@@ -1,0 +1,1072 @@
+:root {
+  --about-bg: #faf5ff;
+  --about-ink: #1a1a1a;
+  --about-white: #ffffff;
+  --about-lavender: #d8d8f6;
+  --about-lavender-soft: #efecff;
+  --about-periwinkle: #7a7adb;
+  --about-periwinkle-dark: #5a5ab4;
+  --about-lemon: #fff6bb;
+  --about-pink: #ffe3ee;
+  --about-shadow: 4px 4px 0 #1a1a1a;
+  --about-shadow-small: 3px 3px 0 #1a1a1a;
+}
+
+
+/* =========================================
+   PAGE
+========================================= */
+
+.about-page {
+  width: min(1060px, calc(100% - 36px));
+
+  margin: 0 auto;
+
+  padding: 52px 0 100px;
+}
+
+.active-link {
+  background: var(--about-lavender) !important;
+}
+
+
+/* =========================================
+   BACKGROUND DOODLES
+========================================= */
+
+.about-doodles {
+  position: fixed;
+
+  inset: 0;
+
+  z-index: -1;
+
+  pointer-events: none;
+
+  overflow: hidden;
+
+  color: rgba(26, 26, 26, 0.72);
+}
+
+.about-doodle {
+  position: absolute;
+
+  font-size: 1.55rem;
+}
+
+.d1 {
+  top: 15%;
+  left: 6%;
+}
+
+.d2 {
+  top: 58%;
+  left: 4%;
+}
+
+.d3 {
+  top: 32%;
+  right: 7%;
+}
+
+.d4 {
+  bottom: 14%;
+  right: 7%;
+}
+
+.d5 {
+  top: 76%;
+  right: 3%;
+
+  transform: rotate(12deg);
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.about-hero {
+  max-width: 820px;
+
+  margin: 0 auto 46px;
+
+  text-align: center;
+}
+
+.about-eyebrow {
+  display: inline-block;
+
+  padding: 7px 13px;
+
+  border: 2px solid var(--about-ink);
+
+  border-radius: 999px;
+
+  background: var(--about-white);
+
+  box-shadow: var(--about-shadow-small);
+
+  font-size: 0.72rem;
+
+  font-weight: 800;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.13em;
+
+  transform: rotate(-1deg);
+}
+
+.about-hero h1 {
+  margin: 20px 0 0;
+
+  font-family: "Fraunces", serif;
+
+  font-size: clamp(3.4rem, 7vw, 5.7rem);
+
+  line-height: 0.95;
+
+  letter-spacing: -0.05em;
+}
+
+.about-squiggle {
+  width: 165px;
+
+  height: 13px;
+
+  margin: 10px auto 0;
+
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 12' preserveAspectRatio='none'%3E%3Cpath d='M2 8 C20 2 40 12 60 6 S100 2 118 7' fill='none' stroke='%237A7ADB' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E");
+
+  background-repeat: no-repeat;
+
+  background-size: 100% 100%;
+}
+
+.about-tagline {
+  max-width: 760px;
+
+  margin: 17px auto 0;
+
+  font-family: "Caveat", cursive;
+
+  font-size: 1.65rem;
+
+  line-height: 1.35;
+
+  color: var(--about-periwinkle-dark);
+}
+
+
+/* =========================================
+   INTRO
+========================================= */
+
+.about-intro {
+  display: grid;
+
+  grid-template-columns: 0.82fr 1.5fr;
+
+  gap: 28px;
+
+  align-items: start;
+}
+
+.profile-stack {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 24px;
+}
+
+.profile-card {
+  position: relative;
+
+  padding: 10px 10px 44px;
+
+  border: 2px solid var(--about-ink);
+
+  background: var(--about-white);
+
+  box-shadow: var(--about-shadow);
+
+  transform: rotate(-1.4deg);
+}
+
+.profile-tape {
+  position: absolute;
+
+  top: -13px;
+
+  left: 50%;
+
+  width: 82px;
+
+  height: 26px;
+
+  transform: translateX(-50%) rotate(3deg);
+
+  background: rgba(216, 216, 246, 0.84);
+
+  z-index: 2;
+}
+
+.profile-placeholder {
+  aspect-ratio: 4 / 5;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  border: 1.5px solid rgba(26, 26, 26, 0.55);
+
+  background:
+    radial-gradient(circle at 1px 1px, rgba(122, 122, 219, 0.18) 1px, transparent 1.5px) 0 0 / 22px 22px,
+    linear-gradient(135deg, #e8e4ff, #fff8d8);
+}
+
+.profile-initials {
+  display: grid;
+
+  width: 86px;
+
+  height: 86px;
+
+  place-items: center;
+
+  border: 2px solid var(--about-ink);
+
+  border-radius: 50%;
+
+  background: var(--about-white);
+
+  box-shadow: var(--about-shadow-small);
+
+  font-family: "Fraunces", serif;
+
+  font-size: 2rem;
+
+  font-weight: 700;
+}
+
+.profile-placeholder-note {
+  font-family: "Caveat", cursive;
+
+  font-size: 1.25rem;
+
+  color: var(--about-periwinkle-dark);
+}
+
+.profile-card img {
+  width: 100%;
+
+  aspect-ratio: 4 / 5;
+
+  object-fit: cover;
+
+  border: 1.5px solid rgba(26, 26, 26, 0.55);
+}
+
+.profile-caption {
+  position: absolute;
+
+  left: 50%;
+
+  bottom: 9px;
+
+  transform: translateX(-50%);
+
+  margin: 0;
+
+  font-family: "Caveat", cursive;
+
+  font-size: 1.35rem;
+
+  white-space: nowrap;
+}
+
+.currently-card {
+  padding: 18px;
+
+  border: 2px solid var(--about-ink);
+
+  border-radius: 20px;
+
+  background: var(--about-lemon);
+
+  box-shadow: var(--about-shadow-small);
+
+  transform: rotate(1.3deg);
+}
+
+.tiny-label {
+  display: inline-block;
+
+  margin-bottom: 8px;
+
+  font-size: 0.68rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.09em;
+
+  text-transform: uppercase;
+}
+
+.currently-card ul {
+  margin: 0;
+
+  padding-left: 18px;
+}
+
+.currently-card li {
+  margin-bottom: 8px;
+
+  font-size: 0.87rem;
+
+  line-height: 1.45;
+}
+
+.intro-card {
+  position: relative;
+
+  padding: 32px;
+
+  border: 2px solid var(--about-ink);
+
+  border-radius: 28px;
+
+  background: var(--about-white);
+
+  box-shadow: var(--about-shadow);
+}
+
+.hello-sticker {
+  position: absolute;
+
+  top: -17px;
+
+  right: 25px;
+
+  padding: 7px 12px;
+
+  border: 2px solid var(--about-ink);
+
+  border-radius: 999px;
+
+  background: var(--about-pink);
+
+  box-shadow: var(--about-shadow-small);
+
+  font-family: "Caveat", cursive;
+
+  font-size: 1.05rem;
+
+  transform: rotate(2deg);
+}
+
+.intro-kicker {
+  margin: 0 0 8px;
+
+  font-family: "Caveat", cursive;
+
+  font-size: 1.3rem;
+
+  color: var(--about-periwinkle-dark);
+}
+
+.intro-card h2 {
+  max-width: 620px;
+
+  margin: 0 0 21px;
+
+  font-family: "Fraunces", serif;
+
+  font-size: clamp(2rem, 4vw, 2.9rem);
+
+  line-height: 1.08;
+}
+
+.intro-card > p:not(.intro-kicker) {
+  margin: 0 0 18px;
+
+  line-height: 1.8;
+
+  color: #49454d;
+}
+
+.favorite-problem {
+  margin-top: 26px;
+
+  padding: 16px 18px;
+
+  border: 2px dashed var(--about-periwinkle);
+
+  border-radius: 17px;
+
+  background: var(--about-lavender-soft);
+}
+
+.favorite-problem span {
+  display: block;
+
+  margin-bottom: 5px;
+
+  font-size: 0.68rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.09em;
+
+  text-transform: uppercase;
+
+  color: var(--about-periwinkle-dark);
+}
+
+.favorite-problem strong {
+  font-family: "Caveat", cursive;
+
+  font-size: 1.45rem;
+
+  font-weight: 600;
+}
+
+
+/* =========================================
+   SECTION HEADINGS
+========================================= */
+
+.section-heading {
+  margin-bottom: 24px;
+}
+
+.handwritten {
+  margin: 0 0 2px;
+
+  font-family: "Caveat", cursive;
+
+  font-size: 1.5rem;
+
+  color: var(--about-periwinkle-dark);
+}
+
+.section-heading h2,
+.tools-heading h2 {
+  margin: 0;
+
+  font-family: "Fraunces", serif;
+
+  font-size: clamp(2.2rem, 4vw, 3.1rem);
+
+  line-height: 1.1;
+}
+
+
+/* =========================================
+   STORY
+========================================= */
+
+.story-section {
+  margin-top: 78px;
+}
+
+.story-line {
+  display: grid;
+
+  grid-template-columns: 1fr auto 1fr auto 1fr;
+
+  gap: 14px;
+
+  align-items: center;
+}
+
+.story-card {
+  min-height: 255px;
+
+  padding: 21px;
+
+  border: 2px solid var(--about-ink);
+
+  border-radius: 22px;
+
+  box-shadow: var(--about-shadow-small);
+}
+
+.story-lav {
+  background: var(--about-lavender);
+
+  transform: rotate(-1deg);
+}
+
+.story-yellow {
+  background: var(--about-lemon);
+
+  transform: rotate(1deg);
+}
+
+.story-white {
+  background: var(--about-white);
+
+  transform: rotate(-0.5deg);
+}
+
+.story-number {
+  display: grid;
+
+  width: 38px;
+
+  height: 38px;
+
+  place-items: center;
+
+  border: 2px solid var(--about-ink);
+
+  border-radius: 50%;
+
+  background: var(--about-white);
+
+  font-family: "Caveat", cursive;
+
+  font-size: 1.1rem;
+
+  font-weight: 700;
+}
+
+.story-mini {
+  margin: 15px 0 4px;
+
+  font-family: "Caveat", cursive;
+
+  font-size: 1.05rem;
+
+  color: var(--about-periwinkle-dark);
+}
+
+.story-card h3 {
+  margin: 0 0 10px;
+
+  font-family: "Fraunces", serif;
+
+  font-size: 1.25rem;
+}
+
+.story-card p:last-child {
+  margin: 0;
+
+  line-height: 1.65;
+
+  color: #4e4852;
+
+  font-size: 0.9rem;
+}
+
+.story-arrow {
+  font-family: "Caveat", cursive;
+
+  font-size: 2rem;
+
+  color: var(--about-periwinkle-dark);
+}
+
+
+/* =========================================
+   BELIEFS
+========================================= */
+
+.beliefs-section {
+  margin-top: 78px;
+}
+
+.beliefs-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 20px;
+}
+
+.belief-card {
+  min-height: 275px;
+
+  padding: 23px;
+
+  border: 2px solid var(--about-ink);
+
+  border-radius: 23px;
+
+  box-shadow: var(--about-shadow-small);
+}
+
+.belief-purple {
+  background: var(--about-lavender-soft);
+
+  transform: rotate(-1deg);
+}
+
+.belief-yellow {
+  background: var(--about-lemon);
+
+  transform: rotate(1deg);
+}
+
+.belief-pink {
+  background: var(--about-pink);
+
+  transform: rotate(-0.7deg);
+}
+
+.belief-icon {
+  display: grid;
+
+  width: 42px;
+
+  height: 42px;
+
+  place-items: center;
+
+  border: 2px solid var(--about-ink);
+
+  border-radius: 50%;
+
+  background: var(--about-white);
+
+  font-family: "Caveat", cursive;
+
+  font-size: 1.3rem;
+
+  font-weight: 700;
+}
+
+.belief-card h3 {
+  margin: 18px 0 9px;
+
+  font-family: "Fraunces", serif;
+
+  font-size: 1.28rem;
+
+  line-height: 1.2;
+}
+
+.belief-card p {
+  margin: 0;
+
+  color: #504a53;
+
+  line-height: 1.68;
+
+  font-size: 0.9rem;
+}
+
+
+/* =========================================
+   SKILLS
+========================================= */
+
+.skills-section {
+  margin-top: 78px;
+}
+
+.skills-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 20px;
+}
+
+.skill-card {
+  padding: 23px;
+
+  border: 2px solid var(--about-ink);
+
+  border-radius: 22px;
+
+  background: var(--about-white);
+
+  box-shadow: var(--about-shadow-small);
+}
+
+.skill-lav {
+  background: var(--about-lavender);
+}
+
+.skill-yellow {
+  background: var(--about-lemon);
+}
+
+.skill-top {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin-bottom: 15px;
+}
+
+.skill-symbol {
+  display: grid;
+
+  width: 38px;
+
+  height: 38px;
+
+  place-items: center;
+
+  border: 2px solid var(--about-ink);
+
+  border-radius: 12px;
+
+  background: var(--about-white);
+
+  font-family: "Caveat", cursive;
+
+  font-size: 1.25rem;
+
+  font-weight: 700;
+}
+
+.skill-card h3 {
+  margin: 0;
+
+  font-family: "Fraunces", serif;
+
+  font-size: 1.4rem;
+}
+
+.skill-card ul {
+  columns: 1;
+
+  margin: 0;
+
+  padding-left: 18px;
+}
+
+.skill-card li {
+  margin-bottom: 8px;
+
+  font-size: 0.88rem;
+
+  line-height: 1.45;
+}
+
+
+/* =========================================
+   TOOLS
+========================================= */
+
+.tools-section {
+  margin-top: 78px;
+}
+
+.tools-board {
+  padding: 28px;
+
+  border: 2px solid var(--about-ink);
+
+  border-radius: 27px;
+
+  background: var(--about-white);
+
+  box-shadow: var(--about-shadow);
+}
+
+.tools-heading {
+  display: flex;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  align-items: flex-start;
+}
+
+.tools-spark {
+  font-size: 2rem;
+
+  color: var(--about-periwinkle-dark);
+}
+
+.tool-cloud {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 11px;
+
+  margin-top: 24px;
+}
+
+.tool-cloud span {
+  padding: 9px 14px;
+
+  border: 2px solid var(--about-ink);
+
+  border-radius: 999px;
+
+  background: var(--about-white);
+
+  box-shadow: var(--about-shadow-small);
+
+  font-size: 0.84rem;
+
+  font-weight: 700;
+
+  transition: 0.18s ease;
+}
+
+.tool-cloud span:nth-child(4n + 1) {
+  background: var(--about-lavender);
+}
+
+.tool-cloud span:nth-child(4n + 3) {
+  background: var(--about-lemon);
+}
+
+.tool-cloud span:hover {
+  transform: translateY(-3px) rotate(-1deg);
+}
+
+
+/* =========================================
+   PERSONAL NOTE
+========================================= */
+
+.personal-note {
+  position: relative;
+
+  width: min(690px, 94%);
+
+  margin: 82px auto 0;
+
+  padding: 31px;
+
+  border: 2px solid var(--about-ink);
+
+  background: #fffef9;
+
+  box-shadow: var(--about-shadow);
+
+  transform: rotate(-0.7deg);
+}
+
+.personal-tape {
+  position: absolute;
+
+  top: -14px;
+
+  left: 50%;
+
+  width: 105px;
+
+  height: 28px;
+
+  transform: translateX(-50%) rotate(2deg);
+
+  background: rgba(255, 246, 187, 0.88);
+}
+
+.personal-label {
+  margin: 0 0 13px;
+
+  font-family: "Caveat", cursive;
+
+  font-size: 1.7rem;
+
+  color: var(--about-periwinkle-dark);
+}
+
+.personal-note > p:not(.personal-label) {
+  margin: 0 0 14px;
+
+  line-height: 1.75;
+
+  color: #4c474f;
+}
+
+.personal-small {
+  display: block;
+
+  margin-top: 20px;
+
+  text-align: right;
+
+  font-family: "Caveat", cursive;
+
+  font-size: 1.12rem;
+
+  color: #777;
+}
+
+
+/* =========================================
+   CTA
+========================================= */
+
+.about-cta {
+  margin-top: 84px;
+
+  text-align: center;
+}
+
+.about-cta h2 {
+  margin: 4px 0 8px;
+
+  font-family: "Fraunces", serif;
+
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+}
+
+.about-cta > p:not(.handwritten) {
+  max-width: 570px;
+
+  margin: 0 auto;
+
+  color: #5e5861;
+
+  line-height: 1.65;
+}
+
+.about-actions {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  justify-content: center;
+
+  gap: 11px;
+
+  margin-top: 22px;
+}
+
+.about-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 11px 18px;
+
+  border: 2px solid var(--about-ink);
+
+  border-radius: 999px;
+
+  box-shadow: var(--about-shadow-small);
+
+  font-weight: 800;
+
+  transition: 0.18s ease;
+}
+
+.about-button:hover {
+  transform: translateY(-2px);
+}
+
+.about-button-dark {
+  background: var(--about-periwinkle-dark);
+
+  color: white;
+}
+
+.about-button-light {
+  background: var(--about-white);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .about-intro {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-stack {
+    display: grid;
+
+    grid-template-columns: minmax(240px, 0.8fr) 1fr;
+
+    align-items: start;
+  }
+
+  .profile-card {
+    max-width: 360px;
+  }
+
+  .story-line {
+    grid-template-columns: 1fr;
+  }
+
+  .story-arrow {
+    transform: rotate(90deg);
+
+    text-align: center;
+  }
+
+  .beliefs-grid,
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .belief-card {
+    min-height: 0;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 620px) {
+
+  .about-page {
+    width: min(100% - 24px, 1060px);
+
+    padding-top: 34px;
+  }
+
+  .profile-stack {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-card {
+    width: min(88%, 340px);
+
+    margin: 0 auto;
+  }
+
+  .intro-card {
+    padding: 23px;
+  }
+
+  .hello-sticker {
+    position: static;
+
+    display: inline-block;
+
+    margin-bottom: 18px;
+  }
+
+  .about-tagline {
+    font-size: 1.4rem;
+  }
+
+  .tools-board,
+  .personal-note {
+    padding: 22px;
+  }
+
+}

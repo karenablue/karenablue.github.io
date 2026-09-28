@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contact | Designed by Karena</title>
+
+  <meta
+    name="description"
+    content="Get in touch with Karena about UX research, design, web projects, and thoughtful collaborations."
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <div class="contact-doodles" aria-hidden="true">
+    <span class="doodle doodle-star">☆</span>
+    <span class="doodle doodle-heart">♡</span>
+    <span class="doodle doodle-spark">✦</span>
+    <span class="doodle doodle-flower">✿</span>
+    <span class="doodle doodle-mail">✉</span>
+  </div>
+
+  <header class="site-header">
+    <a href="index.html" class="site-logo">
+      Designed by Karena
+    </a>
+
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="work.html">Work</a>
+      <a href="about.html">About</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html" class="active-link" aria-current="page">Contact</a>
+    </nav>
+  </header>
+
+  <main class="contact-page" id="main-content" tabindex="-1">
+
+    <section class="contact-hero">
+
+      <div class="contact-eyebrow">
+        ✦ inbox open
+      </div>
+
+      <h1>Say hello.</h1>
+
+      <div class="contact-squiggle"></div>
+
+      <p>
+        Have a project, a role, a question, or something interesting to talk through?
+        Send it my way.
+      </p>
+
+    </section>
+
+
+    <section class="contact-layout">
+
+      <!-- LEFT NOTES -->
+      <aside class="contact-side contact-side-left" aria-label="Contact notes">
+
+        <div class="contact-sticker lavender-sticker">
+          <span class="sticker-label">best for</span>
+          <p>UX research, strategy, web projects, and thoughtful collaborations.</p>
+        </div>
+
+        <div class="contact-sticker yellow-sticker">
+          <span class="sticker-label">tiny request</span>
+          <p>Please tell me a little about what you're reaching out about. Context is my love language.</p>
+        </div>
+
+      </aside>
+
+
+      <!-- MAIN MESSAGE CARD -->
+      <section class="message-board">
+
+        <div class="message-board-top">
+
+          <div>
+            <span class="board-label">
+              new message
+            </span>
+
+            <h2>What’s on your mind?</h2>
+          </div>
+
+          <span class="mail-stamp" aria-hidden="true">
+            ✉
+          </span>
+
+        </div>
+
+        <p class="message-intro">
+          No need to make it sound formal. A clear note is perfect.
+        </p>
+
+        <form class="contact-form" id="contact-form">
+
+          <div class="form-row">
+
+            <div class="form-field">
+              <label for="name">Your name</label>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                autocomplete="name"
+                placeholder="Your name"
+                required
+              >
+            </div>
+
+            <div class="form-field">
+              <label for="email">Your email</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                placeholder="you@example.com"
+                required
+              >
+            </div>
+
+          </div>
+
+          <div class="form-field">
+            <label for="subject">What are we talking about?</label>
+
+            <select id="subject" name="subject" required>
+              <option value="" selected disabled>Pick one...</option>
+              <option value="UX Research">UX Research</option>
+              <option value="Design Opportunity">Design Opportunity</option>
+              <option value="Web Project">Web Project</option>
+              <option value="Recruiting / Role">Recruiting / Role</option>
+              <option value="Collaboration">Collaboration</option>
+              <option value="Something Else">Something Else</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="message">Your note</label>
+
+            <textarea
+              id="message"
+              name="message"
+              rows="7"
+              placeholder="Tell me what you're working on, what you need, or what made you reach out..."
+              required
+            ></textarea>
+          </div>
+
+          <div class="form-footer">
+
+            <p class="form-note">
+              This opens a draft in your email app. Press Send there to deliver it.
+            </p>
+
+            <button type="submit" class="send-button">
+              Open email draft →
+            </button>
+
+          </div>
+
+          <p class="form-status" id="form-status" aria-live="polite"></p>
+
+        </form>
+
+      </section>
+
+
+      <!-- RIGHT NOTES -->
+      <aside class="contact-side contact-side-right" aria-label="Direct contact links">
+
+        <a class="contact-link-card email-card" href="mailto:designedbykarena@gmail.com">
+          <span class="contact-link-icon">✉</span>
+
+          <div>
+            <span class="contact-link-label">email me</span>
+            <strong>designedbykarena@gmail.com</strong>
+          </div>
+        </a>
+
+        <a
+          class="contact-link-card linkedin-card"
+          href="https://www.linkedin.com/in/karenablue/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span class="contact-link-icon">in</span>
+
+          <div>
+            <span class="contact-link-label">find me on</span>
+            <strong>LinkedIn</strong>
+          </div>
+        </a>
+
+        <div class="contact-sticker pink-sticker">
+          <span class="sticker-label">response time</span>
+          <p>I’m usually better at replying when there’s an actual question in the message. ♡</p>
+        </div>
+
+      </aside>
+
+    </section>
+
+
+    <section class="contact-closing">
+
+      <div class="closing-card">
+
+        <p class="closing-handwritten">
+          before you go...
+        </p>
+
+        <h2>You can also just look around.</h2>
+
+        <p>
+          If you landed here before seeing the research archive, start there.
+          It tells you much more about how I think than a contact page ever could.
+        </p>
+
+        <a href="work.html" class="closing-button">
+          Browse my research →
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer class="site-footer">
+    <p>
+      Designed by Karena — made by hand, one page at a time.
+    </p>
+  </footer>
+
+  <script src="contact.js"></script>
+
+</body>
+</html>
