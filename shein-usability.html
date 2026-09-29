@@ -37,6 +37,13 @@
       <div class="stat-card"><span>Reported SUS avg. (incl. pilot)</span><strong>82.5</strong></div>
       <div class="stat-card"><span>Recommendations</span><strong>4</strong></div>
     </div>
+
+    <!-- TODO: fill in role and start date, then uncomment.
+    <p class="case-deck case-credit">
+      Team project for HCI 460, Winter 2026, with Alisha Jordan, Chyna Little and Vicky Kimani.
+      My role: [ROLE — facilitator / evaluator / observer, plus what you personally did]. Timeline: [START DATE] to March 9, 2026.
+    </p>
+    -->
   </section>
 
   <div class="case-layout">
@@ -46,6 +53,7 @@
       <a href="#method">Method</a><a href="#completion">Completion rates</a>
       <a href="#task1">Task 1</a><a href="#task2">Task 2</a><a href="#task3">Task 3</a>
       <a href="#sus">SUS</a><a href="#findings">Recommendations</a><a href="#limits">Limitations</a>
+      <a href="#reflection">Reflection</a>
     </nav>
     <article>
 
@@ -57,9 +65,7 @@
 
         <p>
           The study evaluated whether users could efficiently discover, filter, and act on products
-          in SHEIN's shopping experience. The written report documents six sessions including a pilot.
-          The final presentation identifies P1–P5 as the five post-pilot participants used for the
-          formal results, so this page keeps the pilot separate.
+          in SHEIN's shopping experience.
         </p>
 
         <div class="callout">
@@ -119,10 +125,8 @@
 
         <h3>KLM Analysis — Search for a fur coat using search + filters</h3>
 
-        <div class="klm-summary">
+        <div class="klm-summary" style="grid-template-columns:minmax(0,240px)">
           <div class="klm-stat"><strong>8.66s</strong><span>KLM estimate</span></div>
-          <div class="klm-stat"><strong>14–18s</strong><span>Actual timed performance</span></div>
-          <div class="klm-stat"><strong>5.34–9.34s</strong><span>Observed gap</span></div>
         </div>
 
         <div class="table-wrap">
@@ -155,6 +159,12 @@
           <h2>Usability Testing Method</h2>
         </div>
 
+        <p>
+          Six moderated remote sessions: one pilot (P0, February 17, 2026) and five formal sessions (P1 to P5).
+          The pilot led us to reword Task 1 and fully rewrite Task 2. All participants had used SHEIN before
+          and were recruited through personal networks and social media.
+        </p>
+
         <div class="table-wrap">
           <table>
             <tbody>
@@ -167,30 +177,25 @@
             </tbody>
           </table>
         </div>
-
-        <div class="source-note">
-          The written report documents six sessions including P0; the final presentation labels P1–P5 as the
-          five post-pilot participants. The site treats P0 as pilot data rather than mixing it into the formal task tables.
-        </div>
       </section>
 
 
       <section class="section" id="completion">
         <div class="section-head">
-          <p class="section-note">what the final presentation reported</p>
+          <p class="section-note">P1 to P5, partial = half credit</p>
           <h2>Task Completion Rates</h2>
         </div>
 
         <div class="bar-group">
-          <h3>Reported completion rate (%)</h3>
+          <h3>Completion rate (%)</h3>
           <div class="bar-row"><span class="bar-label">Task 1 · Search &amp; Filter</span><span class="bar-track"><span class="bar-fill low" style="width:50%"></span></span><span class="bar-value">50%</span></div>
-          <div class="bar-row"><span class="bar-label">Task 2 · Quick Add</span><span class="bar-track"><span class="bar-fill mid" style="width:60%"></span></span><span class="bar-value">60%</span></div>
+          <div class="bar-row"><span class="bar-label">Task 2 · Quick Add</span><span class="bar-track"><span class="bar-fill mid" style="width:70%"></span></span><span class="bar-value">70%</span></div>
           <div class="bar-row"><span class="bar-label">Task 3 · Favorites</span><span class="bar-track"><span class="bar-fill" style="width:100%"></span></span><span class="bar-value">100%</span></div>
         </div>
 
         <div class="source-note">
-          These percentages are reproduced exactly from the final presentation. The raw Yes / Partial / No
-          statuses are shown below so the underlying evidence stays visible.
+          Task 1 (Search &amp; Filter): 50%. Task 2 (Quick Add): 70%. Task 3 (Favorites): 100%.
+          Rates are based on P1 to P5, and a partial completion counts as half credit.
         </div>
       </section>
 
@@ -278,13 +283,14 @@
         </div>
 
         <div class="source-note">
-          *P0 was the pilot. The written report's 82.5 average includes P0. The final presentation
-          shows P1–P5 as the post-pilot participant set but retains the 82.5 reported average.
-          This page preserves the source data instead of silently reconciling the discrepancy.
+          *P0 was the pilot. The average SUS score was 82.5 across all six sessions, or 81.5 for P1 to P5 alone.
+          Both are above the 68 benchmark. The spread is wide, from 32.5 (P1) to 100 (P5). P1 was also the
+          participant who failed Task 1 and hit the account-creation wall in Task 3, so the low score matches
+          what happened in the session.
         </div>
 
         <div class="callout">
-          <p><strong>Pattern:</strong> SUS scores ranged from 32.5 to 100. The report interprets this
+          <p><strong>Pattern:</strong> The report interprets the wide spread
           as evidence that familiarity with e-commerce conventions shaped perceived usability,
           even when participants encountered task-level friction.</p>
         </div>
@@ -309,9 +315,20 @@
         <ul>
           <li>Small convenience sample.</li>
           <li>The pilot changed task wording before formal testing.</li>
-          <li>The written report and final presentation use slightly different participant framing.</li>
           <li>The source documents record ASQ as a measure, but do not provide an aggregate ASQ score table in the final results section; no ASQ values are invented here.</li>
           <li>Only three shopping tasks were evaluated.</li>
+        </ul>
+      </section>
+
+
+      <section class="section" id="reflection">
+        <div class="section-head"><p class="section-note">looking back</p><h2>What I'd do differently</h2></div>
+
+        <ul>
+          <li><strong>Recruit beyond experienced SHEIN users.</strong> Everyone had used the site before, and the report itself says familiarity likely explains the high SUS scores despite real task failures. Testing new users would show the discoverability problems more clearly.</li>
+          <li><strong>Run a bigger pilot.</strong> One pilot participant caught two task-wording problems. Another round might have caught the Task 2 confusion before the formal sessions.</li>
+          <li><strong>Record task times.</strong> We planned to measure time on task, but the results only have success, difficulty and errors. Without times I couldn't check the KLM prediction against real behavior.</li>
+          <li><strong>Retest the fixes.</strong> The four recommendations are untested. The next step is a second round on a redesigned filter and a more visible quick-add button.</li>
         </ul>
       </section>
 
@@ -335,6 +352,7 @@
         <a href="#sus">SUS</a>
         <a href="#findings">Recommendations</a>
         <a href="#limits">Limitations</a>
+        <a href="#reflection">Reflection</a>
       </nav>
     </aside>
   </div>

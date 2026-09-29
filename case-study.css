@@ -66,6 +66,7 @@ input,textarea{cursor:text}
   letter-spacing:-.045em;
 }
 .case-deck{max-width:820px;margin:0;color:#514c56;line-height:1.75}
+.case-credit{margin-top:18px;font-size:.9rem}
 .stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:23px}
 .stat-card{border:2px solid var(--ink);border-radius:16px;background:var(--lav2);padding:13px}
 .stat-card span{display:block;font-size:.62rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
