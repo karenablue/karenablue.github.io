@@ -9,8 +9,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="case-study.css">
 
-<title>Information Architecture Research | Designed by Karena</title>
-<meta name="description" content="Information architecture research using competitive analysis, card sorting, and tree testing.">
+<title>Sigma Gamma Rho: Navigation Research to Coded Redesign | Designed by Karena</title>
+<meta name="description" content="Card sorting and tree testing to help prospective members find where to join Sigma Gamma Rho, carried into a coded website redesign.">
 </head>
 <body>
 <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -26,120 +26,61 @@
 <main class="case-page" id="main-content" tabindex="-1">
 <a class="back-link" href="work.html">← back to the research cabinet</a>
 <section class="case-hero">
-  <span class="case-kicker">Information Architecture Research</span>
-  <h1>Why can’t prospective members find the “Join” button on a 100k-member sorority website?</h1>
-  <p class="case-deck">In a tree test of the proposed navigation, everyone who attempted the join task found Membership → Become a Member directly. Card sorting and tree testing also exposed labels that still confused participants.</p>
+  <span class="case-kicker">Information Architecture Research + Coded Redesign</span>
+  <h1>Helping prospective members find where to join Sigma Gamma Rho</h1>
+  <p class="case-deck">Every participant who attempted the tree-test join task went directly to Membership → Become a Member. I used the card-sort and tree-test findings to make Membership a primary category in a coded redesign, while marking the decisions that still need testing.</p>
   <div class="stat-grid">
-    <div class="stat-card"><span>Role</span><strong>UX Researcher</strong></div>
-    <div class="stat-card"><span>Methods</span><strong>Card sort + tree test</strong></div>
+    <div class="stat-card"><span>Role</span><strong>UX researcher + front-end developer</strong></div>
+    <div class="stat-card"><span>Methods</span><strong>Benchmark, card sort, tree test</strong></div>
     <div class="stat-card"><span>Participants</span><strong>9 per phase</strong></div>
-    <div class="stat-card"><span>Timeline</span><strong>Feb–Apr 2025</strong></div>
+    <div class="stat-card"><span>Timeline</span><strong>Research Feb–Apr 2025 · Build Aug–Sep 2026</strong></div>
   </div>
 </section>
 
 <div class="case-layout">
-<nav class="jump-card mobile-jump" aria-label="Case study sections"><p>jump to ↓</p><a href="#overview">Overview</a><a href="#benchmark">Benchmarking</a><a href="#cardsort">Card sorting</a><a href="#synthesis">Synthesis</a><a href="#architecture">Proposed IA</a><a href="#tree-test">Tree testing</a><a href="#rationale">Rationale</a><a href="#limits">Limitations</a></nav>
+<nav class="jump-card mobile-jump" aria-label="Case study sections"><p>jump to ↓</p><a href="#summary">Summary</a><a href="#overview">Overview</a><a href="#findings">Key findings</a><a href="#synthesis">Synthesis</a><a href="#architecture">Proposed IA</a><a href="#rationale">Rationale</a><a href="#implementation">Coded redesign</a><a href="#evidence">Full results</a><a href="#limits">Limitations</a></nav>
 <article>
+<section class="section" id="summary">
+  <div class="section-head"><p class="section-note">the short version</p><h2>Summary</h2></div>
+  <div class="summary-grid">
+    <div class="summary-card"><span class="summary-label">What I learned</span><p>Prospective members expected a top-level Membership section, and every card-sort participant grouped "Become a Member" with the other membership actions. Insider titles such as "Grand Basileus" were the biggest barrier for non-members.</p></div>
+    <div class="summary-card"><span class="summary-label">What I changed</span><p>I moved Membership into the primary navigation and put "Become a Member" first. I also replaced the weak "Service &amp; Impact" label and designed a shallower navigation. The captured desktop and mobile interfaces give joining a prominent control.</p></div>
+    <div class="summary-card highlight"><span class="summary-label">Strongest result</span><strong>100% direct</strong><p>Every participant who attempted the join task in the tree test went straight to Membership → Become a Member. The average time was 7.5 seconds.</p></div>
+  </div>
+  <p class="small-note">The tree test evaluated a proposed structure. This page does not report a post-launch test or measured change on the organization's live site.</p>
+</section>
+
 <section class="section" id="overview">
   <div class="section-head"><p class="section-note">the setup</p><h2>Project Overview</h2></div>
-  <p>The study asked why prospective members struggled to find membership information and what the navigation structure revealed about the gap between organizational logic and user mental models.</p>
-  <div class="callout yellow"><p><strong>Decision from the evidence:</strong> Put Membership in primary navigation and lead with “Become a Member.” The proposed path was direct for every participant who attempted the join task. Tree testing also exposed a weaker “Service &amp; Impact” label, so the final recommendation uses “Programs &amp; Initiatives.” These are recommendations for a proposed structure, not measured improvements to the live site.</p></div>
-  <div class="callout"><p><strong>Research question:</strong> Why are users struggling to find membership information — and what does the site’s navigation structure reveal about the gap between organizational logic and user mental models?</p></div>
+  <div class="callout"><p><strong>Research question:</strong> why do prospective members struggle to find membership information, and what does the navigation reveal about the gap between how the organization thinks about its content and how visitors expect to find it?</p></div>
   <div class="table-wrap">
     <table>
       <tbody>
-        <tr><th>Total participants</th><td>9 card sort; 9 tree test (different pools)</td></tr>
-        <tr><th>Card sort segments</th><td>6 sorors (3 undergraduate, 3 alumnae), 3 non-members</td></tr>
-        <tr><th>Tree test segments</th><td>2 members, 7 non-members</td></tr>
-        <tr><th>Methods</th><td>Competitive analysis, open card sorting, tree testing</td></tr>
-        <tr><th>Competitors benchmarked</th><td>3 NPHC sororities</td></tr>
-        <tr><th>Cards sorted</th><td>30 content items across all participants</td></tr>
-        <tr><th>Tree test</th><td>10 navigation tasks per participant</td></tr>
+        <tr><th>Participation by phase</th><td>9 card-sort participants and 9 tree-test participants. The groups were mostly different. The exact overlap is unknown.</td></tr>
+        <tr><th>Card sort segments</th><td>6 sorors (3 undergraduate, 3 alumnae) and 3 non-members</td></tr>
+        <tr><th>Tree test segments</th><td>2 members and 7 non-members</td></tr>
+        <tr><th>Methods</th><td>Competitive analysis of 3 NPHC sororities, open card sort (30 cards), tree test (10 tasks)</td></tr>
       </tbody>
     </table>
   </div>
 </section>
 
-<section class="section" id="benchmark">
-  <div class="section-head"><p class="section-note">before changing the tree</p><h2>Competitive Benchmarking</h2></div>
-  <p>Three comparable Divine Nine sorority sites were benchmarked against the existing SGRho navigation. The comparison focused on conventions that reduce findability friction.</p>
-  <div class="table-wrap">
-    <table>
-      <thead><tr><th>Navigation feature</th><th>AKA</th><th>DST</th><th>ZPB</th><th>SGRho</th></tr></thead>
-      <tbody>
-        <tr><td>Clear primary CTA (Join)</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="no">×</td></tr>
-        <tr><td>Dedicated membership section</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="no">×</td></tr>
-        <tr><td>Dropdown simplicity (&lt;6 items)</td><td class="yes">✓</td><td class="no">×</td><td class="yes">✓</td><td class="no">×</td></tr>
-        <tr><td>Search functionality</td><td class="yes">✓</td><td class="yes">✓</td><td class="no">×</td><td class="no">×</td></tr>
-        <tr><td>Visual readability</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="no">×</td></tr>
-        <tr><td>Persistent navigation</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
-        <tr><td>Logical labeling</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="no">×</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <div class="insight-grid">
-    <div class="insight"><span class="num">01</span><h3>Membership is always top-level</h3><p>Every benchmarked organization places membership information in primary navigation. The existing site exposed only “Reactivate” as a general membership entry point.</p></div>
-    <div class="insight"><span class="num">02</span><h3>Programs are grouped under one umbrella</h3><p>Comparable sites consolidate community work into one category; the existing site split it across Programs, Community Impact, and nested dropdowns.</p></div>
-    <div class="insight"><span class="num">03</span><h3>Partner content is co-located</h3><p>Peer sites group partnership and collaboration content together instead of distributing it across multiple top-level areas.</p></div>
-  </div>
-</section>
-
-<section class="section" id="cardsort">
-  <div class="section-head"><p class="section-note">9 people, 30 cards</p><h2>Card Sorting Results</h2></div>
-  <p>Participants sorted 30 content cards into groups that made sense to them. Six sorors (3 undergraduate, 3 alumnae) and three non-members participated.</p>
-  <p class="small-note">Percentages are the share of all 9 participants who placed an item in the category shown (88.9% = 8 of 9; 77.8% = 7 of 9; 66.7% = 6 of 9). Items with weak or split grouping signal are omitted, so not all 30 cards appear below.</p>
-  <div class="bar-groups">
-    <div class="bar-group"><h3>About</h3>
-      <div class="bar-row"><span class="bar-label">Our Founders</span><span class="bar-track"><span class="bar-fill" style="width:100%"></span></span><span class="bar-value">100%</span></div>
-      <div class="bar-row"><span class="bar-label">Herstory</span><span class="bar-track"><span class="bar-fill" style="width:88.9%"></span></span><span class="bar-value">88.9%</span></div>
-      <div class="bar-row"><span class="bar-label">Our Foundations</span><span class="bar-track"><span class="bar-fill mid" style="width:66.7%"></span></span><span class="bar-value">66.7%</span></div>
-      <div class="bar-row"><span class="bar-label">Anti-Hazing Policy</span><span class="bar-track"><span class="bar-fill low" style="width:33.3%"></span></span><span class="bar-value">33.3%</span></div>
-    </div>
-    <div class="bar-group"><h3>Programs &amp; Initiatives</h3>
-      <div class="bar-row"><span class="bar-label">National Programs</span><span class="bar-track"><span class="bar-fill" style="width:77.8%"></span></span><span class="bar-value">77.8%</span></div>
-      <div class="bar-row"><span class="bar-label">Partner Foundations</span><span class="bar-track"><span class="bar-fill mid" style="width:66.7%"></span></span><span class="bar-value">66.7%</span></div>
-      <div class="bar-row"><span class="bar-label">Notable Sigmas</span><span class="bar-track"><span class="bar-fill low" style="width:33.3%"></span></span><span class="bar-value">33.3%</span></div>
-    </div>
-    <div class="bar-group"><h3>Leadership</h3>
-      <div class="bar-row"><span class="bar-label">Regional Leadership</span><span class="bar-track"><span class="bar-fill" style="width:100%"></span></span><span class="bar-value">100%</span></div>
-      <div class="bar-row"><span class="bar-label">International Grand Basileus</span><span class="bar-track"><span class="bar-fill" style="width:88.9%"></span></span><span class="bar-value">88.9%</span></div>
-      <div class="bar-row"><span class="bar-label">International Board of Directors</span><span class="bar-track"><span class="bar-fill" style="width:77.8%"></span></span><span class="bar-value">77.8%</span></div>
-      <div class="bar-row"><span class="bar-label">Past Grand Basilei</span><span class="bar-track"><span class="bar-fill" style="width:77.8%"></span></span><span class="bar-value">77.8%</span></div>
-      <div class="bar-row"><span class="bar-label">International Corporate Headquarters</span><span class="bar-track"><span class="bar-fill low" style="width:33.3%"></span></span><span class="bar-value">33.3%</span></div>
-    </div>
-    <div class="bar-group"><h3>Membership</h3>
-      <div class="bar-row"><span class="bar-label">Become a Member</span><span class="bar-track"><span class="bar-fill" style="width:100%"></span></span><span class="bar-value">100%</span></div>
-      <div class="bar-row"><span class="bar-label">Reactivate Today</span><span class="bar-track"><span class="bar-fill" style="width:88.9%"></span></span><span class="bar-value">88.9%</span></div>
-      <div class="bar-row"><span class="bar-label">Chapter Locator</span><span class="bar-track"><span class="bar-fill mid" style="width:66.7%"></span></span><span class="bar-value">66.7%</span></div>
-      <div class="bar-row"><span class="bar-label">Affiliates</span><span class="bar-track"><span class="bar-fill low" style="width:44.4%"></span></span><span class="bar-value">44.4%</span></div>
-    </div>
-    <div class="bar-group"><h3>News &amp; Events</h3>
-      <div class="bar-row"><span class="bar-label">Latest News</span><span class="bar-track"><span class="bar-fill" style="width:100%"></span></span><span class="bar-value">100%</span></div>
-      <div class="bar-row"><span class="bar-label">Upcoming Events</span><span class="bar-track"><span class="bar-fill" style="width:100%"></span></span><span class="bar-value">100%</span></div>
-      <div class="bar-row"><span class="bar-label">Highlights &amp; Stories</span><span class="bar-track"><span class="bar-fill" style="width:77.8%"></span></span><span class="bar-value">77.8%</span></div>
-      <div class="bar-row"><span class="bar-label">Media Relations</span><span class="bar-track"><span class="bar-fill low" style="width:44.4%"></span></span><span class="bar-value">44.4%</span></div>
-    </div>
-    <div class="bar-group"><h3>Resources</h3>
-      <div class="bar-row"><span class="bar-label">Vendor</span><span class="bar-track"><span class="bar-fill" style="width:88.9%"></span></span><span class="bar-value">88.9%</span></div>
-      <div class="bar-row"><span class="bar-label">Help Center</span><span class="bar-track"><span class="bar-fill" style="width:88.9%"></span></span><span class="bar-value">88.9%</span></div>
-      <div class="bar-row"><span class="bar-label">Contact Us</span><span class="bar-track"><span class="bar-fill mid" style="width:66.7%"></span></span><span class="bar-value">66.7%</span></div>
-      <div class="bar-row"><span class="bar-label">Careers</span><span class="bar-track"><span class="bar-fill mid" style="width:55.6%"></span></span><span class="bar-value">55.6%</span></div>
-    </div>
-  </div>
-  <div class="consensus-grid">
-    <div class="consensus-box"><h3>High consensus ≥75%</h3><ul><li>Our Founders — 100%</li><li>Become a Member — 100%</li><li>Latest News — 100%</li><li>Upcoming Events — 100%</li><li>Regional Leadership — 100%</li><li>Reactivate Membership — 88.9%</li><li>National Programs — 77.8%</li></ul></div>
-    <div class="consensus-box"><h3>Moderate 50–74%</h3><ul><li>Our Foundations — 66.7%</li><li>Partner Foundations — 66.7%</li><li>Chapter Locator — 66.7%</li><li>Contact Us — 66.7%</li><li>Careers — 55.6%</li></ul></div>
-    <div class="consensus-box"><h3>Low &lt;50%</h3><ul><li>Affiliates — 44.4%</li><li>Media Relations — 44.4%</li><li>Anti-Hazing Policy — 33.3%</li><li>Notable Sigmas — 33.3%</li><li>International Corporate Headquarters — 33.3%</li></ul></div>
+<section class="section" id="findings">
+  <div class="section-head"><p class="section-note">the three that drove decisions</p><h2>Key Findings</h2></div>
+  <div class="principle-list">
+    <div class="principle"><h3>1. Membership belongs at the top level</h3><p><strong>Evidence:</strong> all 9 card-sort participants (100%) grouped "Become a Member" under Membership. All 3 benchmarked sororities put membership in primary navigation. In the tree test, the join task reached 100% success, and every participant took the direct path.</p><p><strong>Decision:</strong> make Membership a primary category and put "Become a Member" first.</p></div>
+    <div class="principle"><h3>2. Insider titles block non-members</h3><p><strong>Evidence:</strong> "Find the current leader" was the weakest tree-test task (55.6% success, 27.6s average). Non-members in the card sort paused at or misplaced terms like "Grand Basileus."</p><p><strong>Decision:</strong> keep the official titles, but explain them in plain language.</p></div>
+    <div class="principle"><h3>3. "Service &amp; Impact" didn't read as programs</h3><p><strong>Evidence:</strong> "Find community programs" reached 62.5% success, and only 37.5% of participants went directly to it. In the card sort, programs, foundations, and initiatives formed one group (National Programs 77.8%).</p><p><strong>Decision:</strong> combine them under one programs label instead of the tested "Service &amp; Impact."</p></div>
   </div>
 </section>
 
 <section class="section" id="synthesis">
   <div class="section-head"><p class="section-note">what held across methods</p><h2>Cross-Method Synthesis</h2></div>
   <div class="insight-grid">
-    <div class="insight"><span class="num">01</span><h3>Membership belongs at the top level</h3><p>Card sorting produced unanimous grouping of membership actions; benchmarking showed peer organizations expose membership in primary navigation.</p></div>
-    <div class="insight"><span class="num">02</span><h3>Insider terminology is a barrier</h3><p>Non-members paused or misplaced items when organizational jargon appeared. Plain-language context was needed alongside official terminology.</p></div>
-    <div class="insight"><span class="num">03</span><h3>Service and program content share a mental model</h3><p>Participants independently clustered programs, foundations, and initiatives together while the existing site fragmented them across multiple paths.</p></div>
-    <div class="insight"><span class="num">04</span><h3>Structural depth slows everyone down</h3><p>Card-sort hesitation and competitive patterns both supported a shallower architecture with two levels as the practical ceiling.</p></div>
+    <div class="insight"><span class="num">01</span><h3>Membership belongs at the top level</h3><p>Card sorting produced unanimous grouping of membership actions, and peer organizations put membership in primary navigation.</p></div>
+    <div class="insight"><span class="num">02</span><h3>Insider terminology is a barrier</h3><p>Non-members paused or misplaced items when organizational jargon appeared. They needed plain-language context alongside the official terms.</p></div>
+    <div class="insight"><span class="num">03</span><h3>Service and program content share a mental model</h3><p>Participants grouped programs, foundations, and initiatives together on their own, while the existing site split them across several paths.</p></div>
+    <div class="insight"><span class="num">04</span><h3>Structural depth slows everyone down</h3><p>Hesitation in the card sort and the competitor patterns both pointed to a shallower architecture, with two levels as the practical limit.</p></div>
   </div>
 </section>
 
@@ -154,43 +95,7 @@
     <div class="tree-group"><div class="tree-title">News &amp; Events</div><div class="tree-items"><span>Latest News</span><span>Upcoming Events</span><span>Highlights &amp; Stories</span><span>Media Relations</span></div></div>
     <div class="tree-group"><div class="tree-title">Resources</div><div class="tree-items"><span>Help Center</span><span>Contact Us</span><span>Careers</span><span>Vendor</span><span>Media</span></div></div>
   </div>
-  <p class="small-note">The original artifact identifies Membership as the primary-goal category. “Programs &amp; Initiatives” and several low-consensus placements are synthesis decisions rather than direct card-sort consensus.</p>
-</section>
-
-<section class="section" id="tree-test">
-  <div class="section-head"><p class="section-note">validate the words before the pixels</p><h2>Tree Testing Validation</h2></div>
-  <div class="metric-strip">
-    <div class="metric"><strong>82.2%</strong><span>Avg success rate</span></div>
-    <div class="metric"><strong>9</strong><span>Participants</span></div>
-    <div class="metric"><strong>10</strong><span>Tasks</span></div>
-    <div class="metric"><strong>14.5s</strong><span>Avg task time</span></div>
-  </div>
-  <p class="small-note">Each task was scored against the 8–9 participants who attempted it (one participant completed only 2 of 10 tasks). 82.2% is the mean of the per-task success rates, which span 55.6% to 100%.</p>
-  <div class="bar-group"><h3>Task success</h3>
-    <div class="bar-row"><span class="bar-label">Become a Member</span><span class="bar-track"><span class="bar-fill" style="width:100%"></span></span><span class="bar-value">100%</span></div>
-    <div class="bar-row"><span class="bar-label">Reactivate Membership</span><span class="bar-track"><span class="bar-fill" style="width:100%"></span></span><span class="bar-value">100%</span></div>
-    <div class="bar-row"><span class="bar-label">Latest News</span><span class="bar-track"><span class="bar-fill" style="width:100%"></span></span><span class="bar-value">100%</span></div>
-    <div class="bar-row"><span class="bar-label">Help Center</span><span class="bar-track"><span class="bar-fill" style="width:100%"></span></span><span class="bar-value">100%</span></div>
-    <div class="bar-row"><span class="bar-label">Find a Chapter</span><span class="bar-track"><span class="bar-fill mid" style="width:87.5%"></span></span><span class="bar-value">87.5%</span></div>
-    <div class="bar-row"><span class="bar-label">Find Founders</span><span class="bar-track"><span class="bar-fill mid" style="width:75%"></span></span><span class="bar-value">75%</span></div>
-    <div class="bar-row"><span class="bar-label">Contact Organization</span><span class="bar-track"><span class="bar-fill mid" style="width:75%"></span></span><span class="bar-value">75%</span></div>
-    <div class="bar-row"><span class="bar-label">Find Origins</span><span class="bar-track"><span class="bar-fill low" style="width:66.7%"></span></span><span class="bar-value">66.7%</span></div>
-    <div class="bar-row"><span class="bar-label">Find Programs</span><span class="bar-track"><span class="bar-fill low" style="width:62.5%"></span></span><span class="bar-value">62.5%</span></div>
-    <div class="bar-row"><span class="bar-label">Find Current Leader</span><span class="bar-track"><span class="bar-fill low" style="width:55.6%"></span></span><span class="bar-value">55.6%</span></div>
-  </div>
-  <div class="callout yellow"><p><strong>Participant note:</strong> one participant completed only 2 of 10 tasks. Their responses are reflected only where applicable; the other 8 participants completed the full task set.</p></div>
-  <div class="task-grid">
-    <div class="task"><div class="task-top"><h3>Find organization origins</h3><span class="badge amber">66.7%</span></div><div class="task-stats"><span>Avg 25.3s</span><span>Direct 33.3%</span></div><p>Expected: Home → About → Herstory. Participants often interpreted “origins” as Founders or Foundations.</p></div>
-    <div class="task"><div class="task-top"><h3>Find current leader</h3><span class="badge red">55.6%</span></div><div class="task-stats"><span>Avg 27.6s</span><span>Direct 44.4%</span></div><p>Expected: Home → Leadership → International Grand Basileus. This confirmed the terminology barrier identified during card sorting.</p></div>
-    <div class="task"><div class="task-top"><h3>Join as a member</h3><span class="badge green">100%</span></div><div class="task-stats"><span>Avg 7.5s</span><span>Direct 100%</span></div><p>Every participant navigated directly to Membership → Become a Member without hesitation or backtracking.</p></div>
-    <div class="task"><div class="task-top"><h3>Reactivate membership</h3><span class="badge green">100%</span></div><div class="task-stats"><span>Direct 100%</span></div><p>Participants went directly to Membership → Reactivate Today, validating consolidation of membership actions.</p></div>
-    <div class="task"><div class="task-top"><h3>Find community programs</h3><span class="badge red">62.5%</span></div><div class="task-stats"><span>Avg 26.3s</span><span>Direct 37.5%</span></div><p>The tested label “Service &amp; Impact” was revised to “Programs &amp; Initiatives” after card-sort and tree-test evidence.</p></div>
-    <div class="task"><div class="task-top"><h3>Find founders</h3><span class="badge amber">75%</span></div><div class="task-stats"><span>Avg 10.7s</span><span>Direct 62.5%</span></div><p>Expected: About → Our Founders. Some participants confused the task with Herstory or Past Grand Basilei.</p></div>
-    <div class="task"><div class="task-top"><h3>Find latest news</h3><span class="badge green">100%</span></div><div class="task-stats"><span>Avg 6.8s</span><span>Direct 100%</span></div><p>News &amp; Events functioned as an intuitive top-level category.</p></div>
-    <div class="task"><div class="task-top"><h3>Get account help</h3><span class="badge green">100%</span></div><div class="task-stats"><span>Avg 11.6s</span><span>Direct 50%</span></div><p>Everyone eventually found Resources → Help Center, but half took indirect routes first.</p></div>
-    <div class="task"><div class="task-top"><h3>Find a chapter</h3><span class="badge green">87.5%</span></div><div class="task-stats"><span>Direct 75%</span></div><p>Expected: Membership → Chapter Locator. One participant went to News &amp; Events → Upcoming Events.</p></div>
-    <div class="task"><div class="task-top"><h3>Contact the organization</h3><span class="badge amber">75%</span></div><div class="task-stats"><span>Avg 15.2s</span><span>Direct 37.5%</span></div><p>Expected: Resources → Contact Us. Some participants explored membership-related areas first.</p></div>
-  </div>
+  <p class="small-note">The original artifact identifies Membership as the primary-goal category. "Programs &amp; Initiatives" and several low-consensus placements are synthesis decisions, not direct card-sort consensus.</p>
 </section>
 
 <section class="section" id="rationale">
@@ -199,27 +104,168 @@
     <table>
       <thead><tr><th>Structural change</th><th>Research basis</th></tr></thead>
       <tbody>
-        <tr><td>Membership elevated to primary navigation</td><td>All participants grouped membership content together; competitive analysis showed it as a top-level category.</td></tr>
-        <tr><td>Programs consolidated into “Programs &amp; Initiatives”</td><td>Participants grouped programs and partner initiatives together. The label is a research synthesis, not a direct consensus outcome.</td></tr>
-        <tr><td>News &amp; Events reintroduced as a category</td><td>Card sorting showed strong clustering of time-sensitive content such as press releases, conferences, and calendar items.</td></tr>
-        <tr><td>Navigation depth reduced</td><td>Tree testing showed faster completion when the structure was flatter; nested paths requiring 3+ clicks were eliminated.</td></tr>
-        <tr><td>Contact moved under Resources</td><td>“Contact Us” had moderate card-sort agreement (66.7%), not enough to justify a standalone top-level item.</td></tr>
-        <tr><td>Plain-language context added for insider terms</td><td>Non-Greek participants struggled with terminology such as “Grand Basileus.”</td></tr>
-        <tr><td>Sub-items ordered by user intent</td><td>Higher-intent and broader-audience items appear first; “Become a Member” leads Membership, with Chapter Locator following.</td></tr>
-        <tr><td>Affiliates placed under Programs &amp; Initiatives</td><td>Affiliates had low card-sort consensus (44.4%); content review showed the groups function more like community/youth programs than membership pathways.</td></tr>
+        <tr><td>Membership elevated to primary navigation</td><td>All participants grouped membership content together, and competitive analysis showed it as a top-level category.</td></tr>
+        <tr><td>Programs consolidated into "Programs &amp; Initiatives"</td><td>Participants grouped programs and partner initiatives together. The label is my synthesis, not a direct consensus outcome.</td></tr>
+        <tr><td>News &amp; Events reintroduced as a category</td><td>The card sort showed strong clustering of time-sensitive content such as press releases, conferences, and calendar items.</td></tr>
+        <tr><td>Navigation depth reduced</td><td>The tree test showed faster completion on flatter paths. Paths needing three or more clicks were removed.</td></tr>
+        <tr><td>Contact moved under Resources</td><td>"Contact Us" had moderate card-sort agreement (66.7%), not enough to justify a standalone top-level item.</td></tr>
+        <tr><td>Plain-language context added for insider terms</td><td>Non-Greek participants struggled with terms such as "Grand Basileus."</td></tr>
+        <tr><td>Sub-items ordered by user intent</td><td>Items with higher intent and a broader audience come first. "Become a Member" leads Membership, followed by Chapter Locator.</td></tr>
+        <tr><td>Affiliates placed under Programs &amp; Initiatives</td><td>Affiliates had low card-sort consensus (44.4%). A content review showed these groups work more like community and youth programs than membership pathways.</td></tr>
       </tbody>
     </table>
   </div>
 </section>
 
+<section class="section" id="implementation">
+  <div class="section-head"><p class="section-note">the same project, carried into code</p><h2>From Findings to Coded Redesign</h2></div>
+  <p>I carried the research into a coded website redesign. The screenshots show the resulting desktop and mobile interfaces. Each row below traces a finding to a design decision and to what can be seen in the captured build; interaction and sitewide behavior still need a code review or hands-on test.</p>
+
+  <figure class="shot">
+    <img src="images/sgrho/sgrho-nav-membership.jpg" alt="Redesigned Sigma Gamma Rho header. The Membership menu is open, listing Become a Member first, then Reactivate Membership, Chapter Locator, Affiliates, and Membership Accountability. A Join button sits beside Search, Poodle Portal, and Donate." width="1200" height="400" loading="lazy">
+    <figcaption>Desktop header: Membership is a primary category with Become a Member listed first, and the captured header places a Join button beside Search.</figcaption>
+  </figure>
+
+  <div class="table-wrap" tabindex="0" role="region" aria-label="Finding to design decision to coded behavior">
+    <table>
+      <thead><tr><th>Finding</th><th>Design decision</th><th>Captured implementation</th></tr></thead>
+      <tbody>
+        <tr><td>Join task: 100% direct; membership grouped unanimously</td><td>Membership in the primary navigation, with "Become a Member" first</td><td>The open Membership menu lists Become a Member first, and the desktop header shows a Join button. <span class="badge green">Shown</span></td></tr>
+        <tr><td>The join path needed to remain easy to find on small screens</td><td>Keep a membership entry outside the collapsed menu</td><td>The mobile capture shows "Explore Membership" next to the Menu button. <span class="badge green">Shown</span></td></tr>
+        <tr><td>Structural depth slowed participants</td><td>Limit navigation depth to two levels</td><td>The captured Membership menu has a single dropdown level. Other menus still need a full check. <span class="badge amber">Partial</span></td></tr>
+        <tr><td>"Find the current leader": 55.6% success</td><td>Explain insider titles in plain language</td><td>The header shows a Leadership category, but the capture does not show how the destination page explains "Grand Basileus." This change remains unverified. <span class="badge amber">Unverified</span></td></tr>
+        <tr><td>"Service &amp; Impact" tested weakly</td><td>Use a clearer programs label</td><td>The desktop capture shows "Programs &amp; Initiatives" in primary navigation. The revised label has not been tree-tested. <span class="badge green">Shown</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="shot-pair">
+    <figure class="shot">
+      <img src="images/sgrho/sgrho-become-a-member.jpg" alt="Redesigned Become a Member page with the heading A Lifetime of Greater Service, buttons for Explore Membership Pathways and Find a Chapter, and a photo of members." width="1200" height="800" loading="lazy">
+      <figcaption>The Become a Member page leads with two next steps: explore membership pathways or find a chapter.</figcaption>
+    </figure>
+    <figure class="shot phone">
+      <img src="images/sgrho/sgrho-mobile-home.jpg" alt="Redesigned homepage on a phone. The nav bar shows a Menu button and an Explore Membership button side by side." width="390" height="640" loading="lazy">
+      <figcaption>On a phone, Explore Membership stays visible outside the collapsed menu.</figcaption>
+    </figure>
+  </div>
+
+  <div class="callout yellow"><p><strong>Where the captured build departs from the tested structure:</strong> Contact appears as a top-level item, and Affiliates appears under Membership. These placements and the revised "Programs &amp; Initiatives" label were not evaluated in the original tree test. A follow-up tree test should check them in the built navigation. <a class="source-link" href="mailto:designedbykarena@gmail.com?subject=Request%20for%20Sigma%20Gamma%20Rho%20Coded%20Redesign">Request the redesign code →</a></p></div>
+</section>
+
+<section class="section" id="evidence">
+  <div class="section-head"><p class="section-note">the supporting evidence, if you want all of it</p><h2>Full Results</h2></div>
+  <p>The findings above draw on the results below. Open any section to see the complete data.</p>
+
+  <details class="evidence">
+    <summary>Competitive benchmarking: 3 NPHC sororities compared with the original site</summary>
+    <div class="evidence-body">
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Navigation feature</th><th>AKA</th><th>DST</th><th>ZPB</th><th>SGRho</th></tr></thead>
+          <tbody>
+            <tr><td>Clear primary CTA (Join)</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="no">×</td></tr>
+            <tr><td>Dedicated membership section</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="no">×</td></tr>
+            <tr><td>Dropdown simplicity (&lt;6 items)</td><td class="yes">✓</td><td class="no">×</td><td class="yes">✓</td><td class="no">×</td></tr>
+            <tr><td>Search functionality</td><td class="yes">✓</td><td class="yes">✓</td><td class="no">×</td><td class="no">×</td></tr>
+            <tr><td>Visual readability</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="no">×</td></tr>
+            <tr><td>Persistent navigation</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+            <tr><td>Logical labeling</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="no">×</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <ul>
+        <li><strong>Membership is always top-level.</strong> Every benchmarked organization puts membership in primary navigation. The original site offered only "Reactivate" as a general membership entry point.</li>
+        <li><strong>Programs are grouped under one umbrella.</strong> Comparable sites keep community work in one category. The original site split it across Programs, Community Impact, and nested dropdowns.</li>
+        <li><strong>Partner content is co-located.</strong> Peer sites keep partnership content together instead of spreading it across several top-level areas.</li>
+      </ul>
+    </div>
+  </details>
+
+  <details class="evidence">
+    <summary>Card sort: agreement for 25 of the 30 cards (9 participants)</summary>
+    <div class="evidence-body">
+      <p class="small-note">Percentages are the share of all 9 participants who placed an item in the category shown (88.9% = 8 of 9; 77.8% = 7 of 9; 66.7% = 6 of 9). Items with weak or split grouping are omitted, so not all 30 cards appear.</p>
+      <div class="bar-groups">
+        <div class="bar-group"><h3>About</h3>
+          <div class="bar-row"><span class="bar-label">Our Founders</span><span class="bar-track"><span class="bar-fill" style="width:100%"></span></span><span class="bar-value">100%</span></div>
+          <div class="bar-row"><span class="bar-label">Herstory</span><span class="bar-track"><span class="bar-fill" style="width:88.9%"></span></span><span class="bar-value">88.9%</span></div>
+          <div class="bar-row"><span class="bar-label">Our Foundations</span><span class="bar-track"><span class="bar-fill mid" style="width:66.7%"></span></span><span class="bar-value">66.7%</span></div>
+          <div class="bar-row"><span class="bar-label">Anti-Hazing Policy</span><span class="bar-track"><span class="bar-fill low" style="width:33.3%"></span></span><span class="bar-value">33.3%</span></div>
+        </div>
+        <div class="bar-group"><h3>Programs &amp; Initiatives</h3>
+          <div class="bar-row"><span class="bar-label">National Programs</span><span class="bar-track"><span class="bar-fill" style="width:77.8%"></span></span><span class="bar-value">77.8%</span></div>
+          <div class="bar-row"><span class="bar-label">Partner Foundations</span><span class="bar-track"><span class="bar-fill mid" style="width:66.7%"></span></span><span class="bar-value">66.7%</span></div>
+          <div class="bar-row"><span class="bar-label">Notable Sigmas</span><span class="bar-track"><span class="bar-fill low" style="width:33.3%"></span></span><span class="bar-value">33.3%</span></div>
+        </div>
+        <div class="bar-group"><h3>Leadership</h3>
+          <div class="bar-row"><span class="bar-label">Regional Leadership</span><span class="bar-track"><span class="bar-fill" style="width:100%"></span></span><span class="bar-value">100%</span></div>
+          <div class="bar-row"><span class="bar-label">International Grand Basileus</span><span class="bar-track"><span class="bar-fill" style="width:88.9%"></span></span><span class="bar-value">88.9%</span></div>
+          <div class="bar-row"><span class="bar-label">International Board of Directors</span><span class="bar-track"><span class="bar-fill" style="width:77.8%"></span></span><span class="bar-value">77.8%</span></div>
+          <div class="bar-row"><span class="bar-label">Past Grand Basilei</span><span class="bar-track"><span class="bar-fill" style="width:77.8%"></span></span><span class="bar-value">77.8%</span></div>
+          <div class="bar-row"><span class="bar-label">International Corporate Headquarters</span><span class="bar-track"><span class="bar-fill low" style="width:33.3%"></span></span><span class="bar-value">33.3%</span></div>
+        </div>
+        <div class="bar-group"><h3>Membership</h3>
+          <div class="bar-row"><span class="bar-label">Become a Member</span><span class="bar-track"><span class="bar-fill" style="width:100%"></span></span><span class="bar-value">100%</span></div>
+          <div class="bar-row"><span class="bar-label">Reactivate Today</span><span class="bar-track"><span class="bar-fill" style="width:88.9%"></span></span><span class="bar-value">88.9%</span></div>
+          <div class="bar-row"><span class="bar-label">Chapter Locator</span><span class="bar-track"><span class="bar-fill mid" style="width:66.7%"></span></span><span class="bar-value">66.7%</span></div>
+          <div class="bar-row"><span class="bar-label">Affiliates</span><span class="bar-track"><span class="bar-fill low" style="width:44.4%"></span></span><span class="bar-value">44.4%</span></div>
+        </div>
+        <div class="bar-group"><h3>News &amp; Events</h3>
+          <div class="bar-row"><span class="bar-label">Latest News</span><span class="bar-track"><span class="bar-fill" style="width:100%"></span></span><span class="bar-value">100%</span></div>
+          <div class="bar-row"><span class="bar-label">Upcoming Events</span><span class="bar-track"><span class="bar-fill" style="width:100%"></span></span><span class="bar-value">100%</span></div>
+          <div class="bar-row"><span class="bar-label">Highlights &amp; Stories</span><span class="bar-track"><span class="bar-fill" style="width:77.8%"></span></span><span class="bar-value">77.8%</span></div>
+          <div class="bar-row"><span class="bar-label">Media Relations</span><span class="bar-track"><span class="bar-fill low" style="width:44.4%"></span></span><span class="bar-value">44.4%</span></div>
+        </div>
+        <div class="bar-group"><h3>Resources</h3>
+          <div class="bar-row"><span class="bar-label">Vendor</span><span class="bar-track"><span class="bar-fill" style="width:88.9%"></span></span><span class="bar-value">88.9%</span></div>
+          <div class="bar-row"><span class="bar-label">Help Center</span><span class="bar-track"><span class="bar-fill" style="width:88.9%"></span></span><span class="bar-value">88.9%</span></div>
+          <div class="bar-row"><span class="bar-label">Contact Us</span><span class="bar-track"><span class="bar-fill mid" style="width:66.7%"></span></span><span class="bar-value">66.7%</span></div>
+          <div class="bar-row"><span class="bar-label">Careers</span><span class="bar-track"><span class="bar-fill mid" style="width:55.6%"></span></span><span class="bar-value">55.6%</span></div>
+        </div>
+      </div>
+      <div class="consensus-grid">
+        <div class="consensus-box"><h3>High consensus ≥75%</h3><ul><li>Our Founders: 100%</li><li>Become a Member: 100%</li><li>Latest News: 100%</li><li>Upcoming Events: 100%</li><li>Regional Leadership: 100%</li><li>Reactivate Membership: 88.9%</li><li>National Programs: 77.8%</li></ul></div>
+        <div class="consensus-box"><h3>Moderate 50–74%</h3><ul><li>Our Foundations: 66.7%</li><li>Partner Foundations: 66.7%</li><li>Chapter Locator: 66.7%</li><li>Contact Us: 66.7%</li><li>Careers: 55.6%</li></ul></div>
+        <div class="consensus-box"><h3>Low &lt;50%</h3><ul><li>Affiliates: 44.4%</li><li>Media Relations: 44.4%</li><li>Anti-Hazing Policy: 33.3%</li><li>Notable Sigmas: 33.3%</li><li>International Corporate Headquarters: 33.3%</li></ul></div>
+      </div>
+    </div>
+  </details>
+
+  <details class="evidence">
+    <summary>Tree test: all 10 tasks (9 participants, 82.2% average success)</summary>
+    <div class="evidence-body">
+      <div class="metric-strip">
+        <div class="metric"><strong>82.2%</strong><span>Avg success rate</span></div>
+        <div class="metric"><strong>9</strong><span>Participants</span></div>
+        <div class="metric"><strong>10</strong><span>Tasks</span></div>
+        <div class="metric"><strong>14.5s</strong><span>Avg task time</span></div>
+      </div>
+      <p class="small-note">Each task was scored against the 8–9 participants who attempted it. One participant completed only 2 of the 10 tasks, so their responses count only where they apply. 82.2% is the mean of the per-task success rates, which range from 55.6% to 100%.</p>
+      <div class="task-grid">
+        <div class="task"><div class="task-top"><h3>Join as a member</h3><span class="badge green">100%</span></div><div class="task-stats"><span>Avg 7.5s</span><span>Direct 100%</span></div><p>Every participant went directly to Membership → Become a Member, with no hesitation or backtracking.</p></div>
+        <div class="task"><div class="task-top"><h3>Reactivate membership</h3><span class="badge green">100%</span></div><div class="task-stats"><span>Direct 100%</span></div><p>Participants went directly to Membership → Reactivate Today, which supports grouping the membership actions together.</p></div>
+        <div class="task"><div class="task-top"><h3>Find latest news</h3><span class="badge green">100%</span></div><div class="task-stats"><span>Avg 6.8s</span><span>Direct 100%</span></div><p>News &amp; Events worked as an intuitive top-level category.</p></div>
+        <div class="task"><div class="task-top"><h3>Get account help</h3><span class="badge green">100%</span></div><div class="task-stats"><span>Avg 11.6s</span><span>Direct 50%</span></div><p>Everyone eventually found Resources → Help Center, but half took indirect routes first.</p></div>
+        <div class="task"><div class="task-top"><h3>Find a chapter</h3><span class="badge green">87.5%</span></div><div class="task-stats"><span>Direct 75%</span></div><p>Expected path: Membership → Chapter Locator. One participant went to News &amp; Events → Upcoming Events.</p></div>
+        <div class="task"><div class="task-top"><h3>Find founders</h3><span class="badge amber">75%</span></div><div class="task-stats"><span>Avg 10.7s</span><span>Direct 62.5%</span></div><p>Expected path: About → Our Founders. Some participants mixed this task up with Herstory or Past Grand Basilei.</p></div>
+        <div class="task"><div class="task-top"><h3>Contact the organization</h3><span class="badge amber">75%</span></div><div class="task-stats"><span>Avg 15.2s</span><span>Direct 37.5%</span></div><p>Expected path: Resources → Contact Us. Some participants looked in membership-related areas first.</p></div>
+        <div class="task"><div class="task-top"><h3>Find organization origins</h3><span class="badge amber">66.7%</span></div><div class="task-stats"><span>Avg 25.3s</span><span>Direct 33.3%</span></div><p>Expected path: Home → About → Herstory. Participants often read "origins" as Founders or Foundations.</p></div>
+        <div class="task"><div class="task-top"><h3>Find community programs</h3><span class="badge red">62.5%</span></div><div class="task-stats"><span>Avg 26.3s</span><span>Direct 37.5%</span></div><p>Based on the card-sort and tree-test evidence, I revised the tested label "Service &amp; Impact" to "Programs &amp; Initiatives."</p></div>
+        <div class="task"><div class="task-top"><h3>Find current leader</h3><span class="badge red">55.6%</span></div><div class="task-stats"><span>Avg 27.6s</span><span>Direct 44.4%</span></div><p>Expected path: Home → Leadership → International Grand Basileus. This confirmed the terminology barrier seen in the card sort.</p></div>
+      </div>
+    </div>
+  </details>
+</section>
+
 <section class="section" id="limits">
   <div class="section-head"><p class="section-note">what this study does not prove</p><h2>Limitations &amp; Next Steps</h2></div>
-  <ul><li>Sample size of 9 participants limits generalizability.</li><li>No post-implementation testing was conducted.</li><li>Participants were recruited from a convenience sample.</li><li>Tree testing used a proposed structure, not a live site.</li></ul>
-  <div class="callout dark"><p><strong>Key takeaway:</strong> Navigation problems in large organizations are rarely just interface problems. They are symptoms of structural misalignment between how an organization governs its content internally and how users form mental models of that content externally.</p></div>
+  <ul><li>A sample of 9 participants per phase limits how far the results generalize.</li><li>Participants came from a convenience sample.</li><li>The tree test used a proposed structure, not a live site.</li><li>The coded navigation has not been tested. Its departures from the tested structure, and the revised "Programs &amp; Initiatives" label, are the next things to test.</li></ul>
+  <div class="callout dark"><p><strong>Key takeaway:</strong> navigation problems in large organizations are rarely just interface problems. They reflect a mismatch between how an organization manages its content internally and how visitors expect to find it.</p></div>
 </section>
-<div class="end-nav"><a href="work.html">← Selected Research</a><a href="taste-curation.html">Next: Taste Curation →</a></div>
+<div class="end-nav"><a href="work.html">← Research Archive</a><a href="shein-usability.html">Next: SHEIN →</a></div>
 </article>
-<aside class="case-aside"><nav class="jump-card" aria-label="Case study sections"><p>jump to ↓</p><a href="#overview">Overview</a><a href="#benchmark">Benchmarking</a><a href="#cardsort">Card sorting</a><a href="#synthesis">Synthesis</a><a href="#architecture">Proposed IA</a><a href="#tree-test">Tree testing</a><a href="#rationale">Rationale</a><a href="#limits">Limitations</a></nav></aside>
+<aside class="case-aside"><nav class="jump-card" aria-label="Case study sections"><p>jump to ↓</p><a href="#summary">Summary</a><a href="#overview">Overview</a><a href="#findings">Key findings</a><a href="#synthesis">Synthesis</a><a href="#architecture">Proposed IA</a><a href="#rationale">Rationale</a><a href="#implementation">Coded redesign</a><a href="#evidence">Full results</a><a href="#limits">Limitations</a></nav></aside>
 </div>
 </main>
 

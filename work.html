@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>UX Research | Designed by Karena</title>
-  <meta name="description" content="Selected UX research by Karena Blue: navigation, saved content, shopping usability, and AI trust.">
+  <title>Karena’s Research Archive | Designed by Karena</title>
+  <meta name="description" content="Featured usability and information architecture case studies, a research-informed coded redesign, and supporting secondary research by Karena Blue.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -27,14 +27,14 @@
   <main class="research-shell" id="main-content" tabindex="-1">
     <section class="research-hero">
       <div class="archive-pill">✦ research · evidence · questions</div>
-      <h1>Selected UX Research</h1>
+      <h1>Karena’s Research Archive</h1>
       <div class="squiggle"></div>
-      <p>Four studies on navigation, saved content, shopping flows, and trust—each with the evidence behind the recommendation.</p>
+      <p>Primary research, secondary synthesis, and a coded redesign informed by navigation research live here. I show the evidence behind each and where it stops.</p>
     </section>
 
     <section class="research-layout">
       <aside class="scrap-column" aria-label="Research notes">
-        <div class="scrap-note dark">research only</div>
+        <div class="scrap-note dark">research into making</div>
         <div class="scrap-note yellow">I care about the why behind the click</div>
         <div class="scrap-note lav">messy middle included</div>
       </aside>
@@ -43,145 +43,90 @@
         <div class="board-top">
           <div>
             <span class="board-stamp">UX research cabinet</span>
-            <h2>Questions that shaped a decision</h2>
+            <h2>Work with the evidence attached</h2>
           </div>
         </div>
-        <p class="board-intro">
-          Start with three studies involving participants, then a secondary research synthesis.
-          Each case connects a finding to a decision and shows where the evidence stops.
-        </p>
+        <p class="board-intro">Two featured projects show primary research and what it informed. A smaller strategy study below draws on secondary research; its recommendations still need participant validation.</p>
 
-        <div class="filter-bar" role="group" aria-label="Filter research studies">
-          <button type="button" class="filter-button is-active" data-filter="all" aria-pressed="true" aria-controls="study-grid">everything</button>
-          <button type="button" class="filter-button" data-filter="generative" aria-pressed="false" aria-controls="study-grid">generative</button>
-          <button type="button" class="filter-button" data-filter="evaluative" aria-pressed="false" aria-controls="study-grid">evaluative</button>
-          <button type="button" class="filter-button" data-filter="strategy" aria-pressed="false" aria-controls="study-grid">strategy</button>
-        </div>
-        <p id="filter-status" class="visually-hidden" role="status" aria-live="polite"></p>
+        <section class="featured-work" aria-labelledby="featured-title">
+          <div class="work-section-head">
+            <p class="handwritten">start here ✦</p>
+            <h3 id="featured-title">Featured case studies</h3>
+            <p>Two projects with the methods, observations, and decisions close to the surface.</p>
+          </div>
 
-        <div class="study-grid" id="study-grid">
-          <article class="study-card" data-type="strategy">
-            <div class="card-tape left"></div>
-            <div class="study-preview preview-ia" aria-hidden="true">
-              <div class="preview-artifact">
-                <span class="mini-label">INFORMATION ARCHITECTURE / 01</span>
-                <strong>Where does “Join” belong?</strong>
-                <div class="mini-trail"><span>Membership</span><b>→</b><span>Become a Member</span></div>
+          <div class="featured-study-grid">
+            <article class="study-card" aria-labelledby="shein-card-title">
+              <div class="card-tape left"></div>
+              <div class="study-preview preview-shein" aria-hidden="true">
+                <div class="preview-artifact">
+                  <span class="mini-label">USABILITY EVALUATION / 01</span>
+                  <strong>Positive SUS. Uneven task success.</strong>
+                  <div class="mini-trail"><span>5 formal participants</span><span>1 pilot</span></div>
+                </div>
+                <span class="preview-sticker">watch the task path</span>
               </div>
-              <span class="preview-sticker">the join path clicked</span>
+              <div class="study-body">
+                <div class="study-meta"><span class="kicker">Primary Research</span><span class="privacy">Public</span></div>
+                <h4 id="shein-card-title">SHEIN: positive usability scores, uneven task success</h4>
+                <p class="subtitle">independent academic team study · Winter 2026</p>
+                <p class="desc">Five formal participants rated the desktop site favorably overall, yet only 2 of 5 fully completed filtering and 3 of 5 fully completed quick add. All 5 completed favorites, with some friction.</p>
+                <div class="study-facts">
+                  <span><strong>Methods:</strong> moderated usability testing, think-aloud, SUS</span>
+                  <span><strong>Formal mean SUS score:</strong> 81.5</span>
+                </div>
+                <div class="method-chips"><span>Usability Testing</span><span>Task Outcomes</span><span>Recommendations</span></div>
+                <div class="study-actions"><a class="study-button primary" href="shein-usability.html">Read the case study →</a></div>
+              </div>
+            </article>
+
+            <article class="study-card" aria-labelledby="sgrho-card-title">
+              <div class="card-tape right"></div>
+              <div class="study-preview preview-ia" aria-hidden="true">
+                <div class="preview-artifact">
+                  <span class="mini-label">IA RESEARCH + CODED REDESIGN / 02</span>
+                  <strong>Where does “Join” belong?</strong>
+                  <div class="mini-trail"><span>Card sort</span><b>→</b><span>Tree test</span><b>→</b><span>Code</span></div>
+                </div>
+                <span class="preview-sticker">one project, two phases</span>
+              </div>
+              <div class="study-body">
+                <div class="study-meta"><span class="kicker">Research-informed implementation</span><span class="privacy locked">Code by request</span></div>
+                <h4 id="sgrho-card-title">Sigma Gamma Rho: From Navigation Research to Coded Redesign.</h4>
+                <p class="subtitle">membership · findability · implementation</p>
+                <p class="desc">Investigated how prospective members find membership information, then used card sorting and tree testing findings to inform navigation and a coded redesign.</p>
+                <div class="study-facts">
+                  <span><strong>Research:</strong> 9 card-sort participants; 9 tree-test participants</span>
+                  <span><strong>Implementation:</strong> coded website redesign informed by the IA study</span>
+                </div>
+                <div class="method-chips"><span>Card Sorting</span><span>Tree Testing</span><span>Coded Redesign</span></div>
+                <div class="study-actions">
+                  <a class="study-button primary" href="ia-redesign.html">Read the research and redesign →</a>
+                  <a class="study-button secondary" href="mailto:designedbykarena@gmail.com?subject=Request%20for%20Sigma%20Gamma%20Rho%20Coded%20Redesign">Request private redesign details →</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="supporting-work" aria-labelledby="supporting-title">
+          <div class="work-section-head">
+            <p class="handwritten">one more from the cabinet</p>
+            <h3 id="supporting-title">Additional Research</h3>
+          </div>
+          <article class="supporting-card" aria-labelledby="banking-card-title">
+            <div class="supporting-art" aria-hidden="true">
+              <span>SECONDARY RESEARCH</span>
+              <strong>Explain → Review → Control</strong>
             </div>
-            <div class="study-body">
-              <div class="study-meta">
-                <span class="kicker">Information Architecture</span>
-                <span class="privacy">Public</span>
-              </div>
-              <h3>Why can’t prospective members find the “Join” button?</h3>
-              <p class="subtitle">membership · findability · organizational language</p>
-              <p class="desc">
-                In the proposed navigation, everyone who attempted the join task found the membership path directly.
-                Card sorting and tree testing showed where organizational language still caused confusion.
-              </p>
-              <div class="study-facts">
-                <span><strong>Methods:</strong> card sorting, competitive analysis, tree testing</span>
-                <span><strong>Focus:</strong> membership pathways and navigation clarity</span>
-              </div>
-              <div class="method-chips"><span>IA</span><span>Tree Testing</span><span>Card Sorting</span><span>Synthesis</span></div>
-              <div class="study-actions"><a class="study-button primary" href="ia-redesign.html">Open the case study →</a></div>
-              <p class="desc">The related website redesign is private. <a href="mailto:designedbykarena@gmail.com?subject=Request%20for%20Private%20Case%20Study">Request design details by email →</a></p>
+            <div class="supporting-body">
+              <span class="kicker">Secondary Research + Strategy</span>
+              <h4 id="banking-card-title">AI Adoption &amp; Trust in Digital Banking</h4>
+              <p>A self-initiated synthesis of published research proposed design priorities for AI-assisted banking: explain actions, provide review steps, and preserve user control. These recommendations came from secondary research, not participant testing. The case study does not document implementation or measured business outcomes.</p>
+              <a class="study-button secondary" href="ai-banking.html">Read the strategy case study →</a>
             </div>
           </article>
-
-          <article class="study-card" data-type="generative">
-            <div class="card-tape right"></div>
-            <div class="study-preview preview-taste" aria-hidden="true">
-              <div class="preview-artifact">
-                <span class="mini-label">GENERATIVE RESEARCH / 02</span>
-                <strong>What happens after “save”?</strong>
-                <div class="mini-trail"><span>Discover</span><b>→</b><span>Save</span><b>→</b><span>Find again?</span></div>
-              </div>
-              <span class="preview-sticker">saving ≠ organizing</span>
-            </div>
-            <div class="study-body">
-              <div class="study-meta">
-                <span class="kicker">Academic Research</span>
-                <span class="privacy">Public</span>
-              </div>
-              <h3>Taste Curation: How People Curate Personal Taste Online</h3>
-              <p class="subtitle">saving · resurfacing · personal taste</p>
-              <p class="desc">
-                Discovery was easy; organizing and finding saved inspiration later was the harder problem.
-                Observations and interviews traced how people build and revisit personal taste online.
-              </p>
-              <div class="study-facts">
-                <span><strong>Methods:</strong> interviews, observation, affinity mapping</span>
-                <span><strong>Focus:</strong> curation habits, discovery, and resurfacing</span>
-              </div>
-              <div class="method-chips"><span>Interviews</span><span>Affinity Mapping</span><span>Personas</span><span>Process Model</span></div>
-              <div class="study-actions"><a class="study-button primary" href="taste-curation.html">Open the case study →</a></div>
-            </div>
-          </article>
-
-          <article class="study-card" data-type="evaluative">
-            <div class="card-tape left"></div>
-            <div class="study-preview preview-shein" aria-hidden="true">
-              <div class="preview-artifact">
-                <span class="mini-label">USABILITY EVALUATION / 03</span>
-                <strong>Search + filters caused friction.</strong>
-                <div class="mini-trail"><span>5 formal participants</span><span>1 pilot</span></div>
-              </div>
-              <span class="preview-sticker">follow the friction</span>
-            </div>
-            <div class="study-body">
-              <div class="study-meta">
-                <span class="kicker">Usability Evaluation</span>
-                <span class="privacy">Public</span>
-              </div>
-              <h3>Usability Test Report: SHEIN</h3>
-              <p class="subtitle">shopping flows · friction · task success</p>
-              <p class="desc">
-                Search and filtering caused the most friction; saving to favorites had the highest reported
-                completion rate. The moderated study tested three core shopping tasks.
-              </p>
-              <div class="study-facts">
-                <span><strong>Participants:</strong> 5 formal + 1 pilot</span>
-                <span><strong>Reported SUS:</strong> 82.5, including pilot</span>
-                <span><strong>Tasks:</strong> 3</span>
-              </div>
-              <div class="method-chips"><span>Moderated Testing</span><span>SUS</span><span>Task Analysis</span><span>Recommendations</span></div>
-              <div class="study-actions"><a class="study-button primary" href="shein-usability.html">Open the case study →</a></div>
-            </div>
-          </article>
-
-          <article class="study-card" data-type="strategy">
-            <div class="card-tape right"></div>
-            <div class="study-preview preview-ai" aria-hidden="true">
-              <div class="preview-artifact">
-                <span class="mini-label">SECONDARY RESEARCH / 04</span>
-                <strong>Trust needs a clear path.</strong>
-                <div class="mini-trail"><span>Explain</span><b>→</b><span>Review</span><b>→</b><span>Override</span></div>
-              </div>
-              <span class="preview-sticker">strategy to validate</span>
-            </div>
-            <div class="study-body">
-              <div class="study-meta">
-                <span class="kicker">UX Research + Strategy</span>
-                <span class="privacy">Public</span>
-              </div>
-              <h3>AI Adoption &amp; Trust in Digital Banking</h3>
-              <p class="subtitle">AI · trust · finance · perceived safety</p>
-              <p class="desc">
-                Secondary research pointed to clear explanations, review steps, and user control as priorities
-                for AI-assisted banking. The recommendations are a synthesis, not the result of user testing.
-              </p>
-              <div class="study-facts">
-                <span><strong>Methods:</strong> secondary research, illustrative journey mapping, benchmarking</span>
-                <span><strong>Focus:</strong> explainability, reassurance, and user control</span>
-              </div>
-              <div class="method-chips"><span>Journey Maps</span><span>Benchmarking</span><span>Archetypes</span><span>Strategy</span></div>
-              <div class="study-actions"><a class="study-button primary" href="ai-banking.html">Open the case study →</a></div>
-            </div>
-          </article>
-        </div>
+        </section>
       </section>
 
       <aside class="scrap-column" aria-label="Research personality notes">
@@ -193,7 +138,7 @@
 
     <section class="footer-card">
       <p class="hand">research first, always.</p>
-      <p>I want the case study to show how I think, not just prove that I can make a pretty deck.</p>
+      <p>I want each case study to show how I think, not just prove that I can make a pretty deck.</p>
     </section>
   </main>
 
@@ -201,6 +146,5 @@
     <p>Designed by Karena — made by hand, one page at a time.</p>
   </footer>
 
-  <script src="work.js"></script>
 </body>
 </html>

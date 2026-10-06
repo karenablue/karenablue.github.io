@@ -628,6 +628,8 @@
    RESPONSIVE
 ========================================= */
 
+.mobile-direct-email { display: none; }
+
 @media (max-width: 1050px) {
 
   .contact-layout {
@@ -653,6 +655,9 @@
 
 
 @media (max-width: 680px) {
+
+  .contact-hero .mobile-direct-email { display: block; margin: 14px auto 0; font: 600 1rem/1.5 "Inter",sans-serif; overflow-wrap: anywhere; }
+  .mobile-direct-email a { color: var(--contact-purple-dark); text-decoration: underline; text-underline-offset: 3px; }
 
   .contact-page {
     width: min(100% - 24px, 1180px);

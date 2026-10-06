@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="case-study.css">
-<title>SHEIN Usability Test | Designed by Karena</title>
-<meta name="description" content="Moderated usability evaluation of SHEIN search, quick add, favorites, preliminary evaluation, KLM, task results, and SUS data.">
+  <title>SHEIN Usability Evaluation | Designed by Karena</title>
+  <meta name="description" content="An independent DePaul HCI 460 team evaluation of SHEIN's desktop shopping experience: five formal usability sessions, task outcomes, SUS, findings, and recommendations.">
 </head>
 <body>
 <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -22,343 +22,145 @@
 
 <main class="case-page" id="main-content" tabindex="-1">
   <a class="back-link" href="work.html">← back to the research cabinet</a>
-
-  <section class="case-hero">
-    <span class="case-kicker">Usability Evaluation · HCI 460</span>
-    <h1>Usability Test Report: SHEIN</h1>
-    <p class="case-deck">
-      Search and filtering caused the most friction, while saving to favorites had the highest
-      reported completion rate. A heuristic review and cognitive walkthrough preceded the moderated test.
-    </p>
-
-    <div class="stat-grid">
-      <div class="stat-card"><span>Participants</span><strong>5 formal + 1 pilot</strong></div>
-      <div class="stat-card"><span>Tasks tested</span><strong>3</strong></div>
-      <div class="stat-card"><span>Reported SUS avg. (incl. pilot)</span><strong>82.5</strong></div>
-      <div class="stat-card"><span>Recommendations</span><strong>4</strong></div>
+  <section class="case-hero" aria-labelledby="case-title">
+    <span class="case-kicker">Independent academic team project · Winter 2026</span>
+    <h1 id="case-title">SHEIN: positive usability scores, uneven task success</h1>
+    <p class="case-deck">Five formal participants generally rated the desktop site favorably, yet filtering and quick add caused observable trouble. All five completed the favorites task, though completion did not always feel smooth.</p>
+    <div class="stat-grid" aria-label="Formal study at a glance">
+      <div class="stat-card"><span>Sessions</span><strong>5 formal + 1 pilot</strong></div>
+      <div class="stat-card"><span>Filter task fully completed</span><strong>2 of 5</strong></div>
+      <div class="stat-card"><span>Quick add fully completed</span><strong>3 of 5</strong></div>
+      <div class="stat-card"><span>Formal mean SUS score</span><strong>81.5</strong></div>
     </div>
-
-    <p class="case-deck case-credit">
-      Team study for HCI 460, Winter 2026.
-    </p>
+    <p class="case-deck case-credit">DePaul University · HCI 460: Usability Evaluation Methods. This class study evaluated SHEIN's public desktop site; it was not commissioned or implemented by SHEIN.</p>
   </section>
 
   <div class="case-layout">
     <nav class="jump-card mobile-jump" aria-label="Case study sections">
       <p>jump to ↓</p>
-      <a href="#overview">Overview</a><a href="#preliminary">Preliminary research</a>
-      <a href="#method">Method</a><a href="#completion">Completion rates</a>
-      <a href="#task1">Task 1</a><a href="#task2">Task 2</a><a href="#task3">Task 3</a>
-      <a href="#sus">SUS</a><a href="#findings">Recommendations</a><a href="#limits">Limitations</a>
-      <a href="#reflection">Reflection</a>
+      <a href="#overview">Overview</a><a href="#questions">Research questions</a>
+      <a href="#design">Study design</a><a href="#pilot">Pilot</a>
+      <a href="#results">Results</a><a href="#findings">Findings</a>
+      <a href="#priorities">Recommendations</a><a href="#next">Limits &amp; next steps</a>
     </nav>
     <article>
-
       <section class="section" id="overview">
-        <div class="section-head">
-          <p class="section-note">the full study, not just the final score</p>
-          <h2>Overview &amp; Research Questions</h2>
-        </div>
+        <div class="section-head"><p class="section-note">the tension in one glance</p><h2>Overview</h2></div>
+        <p>The four-person class team studied whether shoppers could search and filter for a product, add an item directly from a listing, and save one for later. The aim was to compare observed task performance with what participants said about the experience.</p>
+        <div class="callout yellow"><p><strong>Core finding:</strong> A formal-study mean SUS score of 81.5 described generally positive perceived usability. The task records tell a narrower story: only two of five fully completed the filtering task and three of five fully completed quick add. Favorites reached five of five full completions, with friction for some participants.</p></div>
+        <p><strong>Team:</strong> Alisha Jordan, Chyna Little, Karena Blue, and Vicky Kimani. The study findings and recommendations are the team's shared work.</p>
+        <h3>My contribution</h3>
+        <p>I moderated usability testing sessions and observed additional sessions led by teammates. I contributed to the collaboratively written report, helped develop the final presentation, and presented its Results &amp; Findings section.</p>
+      </section>
 
-        <p>
-          The study evaluated whether users could efficiently discover, filter, and act on products
-          in SHEIN's shopping experience.
-        </p>
+      <section class="section" id="questions">
+        <div class="section-head"><p class="section-note">why watch the work happen?</p><h2>Research questions &amp; method choice</h2></div>
+        <ul>
+          <li>Could participants find a product and use filters to narrow the results?</li>
+          <li>Could they recognize and use quick add without opening a product page?</li>
+          <li>Could they save an item to favorites, and what interrupted that path?</li>
+          <li>How did task behavior compare with reported ease and overall perceived usability?</li>
+        </ul>
+        <p>Moderated, think-aloud testing let the team observe the route each person took and ask about difficulty after a task. That matters here because finding a coat by scrolling is different from successfully using filters, and adding from a product page is different from using quick add.</p>
+      </section>
 
-        <div class="callout yellow">
-          <p><strong>Decision from the evidence:</strong> Prioritize stable, clearer filters and a more visible quick-add control. The pilot prompted task wording changes before formal testing; the interface recommendations still need to be designed and retested.</p>
-        </div>
-
-        <div class="callout">
-          <p><strong>Research questions:</strong> Can users quickly find products? Which interface
-          elements create confusion? Do pop-ups interrupt task completion? Can users successfully
-          filter by price, size, and color? How easy do tasks feel? How satisfied are users with the
-          overall interface?</p>
-        </div>
-
+      <section class="section" id="design">
+        <div class="section-head"><p class="section-note">one pilot, then the formal test</p><h2>Study design</h2></div>
         <div class="phase-grid">
-          <div class="phase-card">
-            <h3>Pilot</h3>
-            <p><strong>P0 · February 17, 2026</strong></p>
-            <p>The pilot ran about 16 minutes. It showed that Task 1 needed revised wording and Task 2 needed a complete rewrite before formal testing.</p>
+          <div class="phase-card"><h3>Participants &amp; setting</h3><p>One pilot participant (P0) and five formal participants (P1–P5) were recruited through personal networks and a social-media volunteer list. Sessions used the SHEIN desktop website with remote screen sharing via Google Meet or Zoom. The report describes prior SHEIN use, but its exact screening rule is inconsistent; see the evidence notes below.</p></div>
+          <div class="phase-card"><h3>Tasks &amp; measures</h3><p>Participants thought aloud through search and filtering, quick add, and favorites tasks. The results tables record full, partial, or unsuccessful completion, difficulty ratings, errors, and observations. SUS captured overall perceived usability after the session. Task time and ASQ appear in the plan, but usable summaries are absent from the final results.</p></div>
+        </div>
+        <p class="small-note">The convenience sample, five formal sessions, and prior site experience limit how far these results can be generalized. The study observed the existing interface; it did not test a redesign.</p>
+      </section>
+
+      <section class="section" id="pilot">
+        <div class="section-head"><p class="section-note">change the task before judging the site</p><h2>What the pilot changed</h2></div>
+        <p>The February 17 pilot (P0) exposed a task-script problem: Task 1 needed clearer wording, and Task 2 needed a complete rewrite to prompt the intended quick-add behavior. The team revised those instructions before the five formal sessions.</p>
+        <div class="source-note"><strong>Why P0 is separate:</strong> the task wording changed after the pilot, so P0 is excluded from every primary completion count and from the formal SUS mean. The report's pilot narrative says all three tasks were completed, but its Task 2 table marks P0 “No.” This case study does not use that conflicting pilot completion claim as an outcome.</div>
+      </section>
+
+      <section class="section" id="results">
+        <div class="section-head"><p class="section-note">counts first, scores in context</p><h2>Formal-study results</h2></div>
+        <p>These counts are calculated from the report's participant-level results tables for P1–P5. “Partial” stays separate rather than being counted as a full success.</p>
+        <div class="table-wrap" tabindex="0" role="region" aria-label="Formal-study task completion counts, scroll horizontally if needed">
+          <table>
+            <caption class="table-caption">Task completion among five formal participants</caption>
+            <thead><tr><th scope="col">Task</th><th scope="col">Full</th><th scope="col">Partial</th><th scope="col">Unsuccessful</th><th scope="col">Reading the result</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Search &amp; filter</th><td>2 of 5</td><td>1 of 5</td><td>2 of 5</td><td>The partial participant found a coat by scrolling without using filters.</td></tr>
+              <tr><th scope="row">Quick add</th><td>3 of 5</td><td>1 of 5</td><td>1 of 5</td><td>Opening a product page did not demonstrate quick-add use.</td></tr>
+              <tr><th scope="row">Save to favorites</th><td>5 of 5</td><td>0 of 5</td><td>0 of 5</td><td>Full completion coexisted with icon and sign-in friction.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <figure class="research-trace" aria-labelledby="filter-trace-title">
+          <figcaption>
+            <span class="trace-kicker">Filtering task · evidence trail</span>
+            <strong id="filter-trace-title">Finding a coat did not always mean using filters successfully.</strong>
+          </figcaption>
+          <p class="trace-source">Portfolio synthesis from the report's formal-participant tables and observations; this is not an original session artifact.</p>
+          <div class="trace-outcomes" role="group" aria-label="Filtering task outcomes among five formal participants">
+            <div class="trace-outcome full"><strong>2 of 5</strong><span>Full completion</span></div>
+            <div class="trace-outcome partial"><strong>1 of 5</strong><span>Partial completion</span></div>
+            <div class="trace-outcome unsuccessful"><strong>2 of 5</strong><span>Unsuccessful</span></div>
           </div>
-
-          <div class="phase-card">
-            <h3>Formal usability testing</h3>
-            <p><strong>P1–P5</strong></p>
-            <p>Five post-pilot participants completed moderated remote sessions. All had prior experience with SHEIN and were recruited through personal networks and social media.</p>
-          </div>
-        </div>
+          <ol class="trace-steps">
+            <li><span>Observed route</span><p>One participant found a coat by scrolling without using filters. Two others encountered no-result or reset behavior and did not complete the task.</p></li>
+            <li><span>Interpretation</span><p>Finding the product did not demonstrate that filtering worked. The scrolling route therefore remains a partial outcome.</p></li>
+            <li><span>Proposed test</span><p>Reproduce the no-result and reset states, then test persistent selections, clearer labels, and visible result counts.</p></li>
+          </ol>
+        </figure>
+        <div class="callout mint"><p><strong>Perceived usability:</strong> the five formal SUS scores listed in the report average <strong>81.5</strong>. The report's <strong>82.5</strong> average includes P0. SUS is a usability score, not a percentage or a measure of task completion. The formal scores span 32.5 to 100, so the mean masks substantial variation.</p></div>
+        <p class="small-note">Source: final report, results tables on pp. 7–9; presentation slide 11 corroborates task statuses and SUS scores. These are calculations from the report's tables; original questionnaire responses and session recordings have not been independently verified.</p>
       </section>
-
-
-      <section class="section" id="preliminary">
-        <div class="section-head">
-          <p class="section-note">what we knew before user testing</p>
-          <h2>Preliminary Research</h2>
-        </div>
-
-        <h3>Heuristic Evaluation</h3>
-
-        <div class="insight-grid">
-          <div class="insight"><span class="num">01</span><h3>Visual clutter</h3><p>Densely packed promotions, banners, and pop-ups overwhelmed the interface.</p></div>
-          <div class="insight"><span class="num">02</span><h3>Limited user control</h3><p>Pop-ups and forced redirects interrupted task flow.</p></div>
-          <div class="insight"><span class="num">03</span><h3>Poor system feedback</h3><p>Actions received minimal visible confirmation.</p></div>
-          <div class="insight"><span class="num">04</span><h3>Inconsistent navigation</h3><p>Menus and layouts varied across pages and could disorient users.</p></div>
-          <div class="insight"><span class="num">05</span><h3>Lack of error prevention</h3><p>The evaluation found few safeguards during checkout to prevent user errors.</p></div>
-        </div>
-
-        <h3>Cognitive Walkthrough</h3>
-
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr><th>Finding</th><th>Severity</th></tr>
-            </thead>
-            <tbody>
-              <tr><td>Visual clutter slows task completion — banners, pop-ups, and dense product listings distract users.</td><td><span class="badge red">3</span></td></tr>
-              <tr><td>Important controls are hidden — filters, size charts, and favorites require extra effort to locate.</td><td><span class="badge amber">2–3</span></td></tr>
-              <tr><td>Poor system feedback — selecting sizes and saving items gives subtle confirmation.</td><td><span class="badge amber">2–3</span></td></tr>
-              <tr><td>Inconsistent layout — menus, product cards, and filter labels vary across pages.</td><td><span class="badge amber">2</span></td></tr>
-            </tbody>
-          </table>
-        </div>
-
-        <h3>KLM Analysis — Search for a fur coat using search + filters</h3>
-
-        <div class="klm-summary" style="grid-template-columns:minmax(0,240px)">
-          <div class="klm-stat"><strong>8.66s</strong><span>KLM estimate</span></div>
-        </div>
-
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr><th>Step</th><th>Description</th><th>Operator</th><th>Time</th></tr>
-            </thead>
-            <tbody>
-              <tr><td>1</td><td>Move pointer to search bar</td><td>P</td><td>1.10s</td></tr>
-              <tr><td>2</td><td>Click on search bar</td><td>K</td><td>0.20s</td></tr>
-              <tr><td>3</td><td>Mental prep — type search term</td><td>M</td><td>1.20s</td></tr>
-              <tr><td>4</td><td>Type “fur coat” (8 chars)</td><td>8K</td><td>0.96s</td></tr>
-              <tr><td>5</td><td>Press Enter / click Search</td><td>K</td><td>0.20s</td></tr>
-              <tr><td>6</td><td>Mental prep — locate Filter panel</td><td>M</td><td>1.20s</td></tr>
-              <tr><td>7</td><td>Point to filter category (e.g. Size)</td><td>P</td><td>1.10s</td></tr>
-              <tr><td>8</td><td>Click filter option</td><td>K</td><td>0.20s</td></tr>
-              <tr><td>9</td><td>Mental prep — apply additional filter</td><td>M</td><td>1.20s</td></tr>
-              <tr><td>10</td><td>Point to second filter (e.g. Color)</td><td>P</td><td>1.10s</td></tr>
-              <tr><td>11</td><td>Click filter</td><td>K</td><td>0.20s</td></tr>
-              <tr><th colspan="3">Estimated total</th><th>8.66s</th></tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-
-      <section class="section" id="method">
-        <div class="section-head">
-          <p class="section-note">the formal test</p>
-          <h2>Usability Testing Method</h2>
-        </div>
-
-        <p>
-          Six moderated remote sessions: one pilot (P0, February 17, 2026) and five formal sessions (P1 to P5).
-          The pilot led us to reword Task 1 and fully rewrite Task 2. All participants had used SHEIN before
-          and were recruited through personal networks and social media.
-        </p>
-
-        <div class="table-wrap">
-          <table>
-            <tbody>
-              <tr><th>Method</th><td>Moderated remote usability testing with think-aloud</td></tr>
-              <tr><th>Formal sample</th><td>5 post-pilot participants (P1–P5)</td></tr>
-              <tr><th>Pilot</th><td>P0, used to revise task wording before formal testing</td></tr>
-              <tr><th>Session length</th><td>Approximately 15–20 minutes</td></tr>
-              <tr><th>Tools</th><td>Google Meet / Zoom, SHEIN desktop website</td></tr>
-              <tr><th>Measures</th><td>Task success, time, errors, ASQ feedback, open-ended reactions, SUS</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-
-      <section class="section" id="completion">
-        <div class="section-head">
-          <p class="section-note">P1 to P5, partial = half credit</p>
-          <h2>Task Completion Rates</h2>
-        </div>
-
-        <div class="bar-group">
-          <h3>Completion rate (%)</h3>
-          <div class="bar-row"><span class="bar-label">Task 1 · Search &amp; Filter</span><span class="bar-track"><span class="bar-fill low" style="width:50%"></span></span><span class="bar-value">50%</span></div>
-          <div class="bar-row"><span class="bar-label">Task 2 · Quick Add</span><span class="bar-track"><span class="bar-fill mid" style="width:70%"></span></span><span class="bar-value">70%</span></div>
-          <div class="bar-row"><span class="bar-label">Task 3 · Favorites</span><span class="bar-track"><span class="bar-fill" style="width:100%"></span></span><span class="bar-value">100%</span></div>
-        </div>
-
-        <div class="source-note">
-          Task 1 (Search &amp; Filter): 50%. Task 2 (Quick Add): 70%. Task 3 (Favorites): 100%.
-          Rates are based on P1 to P5, and a partial completion counts as half credit.
-        </div>
-      </section>
-
-
-      <section class="section" id="task1">
-        <div class="section-head"><p class="section-note">most error-prone task</p><h2>Task 1 — Search &amp; Filter</h2></div>
-
-        <div class="table-wrap">
-          <table>
-            <thead><tr><th>Participant</th><th>Status</th><th>Difficulty</th><th>Errors</th><th>Observation</th></tr></thead>
-            <tbody>
-              <tr><td>P1</td><td class="no">No</td><td>5</td><td>5</td><td>Filters repeatedly returned no results; page resets prevented completion.</td></tr>
-              <tr><td>P2</td><td class="partial">Partial</td><td>1</td><td>—</td><td>Skipped filters and found a coat by scrolling; said they do not normally use filters.</td></tr>
-              <tr><td>P3</td><td class="yes">Yes</td><td>1</td><td>1</td><td>Completed, but said avoiding filters would have saved time.</td></tr>
-              <tr><td>P4</td><td class="no">No</td><td>2.5</td><td>3</td><td>Difficulty filtering by size; filters did not return expected results.</td></tr>
-              <tr><td>P5</td><td class="yes">Yes</td><td>1</td><td>0</td><td>Completed without a recorded error.</td></tr>
-            </tbody>
-          </table>
-        </div>
-
-        <div class="quote-box"><p>“It would have saved time if I had not used the filter option.” — P3</p></div>
-        <div class="quote-box"><p>“The filters were not returning expected results. It was difficult to filter by size.” — P4</p></div>
-      </section>
-
-
-      <section class="section" id="task2">
-        <div class="section-head"><p class="section-note">easy concept, weak discoverability</p><h2>Task 2 — Quick Add to Cart</h2></div>
-
-        <div class="table-wrap">
-          <table>
-            <thead><tr><th>Participant</th><th>Status</th><th>Difficulty</th><th>Errors</th><th>Observation</th></tr></thead>
-            <tbody>
-              <tr><td>P1</td><td class="yes">Yes</td><td>2</td><td>2</td><td>Initially entered the product page instead of using quick add; confused by the icon.</td></tr>
-              <tr><td>P2</td><td class="yes">Yes</td><td>1</td><td>0</td><td>Completed without a recorded error.</td></tr>
-              <tr><td>P3</td><td class="no">No</td><td>1</td><td>1</td><td>Did not use the quick-add button.</td></tr>
-              <tr><td>P4</td><td class="yes">Yes</td><td>1</td><td>0</td><td>Very pleased with how easy the task was.</td></tr>
-              <tr><td>P5</td><td class="partial">Partial</td><td>1</td><td>0</td><td>Partially completed.</td></tr>
-            </tbody>
-          </table>
-        </div>
-
-        <div class="quote-box"><p>“Confused with the add-to-cart icon.” — P1</p></div>
-      </section>
-
-
-      <section class="section" id="task3">
-        <div class="section-head"><p class="section-note">highest completion rate</p><h2>Task 3 — Save to Favorites</h2></div>
-
-        <div class="table-wrap">
-          <table>
-            <thead><tr><th>Participant</th><th>Status</th><th>Difficulty</th><th>Errors</th><th>Observation</th></tr></thead>
-            <tbody>
-              <tr><td>P1</td><td class="yes">Yes</td><td>3.5</td><td>3</td><td>Could not initially locate the heart; was required to create an account before saving.</td></tr>
-              <tr><td>P2</td><td class="yes">Yes</td><td>2</td><td>1</td><td>Initially saved incorrectly, recognized the mistake, and self-corrected.</td></tr>
-              <tr><td>P3</td><td class="yes">Yes</td><td>1</td><td>0</td><td>Completed without a recorded error.</td></tr>
-              <tr><td>P4</td><td class="yes">Yes</td><td>1</td><td>0</td><td>Positive reaction to the outcome.</td></tr>
-              <tr><td>P5</td><td class="yes">Yes</td><td>2</td><td>0</td><td>Minor initial difficulty locating the control; otherwise smooth.</td></tr>
-            </tbody>
-          </table>
-        </div>
-
-        <div class="quote-box"><p>“Disappointed — it took too much time. Confused.” — P1</p></div>
-      </section>
-
-
-      <section class="section" id="sus">
-        <div class="section-head"><p class="section-note">raw scores + the reported aggregate</p><h2>System Usability Scale</h2></div>
-
-        <div class="sus-layout">
-          <div class="sus-score">
-            <strong>82.5</strong>
-            <span>Reported average in the written report</span>
-            <hr>
-            <span>Historical cross-product average: <a class="source-link" href="https://measuringu.com/10-things-sus/" target="_blank" rel="noopener noreferrer">68 ↗</a></span>
-          </div>
-
-          <div class="sus-bars">
-            <div class="sus-row"><span>P0*</span><span class="bar-track"><span class="bar-fill" style="width:87.5%"></span></span><strong>87.5</strong></div>
-            <div class="sus-row"><span>P1</span><span class="bar-track"><span class="bar-fill low" style="width:32.5%"></span></span><strong>32.5</strong></div>
-            <div class="sus-row"><span>P2</span><span class="bar-track"><span class="bar-fill" style="width:92.5%"></span></span><strong>92.5</strong></div>
-            <div class="sus-row"><span>P3</span><span class="bar-track"><span class="bar-fill" style="width:95%"></span></span><strong>95</strong></div>
-            <div class="sus-row"><span>P4</span><span class="bar-track"><span class="bar-fill" style="width:87.5%"></span></span><strong>87.5</strong></div>
-            <div class="sus-row"><span>P5</span><span class="bar-track"><span class="bar-fill" style="width:100%"></span></span><strong>100</strong></div>
-          </div>
-        </div>
-
-        <div class="source-note">
-          *P0 was the pilot. The average SUS score was 82.5 across all six sessions, or 81.5 for P1 to P5 alone.
-          Both are above the 68 benchmark. The spread is wide, from 32.5 (P1) to 100 (P5). P1 was also the
-          participant who failed Task 1 and hit the account-creation wall in Task 3, so the low score matches
-          what happened in the session.
-        </div>
-
-        <div class="callout">
-          <p><strong>Pattern:</strong> The report interprets the wide spread
-          as evidence that familiarity with e-commerce conventions shaped perceived usability,
-          even when participants encountered task-level friction.</p>
-        </div>
-      </section>
-
 
       <section class="section" id="findings">
-        <div class="section-head"><p class="section-note">what repeated across methods</p><h2>Findings &amp; Recommendations</h2></div>
-
+        <div class="section-head"><p class="section-note">what people did, then what to try</p><h2>Three findings</h2></div>
         <div class="principle-list">
-          <div class="principle"><h3>01 · Fix the Filter System</h3><p><strong>Issue:</strong> filters returned no results or reset; users abandoned them. <strong>Recommendation:</strong> clearer labels, stable multi-select behavior, visible result count, and a “Clear all” control.</p></div>
-          <div class="principle"><h3>02 · Boost Quick-Add Visibility</h3><p><strong>Issue:</strong> the icon was overlooked and users entered product pages instead. <strong>Recommendation:</strong> a larger hover-state button, tooltip (“Add to Cart”), and stronger contrast.</p></div>
-          <div class="principle"><h3>03 · Surface the Favorites Feature</h3><p><strong>Issue:</strong> the heart icon was hard to find and new users encountered an account-creation wall. <strong>Recommendation:</strong> more prominent affordance, guest wishlisting, or a softer sign-in prompt after saving.</p></div>
-          <div class="principle"><h3>04 · Reduce Disruptive Interruptions</h3><p><strong>Issue:</strong> pop-ups, CAPTCHA, and unexpected navigation broke task flow. <strong>Recommendation:</strong> reduce overlay frequency, control redirects, and reserve CAPTCHA for suspicious activity.</p></div>
+          <div class="principle"><h3>01 · Filters interrupted the search path</h3><p><strong>Observed:</strong> P1 and P4 did not complete the task after filters returned no results or reset. P2 found a coat by scrolling but did not use filters, so their outcome is partial. P3 completed the task while noting that filters cost time.</p><p><strong>Recommendation:</strong> investigate result and reset behavior, then test clearer filter labels, persistent selections, and visible result counts. These changes were proposed, not implemented or validated in this study.</p></div>
+          <div class="principle"><h3>02 · Quick add was easy to miss</h3><p><strong>Observed:</strong> P1 first opened the product page instead of using the listing control. P3 did not use quick add, and P5 partially completed the task. Three of five fully completed it.</p><p><strong>Recommendation:</strong> test a more prominent, clearly labeled quick-add control on product cards, with visible feedback after activation.</p></div>
+          <div class="principle"><h3>03 · Favorites succeeded, with friction</h3><p><strong>Observed:</strong> all five formal participants completed the task. P1 struggled to find the heart control and encountered an account-creation prompt; P2 corrected an initial mistake.</p><p><strong>Recommendation:</strong> make the save control easier to identify and clarify the sign-in step before it interrupts saving. Whether guest saving is feasible requires separate product and technical review.</p></div>
         </div>
       </section>
 
-
-      <section class="section" id="limits">
-        <div class="section-head"><p class="section-note">how I would read the results</p><h2>Limitations &amp; Source Notes</h2></div>
-
-        <ul>
-          <li>Small convenience sample.</li>
-          <li>The pilot changed task wording before formal testing.</li>
-          <li>The source documents record ASQ as a measure, but do not provide an aggregate ASQ score table in the final results section; no ASQ values are invented here.</li>
-          <li>Only three shopping tasks were evaluated.</li>
-        </ul>
+      <section class="section" id="priorities">
+        <div class="section-head"><p class="section-note">a portfolio read of the evidence</p><h2>Prioritized recommendations</h2></div>
+        <p class="small-note"><strong>Retrospective analysis:</strong> this order is a later interpretation of the formal task counts and documented friction, not a ranking recorded in the original report or a claim that any change was shipped.</p>
+        <div class="flow">
+          <div class="flow-step" data-step="1"><h3>Fix and retest filtering</h3><p>Two unsuccessful and one partial outcome make this the clearest task barrier. First reproduce no-result and reset behavior; then test stable filter selections, clearer labels, and result feedback.</p></div>
+          <div class="flow-step" data-step="2"><h3>Make quick add recognizable</h3><p>One unsuccessful and one partial outcome, plus a documented detour into the product page, support testing a visible label, stronger contrast, and clearer feedback.</p></div>
+          <div class="flow-step" data-step="3"><h3>Smooth the favorites path</h3><p>All five completed it, so this follows the completion barriers. Test icon visibility and explain when sign-in is required. The report also notes disruptive overlays and navigation; capture their frequency in a follow-up study.</p></div>
+        </div>
       </section>
 
-
-      <section class="section" id="reflection">
-        <div class="section-head"><p class="section-note">looking back</p><h2>What I'd do differently</h2></div>
-
+      <section class="section" id="next">
+        <div class="section-head"><p class="section-note">where the evidence stops</p><h2>What we know &amp; what comes next</h2></div>
+        <div class="phase-grid">
+          <div class="phase-card"><h3>Established by this study</h3><p>The formal task tables show uneven completion across three shopping flows, while the reported SUS scores show generally positive perceived usability with wide variation. Specific filter failures, quick-add detours, and favorites friction are documented.</p></div>
+          <div class="phase-card"><h3>Still uncertain</h3><p>Five formal sessions cannot establish prevalence across shoppers. The report suggests familiarity or low prices may explain favorable impressions, but these are hypotheses here. No follow-up study shows that the recommendations improve task success, satisfaction, conversion, or revenue.</p></div>
+        </div>
+        <h3>Evidence notes to resolve</h3>
         <ul>
-          <li><strong>Recruit beyond experienced SHEIN users.</strong> Everyone had used the site before, and the report itself says familiarity likely explains the high SUS scores despite real task failures. Testing new users would show the discoverability problems more clearly.</li>
-          <li><strong>Run a bigger pilot.</strong> One pilot participant caught two task-wording problems. Another round might have caught the Task 2 confusion before the formal sessions.</li>
-          <li><strong>Record task times.</strong> We planned to measure time on task, but the results only have success, difficulty and errors. Without times I couldn't check the KLM prediction against real behavior.</li>
-          <li><strong>Retest the fixes.</strong> The four recommendations are untested. The next step is a second round on a redesigned filter and a more visible quick-add button.</li>
+          <li><strong>Recruitment:</strong> the method section requires prior SHEIN use; the consent appendix allows 0–3 uses, while its screener terminates zero-use respondents. The exact criterion applied to this sample needs confirmation.</li>
+          <li><strong>Measures:</strong> the plan lists task time and ASQ, and the presentation's method slide labels task success Yes/No even though its results slide includes Partial. The report's results provide no usable time or aggregate ASQ table. This page uses the participant-level Yes/Partial/No statuses and does not infer missing measures.</li>
+          <li><strong>Source summaries:</strong> the presentation's “3/3 tasks completed” conclusion and the pilot's “all tasks completed” sentence conflict with their task tables. This page follows the tables and separates P0 from P1–P5.</li>
         </ul>
+        <div class="callout dark"><p><strong>Next test:</strong> prototype the filter and quick-add changes, recruit a mix of new and experienced shoppers, and repeat the same desktop tasks. Record full, partial, and unsuccessful outcomes alongside time, errors, post-task feedback, and SUS so behavior and perception can be compared again.</p></div>
+        <p class="small-note">Sources used for this case study: <em>HCI 460 Final Usability Testing Report</em> (primary, March 4, 2026) and <em>460 SHEIN Final Presentation</em> (supporting, March 9, 2026). No participant names, recordings, or consent materials are reproduced.</p>
       </section>
-
-      <div class="end-nav">
-        <a href="taste-curation.html">← Taste Curation</a>
-        <a href="ai-banking.html">Next: AI Banking →</a>
-      </div>
+      <div class="end-nav"><a href="ia-redesign.html">← IA Research</a><a href="work.html">Research Archive →</a></div>
     </article>
-
-
     <aside class="case-aside">
       <nav class="jump-card" aria-label="Case study sections">
         <p>jump to ↓</p>
-        <a href="#overview">Overview</a>
-        <a href="#preliminary">Preliminary research</a>
-        <a href="#method">Method</a>
-        <a href="#completion">Completion rates</a>
-        <a href="#task1">Task 1</a>
-        <a href="#task2">Task 2</a>
-        <a href="#task3">Task 3</a>
-        <a href="#sus">SUS</a>
-        <a href="#findings">Recommendations</a>
-        <a href="#limits">Limitations</a>
-        <a href="#reflection">Reflection</a>
+        <a href="#overview">Overview</a><a href="#questions">Research questions</a>
+        <a href="#design">Study design</a><a href="#pilot">Pilot</a>
+        <a href="#results">Results</a><a href="#findings">Findings</a>
+        <a href="#priorities">Recommendations</a><a href="#next">Limits &amp; next steps</a>
       </nav>
     </aside>
   </div>
 </main>
-
 <footer class="site-footer"><p>Designed by Karena — made by hand, one page at a time.</p></footer>
 </body>
 </html>

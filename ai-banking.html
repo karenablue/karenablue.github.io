@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="case-study.css">
 
 <title>AI Adoption & Trust in Digital Banking | Designed by Karena</title>
-<meta name="description" content="UX research and strategy study on trust, AI, and digital banking."></head><body>
+<meta name="description" content="Self-initiated secondary research synthesis on trust, AI, and digital banking, with a validation plan."></head><body>
 <a class="skip-link" href="#main-content">Skip to main content</a>
 
 <header class="site-header">
@@ -21,98 +21,100 @@
 <main class="case-page" id="main-content" tabindex="-1">
 <a class="back-link" href="work.html">← back to the research cabinet</a>
 <section class="case-hero">
-<span class="case-kicker">UX Research + Strategic Analysis</span>
+<span class="case-kicker">Secondary Research + Strategy</span>
 <h1>AI Adoption &amp; Trust in Digital Banking</h1>
-<p class="case-deck">A synthesis of published research pointed to three design priorities for AI-assisted banking: explain the action, give people a chance to review it, and preserve their ability to override it. These are strategic recommendations, not findings from participant testing.</p>
+<p class="case-deck">I ran a self-initiated synthesis of published research on how people decide whether to trust AI with their money. It produced one central hypothesis: safeguards should scale with what is at stake. Low-risk suggestions can stay lightweight. Actions that move money should explain themselves, pause for review, and stay easy to override. None of this has been tested with participants yet. A validation plan closes the page.</p>
 <div class="stat-grid">
-<div class="stat-card"><span>Role</span><strong>UX Researcher</strong></div>
-<div class="stat-card"><span>Setting</span><strong>BMO U.S. UX Research</strong></div>
-<div class="stat-card"><span>Presented</span><strong>January 2026</strong></div>
+<div class="stat-card"><span>Role</span><strong>Independent researcher</strong></div>
+<div class="stat-card"><span>Context</span><strong>Self-initiated while a BMO U.S. rotational analyst</strong></div>
+<div class="stat-card"><span>Shared</span><strong>Presented internally, Jan 2026</strong></div>
 <div class="stat-card"><span>Evidence</span><strong>Secondary research only</strong></div>
 </div>
 </section>
-<div class="case-layout"><nav class="jump-card mobile-jump" aria-label="Case study sections"><p>jump to ↓</p><a href="#overview">Overview</a><a href="#insights">Evidence &amp; hypotheses</a><a href="#archetypes">Archetypes</a><a href="#journeys">Journey maps</a><a href="#benchmark">Benchmarking</a><a href="#principles">UX principles</a><a href="#takeaway">Takeaway</a><a href="#limits">Limitations</a></nav><article>
-<section class="section" id="overview"><div class="section-head"><p class="section-note">the business problem</p><h2>Overview</h2></div>
-<p>The project investigated how AI-driven features influence user trust in digital banking and what design principles could guide AI integration without undermining user confidence. The study synthesized public market research and academic literature, then mapped the findings into behavioral archetypes, journeys, competitive examples, and strategic UX principles.</p>
-<div class="callout"><p><strong>Research approach:</strong> secondary research synthesis → thematic clustering → insight synthesis → opportunity mapping.</p></div>
-<p class="small-note">This was a synthesis of published research, not a participant study. Provider examples and survey figures below link to their original publications; the design implications are my interpretation of that evidence.</p>
+<div class="case-layout"><nav class="jump-card mobile-jump" aria-label="Case study sections"><p>jump to ↓</p><a href="#overview">Overview</a><a href="#synthesis">How I synthesized</a><a href="#insights">Evidence &amp; hypotheses</a><a href="#needs">Two trust needs</a><a href="#benchmark">Benchmarking</a><a href="#principles">UX principles</a><a href="#validation">Validation plan</a><a href="#limits">Limitations</a></nav><article>
+<section class="section" id="overview"><div class="section-head"><p class="section-note">the question</p><h2>Overview</h2></div>
+<p>I started this project during my rotational program at BMO U.S. It was not a UX Research team assignment. I wanted to know how AI features affect trust in digital banking and which design principles could support AI without costing people their confidence. I reviewed public surveys, provider publications, and academic literature, then coded the evidence by theme and turned the patterns into testable design hypotheses.</p>
+<p class="small-note">This was a synthesis of published research, not a participant study. Survey figures and provider examples link to their original publications. The design implications are my interpretation.</p>
+</section>
+
+<section class="section" id="synthesis"><div class="section-head"><p class="section-note">one thread, from source to hypothesis</p><h2>How I Synthesized the Sources</h2></div>
+<p>The steps below follow one piece of evidence from the source to the design hypothesis it produced. I treated the rest of the material the same way.</p>
+<div class="sequence-model">
+<div class="sequence-row"><span class="sequence-label">1 · Source evidence</span><p>In TD Bank's 2025 U.S. survey, 60% of respondents were comfortable using AI for budgeting, compared with 44% for investing. The same report describes transparency and keeping people involved as foundations for AI in banking. <a class="source-link" href="https://stories.td.com/volumes/default/article/TDBank_AI_InsightsReport.pdf" target="_blank" rel="noopener noreferrer">TD Bank survey ↗</a></p></div>
+<div class="sequence-row"><span class="sequence-label">2 · Pattern</span><p>The same respondents gave different answers for different tasks, so I coded trust as a property of the task, not a fixed trait of the person. Comfort dropped as the delegated decision became more consequential and harder to undo. The oversight theme in the same report pointed the same way: people want to stay involved where the stakes are highest.</p></div>
+<div class="sequence-row"><span class="sequence-label">3 · Design hypothesis</span><p>Match the safeguards to the stakes. Low-stakes suggestions, such as budgeting nudges, can appear inline. Consequential actions, such as moving money or investing, should give a plain-language reason, a review step, and a visible way to override.</p></div>
+<div class="sequence-row"><span class="sequence-label">4 · What it changed</span><p>This is why the principles below form a graduated pattern instead of a confirmation on every action. It is also why the two trust needs differ in how much friction people accept, not in whether they trust AI at all.</p></div>
+</div>
+<p class="small-note">Caveat: two tasks from one survey suggest a stakes effect but do not measure one. The validation plan below tests this hypothesis.</p>
 </section>
 
 <section class="section" id="insights"><div class="section-head"><p class="section-note">what the sources support and what still needs testing</p><h2>Evidence &amp; Strategy Hypotheses</h2></div>
 <div class="insight-grid">
-<div class="insight"><span class="num">01</span><h3>Comfort depends on the task</h3><p>In TD Bank's 2025 U.S. survey, 60% were comfortable using AI for budgeting, compared with 44% for investing. This suggests that confidence varies with the decision being delegated. <a class="source-link" href="https://stories.td.com/volumes/default/article/TDBank_AI_InsightsReport.pdf" target="_blank" rel="noopener noreferrer">TD Bank survey ↗</a></p></div>
-<div class="insight"><span class="num">02</span><h3>Human oversight remains important</h3><p>The same survey describes trust, transparency, and keeping people involved as foundations for AI in banking. This supports review and confirmation steps before consequential actions. <a class="source-link" href="https://stories.td.com/volumes/default/article/TDBank_AI_InsightsReport.pdf" target="_blank" rel="noopener noreferrer">TD Bank survey ↗</a></p></div>
-<div class="insight"><span class="num">03</span><h3>Explanation and override are design hypotheses</h3><p>The synthesis translates the trust concerns into proposed explanations, review steps, and override controls. Their effect on actual banking behavior still needs to be tested with users.</p></div>
-<div class="insight"><span class="num">04</span><h3>Make the benefit visible, then test it</h3><p>Showing a concrete outcome, such as money saved, is a proposed way to make an AI feature easier to evaluate. This study did not test alternative messages or measure engagement.</p></div>
+<div class="insight"><span class="num">01</span><h3>Comfort depends on the task</h3><p>Comfort with AI was higher for budgeting (60%) than for investing (44%). Confidence varies with the decision being delegated. <a class="source-link" href="https://stories.td.com/volumes/default/article/TDBank_AI_InsightsReport.pdf" target="_blank" rel="noopener noreferrer">TD Bank survey ↗</a></p></div>
+<div class="insight"><span class="num">02</span><h3>Human oversight remains important</h3><p>Trust, transparency, and human involvement appear as foundations for AI in banking. This supports review steps before consequential actions. <a class="source-link" href="https://stories.td.com/volumes/default/article/TDBank_AI_InsightsReport.pdf" target="_blank" rel="noopener noreferrer">TD Bank survey ↗</a></p></div>
+<div class="insight"><span class="num">03</span><h3>Explanation and override are design hypotheses</h3><p>I translated the trust concerns into proposed explanations, review steps, and override controls. Their effect on real banking behavior still needs to be tested.</p></div>
+<div class="insight"><span class="num">04</span><h3>Make the benefit visible, then test it</h3><p>Showing a concrete outcome, such as money saved, could make an AI feature easier to evaluate. This study did not test messages or measure engagement.</p></div>
 </div>
 </section>
 
-<section class="section" id="archetypes"><div class="section-head"><p class="section-note">two hypothesis-generating frames</p><h2>Behavioral Archetypes</h2></div>
-<p class="small-note">Jonah and Taylor are illustrative archetypes synthesized from secondary research. Their statements are written examples, not participant quotes.</p>
-<div class="persona-grid">
-<div class="persona"><div class="persona-head">Digitally Native — Jonah Johnson</div><div class="persona-body">
-<p><strong>Values:</strong> speed + control</p><p class="persona-quote">“I want AI to handle the routine stuff so I can focus on decisions that matter.”</p>
-<ul><li>Adopts AI when it reduces friction and confirms actions without slowing the task down.</li><li>Comfortable automating recurring payments.</li><li>Frustrated by unnecessary confirmation steps or opaque delays.</li></ul>
-<p><strong>Trust trigger:</strong> demonstrable speed advantage with a visible override option.</p>
-</div></div>
-<div class="persona dark"><div class="persona-head">Digitally Wary — Taylor Morgan</div><div class="persona-body">
-<p><strong>Values:</strong> safety + transparency</p><p class="persona-quote">“I need to understand what’s happening with my money before I let a machine touch it.”</p>
-<ul><li>Prefers AI that explains before it acts.</li><li>Adopts when steps are clear and an easy opt-out exists.</li><li>Distrusts recommendations without rationale.</li></ul>
-<p><strong>Trust trigger:</strong> plain-language explanation of logic with a confirm-before-action pattern.</p>
-</div></div>
-</div>
+<section class="section" id="needs"><div class="section-head"><p class="section-note">two archetypes, reduced to what they explain</p><h2>Two Trust Needs</h2></div>
+<p>I drafted two behavioral archetypes and journey maps from the secondary research. They are kept here only where they explain a recommendation. Both are illustrative and were not validated with participants.</p>
+<div class="table-wrap" tabindex="0" role="region" aria-label="Two trust needs and the recommendations they support"><table>
+<thead><tr><th>Trust need</th><th>Where trust is most likely to break</th><th>Recommendation it supports</th></tr></thead><tbody>
+<tr><td><strong>Speed first</strong><br>Delegates routine tasks such as recurring payments and wants the AI out of the way.</td><td>Confirmation steps on low-stakes actions, plus slow or opaque status after money moves</td><td>Lightweight handling of low-stakes actions, an override that is always visible, and immediate confirmation of the result</td></tr>
+<tr><td><strong>Explanation first</strong><br>Wants to understand an action before allowing it, especially when a transfer can't be undone.</td><td>A recommendation with no reason given, or no review point before a transfer is submitted</td><td>Plain-language reasons, a review checkpoint that flags risky details, and an easy way to opt out</td></tr>
+</tbody></table></div>
 </section>
 
-<section class="section" id="journeys"><div class="section-head"><p class="section-note">where trust might rise or break</p><h2>Illustrative Journey Maps</h2></div>
-<div class="journey-grid">
-<div class="journey"><h3>Jonah — Paying a Car Note with Confidence</h3><div class="table-wrap" style="margin:0;border:0;border-radius:0"><table>
-<thead><tr><th>Stage</th><th>AI opportunity</th><th>Pain point</th></tr></thead><tbody>
-<tr><td>Dashboard</td><td>Pre-load with predicted next actions</td><td>Generic landing screen</td></tr>
-<tr><td>Biller Search</td><td>Auto-suggest billers based on payment history</td><td>Manual entry required</td></tr>
-<tr><td>Detail Entry</td><td>Validate and auto-fill from previous data</td><td>Redundant data input</td></tr>
-<tr><td>Scheduling</td><td>Recommend optimal delivery date</td><td>No guidance on timing</td></tr>
-<tr><td>Confirmation</td><td>Instant confirmation with status tracking</td><td>Wants immediate feedback when money moves</td></tr>
-</tbody></table></div></div>
-<div class="journey"><h3>Taylor — Transferring Money with Reassurance</h3><div class="table-wrap" style="margin:0;border:0;border-radius:0"><table>
-<thead><tr><th>Stage</th><th>AI opportunity</th><th>Pain point</th></tr></thead><tbody>
-<tr><td>Entry</td><td>Reassuring welcome message with transfer tips</td><td>Anxiety about irreversible errors</td></tr>
-<tr><td>Detail Input</td><td>Real-time detail validation with clear error messages</td><td>Fear of entering wrong account number</td></tr>
-<tr><td>Review</td><td>Confirmation checklist highlighting missing or risky info</td><td>No safety net before submission</td></tr>
-<tr><td>Confirmation</td><td>Downloadable receipt with full transaction details</td><td>Uncertainty about whether it went through</td></tr>
-</tbody></table></div></div>
-</div>
-</section>
-
-<section class="section" id="benchmark"><div class="section-head"><p class="section-note">what the market was already signaling</p><h2>Competitive Benchmarking</h2></div>
-<p>These are provider-reported examples, not measured outcomes of this research. Each claim links to the provider's publication.</p>
+<section class="section" id="benchmark"><div class="section-head"><p class="section-note">grouped by how closely each example applies</p><h2>Competitive Benchmarking</h2></div>
+<p>These are provider-reported examples, not outcomes measured in this research. I grouped them by who interacts with the AI, because that determines what carries over to a customer banking experience.</p>
+<details class="evidence"><summary>Explore the five provider examples</summary><div class="evidence-body">
+<h3>Customer-facing: most directly relevant</h3>
 <div class="benchmark-grid">
-<div class="benchmark-card"><h3>TD Bank — Personalization &amp; Analytics</h3><p>TD said its AI Prism model processes 100 times more data variables to help predict customer needs. At its 2025 launch, personalized marketing was a planned use, not a measured engagement result. <a class="source-link" href="https://stories.td.com/ca/en/news/2025-06-11-td-announces-launch-of-groundbreaking-predictive-foundation" target="_blank" rel="noopener noreferrer">TD announcement ↗</a></p></div>
-<div class="benchmark-card"><h3>Bank of America — Conversational AI + Internal Knowledge</h3><p>Bank of America reported more than 3 billion Erica interactions and said over 98% of users find the information they need. It separately reported that AskGPS uses more than 3,200 internal documents to answer employee questions within seconds. <a class="source-link" href="https://newsroom.bankofamerica.com/content/newsroom/press-releases/2025/08/a-decade-of-ai-innovation--bofa-s-virtual-assistant-erica-surpas.html" target="_blank" rel="noopener noreferrer">Erica report ↗</a> <a class="source-link" href="https://newsroom.bankofamerica.com/content/newsroom/press-releases/2025/09/bofa-s-new-genai-assistant-transforms-global-payments-solutions.html" target="_blank" rel="noopener noreferrer">AskGPS report ↗</a></p></div>
-<div class="benchmark-card"><h3>Visa — Fraud Detection</h3><p>Visa reported that its AI fraud solutions helped banks detect and stop more than $40 billion in card payment fraud in 2023. That figure covers Visa's AI fraud solutions, rather than Advanced Authorization alone. <a class="source-link" href="https://corporate.visa.com/content/dam/VCOM/corporate/solutions/documents/humanitarian-refugee-whitepaper.pdf" target="_blank" rel="noopener noreferrer">Visa report ↗</a></p></div>
-<div class="benchmark-card"><h3>Stripe — Payment Acceptance</h3><p>Stripe describes Adaptive Acceptance as an AI-powered product designed to recover false declines and improve payment acceptance. <a class="source-link" href="https://stripe.com/blog/ai-enhancements-to-adaptive-acceptance" target="_blank" rel="noopener noreferrer">Stripe technical article ↗</a></p></div>
+<div class="benchmark-card"><h3>Bank of America: Erica</h3><p>Bank of America reported more than 3 billion Erica interactions and said over 98% of users find the information they need. <a class="source-link" href="https://newsroom.bankofamerica.com/content/newsroom/press-releases/2025/08/a-decade-of-ai-innovation--bofa-s-virtual-assistant-erica-surpas.html" target="_blank" rel="noopener noreferrer">Erica report ↗</a></p><p><strong>What transfers:</strong> customers will use a conversational assistant for everyday banking. Usage volume shows adoption, though, not trust in consequential actions.</p></div>
+<div class="benchmark-card"><h3>TD Bank: AI Prism</h3><p>TD said its AI Prism model processes 100 times more data variables to help predict customer needs. At the 2025 launch, personalized marketing was a planned use, not a measured result. <a class="source-link" href="https://stories.td.com/ca/en/news/2025-06-11-td-announces-launch-of-groundbreaking-predictive-foundation" target="_blank" rel="noopener noreferrer">TD announcement ↗</a></p><p><strong>What transfers:</strong> more prediction means more recommendations, and more recommendations need explaining.</p></div>
 </div>
+<h3>Employee-facing: transfers with limits</h3>
+<div class="benchmark-grid">
+<div class="benchmark-card"><h3>Bank of America: AskGPS</h3><p>Bank of America reported that AskGPS draws on more than 3,200 internal documents to answer employee questions within seconds. <a class="source-link" href="https://newsroom.bankofamerica.com/content/newsroom/press-releases/2025/09/bofa-s-new-genai-assistant-transforms-global-payments-solutions.html" target="_blank" rel="noopener noreferrer">AskGPS report ↗</a></p><p><strong>What transfers:</strong> answers grounded in identifiable sources could serve as a model for customer-facing explanations. <strong>What doesn't:</strong> employees are trained, accountable, and able to check answers. Customers bear the financial risk alone and need more support.</p></div>
+</div>
+<h3>Behind the scenes: context, not interface patterns</h3>
+<div class="benchmark-grid">
+<div class="benchmark-card"><h3>Visa: fraud detection</h3><p>Visa said it helped proactively block $40 billion in fraud in fiscal 2023. This is a company-reported network figure, not an outcome measured in this project. <a class="source-link" href="https://investor.visa.com/news/news-details/2024/Visa-Announces-Generative-AI-Powered-Fraud-Solution-to-Combat-Account-Attacks/default.aspx" target="_blank" rel="noopener noreferrer">Visa announcement ↗</a></p></div>
+<div class="benchmark-card"><h3>Stripe: Adaptive Acceptance</h3><p>Stripe describes Adaptive Acceptance as an AI-powered product designed to recover false declines and improve payment acceptance. <a class="source-link" href="https://stripe.com/blog/ai-enhancements-to-adaptive-acceptance" target="_blank" rel="noopener noreferrer">Stripe technical article ↗</a></p></div>
+</div>
+<p><strong>What transfers:</strong> these systems act on people's money without a visible interface. The customer meets them only when something is flagged or declined, and that moment is where an explanation and a clear next step matter.</p>
+</div></details>
 </section>
 
 <section class="section" id="principles"><div class="section-head"><p class="section-note">design ideas to validate next</p><h2>Strategic UX Implications</h2></div>
 <div class="principle-list">
-<div class="principle"><h3>Explainable AI</h3><p>Offer a plain-language reason for an AI recommendation, with more detail available when users want it.</p></div>
-<div class="principle"><h3>Confirmation Checkpoints</h3><p>Let users review consequential AI-initiated actions before execution. Test whether this improves their understanding and sense of control.</p></div>
-<div class="principle"><h3>Real-Time Validation</h3><p>Show the result after an AI action completes so users can check what happened and whether it helped.</p></div>
-<div class="principle"><h3>Progressive Disclosure</h3><p>Lead with the insight, offer detail on tap, and reserve technical specifics for users who seek them. Do not front-load complexity.</p></div>
-<div class="principle"><h3>User Override Controls</h3><p>Provide a clear path to undo, adjust, or opt out of AI recommendations, and test whether people can find and use those controls.</p></div>
+<div class="principle"><h3>Safeguards matched to the stakes</h3><p>Keep low-stakes suggestions lightweight. Add explanation, review, and override as the action becomes more consequential or harder to undo.</p></div>
+<div class="principle"><h3>Explainable AI with progressive disclosure</h3><p>Lead with a plain-language reason, offer more detail on tap, and save the technical specifics for people who look for them.</p></div>
+<div class="principle"><h3>Confirmation checkpoints</h3><p>Let people review consequential AI-initiated actions before they run, and point out details that look risky.</p></div>
+<div class="principle"><h3>User override controls</h3><p>Provide a clear way to undo, adjust, or decline a recommendation, and make sure people can find it.</p></div>
+<div class="principle"><h3>Visible results</h3><p>Show what happened after an AI action so people can check the outcome.</p></div>
 </div>
 </section>
 
-<section class="section" id="takeaway"><div class="section-head"><p class="section-note">the sentence I wanted people to remember</p><h2>Core Takeaway</h2></div>
-<div class="callout dark"><p><strong>This synthesis suggests a design hypothesis: people need to see, understand, and retain control over AI-assisted financial actions. User testing is the next step to learn whether the proposed patterns earn that trust.</strong></p></div>
+<section class="section" id="validation"><div class="section-head"><p class="section-note">how I would test the central hypothesis</p><h2>Validation Plan</h2></div>
+<div class="callout"><p><strong>Hypothesis:</strong> when an AI recommends a consequential money action, a plain-language reason plus a visible override will help people understand the recommendation and challenge it when it is wrong, without slowing routine use much.</p></div>
+<div class="sequence-model">
+<div class="sequence-row"><span class="sequence-label">Method</span><p>A moderated, within-subjects prototype test. Each participant sees both variants, in counterbalanced order.</p></div>
+<div class="sequence-row"><span class="sequence-label">Participants</span><p>8–10 people who bank on mobile, screened to include both high and low comfort with AI. The screener would reuse the budgeting-versus-investing comfort question.</p></div>
+<div class="sequence-row"><span class="sequence-label">Variants</span><p><strong>A:</strong> an AI recommendation with a single Confirm button. <strong>B:</strong> the same recommendation with a "Why this?" reason and visible Edit and Decline controls.</p></div>
+<div class="sequence-row"><span class="sequence-label">Tasks</span><p>Respond to an AI-suggested bill-payment date and an AI-suggested transfer to savings. In one trial the recommendation is deliberately flawed: it schedules a payment after the due date.</p></div>
+<div class="sequence-row"><span class="sequence-label">Measures</span><p>Whether participants catch and override the flawed recommendation. Whether they can explain any recommendation in their own words. Time to find the override. Perceived control after each variant. Think-aloud comments at the review step.</p></div>
+<div class="sequence-row"><span class="sequence-label">Decision rule</span><p>Keep explanation and override if Variant B improves catches of the flawed recommendation and the quality of participants' explanations. If it only adds time, simplify the explanation and retest. With this sample size, results are directional, not statistically conclusive.</p></div>
+</div>
 </section>
 
 <section class="section" id="limits"><div class="section-head"><p class="section-note">where the evidence stops</p><h2>Limitations</h2></div>
-<ul><li><strong>No primary behavioral data:</strong> findings were derived from published industry reports and competitive analysis.</li><li><strong>Publication bias:</strong> provider reports describe their own products and may emphasize favorable outcomes.</li><li><strong>Archetypes are illustrative:</strong> Jonah and Taylor were synthesized from secondary research patterns and were not validated through primary interviews.</li><li><strong>Rapidly evolving landscape:</strong> the original research and linked 2025 examples may not reflect newer AI features or expectations.</li></ul>
+<ul><li><strong>No primary behavioral data:</strong> the findings come from published industry reports and competitive analysis.</li><li><strong>Publication bias:</strong> provider reports describe their own products and may emphasize favorable outcomes.</li><li><strong>Illustrative archetypes:</strong> the two trust needs came from secondary research patterns and were not validated through interviews.</li><li><strong>Fast-changing landscape:</strong> the original research and the 2025 examples may not reflect newer AI features or expectations.</li></ul>
 </section>
-<div class="end-nav"><a href="shein-usability.html">← SHEIN</a><a href="work.html">Selected Research →</a></div>
+<div class="end-nav"><a href="shein-usability.html">← SHEIN</a><a href="work.html">Research Archive →</a></div>
 </article>
-<aside class="case-aside"><nav class="jump-card" aria-label="Case study sections"><p>jump to ↓</p><a href="#overview">Overview</a><a href="#insights">Evidence &amp; hypotheses</a><a href="#archetypes">Archetypes</a><a href="#journeys">Journey maps</a><a href="#benchmark">Benchmarking</a><a href="#principles">UX principles</a><a href="#takeaway">Takeaway</a><a href="#limits">Limitations</a></nav></aside>
+<aside class="case-aside"><nav class="jump-card" aria-label="Case study sections"><p>jump to ↓</p><a href="#overview">Overview</a><a href="#synthesis">How I synthesized</a><a href="#insights">Evidence &amp; hypotheses</a><a href="#needs">Two trust needs</a><a href="#benchmark">Benchmarking</a><a href="#principles">UX principles</a><a href="#validation">Validation plan</a><a href="#limits">Limitations</a></nav></aside>
 </div></main>
 <footer class="site-footer"><p>Designed by Karena — made by hand, one page at a time.</p></footer>
 </body></html>
