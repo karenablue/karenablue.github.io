@@ -1,15 +1,15 @@
 :root {
-  --about-bg: #faf5ff;
-  --about-ink: #1a1a1a;
+  --about-bg: #f7f5f0;
+  --about-ink: #161a2e;
   --about-white: #ffffff;
-  --about-lavender: #d8d8f6;
-  --about-lavender-soft: #efecff;
-  --about-periwinkle: #7a7adb;
-  --about-periwinkle-dark: #5a5ab4;
-  --about-lemon: #fff6bb;
-  --about-pink: #ffe3ee;
-  --about-shadow: 4px 4px 0 #1a1a1a;
-  --about-shadow-small: 3px 3px 0 #1a1a1a;
+  --about-lavender: #dfe6fb;
+  --about-lavender-soft: #eef2fd;
+  --about-periwinkle: #2b4fd8;
+  --about-periwinkle-dark: #1d3596;
+  --about-lemon: #f8ebc4;
+  --about-pink: #f6e4da;
+  --about-shadow: 0 1px 2px rgba(22,26,46,.06), 0 8px 16px -6px rgba(22,26,46,.24);
+  --about-shadow-small: 0 1px 2px rgba(22,26,46,.06), 0 6px 12px -5px rgba(22,26,46,.24);
 }
 
 
@@ -99,7 +99,7 @@
 
   padding: 7px 13px;
 
-  border: 2px solid var(--about-ink);
+  border: 1.5px solid var(--about-ink);
 
   border-radius: 999px;
 
@@ -115,7 +115,7 @@
 
   letter-spacing: 0.13em;
 
-  transform: rotate(-1deg);
+  transform: none;
 }
 
 .about-hero h1 {
@@ -184,34 +184,30 @@
 .profile-card {
   position: relative;
 
-  padding: 10px 10px 44px;
+  padding: 12px;
 
-  border: 2px solid var(--about-ink);
+  border: 1.5px solid var(--about-ink);
 
-  background: var(--about-white);
+  background: var(--gold-light);
 
-  box-shadow: var(--about-shadow);
+  box-shadow: 0 1px 2px rgba(22,26,46,.06), 0 14px 28px -11px rgba(22,26,46,.24);
 
-  transform: rotate(-1.4deg);
+  transform: none;
 }
 
-.profile-tape {
-  position: absolute;
-
-  top: -13px;
-
-  left: 50%;
-
-  width: 82px;
-
-  height: 26px;
-
-  transform: translateX(-50%) rotate(3deg);
-
-  background: rgba(216, 216, 246, 0.84);
-
-  z-index: 2;
+.profile-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  color: var(--about-periwinkle-dark);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
 }
+
+.profile-card-header span:last-child { font-size: 1rem; line-height: 1; }
 
 .profile-placeholder {
   aspect-ratio: 4 / 5;
@@ -229,8 +225,8 @@
   border: 1.5px solid rgba(26, 26, 26, 0.55);
 
   background:
-    radial-gradient(circle at 1px 1px, rgba(122, 122, 219, 0.18) 1px, transparent 1.5px) 0 0 / 22px 22px,
-    linear-gradient(135deg, #e8e4ff, #fff8d8);
+    radial-gradient(circle at 1px 1px, rgba(43,79,216, 0.18) 1px, transparent 1.5px) 0 0 / 22px 22px,
+    linear-gradient(135deg, #e6ebfb, #fbf3dc);
 }
 
 .profile-initials {
@@ -242,7 +238,7 @@
 
   place-items: center;
 
-  border: 2px solid var(--about-ink);
+  border: 1.5px solid var(--about-ink);
 
   border-radius: 50%;
 
@@ -276,27 +272,18 @@
 }
 
 .profile-caption {
-  position: absolute;
-
-  left: 50%;
-
-  bottom: 9px;
-
-  transform: translateX(-50%);
-
-  margin: 0;
-
-  font-family: "Caveat", cursive;
-
-  font-size: 1.35rem;
-
-  white-space: nowrap;
+  margin: 10px 0 2px;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  line-height: 1.35;
+  text-transform: uppercase;
 }
 
 .currently-card {
   padding: 18px;
 
-  border: 2px solid var(--about-ink);
+  border: 1.5px solid var(--about-ink);
 
   border-radius: 20px;
 
@@ -304,7 +291,7 @@
 
   box-shadow: var(--about-shadow-small);
 
-  transform: rotate(1.3deg);
+  transform: none;
 }
 
 .tiny-label {
@@ -340,7 +327,7 @@
 
   padding: 32px;
 
-  border: 2px solid var(--about-ink);
+  border: 1.5px solid var(--about-ink);
 
   border-radius: 28px;
 
@@ -358,7 +345,7 @@
 
   padding: 7px 12px;
 
-  border: 2px solid var(--about-ink);
+  border: 1.5px solid var(--about-ink);
 
   border-radius: 999px;
 
@@ -370,7 +357,7 @@
 
   font-size: 1.05rem;
 
-  transform: rotate(2deg);
+  transform: none;
 }
 
 .intro-kicker {
@@ -400,7 +387,7 @@
 
   line-height: 1.8;
 
-  color: #49454d;
+  color: #3e4357;
 }
 
 .favorite-problem {
@@ -485,15 +472,14 @@
 
   gap: 14px;
 
-  align-items: center;
+  align-items: stretch;
 }
 
 .story-card {
-  min-height: 255px;
 
   padding: 21px;
 
-  border: 2px solid var(--about-ink);
+  border: 1.5px solid var(--about-ink);
 
   border-radius: 22px;
 
@@ -503,19 +489,19 @@
 .story-lav {
   background: var(--about-lavender);
 
-  transform: rotate(-1deg);
+  transform: none;
 }
 
 .story-yellow {
   background: var(--about-lemon);
 
-  transform: rotate(1deg);
+  transform: none;
 }
 
 .story-white {
   background: var(--about-white);
 
-  transform: rotate(-0.5deg);
+  transform: none;
 }
 
 .story-number {
@@ -527,7 +513,7 @@
 
   place-items: center;
 
-  border: 2px solid var(--about-ink);
+  border: 1.5px solid var(--about-ink);
 
   border-radius: 50%;
 
@@ -563,12 +549,13 @@
 
   line-height: 1.65;
 
-  color: #4e4852;
+  color: #3e4357;
 
   font-size: 0.9rem;
 }
 
 .story-arrow {
+  align-self: center;
   font-family: "Caveat", cursive;
 
   font-size: 2rem;
@@ -588,17 +575,16 @@
 .beliefs-grid {
   display: grid;
 
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 
   gap: 20px;
 }
 
 .belief-card {
-  min-height: 275px;
 
   padding: 23px;
 
-  border: 2px solid var(--about-ink);
+  border: 1.5px solid var(--about-ink);
 
   border-radius: 23px;
 
@@ -608,19 +594,24 @@
 .belief-purple {
   background: var(--about-lavender-soft);
 
-  transform: rotate(-1deg);
+  transform: none;
 }
 
 .belief-yellow {
   background: var(--about-lemon);
 
-  transform: rotate(1deg);
+  transform: none;
 }
 
 .belief-pink {
   background: var(--about-pink);
 
-  transform: rotate(-0.7deg);
+  transform: none;
+}
+
+.belief-white {
+  background: var(--about-white);
+  transform: none;
 }
 
 .belief-icon {
@@ -632,7 +623,7 @@
 
   place-items: center;
 
-  border: 2px solid var(--about-ink);
+  border: 1.5px solid var(--about-ink);
 
   border-radius: 50%;
 
@@ -658,7 +649,7 @@
 .belief-card p {
   margin: 0;
 
-  color: #504a53;
+  color: #3e4357;
 
   line-height: 1.68;
 
@@ -685,7 +676,7 @@
 .skill-card {
   padding: 23px;
 
-  border: 2px solid var(--about-ink);
+  border: 1.5px solid var(--about-ink);
 
   border-radius: 22px;
 
@@ -721,7 +712,7 @@
 
   place-items: center;
 
-  border: 2px solid var(--about-ink);
+  border: 1.5px solid var(--about-ink);
 
   border-radius: 12px;
 
@@ -770,7 +761,7 @@
 .tools-board {
   padding: 28px;
 
-  border: 2px solid var(--about-ink);
+  border: 1.5px solid var(--about-ink);
 
   border-radius: 27px;
 
@@ -808,7 +799,7 @@
 .tool-cloud span {
   padding: 9px 14px;
 
-  border: 2px solid var(--about-ink);
+  border: 1.5px solid var(--about-ink);
 
   border-radius: 999px;
 
@@ -832,7 +823,7 @@
 }
 
 .tool-cloud span:hover {
-  transform: translateY(-3px) rotate(-1deg);
+  transform: translateY(-3px);
 }
 
 
@@ -849,13 +840,13 @@
 
   padding: 31px;
 
-  border: 2px solid var(--about-ink);
+  border: 1.5px solid var(--about-ink);
 
   background: #fffef9;
 
   box-shadow: var(--about-shadow);
 
-  transform: rotate(-0.7deg);
+  transform: none;
 }
 
 .personal-tape {
@@ -869,7 +860,7 @@
 
   height: 28px;
 
-  transform: translateX(-50%) rotate(2deg);
+  transform: translateX(-50%);
 
   background: rgba(255, 246, 187, 0.88);
 }
@@ -889,7 +880,7 @@
 
   line-height: 1.75;
 
-  color: #4c474f;
+  color: #3e4357;
 }
 
 .personal-small {
@@ -930,7 +921,7 @@
 
   margin: 0 auto;
 
-  color: #5e5861;
+  color: #4d5368;
 
   line-height: 1.65;
 }
@@ -956,7 +947,7 @@
 
   padding: 11px 18px;
 
-  border: 2px solid var(--about-ink);
+  border: 1.5px solid var(--about-ink);
 
   border-radius: 999px;
 

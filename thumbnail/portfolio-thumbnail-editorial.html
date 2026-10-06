@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Designed by Karena — Editorial portfolio thumbnail</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Fraunces:ital,opsz,wght@0,9..144,600;1,9..144,600&family=Inter:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root { --ink:#161a2e; --purple:#1d3596; --lavender:#dfe6fb; --lemon:#f8ebc4; --pink:#f6e4da; --cobalt:#2b4fd8; --gold-light:#fdf0c8; }
+    * { box-sizing:border-box; }
+    html,body { width:1200px; height:627px; margin:0; overflow:hidden; }
+    body { font-family:Inter,Arial,sans-serif; color:var(--ink); }
+    .canvas {
+      position:relative; width:1200px; height:627px; overflow:hidden;
+      background:
+        radial-gradient(circle at 1px 1px,rgba(43,79,216,.10) 1.2px,transparent 1.7px) 0 0/22px 22px,
+        #f7f5f0;
+    }
+    .frame { position:absolute; inset:20px; border:3px solid var(--ink); border-radius:28px; pointer-events:none; }
+    .lavender-splash { position:absolute; width:530px; height:530px; right:-80px; top:-165px; border-radius:50%; background:#e6ebfb; }
+    .pink-splash { position:absolute; width:310px; height:220px; right:0; bottom:-85px; border-radius:50%; background:var(--pink); }
+    .star { position:absolute; color:var(--purple); font-size:30px; line-height:1; }
+    .star.one { left:723px; top:80px; transform:rotate(-12deg); }
+    .star.two { left:704px; top:466px; font-size:23px; }
+    .star.three { right:60px; bottom:42px; font-size:24px; }
+    .content { position:absolute; left:75px; top:59px; width:670px; z-index:2; }
+    .eyebrow {
+      display:inline-block; padding:10px 17px; border:2px solid var(--ink); border-radius:999px;
+      background:var(--lemon); box-shadow:none;
+      font-size:14px; font-weight:800; letter-spacing:.11em; text-transform:uppercase;
+      transform:none;
+    }
+    .hello { margin:30px 0 -4px; color:var(--purple); font:700 35px/1 Caveat,cursive; }
+    h1 { margin:0; font:600 94px/.91 Fraunces,Georgia,serif; letter-spacing:-.04em; }
+    h1 span { display:block; margin-left:30px; color:var(--purple); font-style:italic; }
+    .scribble { width:235px; height:18px; margin:15px 0 0 99px; background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 12' preserveAspectRatio='none'%3E%3Cpath d='M2 8 C20 2 40 12 60 6 S100 2 118 7' fill='none' stroke='%231a1a1a' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E") center/100% 100% no-repeat; }
+    .subtitle { width:620px; margin:19px 0 0; color:#3d3943; font-size:24px; font-weight:600; line-height:1.33; }
+    .site { position:absolute; left:76px; bottom:51px; z-index:2; color:var(--purple); font-size:18px; font-weight:800; letter-spacing:.01em; }
+    .portrait-card {
+      position:absolute; z-index:2; top:82px; right:81px; width:336px; padding:12px;
+      border:3px solid var(--ink); background:var(--gold-light); box-shadow:0 1px 2px rgba(22,26,46,.06),0 18px 36px -16px rgba(22,26,46,.35);
+      
+    }
+    .portrait-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; color:var(--cobalt); font:800 11px/1.2 Inter,Arial,sans-serif; letter-spacing:.11em; text-transform:uppercase; }
+    .portrait-header span:last-child { font-size:18px; line-height:1; }
+    .portrait-card img { display:block; width:304px; height:332px; object-fit:cover; object-position:center 30%; }
+    .portrait-caption { margin:10px 0 1px; font:800 13px/1.3 Inter,Arial,sans-serif; letter-spacing:.06em; text-transform:uppercase; }
+    .note {
+      position:absolute; z-index:3; right:53px; bottom:62px; padding:11px 20px 8px;
+      border:2px solid var(--ink); border-radius:12px; background:var(--pink);
+      box-shadow:0 8px 18px -10px rgba(22,26,46,.3); transform:rotate(-3deg);
+      font:700 29px/1 Caveat,cursive;
+    }
+  </style>
+</head>
+<body>
+  <main class="canvas" aria-label="Designed by Karena portfolio thumbnail">
+    <div class="lavender-splash" aria-hidden="true"></div>
+    <div class="pink-splash" aria-hidden="true"></div>
+    <div class="star one" aria-hidden="true">✦</div>
+    <div class="star two" aria-hidden="true">✿</div>
+    <div class="star three" aria-hidden="true">♡</div>
+    <div class="content">
+      <div class="eyebrow">✦ Karena's Research Archive</div>
+      <p class="hello">hello internet,</p>
+      <h1>Designed <span>by Karena</span></h1>
+      <div class="scribble" aria-hidden="true"></div>
+      <p class="subtitle">Research into how people understand, navigate, and use digital experiences.</p>
+    </div>
+    <div class="portrait-card"><div class="portrait-header"><span>Portrait / Karena Blue</span><span aria-hidden="true">✦</span></div><img src="../images/headshot.png" alt="Portrait of Karena"><p class="portrait-caption">researcher · designer · builder</p></div>
+    <div class="note">evidence &gt; vibes</div>
+    <div class="site">designedbykarena.com</div>
+    <div class="frame" aria-hidden="true"></div>
+  </main>
+</body>
+</html>

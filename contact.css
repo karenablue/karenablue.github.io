@@ -1,14 +1,14 @@
 :root {
-  --contact-bg: #faf5ff;
-  --contact-ink: #1a1a1a;
+  --contact-bg: #f7f5f0;
+  --contact-ink: #161a2e;
   --contact-white: #ffffff;
-  --contact-lavender: #d8d8f6;
-  --contact-purple: #7a7adb;
-  --contact-purple-dark: #5a5ab4;
-  --contact-lemon: #fff9e0;
-  --contact-pink: #ffe4f0;
-  --contact-shadow: 4px 4px 0 #1a1a1a;
-  --contact-shadow-small: 3px 3px 0 #1a1a1a;
+  --contact-lavender: #dfe6fb;
+  --contact-purple: #2b4fd8;
+  --contact-purple-dark: #1d3596;
+  --contact-lemon: #fbf3dc;
+  --contact-pink: #f6e4da;
+  --contact-shadow: 0 1px 2px rgba(22,26,46,.06), 0 8px 16px -6px rgba(22,26,46,.24);
+  --contact-shadow-small: 0 1px 2px rgba(22,26,46,.06), 0 6px 12px -5px rgba(22,26,46,.24);
 }
 
 
@@ -94,7 +94,7 @@
 
   padding: 7px 13px;
 
-  border: 2px solid var(--contact-ink);
+  border: 1.5px solid var(--contact-ink);
 
   border-radius: 999px;
 
@@ -110,7 +110,7 @@
 
   letter-spacing: 0.13em;
 
-  transform: rotate(-1deg);
+  transform: none;
 }
 
 .contact-hero h1 {
@@ -161,7 +161,7 @@
 .contact-layout {
   display: grid;
 
-  grid-template-columns: 190px minmax(0, 1fr) 190px;
+  grid-template-columns: 215px minmax(0, 1fr) 215px;
 
   gap: 22px;
 
@@ -186,7 +186,7 @@
 .contact-sticker {
   padding: 16px;
 
-  border: 2px solid var(--contact-ink);
+  border: 1.5px solid var(--contact-ink);
 
   border-radius: 20px;
 
@@ -218,19 +218,19 @@
 .lavender-sticker {
   background: var(--contact-lavender);
 
-  transform: rotate(-2deg);
+  transform: none;
 }
 
 .yellow-sticker {
   background: var(--contact-lemon);
 
-  transform: rotate(2deg);
+  transform: none;
 }
 
 .pink-sticker {
   background: var(--contact-pink);
 
-  transform: rotate(-1deg);
+  transform: none;
 }
 
 
@@ -241,7 +241,7 @@
 .message-board {
   padding: 26px;
 
-  border: 2px solid var(--contact-ink);
+  border: 1.5px solid var(--contact-ink);
 
   border-radius: 30px;
 
@@ -267,13 +267,13 @@
 
   padding: 6px 10px;
 
-  border: 2px solid var(--contact-ink);
+  border: 1.5px solid var(--contact-ink);
 
   border-radius: 999px;
 
   background: var(--contact-lavender);
 
-  box-shadow: 2px 2px 0 var(--contact-ink);
+  box-shadow: 0 1px 2px rgba(22,26,46,.06), 0 4px 8px -3px rgba(22,26,46,.24);
 
   font-size: 0.68rem;
 
@@ -303,7 +303,7 @@
 
   place-items: center;
 
-  border: 2px solid var(--contact-ink);
+  border: 1.5px solid var(--contact-ink);
 
   border-radius: 14px;
 
@@ -319,7 +319,7 @@
 .message-intro {
   margin: 15px 0 0;
 
-  color: #5a555d;
+  color: #4d5368;
 
   line-height: 1.6;
 }
@@ -362,7 +362,7 @@
 
   padding: 12px 13px;
 
-  border: 2px solid var(--contact-ink);
+  border: 1.5px solid var(--contact-ink);
 
   border-radius: 14px;
 
@@ -384,7 +384,7 @@
 .form-field input:focus,
 .form-field textarea:focus,
 .form-field select:focus {
-  box-shadow: 0 0 0 4px rgba(122, 122, 219, 0.18);
+  box-shadow: 0 0 0 4px rgba(43,79,216, 0.18);
 
   transform: translateY(-1px);
 }
@@ -413,7 +413,7 @@
 
   max-width: 360px;
 
-  color: #6e6872;
+  color: #4d5368;
 
   font-size: 0.78rem;
 
@@ -423,7 +423,7 @@
 .send-button {
   padding: 11px 18px;
 
-  border: 2px solid var(--contact-ink);
+  border: 1.5px solid var(--contact-ink);
 
   border-radius: 999px;
 
@@ -470,7 +470,7 @@
 
   padding: 15px;
 
-  border: 2px solid var(--contact-ink);
+  border: 1.5px solid var(--contact-ink);
 
   border-radius: 18px;
 
@@ -482,7 +482,7 @@
 }
 
 .contact-link-card:hover {
-  transform: translateY(-3px) rotate(-0.5deg);
+  transform: translateY(-3px);
 }
 
 .email-card {
@@ -504,7 +504,7 @@
 
   place-items: center;
 
-  border: 2px solid var(--contact-ink);
+  border: 1.5px solid var(--contact-ink);
 
   border-radius: 50%;
 
@@ -547,7 +547,7 @@
 
   padding: 27px;
 
-  border: 2px solid var(--contact-ink);
+  border: 1.5px solid var(--contact-ink);
 
   border-radius: 24px;
 
@@ -557,7 +557,7 @@
 
   text-align: center;
 
-  transform: rotate(-0.6deg);
+  transform: none;
 }
 
 .closing-handwritten {
@@ -585,7 +585,7 @@
 
   line-height: 1.7;
 
-  color: #4d4850;
+  color: #3e4357;
 }
 
 .closing-button {
@@ -595,7 +595,7 @@
 
   padding: 10px 17px;
 
-  border: 2px solid var(--contact-ink);
+  border: 1.5px solid var(--contact-ink);
 
   border-radius: 999px;
 
@@ -708,4 +708,9 @@
     width: 100%;
   }
 
+}
+
+.form-status:empty {
+  min-height: 0;
+  margin: 0;
 }

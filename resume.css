@@ -4,27 +4,27 @@
 
 :root {
 
-  --resume-bg: #faf5ff;
+  --resume-bg: #f7f5f0;
 
-  --resume-ink: #1a1a1a;
+  --resume-ink: #161a2e;
 
   --resume-white: #ffffff;
 
-  --resume-lavender: #d8d8f6;
+  --resume-lavender: #dfe6fb;
 
-  --resume-lavender-light: #efecff;
+  --resume-lavender-light: #eef2fd;
 
-  --resume-purple: #7a7adb;
+  --resume-purple: #2b4fd8;
 
-  --resume-purple-dark: #5a5ab4;
+  --resume-purple-dark: #1d3596;
 
-  --resume-yellow: #fff6bb;
+  --resume-yellow: #f8ebc4;
 
-  --resume-pink: #ffe3ee;
+  --resume-pink: #f6e4da;
 
-  --resume-shadow: 4px 4px 0 #1a1a1a;
+  --resume-shadow: 0 1px 2px rgba(22,26,46,.06), 0 8px 16px -6px rgba(22,26,46,.24);
 
-  --resume-shadow-small: 3px 3px 0 #1a1a1a;
+  --resume-shadow-small: 0 1px 2px rgba(22,26,46,.06), 0 6px 12px -5px rgba(22,26,46,.24);
 
 }
 
@@ -165,7 +165,7 @@
     13px;
 
   border:
-    2px solid
+    1.5px solid
     var(--resume-ink);
 
   border-radius:
@@ -190,7 +190,7 @@
     uppercase;
 
   transform:
-    rotate(-1deg);
+    none;
 
 }
 
@@ -258,7 +258,7 @@
     1.05rem;
 
   color:
-    #4f4a52;
+    #3e4357;
 
 }
 
@@ -299,7 +299,7 @@
     21px;
 
   border:
-    2px solid
+    1.5px solid
     var(--resume-ink);
 
   border-radius:
@@ -476,7 +476,7 @@
     27px;
 
   border:
-    2px solid
+    1.5px solid
     var(--resume-ink);
 
   border-radius:
@@ -497,7 +497,7 @@
     linear-gradient(
       135deg,
       #ffffff,
-      #faf8ff
+      #f7f5f0
     );
 
 }
@@ -599,7 +599,7 @@
     700;
 
   color:
-    #605a63;
+    #4d5368;
 
 }
 
@@ -643,7 +643,7 @@
     1.65;
 
   color:
-    #57515a;
+    #3e4357;
 
 }
 
@@ -682,7 +682,7 @@
     1.65;
 
   color:
-    #464148;
+    #3e4357;
 
 }
 
@@ -796,7 +796,7 @@
     11px;
 
   border:
-    2px solid
+    1.5px solid
     var(--resume-ink);
 
   border-radius:
@@ -806,8 +806,7 @@
     var(--resume-yellow);
 
   box-shadow:
-    2px 2px 0
-    var(--resume-ink);
+    0 1px 2px rgba(22,26,46,.06), 0 4px 8px -3px rgba(22,26,46,.24);
 
   font-size:
     0.72rem;
@@ -846,7 +845,7 @@
     12px;
 
   border:
-    2px solid
+    1.5px solid
     var(--resume-ink);
 
   border-radius:
@@ -866,7 +865,7 @@
     1.05rem;
 
   transform:
-    rotate(2deg);
+    none;
 
 }
 
@@ -889,7 +888,7 @@
     14px;
 
   border:
-    2px solid
+    1.5px solid
     var(--resume-ink);
 
   border-radius:
@@ -932,7 +931,7 @@
 
   grid-template-columns:
     repeat(
-      2,
+      3,
       minmax(
         0,
         1fr
@@ -951,7 +950,7 @@
     23px;
 
   border:
-    2px solid
+    1.5px solid
     var(--resume-ink);
 
   border-radius:
@@ -969,7 +968,7 @@
 .education-card:nth-child(1) {
 
   transform:
-    rotate(-0.5deg);
+    none;
 
 }
 
@@ -977,7 +976,7 @@
 .education-card:nth-child(2) {
 
   transform:
-    rotate(0.6deg);
+    none;
 
 }
 
@@ -985,7 +984,7 @@
 .education-card:nth-child(3) {
 
   transform:
-    rotate(-0.3deg);
+    none;
 
 }
 
@@ -1069,7 +1068,7 @@
     0;
 
   color:
-    #555058;
+    #3e4357;
 
   font-size:
     0.9rem;
@@ -1110,7 +1109,7 @@
     26px;
 
   border:
-    2px solid
+    1.5px solid
     var(--resume-ink);
 
   border-radius:
@@ -1191,7 +1190,7 @@
     13px;
 
   border:
-    2px solid
+    1.5px solid
     var(--resume-ink);
 
   border-radius:
@@ -1201,8 +1200,7 @@
     var(--resume-white);
 
   box-shadow:
-    2px 2px 0
-    var(--resume-ink);
+    0 1px 2px rgba(22,26,46,.06), 0 4px 8px -3px rgba(22,26,46,.24);
 
   font-size:
     0.77rem;
@@ -1249,8 +1247,7 @@
 .resume-skills span:hover {
 
   transform:
-    translateY(-2px)
-    rotate(-1deg);
+    translateY(-2px);
 
 }
 
@@ -1276,7 +1273,7 @@
     29px;
 
   border:
-    2px solid
+    1.5px solid
     var(--resume-ink);
 
   border-radius:
@@ -1292,7 +1289,7 @@
     center;
 
   transform:
-    rotate(-0.4deg);
+    none;
 
 }
 
@@ -1331,7 +1328,7 @@
     1.65;
 
   color:
-    #514c54;
+    #3e4357;
 
 }
 
@@ -1372,7 +1369,7 @@
     16px;
 
   border:
-    2px solid
+    1.5px solid
     var(--resume-ink);
 
   border-radius:
@@ -1590,14 +1587,15 @@
 
 /* Compact research cards connect the resume to the public case studies. */
 .selected-projects { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 18px; }
-.selected-project { padding: 21px; border: 2px solid var(--resume-ink); border-radius: 22px; background: var(--resume-lavender-light); box-shadow: var(--resume-shadow-small); }
+.selected-project { display: flex; flex-direction: column; padding: 21px; border: 1.5px solid var(--resume-ink); border-radius: 22px; background: var(--resume-lavender-light); box-shadow: var(--resume-shadow-small); }
 .selected-project-secondary { grid-column: 1 / -1; background: var(--resume-white); }
 .selected-project-heading { display: flex; justify-content: space-between; align-items: baseline; gap: 14px; }
 .selected-project h3 { margin: 0; font: 700 1.25rem/1.2 "Fraunces",serif; }
 .selected-project-heading span { flex: none; color: var(--resume-purple-dark); font: 600 1rem "Caveat",cursive; }
 .selected-project p { margin: 10px 0 0; line-height: 1.55; }
 .selected-project .resume-company { margin-top: 6px; }
-.selected-project .case-study-link { margin-top: 15px; }
+.selected-project .case-study-link { align-self: flex-start; margin-top: auto; }
+.selected-project > p:last-of-type { margin-bottom: 15px; }
 @media(max-width:760px) { .selected-projects { grid-template-columns: 1fr; } .selected-project-secondary { grid-column: auto; } }
 @media(max-width:430px) { .selected-project-heading { flex-direction: column; gap: 3px; } }
 
@@ -1610,7 +1608,7 @@
 
 @media print {
 
-  html, body { background: #fff !important; color: #111 !important; }
+  html, body { background: #fff !important; color: #161a2e !important; }
   body { overflow: visible; }
   .skip-link, .site-header, .site-footer, .resume-doodles,
   .resume-hero, .resume-bottom, .entry-actions, .resume-tape,
@@ -1620,11 +1618,11 @@
     display: block;
     margin-bottom: 12pt;
     padding-bottom: 7pt;
-    border-bottom: 1pt solid #222;
+    border-bottom: 1pt solid #1d2236;
   }
   .print-header h1 { margin: 0; font: 700 24pt/1.1 "Fraunces", serif; }
   .print-header p { margin: 4pt 0 0; font: 9pt/1.3 "Inter", sans-serif; }
-  .resume-positioning { max-width: none; margin: 0 0 10pt; padding: 0; border: 0; border-radius: 0; background: #fff !important; color: #222; font: 9pt/1.35 "Inter",sans-serif; }
+  .resume-positioning { max-width: none; margin: 0 0 10pt; padding: 0; border: 0; border-radius: 0; background: #fff !important; color: #1d2236; font: 9pt/1.35 "Inter",sans-serif; }
 
   .resume-page { width: 100%; max-width: none; margin: 0; padding: 0; }
   .resume-page * { box-shadow: none !important; text-shadow: none !important; }
@@ -1654,14 +1652,14 @@
   .selected-project .case-study-link { display: none; }
   .education-section { break-before: page; }
   .education-grid { grid-template-columns: repeat(3,minmax(0,1fr)); gap: 8pt; }
-  .education-card { padding: 8pt; border: 1pt solid #222; border-radius: 8pt; background: #fff !important; transform: none !important; break-inside: avoid-page; }
+  .education-card { padding: 8pt; border: 1pt solid #1d2236; border-radius: 8pt; background: #fff !important; transform: none !important; break-inside: avoid-page; }
   .education-card h3 { font-size: 10pt !important; line-height: 1.2 !important; }
   .education-label, .education-school, .education-status { font-size: 8.5pt !important; }
   .education-label { margin-bottom: 4pt; padding: 0; border: 0; }
   .education-school, .education-status { margin: 3pt 0 0; }
   .skills-board { padding: 0; border: 0; background: #fff !important; }
   .skill-category { margin: 0 0 6pt; break-inside: avoid-page; }
-  .skill-category-title { margin: 0 0 3pt; font: 700 9pt "Inter", sans-serif; color: #111; }
+  .skill-category-title { margin: 0 0 3pt; font: 700 9pt "Inter", sans-serif; color: #161a2e; }
   .resume-skills { gap: 3pt 8pt; }
   .resume-skills span { padding: 0; border: 0; background: #fff !important; font-size: 8.5pt; }
 }

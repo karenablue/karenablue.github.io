@@ -4,32 +4,36 @@
 
 :root {
 
-  --background: #faf5ff;
+  --background: #f7f5f0;
 
-  --ink: #1a1a1a;
+  --ink: #161a2e;
 
   --white: #ffffff;
 
-  --lavender: #d8d8f6;
+  --lavender: #dfe6fb;
 
-  --lavender-light: #efecff;
+  --lavender-light: #eef2fd;
 
-  --purple: #7a7adb;
+  --purple: #2b4fd8;
 
-  --purple-dark: #5a5ab4;
+  --purple-dark: #1d3596;
 
-  --lemon: #fff6bb;
+  --lemon: #f8ebc4;
 
-  --pink: #ffe3ee;
+  --pink: #f6e4da;
 
-  --mint: #dcf5e9;
+  --mint: #e2efe6;
 
-  --shadow: 4px 4px 0 #1a1a1a;
+  /* pulled from the headshot — used only around the portrait */
+  --cobalt: #2b4fd8;
 
-  --shadow-small: 3px 3px 0 #1a1a1a;
+  --gold-light: #fdf0c8;
+
+  --shadow: 0 1px 2px rgba(22,26,46,.06), 0 8px 16px -6px rgba(22,26,46,.24);
+
+  --shadow-small: 0 1px 2px rgba(22,26,46,.06), 0 6px 12px -5px rgba(22,26,46,.24);
 
 }
-
 
 
 /* =========================================
@@ -66,7 +70,7 @@ body {
 
     radial-gradient(
       circle at 1px 1px,
-      rgba(122, 122, 219, 0.09) 1px,
+      rgba(43,79,216, 0.09) 1px,
       transparent 1.4px
     )
     0 0 / 24px 24px,
@@ -96,7 +100,7 @@ a {
   left: 12px;
   z-index: 1000;
   padding: 10px 14px;
-  border: 2px solid var(--ink);
+  border: 1.5px solid var(--ink);
   border-radius: 10px;
   background: var(--white);
   font-weight: 700;
@@ -116,6 +120,11 @@ a {
   border: 0;
 }
 
+::selection {
+  background: var(--gold-light);
+  color: var(--ink);
+}
+
 a:focus-visible,
 button:focus-visible,
 input:focus-visible,
@@ -133,7 +142,6 @@ img {
   max-width: 100%;
 
 }
-
 
 
 /* =========================================
@@ -171,7 +179,6 @@ textarea {
 }
 
 
-
 /* =========================================
    BACKGROUND DECORATIONS
 ========================================= */
@@ -189,7 +196,6 @@ textarea {
   pointer-events: none;
 
 }
-
 
 
 /* =========================================
@@ -265,233 +271,6 @@ textarea {
 }
 
 
-
-/* =========================================
-   Y2K DOODLES
-========================================= */
-
-.bg-doodle {
-
-  position: absolute;
-
-  color: rgba(
-    26,
-    26,
-    26,
-    0.22
-  );
-
-  font-family:
-    "Caveat",
-    cursive;
-
-}
-
-
-.doodle-star-one {
-
-  top: 18%;
-
-  left: 4%;
-
-  font-size: 1.8rem;
-
-  transform:
-    rotate(-12deg);
-
-}
-
-
-.doodle-star-two {
-
-  top: 31%;
-
-  right: 8%;
-
-  font-size: 1.55rem;
-
-  color:
-    rgba(
-      90,
-      90,
-      180,
-      0.28
-    );
-
-}
-
-
-.doodle-heart-one {
-
-  top: 70%;
-
-  left: 8%;
-
-  font-size: 1.8rem;
-
-}
-
-
-.doodle-heart-two {
-
-  top: 21%;
-
-  right: 20%;
-
-  font-size: 0.9rem;
-
-  color:
-    rgba(
-      122,
-      122,
-      219,
-      0.28
-    );
-
-}
-
-
-.doodle-flower-one {
-
-  bottom: 16%;
-
-  right: 4%;
-
-  font-size: 1.65rem;
-
-}
-
-
-.doodle-flower-two {
-
-  bottom: 40%;
-
-  left: 11%;
-
-  font-size: 1.15rem;
-
-}
-
-
-.doodle-smile {
-
-  top: 83%;
-
-  left: 21%;
-
-  font-size: 1.2rem;
-
-  transform:
-    rotate(-8deg);
-
-}
-
-
-.doodle-spark {
-
-  top: 56%;
-
-  right: 11%;
-
-  font-size: 1.9rem;
-
-}
-
-
-.doodle-plus {
-
-  top: 40%;
-
-  left: 5%;
-
-  font-size: 1.2rem;
-
-  transform:
-    rotate(13deg);
-
-}
-
-
-
-/* =========================================
-   BACKGROUND RINGS
-========================================= */
-
-.bg-ring {
-
-  position: absolute;
-
-  display: block;
-
-  border:
-
-    2px solid
-
-    rgba(
-      122,
-      122,
-      219,
-      0.15
-    );
-
-  border-radius: 50%;
-
-}
-
-
-.ring-one {
-
-  top: 8%;
-
-  right: -32px;
-
-  width: 145px;
-
-  height: 145px;
-
-}
-
-
-.ring-two {
-
-  bottom: 13%;
-
-  left: -30px;
-
-  width: 105px;
-
-  height: 105px;
-
-}
-
-
-.ring-three {
-
-  top: 44%;
-
-  left: 46%;
-
-  width: 48px;
-
-  height: 48px;
-
-}
-
-
-.ring-four {
-
-  top: 72%;
-
-  right: 24%;
-
-  width: 32px;
-
-  height: 32px;
-
-}
-
-
-
 /* =========================================
    HEADER
 ========================================= */
@@ -544,7 +323,7 @@ textarea {
   padding: 5px;
 
   border:
-    2px solid
+    1.5px solid
     var(--ink);
 
   border-radius: 999px;
@@ -601,7 +380,6 @@ textarea {
 }
 
 
-
 /* =========================================
    PAGE
 ========================================= */
@@ -622,7 +400,6 @@ textarea {
     110px;
 
 }
-
 
 
 /* =========================================
@@ -663,41 +440,6 @@ textarea {
 }
 
 
-.hero-sticker {
-
-  display: inline-block;
-
-  padding:
-    7px 13px;
-
-  border:
-    2px solid
-    var(--ink);
-
-  border-radius: 999px;
-
-  background:
-    var(--lemon);
-
-  box-shadow:
-    var(--shadow-small);
-
-  font-size:
-    0.7rem;
-
-  font-weight: 800;
-
-  letter-spacing:
-    0.1em;
-
-  text-transform: uppercase;
-
-  transform:
-    rotate(-1deg);
-
-}
-
-
 .hello-note {
 
   margin:
@@ -728,15 +470,15 @@ textarea {
 
   font-size:
     clamp(
-      4.8rem,
-      9vw,
-      7.8rem
+      3.8rem,
+      8vw,
+      6rem
     );
 
-  line-height: 0.84;
+  line-height: 0.9;
 
   letter-spacing:
-    -0.065em;
+    -0.04em;
 
 }
 
@@ -792,7 +534,7 @@ textarea {
   line-height: 1.8;
 
   color:
-    #49434b;
+    #3e4357;
 
 }
 
@@ -843,7 +585,7 @@ textarea {
     11px 18px;
 
   border:
-    2px solid
+    1.5px solid
     var(--ink);
 
   border-radius: 999px;
@@ -864,8 +606,7 @@ textarea {
 .hero-button:hover {
 
   transform:
-    translateY(-3px)
-    rotate(-0.5deg);
+    translateY(-3px);
 
 }
 
@@ -901,10 +642,9 @@ textarea {
   font-size: 1.03rem;
 
   color:
-    #777178;
+    #4d5368;
 
 }
-
 
 
 /* =========================================
@@ -917,43 +657,65 @@ textarea {
 
   min-height: 535px;
 
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 16px;
+
+  padding: 18px 0 8px;
+
 }
 
 
 .photo-card {
 
-  position: absolute;
+  position: relative;
 
-  top: 27px;
-
-  left: 50%;
+  z-index: 2;
 
   width:
     min(
-      310px,
+      330px,
       78%
     );
 
   padding:
-    11px
-    11px
-    43px;
+    12px;
 
   transform:
-    translateX(-50%)
-    rotate(2.5deg);
+    none;
 
   border:
-    2px solid
+    1.5px solid
     var(--ink);
 
   background:
-    var(--white);
+    var(--gold-light);
 
   box-shadow:
-    var(--shadow);
+    0 1px 2px rgba(22,26,46,.06), 0 14px 28px -11px rgba(22,26,46,.24);
 
 }
+
+
+.photo-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  color: var(--cobalt);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.photo-card-header span:last-child { font-size: 1rem; line-height: 1; }
 
 
 .photo-card img {
@@ -965,6 +727,8 @@ textarea {
 
   object-fit: cover;
 
+  object-position: center 30%;
+
   border:
     1.5px solid
     var(--ink);
@@ -973,266 +737,17 @@ textarea {
 
 
 .photo-card p {
-
-  position: absolute;
-
-  bottom: 8px;
-
-  left: 0;
-
-  width: 100%;
-
-  margin: 0;
-
-  text-align: center;
-
-  font-family:
-    "Caveat",
-    cursive;
-
-  font-size: 1.4rem;
-
-}
-
-
-.photo-tape {
-
-  position: absolute;
-
-  top: -14px;
-
-  left: 50%;
-
-  width: 95px;
-
-  height: 28px;
-
-  background:
-    rgba(
-      255,
-      246,
-      187,
-      0.94
-    );
-
-  transform:
-    translateX(-50%)
-    rotate(-2deg);
-
-}
-
-
-.floating-note {
-
-  position: absolute;
-
-  border:
-    2px solid
-    var(--ink);
-
-  box-shadow:
-    var(--shadow-small);
-
-  font-family:
-    "Caveat",
-    cursive;
-
-}
-
-
-.note-label {
-
-  display: block;
-
-  margin-bottom: 5px;
-
-  font-family:
-    "Inter",
-    sans-serif;
-
-  font-size: 0.62rem;
-
+  margin: 10px 0 2px;
+  font-size: 0.72rem;
   font-weight: 800;
-
-  letter-spacing:
-    0.1em;
-
+  letter-spacing: 0.06em;
+  line-height: 1.35;
   text-transform: uppercase;
-
-}
-
-
-.currently-note {
-
-  bottom: 24px;
-
-  left: -7px;
-
-  width: 195px;
-
-  padding: 15px;
-
-  background:
-    var(--lavender);
-
-  transform:
-    rotate(-5deg);
-
-}
-
-
-.currently-note p {
-
-  margin: 0;
-
-  font-size: 1.16rem;
-
-  line-height: 1.2;
-
-}
-
-
-.now-playing-note {
-
-  top: 113px;
-
-  right: -12px;
-
-  width: 190px;
-
-  padding: 15px;
-
-  background:
-    var(--pink);
-
-  transform:
-    rotate(5deg);
-
-}
-
-
-.song-title {
-
-  margin:
-    8px 0
-    2px;
-
-  font-size: 1.3rem;
-
-  font-weight: 700;
-
-  line-height: 1.08;
-
-}
-
-
-.song-artist {
-
-  font-family:
-    "Inter",
-    sans-serif;
-
-  font-size: 0.69rem;
-
-  font-weight: 700;
-
-  color:
-    #625d66;
-
-}
-
-
-.music-line {
-
-  height: 18px;
-
-  display: flex;
-
-  align-items: flex-end;
-
-  gap: 3px;
-
-  margin-top: 10px;
-
-}
-
-
-.music-line span {
-
-  width: 3px;
-
-  border-radius: 2px;
-
-  background:
-    var(--purple-dark);
-
-  height: 4px;
-
-  animation: eq-bounce 900ms ease-in-out infinite alternate;
-
-}
-
-
-.music-line span:nth-child(1) {
-
-  animation-duration: 720ms;
-
-  animation-delay: -200ms;
-
-}
-
-
-.music-line span:nth-child(2) {
-
-  animation-duration: 950ms;
-
-  animation-delay: -640ms;
-
-}
-
-
-.music-line span:nth-child(3) {
-
-  animation-duration: 620ms;
-
-  animation-delay: -120ms;
-
-}
-
-
-.music-line span:nth-child(4) {
-
-  animation-duration: 1050ms;
-
-  animation-delay: -480ms;
-
-}
-
-
-.music-line span:nth-child(5) {
-
-  animation-duration: 820ms;
-
-  animation-delay: -340ms;
-
-}
-
-
-@keyframes eq-bounce {
-
-  0%   { height: 4px; }
-
-  100% { height: 18px; }
-
 }
 
 
 @media (prefers-reduced-motion: reduce) {
 
-  .music-line span {
-    animation: none;
-    height: 11px;
-  }
 
 }
 
@@ -1266,52 +781,6 @@ textarea {
 }
 
 
-.collage-star {
-
-  position: absolute;
-
-  top: 2px;
-
-  right: 11%;
-
-  font-size: 2rem;
-
-  color:
-    var(--purple-dark);
-
-}
-
-
-.collage-heart {
-
-  position: absolute;
-
-  bottom: 82px;
-
-  right: 1%;
-
-  font-size: 2rem;
-
-}
-
-
-.collage-flower {
-
-  position: absolute;
-
-  bottom: 6px;
-
-  right: 24%;
-
-  font-size: 1.35rem;
-
-  color:
-    var(--purple-dark);
-
-}
-
-
-
 /* =========================================
    STATUS STRIP
 ========================================= */
@@ -1328,11 +797,11 @@ textarea {
   overflow: hidden;
 
   border-top:
-    2px solid
+    1.5px solid
     var(--ink);
 
   border-bottom:
-    2px solid
+    1.5px solid
     var(--ink);
 
   background:
@@ -1344,7 +813,7 @@ textarea {
     );
 
   transform:
-    rotate(-0.4deg);
+    none;
 
 }
 
@@ -1379,7 +848,6 @@ textarea {
     var(--purple-dark);
 
 }
-
 
 
 /* =========================================
@@ -1432,7 +900,6 @@ textarea {
 }
 
 
-
 /* =========================================
    START CARDS
 ========================================= */
@@ -1463,18 +930,18 @@ textarea {
 
   position: relative;
 
-  min-height: 245px;
-
   display: flex;
 
   flex-direction: column;
 
-  justify-content: space-between;
+  justify-content: flex-start;
+
+  gap: 18px;
 
   padding: 23px;
 
   border:
-    2px solid
+    1.5px solid
     var(--ink);
 
   border-radius: 24px;
@@ -1491,8 +958,7 @@ textarea {
 .start-card:hover {
 
   transform:
-    translateY(-5px)
-    rotate(-0.5deg);
+    translateY(-5px);
 
 }
 
@@ -1503,7 +969,7 @@ textarea {
     var(--lavender);
 
   transform:
-    rotate(-1deg);
+    none;
 
 }
 
@@ -1514,7 +980,7 @@ textarea {
     var(--lemon);
 
   transform:
-    rotate(1deg);
+    none;
 
 }
 
@@ -1525,35 +991,7 @@ textarea {
     var(--white);
 
   transform:
-    rotate(-0.5deg);
-
-}
-
-
-.start-number {
-
-  display: grid;
-
-  width: 40px;
-
-  height: 40px;
-
-  place-items: center;
-
-  border:
-    2px solid
-    var(--ink);
-
-  border-radius: 50%;
-
-  background:
-    var(--white);
-
-  font-family:
-    "Caveat",
-    cursive;
-
-  font-weight: 700;
+    none;
 
 }
 
@@ -1599,16 +1037,20 @@ textarea {
   line-height: 1.6;
 
   color:
-    #4f4951;
+    #3e4357;
 
 }
 
 
 .start-arrow {
 
-  align-self: flex-end;
+  position: absolute;
 
-  margin-top: 15px;
+  top: 18px;
+
+  right: 22px;
+
+  line-height: 1;
 
   font-family:
     "Caveat",
@@ -1617,7 +1059,6 @@ textarea {
   font-size: 1.8rem;
 
 }
-
 
 
 /* =========================================
@@ -1651,7 +1092,7 @@ textarea {
   padding-bottom: 4px;
 
   border-bottom:
-    2px solid
+    1.5px solid
     var(--ink);
 
   font-size: 0.8rem;
@@ -1682,8 +1123,6 @@ textarea {
 
   position: relative;
 
-  min-height: 390px;
-
   display: flex;
 
   flex-direction: column;
@@ -1691,7 +1130,7 @@ textarea {
   padding: 24px;
 
   border:
-    2px solid
+    1.5px solid
     var(--ink);
 
   border-radius: 23px;
@@ -1708,7 +1147,7 @@ textarea {
     var(--white);
 
   transform:
-    rotate(-0.7deg);
+    none;
 
 }
 
@@ -1719,7 +1158,7 @@ textarea {
     var(--lavender-light);
 
   transform:
-    rotate(0.7deg);
+    none;
 
 }
 
@@ -1730,48 +1169,7 @@ textarea {
     var(--lemon);
 
   transform:
-    rotate(-0.5deg);
-
-}
-
-
-.project-tape {
-
-  position: absolute;
-
-  top: -12px;
-
-  width: 75px;
-
-  height: 24px;
-
-  background:
-    rgba(
-      216,
-      216,
-      246,
-      0.88
-    );
-
-}
-
-
-.tape-left {
-
-  left: 35px;
-
-  transform:
-    rotate(-4deg);
-
-}
-
-
-.tape-right {
-
-  right: 35px;
-
-  transform:
-    rotate(4deg);
+    none;
 
 }
 
@@ -1831,7 +1229,7 @@ textarea {
   line-height: 1.65;
 
   color:
-    #4d474f;
+    #3e4357;
 
 }
 
@@ -1879,149 +1277,13 @@ textarea {
 
   margin-top: auto;
 
-  padding-top: 24px;
+  padding-top: 18px;
 
   font-size: 0.8rem;
 
   font-weight: 800;
 
 }
-
-
-
-/* =========================================
-   PERSONAL NOTE
-========================================= */
-
-.home-note {
-
-  position: relative;
-
-  width:
-    min(
-      660px,
-      93%
-    );
-
-  margin:
-    112px auto 0;
-
-  padding: 32px;
-
-  border:
-    2px solid
-    var(--ink);
-
-  background:
-    #fffef8;
-
-  box-shadow:
-    var(--shadow);
-
-  transform:
-    rotate(-1deg);
-
-}
-
-
-.home-note-tape {
-
-  position: absolute;
-
-  top: -15px;
-
-  left: 50%;
-
-  width: 110px;
-
-  height: 29px;
-
-  transform:
-    translateX(-50%)
-    rotate(2deg);
-
-  background:
-    rgba(
-      255,
-      246,
-      187,
-      0.94
-    );
-
-}
-
-
-.note-star {
-
-  position: absolute;
-
-  top: 18px;
-
-  right: 20px;
-
-  font-size: 1.3rem;
-
-  color:
-    var(--purple-dark);
-
-}
-
-
-.home-note-title {
-
-  margin:
-    0 0
-    14px;
-
-  font-family:
-    "Caveat",
-    cursive;
-
-  font-size: 1.7rem;
-
-  color:
-    var(--purple-dark);
-
-}
-
-
-.home-note p:not(.home-note-title) {
-
-  margin:
-    0 0
-    15px;
-
-  line-height: 1.75;
-
-  color:
-    #4c474f;
-
-}
-
-
-.note-emphasis {
-
-  font-weight: 600;
-
-}
-
-
-.note-signature {
-
-  display: block;
-
-  margin-top: 23px;
-
-  text-align: right;
-
-  font-family:
-    "Caveat",
-    cursive;
-
-  font-size: 1.28rem;
-
-}
-
 
 
 /* =========================================
@@ -2067,7 +1329,7 @@ textarea {
   line-height: 1.65;
 
   color:
-    #5a555d;
+    #4d5368;
 
 }
 
@@ -2077,7 +1339,6 @@ textarea {
   margin-top: 22px;
 
 }
-
 
 
 /* =========================================
@@ -2118,10 +1379,9 @@ textarea {
   font-size: 0.72rem;
 
   color:
-    #736d75;
+    #4d5368;
 
 }
-
 
 
 /* =========================================
@@ -2178,13 +1438,6 @@ textarea {
   }
 
 
-  .project-card {
-
-    min-height: 290px;
-
-  }
-
-
   .featured-heading {
 
     flex-direction: column;
@@ -2201,7 +1454,6 @@ textarea {
   }
 
 }
-
 
 
 /* =========================================
@@ -2268,7 +1520,7 @@ textarea {
 
   .hero-collage {
 
-    min-height: 535px;
+    min-height: 0;
 
   }
 
@@ -2276,24 +1528,6 @@ textarea {
   .photo-card {
 
     width: 74%;
-
-  }
-
-
-  .currently-note {
-
-    left: 0;
-
-    width: 162px;
-
-  }
-
-
-  .now-playing-note {
-
-    right: 0;
-
-    width: 162px;
 
   }
 
@@ -2312,16 +1546,9 @@ textarea {
   }
 
 
-  .home-note {
-
-    padding: 25px;
-
-  }
-
-
   .bg-sankofa {
 
-    opacity: 0.055;
+    opacity: 0.09;
 
   }
 
