@@ -90,6 +90,13 @@
       <section class="section" id="results">
         <div class="section-head"><p class="section-note">counts first, scores in context</p><h2>Formal-study results</h2></div>
         <p>These counts are calculated from the report's participant-level results tables for P1–P5. “Partial” stays separate rather than being counted as a full success.</p>
+        <figure class="chart-fig">
+          <figcaption>Task outcomes among five formal participants (P1–P5)</figcaption>
+          <div class="bar-row"><span class="bar-label">Search &amp; filter</span><div class="bar" role="img" aria-label="Search and filter: 2 full, 1 partial, 2 unsuccessful"><span class="full" style="flex:2">2 full</span><span class="partial" style="flex:1">1</span><span class="fail" style="flex:2">2 failed</span></div></div>
+          <div class="bar-row"><span class="bar-label">Quick add</span><div class="bar" role="img" aria-label="Quick add: 3 full, 1 partial, 1 unsuccessful"><span class="full" style="flex:3">3 full</span><span class="partial" style="flex:1">1</span><span class="fail" style="flex:1">1</span></div></div>
+          <div class="bar-row"><span class="bar-label">Save to favorites</span><div class="bar" role="img" aria-label="Save to favorites: 5 full"><span class="full" style="flex:5">5 full</span></div></div>
+          <div class="bar-legend"><span><i style="background:var(--mint)"></i>Full</span><span><i style="background:var(--lemon)"></i>Partial</span><span><i style="background:var(--pink)"></i>Unsuccessful</span></div>
+        </figure>
         <div class="table-wrap" tabindex="0" role="region" aria-label="Formal-study task completion counts, scroll horizontally if needed">
           <table>
             <caption class="table-caption">Task completion among five formal participants</caption>
@@ -129,6 +136,15 @@
           <div class="principle"><h3>02 · Quick add was easy to miss</h3><p><strong>Observed:</strong> P1 first opened the product page instead of using the listing control. P3 did not use quick add, and P5 partially completed the task. Three of five fully completed it.</p><p><strong>Recommendation:</strong> test a more prominent, clearly labeled quick-add control on product cards, with visible feedback after activation.</p></div>
           <div class="principle"><h3>03 · Favorites succeeded, with friction</h3><p><strong>Observed:</strong> all five formal participants completed the task. P1 struggled to find the heart control and encountered an account-creation prompt; P2 corrected an initial mistake.</p><p><strong>Recommendation:</strong> make the save control easier to identify and clarify the sign-in step before it interrupts saving. Whether guest saving is feasible requires separate product and technical review.</p></div>
         </div>
+        <figure class="chart-fig">
+          <figcaption>Proposed filter fix (sketch, untested)</figcaption>
+          <div class="sketch-pair">
+            <div class="sketch"><h4>Observed</h4><span class="chip on">Coat</span><span class="chip on">Black</span><span class="chip on">XL</span>
+              <div class="state">No results found.<br><span class="btn">Reset</span> clears everything with no warning.</div></div>
+            <div class="sketch"><h4>Proposed</h4><span class="chip on">Coat ✕</span><span class="chip on">Black ✕</span><span class="chip on">XL ✕</span>
+              <div class="state"><strong>0 results.</strong> Remove “XL” to see 14.<br><span class="btn">Clear all filters</span> keeps your search term.</div></div>
+          </div>
+        </figure>
       </section>
 
       <section class="section" id="priorities">
