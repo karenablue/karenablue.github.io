@@ -810,3 +810,6 @@ body{
   .research-artifact{padding:8px;border-radius:14px}
   .research-artifact figcaption{font-size:.73rem}
 }
+
+.supporting-card + .supporting-card{margin-top:18px}
+.supporting-meta{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
