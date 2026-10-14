@@ -10,13 +10,13 @@
 
   --white: #ffffff;
 
-  --lavender: #ece4f4;
+  --lavender: #e9e9f7;
 
-  --lavender-light: #f5f1f9;
+  --lavender-light: #f3f3fb;
 
-  --purple: #5b2c83;
+  --purple: #5a5ab4;
 
-  --purple-dark: #3f1d5e;
+  --purple-dark: #43439a;
 
   --lemon: #f8ebc4;
 
@@ -25,7 +25,7 @@
   --mint: #e2efe6;
 
   /* pulled from the headshot — used only around the portrait */
-  --cobalt: #5b2c83;
+  --cobalt: #5a5ab4;
 
   --gold-light: #fdf0c8;
 
@@ -70,7 +70,7 @@ body {
 
     radial-gradient(
       circle at 1px 1px,
-      rgba(91,44,131, 0.09) 1px,
+      rgba(90,90,180, 0.09) 1px,
       transparent 1.4px
     )
     0 0 / 24px 24px,

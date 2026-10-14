@@ -2,10 +2,10 @@
   --bg:#f7f5f0;
   --paper:#ffffff;
   --ink:#161a2e;
-  --lavender:#ece4f4;
-  --lavender-2:#f5f1f9;
-  --periwinkle:#5b2c83;
-  --periwinkle-deep:#3f1d5e;
+  --lavender:#e9e9f7;
+  --lavender-2:#f3f3fb;
+  --periwinkle:#5a5ab4;
+  --periwinkle-deep:#43439a;
   --lemon:#f8ebc4;
   --pink:#f6e4da;
   --mint:#e2efe6;
@@ -19,7 +19,7 @@ html{scroll-behavior:smooth}
 
 body{
   background:
-    radial-gradient(circle at 1px 1px, rgba(91,44,131,.10) 1px, transparent 1.4px) 0 0/25px 25px,
+    radial-gradient(circle at 1px 1px, rgba(90,90,180,.10) 1px, transparent 1.4px) 0 0/25px 25px,
     var(--bg);
   color:var(--ink);
 }
@@ -170,7 +170,7 @@ body{
 .supporting-art{
   display:flex;flex-direction:column;justify-content:center;gap:12px;
   min-height:150px;padding:16px;border:var(--line);border-radius:15px;
-  background:linear-gradient(135deg,#ece4f4,#ddd0ec);
+  background:linear-gradient(135deg,#e9e9f7,#d6d6ef);
 }
 .supporting-art span{font-size:.72rem;font-weight:800;letter-spacing:.08em;color:var(--periwinkle-deep)}
 .supporting-art strong{font:700 1.3rem/1.2 "Bricolage Grotesque",serif}
@@ -234,8 +234,8 @@ body{
   padding:16px 18px 22px;
 }
 
-.preview-ia{background:linear-gradient(135deg,#ece4f4,#ddd0ec)}
-.preview-ai{background:linear-gradient(135deg,#ece4f4,#ddd0ec)}
+.preview-ia{background:linear-gradient(135deg,#e9e9f7,#d6d6ef)}
+.preview-ai{background:linear-gradient(135deg,#e9e9f7,#d6d6ef)}
 .preview-shein{background:linear-gradient(135deg,#fbf0d2,#f6e3ae)}
 .preview-taste{background:linear-gradient(135deg,#e8f2ec,#d5e9dd)}
 
@@ -387,8 +387,8 @@ body{
   text-align:center;
   padding:20px;
   background:
-    radial-gradient(circle,rgba(91,44,131,.18) 1px,transparent 1.4px) 0 0/22px 22px,
-    linear-gradient(135deg,#f5f1f9,#fbf3dc);
+    radial-gradient(circle,rgba(90,90,180,.18) 1px,transparent 1.4px) 0 0/22px 22px,
+    linear-gradient(135deg,#f3f3fb,#fbf3dc);
   border-bottom:var(--line);
 }
 
@@ -816,7 +816,7 @@ body{
 
 .disc-tags{display:flex;gap:6px;margin-bottom:8px}
 .disc-tags span{padding:3px 9px;border:1.5px solid var(--ink,#161a2e);border-radius:6px;font-size:.66rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase;background:#fff}
-.disc-tags .research{background:#ece4f4}.disc-tags .design{background:#f8ebc4}.disc-tags .code{background:#e2efe6}
+.disc-tags .research{background:#e9e9f7}.disc-tags .design{background:#f8ebc4}.disc-tags .code{background:#e2efe6}
 
 .study-preview>img{position:absolute;inset:16px 18px 22px;width:calc(100% - 36px);height:calc(100% - 38px);object-fit:cover;object-position:left top;border:var(--line);border-radius:14px;background:#fff}
 .study-preview .preview-sticker{z-index:1}

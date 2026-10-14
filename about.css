@@ -2,10 +2,10 @@
   --about-bg: #f7f5f0;
   --about-ink: #161a2e;
   --about-white: #ffffff;
-  --about-lavender: #ece4f4;
-  --about-lavender-soft: #f5f1f9;
-  --about-periwinkle: #5b2c83;
-  --about-periwinkle-dark: #3f1d5e;
+  --about-lavender: #e9e9f7;
+  --about-lavender-soft: #f3f3fb;
+  --about-periwinkle: #5a5ab4;
+  --about-periwinkle-dark: #43439a;
   --about-lemon: #f8ebc4;
   --about-pink: #f6e4da;
   --about-shadow: 0 1px 2px rgba(22,26,46,.06), 0 8px 16px -6px rgba(22,26,46,.24);
@@ -225,8 +225,8 @@
   border: 1.5px solid rgba(26, 26, 26, 0.55);
 
   background:
-    radial-gradient(circle at 1px 1px, rgba(91,44,131, 0.18) 1px, transparent 1.5px) 0 0 / 22px 22px,
-    linear-gradient(135deg, #ece4f4, #fbf3dc);
+    radial-gradient(circle at 1px 1px, rgba(90,90,180, 0.18) 1px, transparent 1.5px) 0 0 / 22px 22px,
+    linear-gradient(135deg, #e9e9f7, #fbf3dc);
 }
 
 .profile-initials {
