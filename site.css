@@ -223,3 +223,5 @@ html, body { max-width: 100%; overflow-x: hidden; }
   .hero-copy h1 { font-size: clamp(2.6rem, 14vw, 3.6rem); }
   .status-track { flex-wrap: wrap; gap: 4px 14px; }
 }
+
+.partial{color:#8a6a00;background:#fbf3dc;font-weight:700}
