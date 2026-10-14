@@ -385,12 +385,13 @@ html body {
 /* hero collage: splat + starburst sticker */
 .hero-collage { position: relative; }
 .hero-collage::before {
-  content: ""; position: absolute; z-index: -1; inset: -34px -30px -24px -24px;
-  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 440'><path fill='%23ff7a1a' d='M60 120c-20-50 30-100 90-85 40-40 120-30 140 20 60-10 100 40 80 90 40 40 20 110-40 120 10 60-50 110-110 90-30 40-110 40-130-10-60 10-100-40-80-90-40-40-30-110 50-135z'/></svg>") center / contain no-repeat;
-  opacity: .9; transform: rotate(-6deg);
+  content: ""; position: absolute; z-index: -1; inset: -40px -44px -36px -40px;
+  background:
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 440'><path fill='%23ff7a1a' stroke='%2343439a' stroke-width='5' stroke-linejoin='round' d='M96 70C140 24 232 18 300 52c52 26 80 82 70 144 14 60-6 120-56 158-44 34-110 52-168 34C84 372 40 318 36 252c-4-48 12-84 26-118 6-26 16-46 34-64z'/><circle cx='352' cy='62' r='14' fill='%23ff8fc7' stroke='%2343439a' stroke-width='4'/><circle cx='42' cy='392' r='10' fill='%238a8ae0' stroke='%2343439a' stroke-width='4'/></svg>") center / 100% 100% no-repeat;
+  transform: rotate(-5deg);
 }
 .hero-collage::after {
-  content: "research-led!"; position: absolute; right: -18px; bottom: 26px; z-index: 3;
+  content: "research-led!"; position: absolute; right: -40px; bottom: 6px; z-index: 3;
   width: 118px; height: 118px; display: grid; place-items: center; text-align: center; padding: 18px;
   font: 700 .95rem/1.05 "Fredoka", sans-serif; color: #fff; transform: rotate(10deg);
   background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'><path fill='%235a5ab4' stroke='%2343439a' stroke-width='3' stroke-linejoin='round' d='M60 4l11 20 22-8-3 23 23 3-9 21 20 12-20 12 9 21-23 3 3 23-22-8-11 20-11-20-22 8 3-23-23-3 9-21-20-12 20-12-9-21 23-3-3-23 22 8z'/></svg>") center / contain no-repeat;
@@ -405,7 +406,7 @@ html body {
 
 @media (max-width: 760px) {
   .hero-collage::before { inset: -18px -10px -14px -10px; }
-  .hero-collage::after { right: 4px; width: 96px; height: 96px; font-size: .8rem; }
+  .hero-collage::after { top: -28px; bottom: auto; right: -2px; width: 88px; height: 88px; padding: 14px; font-size: .72rem; }
 }
 @media (prefers-reduced-motion: reduce) {
   .project-card:hover, .start-card:hover, .study-card:hover, .change:hover, .hero-button-dark:hover { transform: none !important; }
