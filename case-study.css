@@ -519,7 +519,7 @@ th,td,.task p,.benchmark-card p,.principle p,.persona-body p,
 .annot li{display:flex;gap:8px;align-items:flex-start;line-height:1.45}
 .annot b{flex:none;display:grid;place-items:center;width:20px;height:20px;border-radius:50%;background:var(--ink);color:#fff;font-size:.72rem}
 
-.redesign-button{display:inline-block;padding:11px 18px;border:2px solid #43439a;border-radius:999px;background:var(--purple2);color:#fff;font:800 .85rem "Inter",sans-serif;text-decoration:none;box-shadow:var(--shadow)}
+.redesign-button{display:inline-block;padding:11px 18px;border:2px solid #43439a;border-radius:999px;background:var(--purple2);color:#fff;font:800 .85rem "Inter",sans-serif;text-decoration:none;box-shadow:0 4px 0 rgba(67,67,154,.3)}
 .redesign-button:hover{transform:translateY(-2px)}
 .rd-actions{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0}
 .redesign-button.alt{background:#fff;color:#43439a}
