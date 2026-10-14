@@ -1,7 +1,6 @@
 /* =========================================================
    site.css: shared design layer, loaded last on every page.
-   World: white paper, ink type, one green accent (the SHEIN
-   redesign green), the portrait's cobalt and gold kept for the
+   World: white paper, ink type, one purple accent, the portrait's cobalt and gold kept for the
    headshot. Handwriting survives only as small annotations.
 ========================================================= */
 
@@ -12,23 +11,23 @@
   --muted: #4b5160;
   --line-color: #dcdad2;
 
-  --green: #1f5a47;
-  --green-dark: #163f33;
-  --green-tint: #e7f0eb;
+  --green: #5b2c83;
+  --green-dark: #3f1d5e;
+  --green-tint: #efe9f5;
 
   /* legacy tokens re-pointed so every page inherits the new palette */
-  --purple: #1f5a47;
-  --purple2: #163f33;
-  --purple-dark: #163f33;
-  --periwinkle-deep: #1f5a47;
-  --lav: #e7f0eb;
-  --lav2: #f2f6f3;
-  --lavender: #e7f0eb;
-  --lavender-light: #f2f6f3;
-  --lavender-2: #f2f6f3;
+  --purple: #5b2c83;
+  --purple2: #3f1d5e;
+  --purple-dark: #3f1d5e;
+  --periwinkle-deep: #5b2c83;
+  --lav: #efe9f5;
+  --lav2: #f7f4fa;
+  --lavender: #efe9f5;
+  --lavender-light: #f7f4fa;
+  --lavender-2: #f7f4fa;
   --lemon: #f4efdc;
   --pink: #f5ebe4;
-  --mint: #e7f0eb;
+  --mint: #efe9f5;
 
   --shadow: 0 1px 2px rgba(18,21,31,.05), 0 12px 28px -14px rgba(18,21,31,.22);
   --shadow-small: 0 1px 2px rgba(18,21,31,.05), 0 8px 18px -10px rgba(18,21,31,.2);
@@ -129,7 +128,7 @@ h1, h2, h3, h4 {
   border: 1px solid var(--line-color); background: #fff; color: var(--muted);
   border-radius: 6px; box-shadow: none;
 }
-.disc-tags .research { background: #eef1fa; }
+.disc-tags .research { background: #f1edf7; }
 .disc-tags .design { background: #f4efdc; }
 .disc-tags .code { background: var(--green-tint); }
 .project-card h3 { font-size: 1.45rem; letter-spacing: -0.02em; }

@@ -4,10 +4,10 @@
   --paper:#fff;
   --ink:#161a2e;
   --muted:#4d5368;
-  --lav:#dfe6fb;
-  --lav2:#eef2fd;
-  --purple:#2b4fd8;
-  --purple2:#1d3596;
+  --lav:#ece4f4;
+  --lav2:#f5f1f9;
+  --purple:#5b2c83;
+  --purple2:#3f1d5e;
   --lemon:#f8ebc4;
   --pink:#f6e4da;
   --mint:#e2efe6;
@@ -24,7 +24,7 @@ body{
   color:var(--ink);
   font-family:"Inter",sans-serif;
   background:
-    radial-gradient(circle at 1px 1px,rgba(43,79,216,.09) 1px,transparent 1.4px) 0 0/24px 24px,
+    radial-gradient(circle at 1px 1px,rgba(91,44,131,.09) 1px,transparent 1.4px) 0 0/24px 24px,
     var(--bg);
 }
 a{color:inherit;text-decoration:none}
