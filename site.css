@@ -245,3 +245,22 @@ html, body { max-width: 100%; overflow-x: hidden; }
 .sitemap-key{font-size:.82rem;color:var(--muted);margin:12px 0 0}
 @media(max-width:760px){.sitemap-cols{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:480px){.sitemap-cols{grid-template-columns:minmax(0,1fr)}}
+
+/* ---------- design rationale cards ---------- */
+.change-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:14px}
+.change{background:var(--paper);border:1px solid var(--line-color);border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:8px}
+.change h3{margin:0;font-size:1rem;line-height:1.25}
+.change p{margin:0;font-size:.88rem;line-height:1.5;color:var(--muted);flex:1}
+.change-evidence{align-self:flex-start;padding:4px 10px;border-radius:999px;background:var(--lav);color:var(--purple2);font-size:.76rem;font-weight:700}
+@media(max-width:700px){.change-grid{grid-template-columns:minmax(0,1fr)}}
+
+/* ---------- card-sort bars ---------- */
+.bar-groups{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.bar-group{border:1px solid var(--line-color) !important;border-radius:14px !important;box-shadow:none !important}
+.bar-group h3{background:var(--lav2) !important;color:var(--ink) !important;border-bottom:1px solid var(--line-color);font-size:.9rem !important;padding:11px 14px !important}
+.bar-track{background:var(--lav2) !important;height:10px}
+.bar-fill{background:var(--purple) !important}
+.bar-fill.mid{background:#9a9ad0 !important}
+.bar-fill.low{background:#c9c9e6 !important}
+.bar-value{color:var(--ink)}
+@media(max-width:700px){.bar-groups{grid-template-columns:minmax(0,1fr)}}
