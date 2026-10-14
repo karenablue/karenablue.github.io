@@ -171,6 +171,8 @@
 
         <p class="small-note"><a class="source-link" href="https://www.figma.com/design/6gJcBBmTdOjOGJpmOJ83K7/SHEIN-filter-fix?node-id=0-1&amp;p=f" target="_blank" rel="noopener">Open the Figma file: all desktop and mobile states and components ↗</a></p>
 
+        <div class="callout"><p><strong>Why this matters (my inference, not a measured result):</strong> in a shopping flow, a filter that returns nothing or resets is a dead end. If 2 of 5 shoppers cannot finish filtering, some of them leave without finding a product to buy. The redesign targets that dead end.</p></div>
+        <div class="callout"><p><strong>Trust design:</strong> the empty state is a "support when the system fails" pattern. It names what went wrong, keeps the shopper's other choices, and offers one clear recovery action. The filter chips add visible control: shoppers see and can undo what the system applied.</p></div>
         <h3>The redesign, step by step</h3>
         <ol class="decision-list">
           <li><strong>Visible filter chips.</strong> Applied filters are removable chips above results, so participants can see why the list changed. <em>Responds to:</em> filters that reset or returned nothing with no explanation.</li>
@@ -208,7 +210,16 @@
         </div>
       </section>
 
-      <section class="section" id="next">
+      <section class="section" id="measure">
+  <div class="section-head"><p class="section-note">how I would know it worked</p><h2>What I would measure</h2></div>
+  <div class="table-wrap"><table><thead><tr><th>Metric</th><th>Baseline</th><th>Target in a retest</th></tr></thead><tbody>
+    <tr><td>Filtering task completion</td><td>2 of 5 (40%)</td><td>At least 4 of 5 (80%)</td></tr>
+    <tr><td>Participants who recover from a zero-result page</td><td>0 of 2 who hit it</td><td>Most recover without restarting</td></tr>
+    <tr><td>Quick add used without opening the product page</td><td>3 of 5 fully completed</td><td>At least 4 of 5</td></tr>
+  </tbody></table></div>
+  <p class="small-note">Targets are mine, set before any retest. With 5 participants a retest shows direction, not proof.</p>
+</section>
+<section class="section" id="next">
         <div class="section-head"><p class="section-note">where the evidence stops</p><h2>What we know &amp; what comes next</h2></div>
         <div class="phase-grid">
           <div class="phase-card"><h3>Established by this study</h3><p>The formal task tables show uneven completion across three shopping flows, while the reported SUS scores show generally positive perceived usability with wide variation. Specific filter failures, quick-add detours, and favorites friction are documented.</p></div>
