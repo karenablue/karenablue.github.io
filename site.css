@@ -1,0 +1,226 @@
+/* =========================================================
+   site.css: shared design layer, loaded last on every page.
+   World: white paper, ink type, one green accent (the SHEIN
+   redesign green), the portrait's cobalt and gold kept for the
+   headshot. Handwriting survives only as small annotations.
+========================================================= */
+
+:root {
+  --background: #fafaf7;
+  --paper: #ffffff;
+  --ink: #12151f;
+  --muted: #4b5160;
+  --line-color: #dcdad2;
+
+  --green: #1f5a47;
+  --green-dark: #163f33;
+  --green-tint: #e7f0eb;
+
+  /* legacy tokens re-pointed so every page inherits the new palette */
+  --purple: #1f5a47;
+  --purple2: #163f33;
+  --purple-dark: #163f33;
+  --periwinkle-deep: #1f5a47;
+  --lav: #e7f0eb;
+  --lav2: #f2f6f3;
+  --lavender: #e7f0eb;
+  --lavender-light: #f2f6f3;
+  --lavender-2: #f2f6f3;
+  --lemon: #f4efdc;
+  --pink: #f5ebe4;
+  --mint: #e7f0eb;
+
+  --shadow: 0 1px 2px rgba(18,21,31,.05), 0 12px 28px -14px rgba(18,21,31,.22);
+  --shadow-small: 0 1px 2px rgba(18,21,31,.05), 0 8px 18px -10px rgba(18,21,31,.2);
+  --shadow-sm: var(--shadow-small);
+}
+
+/* ---------- ground ---------- */
+html body {
+  background: var(--background);
+  color: var(--ink);
+  font-family: "Inter", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.page-background, .bg-sankofa, .hero-scribble, .squiggle, .resume-squiggle,
+.contact-squiggle, .strip-symbol, .scrap-column, .preview-sticker,
+.tiny-hero-note { display: none !important; }
+
+::selection { background: var(--green); color: #fff; }
+
+/* ---------- type ---------- */
+h1, h2, h3, h4 {
+  font-family: "Bricolage Grotesque", "Inter", system-ui, sans-serif;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+.handwritten, .section-note, .hello-note, .resume-handwritten, .hand {
+  font-family: "Caveat", cursive;
+  color: var(--green);
+}
+
+/* ---------- header ---------- */
+.site-header { padding: 18px 0; border-bottom: 1px solid var(--line-color); margin-bottom: 8px; }
+.site-logo {
+  font-family: "Bricolage Grotesque", "Inter", sans-serif;
+  font-weight: 700; font-size: 1.15rem; letter-spacing: -0.02em; color: var(--ink);
+}
+.site-nav { background: transparent !important; border: 0 !important; box-shadow: none !important; padding: 0 !important; gap: 4px; }
+.site-nav a {
+  font-size: .9rem; font-weight: 600; color: var(--muted);
+  padding: 8px 12px; border-radius: 8px; background: transparent !important;
+}
+.site-nav a:hover { color: var(--ink); background: var(--green-tint) !important; }
+.site-nav a.active-link, .site-nav a[aria-current] {
+  color: var(--green-dark); background: var(--green-tint) !important;
+}
+
+/* ---------- buttons ---------- */
+.hero-button, .study-button, .contact-button, .case-study-link {
+  border-radius: 10px; font-weight: 700; box-shadow: none;
+}
+.hero-button-dark, .study-button.primary { background: var(--green); color: #fff; border: 1px solid var(--green); }
+.hero-button-dark:hover, .study-button.primary:hover { background: var(--green-dark); }
+.hero-button-light, .study-button.secondary { background: #fff; color: var(--ink); border: 1px solid var(--line-color); }
+
+/* ---------- home hero ---------- */
+.home-hero { align-items: center; padding-top: 56px; padding-bottom: 40px; }
+.hero-copy h1 {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 700; letter-spacing: -0.04em; line-height: .95;
+  font-size: clamp(3rem, 7vw, 5.5rem);
+}
+.hero-copy h1 span { font-family: inherit; font-style: normal; color: var(--green); display: block; }
+.hero-intro { font-size: 1.2rem; line-height: 1.5; color: var(--ink); max-width: 34ch; }
+.hero-intro.second-intro { font-size: 1.02rem; color: var(--muted); }
+.photo-card {
+  background: var(--paper); border: 1px solid var(--line-color); border-radius: 16px;
+  box-shadow: var(--shadow); transform: none;
+}
+.photo-card-header { color: var(--muted); }
+
+/* ---------- status strip becomes a quiet rule ---------- */
+.status-strip {
+  border: 0; border-top: 1px solid var(--line-color); border-bottom: 1px solid var(--line-color);
+  background: transparent; box-shadow: none; border-radius: 0;
+}
+.status-track span { font-family: "Inter", sans-serif !important; font-size: .85rem; font-weight: 600; color: var(--muted); letter-spacing: .02em; }
+
+/* ---------- project cards ---------- */
+.project-card, .start-card, .study-card, .supporting-card, .principle, .phase-card,
+.summary-card, .stat-card, .chart-fig, .fix-fig, .research-trace, .callout, .insight, .metric {
+  border: 1px solid var(--line-color) !important;
+  border-radius: 14px !important;
+  box-shadow: none !important;
+  background: var(--paper);
+  transform: none !important;
+}
+.callout.yellow, .project-card.project-three { background: var(--lemon); }
+.callout.mint { background: var(--green-tint); }
+.callout.dark { background: var(--ink); }
+.stat-card, .summary-card, .insight, .metric { background: #fff; }
+.project-card { padding: 20px; overflow: hidden; }
+.project-card.project-one, .project-card.project-three { background: var(--paper); }
+.project-card:hover, .start-card:hover, .study-card:hover {
+  border-color: var(--green) !important; box-shadow: var(--shadow) !important;
+}
+.card-shot { border: 1px solid var(--line-color) !important; border-radius: 10px !important; }
+.project-type, .kicker, .privacy, .project-tags span, .method-chips span, .disc-tags span {
+  border: 1px solid var(--line-color); background: #fff; color: var(--muted);
+  border-radius: 6px; box-shadow: none;
+}
+.disc-tags .research { background: #eef1fa; }
+.disc-tags .design { background: #f4efdc; }
+.disc-tags .code { background: var(--green-tint); }
+.project-card h3 { font-size: 1.45rem; letter-spacing: -0.02em; }
+.featured-heading h2, .section-heading h2, .home-contact h2 { font-weight: 700; letter-spacing: -0.03em; }
+
+/* ---------- case studies ---------- */
+.case-hero { border: 0; background: transparent; box-shadow: none; padding-left: 0; padding-right: 0; }
+.case-hero h1 { font-weight: 700; letter-spacing: -0.035em; line-height: 1.02; }
+.case-kicker { color: var(--green); }
+.section { border-top: 1px solid var(--line-color); padding-top: 36px; margin-top: 8px; }
+.section:first-of-type { border-top: 0; }
+.section h2 { font-weight: 700; letter-spacing: -0.03em; }
+.jump-card { border: 1px solid var(--line-color) !important; box-shadow: none !important; border-radius: 14px; background: var(--paper); }
+.jump-card a:hover { background: var(--green-tint); }
+.table-wrap { border: 1px solid var(--line-color); border-radius: 12px; box-shadow: none; }
+th { background: var(--lav2); }
+.shot img, .zoom img, .fix-fig > img { border: 1px solid var(--line-color) !important; border-radius: 12px; box-shadow: var(--shadow-small); }
+.bar { border: 1px solid var(--line-color); }
+.bar span { border-right: 1px solid var(--line-color); }
+.source-link, .back-link { color: var(--green); }
+.footer-card, .site-footer { border: 0; background: transparent; box-shadow: none; }
+.site-footer { border-top: 1px solid var(--line-color); }
+
+/* ---------- Work page ---------- */
+.research-layout { grid-template-columns: minmax(0, 1fr) !important; }
+.archive-board { border: 0 !important; background: transparent !important; box-shadow: none !important; padding: 0 !important; }
+.research-hero h1 { font-weight: 700; letter-spacing: -0.035em; }
+.archive-pill, .board-stamp { background: var(--green-tint); color: var(--green-dark); border: 0; border-radius: 6px; }
+.study-preview { border-bottom: 1px solid var(--line-color) !important; background: var(--lav2) !important; }
+.study-preview > img { border: 1px solid var(--line-color) !important; box-shadow: var(--shadow-small); }
+.supporting-art { background: var(--lav2) !important; }
+
+/* ---------- inputs ---------- */
+input, textarea, select { border-radius: 10px; border: 1px solid var(--line-color); }
+input:focus, textarea:focus, select:focus { outline: 2px solid var(--green); outline-offset: 1px; }
+a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px solid var(--green); outline-offset: 3px; }
+
+/* ---------- motion respect ---------- */
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}
+
+/* ---------- Work page structure ---------- */
+.research-shell { width: min(1100px, calc(100% - 40px)); margin-inline: auto; }
+.archive-pill, .board-top, .footer-card .hand { display: none !important; }
+.research-hero { padding: 48px 0 8px; text-align: left; }
+.research-hero p { font-family: "Inter", sans-serif !important; font-size: 1.1rem; color: var(--muted); max-width: 52ch; margin-inline: 0; }
+.board-intro, .work-section-head p { color: var(--muted); }
+.study-facts { border: 0 !important; background: var(--lav2) !important; border-radius: 10px; }
+.work-section-head { margin-top: 28px; }
+.supporting-art { border: 1px solid var(--line-color) !important; border-radius: 12px; box-shadow: none !important; }
+.footer-card { text-align: left; border-top: 1px solid var(--line-color); }
+
+/* ---------- calm the pastel scrapbook on inner pages ---------- */
+.education-card, .skill-card, .contact-side > *, .principle, .insight, .selected-project,
+.resume-card, .story-card, .question-card, .path-card, .current-card, .note-card {
+  background: var(--paper) !important;
+  border: 1px solid var(--line-color) !important;
+  border-radius: 14px;
+  box-shadow: none !important;
+  transform: none !important;
+}
+.skill-top, .skill-card ul, .education-card > *, .contact-side > * > * { background: transparent !important; border: 0 !important; box-shadow: none !important; }
+main [class*="education-"] p, main [class*="note"] p { color: var(--muted); }
+.resume-download, .contact-submit, button[type="submit"], .email-button, [class*="contact"] button {
+  background: var(--green) !important; border-color: var(--green) !important; color: #fff !important; box-shadow: none !important; border-radius: 10px;
+}
+.resume-positioning { border: 0 !important; background: var(--green-tint) !important; border-radius: 12px; color: var(--ink); }
+.about-hero h1, .contact-hero h1, .resume-hero h1 { font-weight: 700; letter-spacing: -0.04em; }
+.about-hero p.handwritten, .contact-hero p { font-family: "Inter", sans-serif !important; color: var(--muted); font-size: 1.1rem; }
+.selected-project, .resume-card, .experience-card { background: var(--paper) !important; border: 1px solid var(--line-color) !important; box-shadow: none !important; }
+a { text-underline-offset: 3px; }
+
+/* ---------- any leftover pastel-coded blocks ---------- */
+main [class*="-yellow"]:not(.callout):not(.tldr), main [class*="-lav"]:not(.callout):not(.disc-tags),
+main [class*="-pink"]:not(.callout), main [class*="-mint"]:not(.callout),
+main [class*="yellow"]:not(.callout):not(.tldr):not(span), main [class*="lavender"]:not(.callout):not(span) {
+  background: var(--paper) !important;
+  border-color: var(--line-color) !important;
+  box-shadow: none !important;
+}
+
+/* ---------- small screens ---------- */
+html, body { max-width: 100%; overflow-x: hidden; }
+@media (max-width: 760px) {
+  .site-header { flex-wrap: wrap; gap: 10px; }
+  .site-nav { flex-wrap: wrap; }
+  .home-hero, .featured-grid, .featured-grid.two-projects, .start-grid, .case-layout,
+  .featured-study-grid, .contact-layout, .about-hero, .resume-hero { grid-template-columns: minmax(0, 1fr) !important; }
+  .home-hero > *, .featured-grid > *, .start-grid > *, .featured-study-grid > * { min-width: 0; }
+  .photo-card { max-width: 100%; }
+  .hero-copy h1 { font-size: clamp(2.6rem, 14vw, 3.6rem); }
+  .status-track { flex-wrap: wrap; gap: 4px 14px; }
+}

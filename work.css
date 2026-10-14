@@ -57,7 +57,7 @@ body{
 
 .research-hero h1{
   margin:18px 0 0;
-  font-family:"Fraunces",serif;
+  font-family:"Bricolage Grotesque",serif;
   font-size:clamp(3.2rem,7.5vw,6rem);
   line-height:.95;
   letter-spacing:-.055em;
@@ -144,7 +144,7 @@ body{
 
 .board-top h2{
   margin:0;
-  font-family:"Fraunces",serif;
+  font-family:"Bricolage Grotesque",serif;
   font-size:2.1rem;
 }
 
@@ -157,7 +157,7 @@ body{
 
 .work-section-head{margin:30px 0 16px}
 .work-section-head .handwritten{margin:0 0 4px;color:var(--periwinkle-deep)}
-.work-section-head h3{margin:0;font:700 1.8rem/1.15 "Fraunces",serif}
+.work-section-head h3{margin:0;font:700 1.8rem/1.15 "Bricolage Grotesque",serif}
 .work-section-head > p:last-child{margin:8px 0 0;color:#3e4357;line-height:1.6}
 .featured-study-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:start;gap:22px}
 .supporting-work{margin-top:40px;padding-top:24px;border-top:2px dashed rgba(27,24,32,.25)}
@@ -173,9 +173,9 @@ body{
   background:linear-gradient(135deg,#e6ebfb,#d3ddf8);
 }
 .supporting-art span{font-size:.72rem;font-weight:800;letter-spacing:.08em;color:var(--periwinkle-deep)}
-.supporting-art strong{font:700 1.3rem/1.2 "Fraunces",serif}
+.supporting-art strong{font:700 1.3rem/1.2 "Bricolage Grotesque",serif}
 .supporting-body{min-width:0}
-.supporting-body h4{margin:10px 0 7px;font:700 1.35rem/1.2 "Fraunces",serif}
+.supporting-body h4{margin:10px 0 7px;font:700 1.35rem/1.2 "Bricolage Grotesque",serif}
 .supporting-body p{margin:0 0 13px;color:#3e4357;line-height:1.65;font-size:.9rem}
 .supporting-body .study-button{margin-top:2px}
 
@@ -257,7 +257,7 @@ body{
 
 .preview-ai .preview-artifact,.preview-taste .preview-artifact{transform:none}
 .mini-label{font-size:.72rem;font-weight:800;letter-spacing:.07em;color:var(--periwinkle-deep)}
-.preview-artifact strong{max-width:390px;font:700 clamp(1.1rem,2.2vw,1.55rem)/1.12 "Fraunces",serif}
+.preview-artifact strong{max-width:390px;font:700 clamp(1.1rem,2.2vw,1.55rem)/1.12 "Bricolage Grotesque",serif}
 .mini-trail{display:flex;align-items:center;flex-wrap:wrap;gap:5px}
 .mini-trail span{
   padding:4px 8px;
@@ -309,7 +309,7 @@ body{
 
 .study-body h3,.study-body h4{
   margin:12px 0 7px;
-  font-family:"Fraunces",serif;
+  font-family:"Bricolage Grotesque",serif;
   font-size:1.55rem;
   line-height:1.16;
 }
@@ -486,7 +486,7 @@ body{
 .case-hero h1{
   margin:13px 0 7px;
   max-width:850px;
-  font-family:"Fraunces",serif;
+  font-family:"Bricolage Grotesque",serif;
   font-size:clamp(2.8rem,6.5vw,5.3rem);
   line-height:1.03;
   letter-spacing:-.045em;
@@ -526,7 +526,7 @@ body{
 .metric strong{
   display:block;
   margin-top:5px;
-  font-family:"Fraunces",serif;
+  font-family:"Bricolage Grotesque",serif;
   font-size:1rem;
 }
 
@@ -571,13 +571,13 @@ body{
 
 .case-section h2{
   margin:0 0 12px;
-  font-family:"Fraunces",serif;
+  font-family:"Bricolage Grotesque",serif;
   font-size:2rem;
 }
 
 .case-section h3{
   margin:22px 0 8px;
-  font-family:"Fraunces",serif;
+  font-family:"Bricolage Grotesque",serif;
   font-size:1.18rem;
 }
 
