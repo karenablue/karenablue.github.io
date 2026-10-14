@@ -817,3 +817,6 @@ body{
 .disc-tags{display:flex;gap:6px;margin-bottom:8px}
 .disc-tags span{padding:3px 9px;border:1.5px solid var(--ink,#161a2e);border-radius:6px;font-size:.66rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase;background:#fff}
 .disc-tags .research{background:#dfe6fb}.disc-tags .design{background:#f8ebc4}.disc-tags .code{background:#e2efe6}
+
+.study-preview>img{position:absolute;inset:16px 18px 22px;width:calc(100% - 36px);height:calc(100% - 38px);object-fit:cover;object-position:left top;border:var(--line);border-radius:14px;background:#fff}
+.study-preview .preview-sticker{z-index:1}
