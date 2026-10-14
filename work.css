@@ -820,3 +820,5 @@ body{
 
 .study-preview>img{position:absolute;inset:16px 18px 22px;width:calc(100% - 36px);height:calc(100% - 38px);object-fit:cover;object-position:left top;border:var(--line);border-radius:14px;background:#fff}
 .study-preview .preview-sticker{z-index:1}
+
+a.study-preview{display:block;text-decoration:none;color:inherit}
