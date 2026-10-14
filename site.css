@@ -224,4 +224,4 @@ html, body { max-width: 100%; overflow-x: hidden; }
   .status-track { flex-wrap: wrap; gap: 4px 14px; }
 }
 
-.partial{color:#8a6a00;background:#fbf3dc;font-weight:700}
+.partial{color:var(--purple2);background:var(--lav);font-weight:800}
