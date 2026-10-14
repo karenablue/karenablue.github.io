@@ -813,3 +813,7 @@ body{
 
 .supporting-card + .supporting-card{margin-top:18px}
 .supporting-meta{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+
+.disc-tags{display:flex;gap:6px;margin-bottom:8px}
+.disc-tags span{padding:3px 9px;border:1.5px solid var(--ink,#161a2e);border-radius:6px;font-size:.66rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase;background:#fff}
+.disc-tags .research{background:#dfe6fb}.disc-tags .design{background:#f8ebc4}.disc-tags .code{background:#e2efe6}

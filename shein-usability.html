@@ -154,15 +154,39 @@
           <div class="principle"><h3>02 · Quick add was easy to miss</h3><p><strong>Observed:</strong> P1 first opened the product page instead of using the listing control. P3 did not use quick add, and P5 partially completed the task. Three of five fully completed it.</p><p><strong>Recommendation:</strong> test a more prominent, clearly labeled quick-add control on product cards, with visible feedback after activation.</p></div>
           <div class="principle"><h3>03 · Favorites succeeded, with friction</h3><p><strong>Observed:</strong> all five formal participants completed the task. P1 struggled to find the heart control and encountered an account-creation prompt; P2 corrected an initial mistake.</p><p><strong>Recommendation:</strong> make the save control easier to identify and clarify the sign-in step before it interrupts saving. Whether guest saving is feasible requires separate product and technical review.</p></div>
         </div>
-        <figure class="chart-fig">
-          <figcaption>Proposed filter fix (sketch, untested)</figcaption>
-          <div class="sketch-pair">
-            <div class="sketch"><h4>Observed</h4><span class="chip on">Coat</span><span class="chip on">Black</span><span class="chip on">XL</span>
-              <div class="state">No results found.<br><span class="btn">Reset</span> clears everything with no warning.</div></div>
-            <div class="sketch"><h4>Proposed</h4><span class="chip on">Coat ✕</span><span class="chip on">Black ✕</span><span class="chip on">XL ✕</span>
-              <div class="state"><strong>0 results.</strong> Remove “XL” to see 14.<br><span class="btn">Clear all filters</span> keeps your search term.</div></div>
-          </div>
+        <figure class="fix-fig" aria-labelledby="fix-title">
+          <figcaption><span class="trace-kicker">Design decision · proposed fix, untested</span>
+            <strong id="fix-title">Because 2 of 5 hit no-results or a filter reset and could not finish, I redesigned the empty state so no one loses their search.</strong></figcaption>
+          <a class="zoom" href="images/shein/desktop-03-empty.png" target="_blank" rel="noopener"><img src="images/shein/desktop-03-empty-crop.png" alt="Redesigned empty state. Applied-filter chips for Size XS, Color Black and Price Under $25 sit above a message reading A little too specific, with a button reading Remove Size XS to see 24 items." width="1440" height="600" loading="lazy"><span>Open full screen ↗</span></a>
+          <ol class="annot"><li><b>1</b>Unclear active filters → visible, removable chips.</li><li><b>2</b>Unexplained zero results → one action: remove XS, see 24 items, keeping color and price.</li><li><b>3</b>Favorites preserved (5 of 5 completed in the study).</li></ol>
+          <p class="small-note">Independent redesign concept, not an official SHEIN design. Product details and result counts are illustrative, not research outcomes. Not shown to participants.</p>
         </figure>
+
+        <h3>The redesign, step by step</h3>
+        <ol class="decision-list">
+          <li><strong>Visible filter chips.</strong> Applied filters are removable chips above results, so participants can see why the list changed. <em>Responds to:</em> filters that reset or returned nothing with no explanation.</li>
+          <li><strong>Explicit Apply and Clear.</strong> “Show 128 results” and “Clear all” replace unclear Clear / Done actions.</li>
+          <li><strong>A recoverable empty state.</strong> It names the one filter to drop and what it restores, keeping the rest.</li>
+          <li><strong>Quick add with a size.</strong> A size picker pre-selects the filtered size and confirms “Added to bag · Size M.”</li>
+        </ol>
+
+        <div class="shot-stack">
+          <figure class="shot "><a class="zoom" href="images/shein/desktop-02-applied.jpg" target="_blank" rel="noopener"><img src="images/shein/desktop-02-applied.jpg" alt="Desktop listing with applied filter chips for Size M and Color Black and a Show 128 results button." width="1440" height="939" loading="lazy"><span>Open full size ↗</span></a><figcaption>Filter applied<ol class="annot"><li><b>1</b>Unclear active filters → visible, removable chips.</li><li><b>2</b>Unclear Clear / Done → explicit “Show 128 results” and “Clear all”.</li><li><b>3</b>Favorites preserved (5 of 5 completed in the study).</li></ol></figcaption></figure>
+          <figure class="shot "><a class="zoom" href="images/shein/desktop-05-picker.jpg" target="_blank" rel="noopener"><img src="images/shein/desktop-05-picker.jpg" alt="Desktop listing with quick-add size picker open, Size M selected from filters, and an Add to bag button." width="1440" height="939" loading="lazy"><span>Open full size ↗</span></a><figcaption>Quick add, size picker open<ol class="annot"><li><b>1</b>Unclear active filters → visible, removable chips.</li><li><b>2</b>Size carried over from the filters, with confirmation.</li><li><b>3</b>Favorites preserved (5 of 5 completed in the study).</li></ol></figcaption></figure>
+        </div>
+        <div class="shot-pair even phones">
+          <figure class="shot phone"><a class="zoom" href="images/shein/mobile-03-empty.png" target="_blank" rel="noopener"><img src="images/shein/mobile-03-empty.png" alt="Mobile empty state with three filter chips and a Remove Size XS to see 24 items button." width="390" height="749" loading="lazy"><span>Open full size ↗</span></a><figcaption>Mobile empty state<ol class="annot"><li><b>1</b>Unclear active filters → visible, removable chips.</li><li><b>2</b>Unexplained zero results → remove XS, see 24.</li><li><b>3</b>Favorites preserved (5 of 5 completed in the study).</li></ol></figcaption></figure>
+          <figure class="shot phone"><a class="zoom" href="images/shein/mobile-05-picker.png" target="_blank" rel="noopener"><img src="images/shein/mobile-05-picker.png" alt="Mobile bottom sheet titled Choose your size with Size M selected and an Add to bag button." width="390" height="749" loading="lazy"><span>Open full size ↗</span></a><figcaption>Mobile size picker<ol class="annot"><li><b>1</b>Unclear active filters → visible, removable chips.</li><li><b>2</b>Size carried over from the filters, with confirmation.</li><li><b>3</b>Favorites preserved (5 of 5 completed in the study).</li></ol></figcaption></figure>
+        </div>
+        <details class="evidence"><summary>Component states used in the redesign</summary>
+          <div class="evidence-body"><figure class="shot "><a class="zoom" href="images/shein/components.jpg" target="_blank" rel="noopener"><img src="images/shein/components.jpg" alt="Component sheet showing filter chips, size selectors, add-to-bag button states, and product card quick-add states." width="1400" height="2072" loading="lazy"><span>Open full size ↗</span></a><figcaption>Chips, size selector, button, and card states.</figcaption></figure></div>
+        </details>
+
+        <div class="judgment-grid">
+          <div class="judgment"><span>Why this method</span><p>Moderated think-aloud shows the route, not just the result. Scrolling to a coat and using filters look the same in a survey but not on screen.</p></div>
+          <div class="judgment"><span>What I'd do differently</span><p>Define pass/fail thresholds before testing, and recruit with a stricter screener so new and returning shoppers can be compared.</p></div>
+          <div class="judgment"><span>Constraint</span><p>Public desktop site only, five sessions, and class-project time, so findings are directional and the fix is a proposal.</p></div>
+        </div>
       </section>
 
       <section class="section" id="priorities">

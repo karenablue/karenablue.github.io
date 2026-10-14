@@ -481,3 +481,40 @@ th,td,.task p,.benchmark-card p,.principle p,.persona-body p,
 .sketch .btn{display:inline-block;padding:4px 10px;border:1.5px solid var(--ink);border-radius:8px;background:#fff}
 .sketch .state{margin:8px 0 0;padding:8px;border-radius:8px;background:#fff;border:1.5px solid var(--ink)}
 @media(max-width:560px){.bar-row{grid-template-columns:1fr;gap:4px}.sketch-pair{grid-template-columns:1fr}}
+
+/* designed fix + judgment */
+.fix-fig{margin:22px 0;padding:18px;border:1.5px solid var(--ink);border-radius:17px;background:#fff;box-shadow:var(--shadow-sm)}
+.fix-fig figcaption strong{display:block;margin-top:4px;line-height:1.4}
+.fix-compare{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:14px}
+.mock{border:1.5px solid var(--ink);border-radius:14px;padding:14px;font-size:.84rem;background:var(--bg)}
+.mock.after{background:var(--mint)}
+.mock h4{margin:0 0 10px;font-size:.74rem;letter-spacing:.06em;text-transform:uppercase}
+.mock-chips{display:flex;flex-wrap:wrap;gap:6px}
+.mchip{padding:3px 10px;border:1.5px solid var(--ink);border-radius:999px;background:#fff}
+.mchip.on{background:var(--lemon);font-weight:700}
+.mock-state{margin-top:10px;padding:10px;border:1.5px solid var(--ink);border-radius:10px;background:#fff;line-height:1.7}
+.mbtn{display:inline-block;padding:3px 10px;border:1.5px solid var(--ink);border-radius:8px;background:#fff;font-weight:600}
+.mbtn.primary{background:var(--ink);color:#fff}
+.mlink{text-decoration:underline;font-weight:600}
+.mock-note{margin:10px 0 0;font-size:.8rem}
+.mock-pins{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:6px;font-size:.8rem}
+.mock-pins b{display:inline-grid;place-items:center;width:20px;height:20px;margin-right:6px;border-radius:50%;background:var(--ink);color:#fff;font-size:.72rem}
+.judgment-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:18px 0}
+.judgment{padding:14px;border:1.5px solid var(--ink);border-radius:14px;background:var(--lav2)}
+.judgment span{font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:.06em}
+.judgment p{margin:6px 0 0;font-size:.86rem;line-height:1.55}
+@media(max-width:700px){.fix-compare,.judgment-grid{grid-template-columns:1fr}}
+
+.fix-fig>img{display:block;width:100%;height:auto;margin-top:14px;border:1.5px solid var(--ink);border-radius:12px}
+.shot-pair.even{grid-template-columns:repeat(2,minmax(0,1fr))}
+.shot-pair.phones{justify-items:center}
+.shot-pair.phones .shot{max-width:300px}
+.decision-list{padding-left:1.2rem;display:grid;gap:8px}
+@media(max-width:700px){.shot-pair.even{grid-template-columns:1fr}}
+.shot-stack{display:grid;gap:18px;margin:18px 0}.shot-stack .shot{margin:0}
+.zoom{display:block;position:relative}.zoom span{position:absolute;right:10px;bottom:10px;padding:4px 9px;border-radius:999px;background:var(--ink);color:#fff;font-size:.72rem;font-weight:700}
+.zoom img{display:block;width:100%;height:auto;border:1.5px solid var(--ink);border-radius:12px;background:#fff}
+.fix-fig .zoom{margin-top:14px}
+.annot{list-style:none;margin:10px 0 0;padding:0;display:grid;gap:5px;font-size:.84rem;color:var(--ink)}
+.annot li{display:flex;gap:8px;align-items:flex-start;line-height:1.45}
+.annot b{flex:none;display:grid;place-items:center;width:20px;height:20px;border-radius:50%;background:var(--ink);color:#fff;font-size:.72rem}
