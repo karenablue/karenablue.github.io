@@ -518,3 +518,6 @@ th,td,.task p,.benchmark-card p,.principle p,.persona-body p,
 .annot{list-style:none;margin:10px 0 0;padding:0;display:grid;gap:5px;font-size:.84rem;color:var(--ink)}
 .annot li{display:flex;gap:8px;align-items:flex-start;line-height:1.45}
 .annot b{flex:none;display:grid;place-items:center;width:20px;height:20px;border-radius:50%;background:var(--ink);color:#fff;font-size:.72rem}
+
+.redesign-button{display:inline-block;padding:11px 18px;border:1.5px solid var(--ink);border-radius:999px;background:var(--purple2);color:#fff;font:800 .85rem "Inter",sans-serif;text-decoration:none;box-shadow:var(--shadow)}
+.redesign-button:hover{transform:translateY(-2px)}
