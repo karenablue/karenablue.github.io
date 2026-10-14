@@ -411,3 +411,20 @@ html body {
 @media (prefers-reduced-motion: reduce) {
   .project-card:hover, .start-card:hover, .study-card:hover, .change:hover, .hero-button-dark:hover { transform: none !important; }
 }
+
+/* ---------- before / after compare ---------- */
+.compare{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:20px 0}
+.compare-item{margin:0;position:relative}
+.compare-item img{display:block;width:100%;height:auto;border:2px solid var(--outline,#43439a);border-radius:16px;background:#fff}
+.compare-item figcaption{margin-top:8px;font-size:.85rem;color:var(--muted);line-height:1.5}
+.compare-tag{display:inline-block;margin-bottom:8px;padding:4px 12px;border-radius:999px;font:700 .76rem "Fredoka","Inter",sans-serif;border:2px solid var(--outline,#43439a)}
+.compare-tag.before{background:#fff;color:var(--purple2)}
+.compare-tag.after{background:var(--purple);color:#fff}
+@media(max-width:760px){.compare{grid-template-columns:minmax(0,1fr)}}
+
+/* ---------- phone nav: keep five links on one row ---------- */
+@media (max-width: 480px) {
+  .site-header { flex-direction: column; gap: 10px; }
+  .site-nav { width: 100%; justify-content: space-between; padding: 3px !important; gap: 0; flex-wrap: nowrap; }
+  .site-nav a { padding: 7px 8px !important; font-size: .82rem !important; }
+}
