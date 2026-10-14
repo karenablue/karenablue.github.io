@@ -628,7 +628,8 @@
    RESPONSIVE
 ========================================= */
 
-.mobile-direct-email { display: none; }
+.mobile-direct-email { display: block; margin: 14px 0 0; font: 600 1rem/1.5 "Inter",sans-serif; overflow-wrap: anywhere; }
+.mobile-direct-email a { text-decoration: underline; text-underline-offset: 3px; }
 
 @media (max-width: 1050px) {
 
