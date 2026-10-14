@@ -4,7 +4,7 @@
 
 :root {
 
-  --resume-bg: #f7f5f0;
+  --resume-bg: #f8f8fc;
 
   --resume-ink: #161a2e;
 
@@ -18,9 +18,9 @@
 
   --resume-purple-dark: #43439a;
 
-  --resume-yellow: #f8ebc4;
+  --resume-yellow: #eeeef9;
 
-  --resume-pink: #f6e4da;
+  --resume-pink: #e3e3f5;
 
   --resume-shadow: 0 1px 2px rgba(22,26,46,.06), 0 8px 16px -6px rgba(22,26,46,.24);
 
@@ -497,7 +497,7 @@
     linear-gradient(
       135deg,
       #ffffff,
-      #f7f5f0
+      #f8f8fc
     );
 
 }

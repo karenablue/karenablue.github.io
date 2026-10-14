@@ -4,7 +4,7 @@
 
 :root {
 
-  --background: #f7f5f0;
+  --background: #f8f8fc;
 
   --ink: #161a2e;
 
@@ -18,16 +18,16 @@
 
   --purple-dark: #43439a;
 
-  --lemon: #f8ebc4;
+  --lemon: #eeeef9;
 
-  --pink: #f6e4da;
+  --pink: #e3e3f5;
 
-  --mint: #e2efe6;
+  --mint: #eeeef9;
 
   /* pulled from the headshot — used only around the portrait */
   --cobalt: #5a5ab4;
 
-  --gold-light: #fdf0c8;
+  --gold-light: #eeeef9;
 
   --shadow: 0 1px 2px rgba(22,26,46,.06), 0 8px 16px -6px rgba(22,26,46,.24);
 

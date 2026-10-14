@@ -5,7 +5,7 @@
 ========================================================= */
 
 :root {
-  --background: #fafaf7;
+  --background: #f8f8fc;
   --paper: #ffffff;
   --ink: #12151f;
   --muted: #4b5160;
@@ -25,9 +25,9 @@
   --lavender: #eeeef9;
   --lavender-light: #f5f5fb;
   --lavender-2: #f5f5fb;
-  --lemon: #f4efdc;
-  --pink: #f5ebe4;
-  --mint: #eeeef9;
+  --lemon: #eeeef9;
+  --pink: #e3e3f5;
+  --mint: #cfcff0;
 
   --shadow: 0 1px 2px rgba(18,21,31,.05), 0 12px 28px -14px rgba(18,21,31,.22);
   --shadow-small: 0 1px 2px rgba(18,21,31,.05), 0 8px 18px -10px rgba(18,21,31,.2);
@@ -129,7 +129,7 @@ h1, h2, h3, h4 {
   border-radius: 6px; box-shadow: none;
 }
 .disc-tags .research { background: #eeeef9; }
-.disc-tags .design { background: #f4efdc; }
+.disc-tags .design { background: #eeeef9; }
 .disc-tags .code { background: var(--green-tint); }
 .project-card h3 { font-size: 1.45rem; letter-spacing: -0.02em; }
 .featured-heading h2, .section-heading h2, .home-contact h2 { font-weight: 700; letter-spacing: -0.03em; }
