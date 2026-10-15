@@ -68,6 +68,10 @@ input,textarea{cursor:text}
 }
 .case-deck{max-width:820px;margin:0;color:#3e4357;line-height:1.75}
 .case-credit{margin-top:18px;font-size:.9rem}
+.case-preview{margin:24px 0 0;border:1.5px solid var(--ink);border-radius:16px;overflow:hidden;background:var(--lav2)}
+.case-preview img{display:block;width:100%;height:auto}
+.case-preview figcaption{padding:12px 16px;color:var(--muted);font-size:.8rem;line-height:1.6}
+.case-preview figcaption a{display:inline-block}
 .stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:23px}
 .stat-card{border:1.5px solid var(--ink);border-radius:16px;background:var(--lav2);padding:13px}
 .stat-card span{display:block;font-size:.62rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}

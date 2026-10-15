@@ -7,8 +7,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="case-study.css">
-  <title>SHEIN Usability Evaluation | Designed by Karena</title>
-  <meta name="description" content="An independent DePaul HCI 460 team evaluation of SHEIN's desktop shopping experience: five formal usability sessions, task outcomes, SUS, findings, and recommendations.">
+  <title>SHEIN: Filter &amp; Quick-add Interaction Design | Designed by Karena</title>
+  <meta name="description" content="Desktop and mobile filter recovery and quick-add concepts by Karena Blue, informed by a DePaul team usability study of SHEIN. Independent, untested redesigns.">
   <link rel="stylesheet" href="motion.css">
   <script src="motion.js"></script>
   <link rel="stylesheet" href="site.css">
@@ -26,21 +26,25 @@
 <main class="case-page" id="main-content" tabindex="-1">
   <a class="back-link" href="work.html">← back to all work</a>
   <section class="case-hero" aria-labelledby="case-title">
-    <span class="case-kicker">Independent academic team project · Winter 2026</span>
-    <h1 id="case-title">SHEIN: redesigning filters after 2 of 5 couldn’t finish</h1>
-    <p class="case-deck">Five participants rated SHEIN's desktop site favorably, yet only 2 of 5 fully completed filtering. I turned that finding into a designed fix: visible filter chips, a recoverable empty state, and a size-aware quick add, shown in desktop and mobile states.</p>
-    <div class="stat-grid" aria-label="Formal study at a glance">
-      <div class="stat-card"><span>Sessions</span><strong>5 formal + 1 pilot</strong></div>
-      <div class="stat-card"><span>Filter task fully completed</span><strong>2 of 5</strong></div>
-      <div class="stat-card"><span>Quick add fully completed</span><strong>3 of 5</strong></div>
-      <div class="stat-card"><span>Formal mean SUS score</span><strong>81.5</strong></div>
+    <span class="case-kicker">Interaction design · team usability study · independent concept</span>
+    <h1 id="case-title">SHEIN: designing a clearer path through filters and quick add</h1>
+    <p class="case-deck">I designed filter recovery and size-aware quick add for desktop and mobile, with visible selections and clearer feedback. The concepts build on a team usability study where I moderated sessions: only 2 of 5 participants fully completed filtering. The redesigns have not been tested.</p>
+    <figure class="case-preview">
+      <img src="images/shein/desktop-03-empty-crop.png" alt="Proposed SHEIN empty state with removable filter chips and a recovery action that keeps the shopper's remaining selections" width="1440" height="600" fetchpriority="high">
+      <figcaption>Proposed filter recovery: remove one restrictive filter while keeping the rest. Counts are illustrative. <a class="source-link" href="#redesign">Explore the interaction decisions →</a></figcaption>
+    </figure>
+    <div class="stat-grid" aria-label="Project at a glance">
+      <div class="stat-card"><span>My contribution</span><strong>Study moderation + independent interaction redesign</strong></div>
+      <div class="stat-card"><span>Deliverable</span><strong>Desktop and mobile concepts + component states</strong></div>
+      <div class="stat-card"><span>Research foundation</span><strong>Team study: 5 formal sessions + 1 pilot</strong></div>
+      <div class="stat-card"><span>Status</span><strong>Independent concepts; not yet tested</strong></div>
     </div>
     <div class="callout yellow tldr" role="note" aria-label="Summary">
       <dl>
-        <dt>Problem</dt><dd>SHEIN's desktop site scored well on perceived usability, but it was unclear whether shoppers could actually filter, quick add, and save items.</dd>
-        <dt>Method</dt><dd>Moderated think-aloud sessions with 5 formal participants (plus 1 pilot), task outcomes coded as full, partial, or unsuccessful, and SUS.</dd>
-        <dt>Result</dt><dd>Mean SUS was 81.5, yet only 2 of 5 fully completed filtering and 3 of 5 quick add. Filtering is the first thing to fix.</dd>
-        <dt>Next</dt><dd>Prototype stable filters and a clearer quick-add control, then rerun the same tasks with new and experienced shoppers.</dd>
+        <dt>Problem</dt><dd>Filters returned no results or reset, and shoppers missed quick add or took detours into product pages.</dd>
+        <dt>Design</dt><dd>Removable filter chips, an empty state with a specific recovery action, and quick add with size selection and confirmation.</dd>
+        <dt>Evidence</dt><dd>In the team's desktop study, 2 of 5 fully completed filtering and 3 of 5 quick add, despite a mean SUS of 81.5.</dd>
+        <dt>Next</dt><dd>Test the redesigned interactions with new and experienced shoppers, then revise based on task outcomes and feedback.</dd>
       </dl>
     </div>
     <p class="case-deck case-credit">DePaul University · HCI 460: Usability Evaluation Methods. This class study evaluated SHEIN's public desktop site; it was not commissioned or implemented by SHEIN.</p>
@@ -61,7 +65,7 @@
         <div class="callout yellow"><p><strong>Core finding:</strong> A formal-study mean SUS score of 81.5 described generally positive perceived usability. But the task records were less positive. Only two of five fully completed the filtering task and three of five fully completed quick add. Favorites reached five of five full completions, with friction for some participants.</p></div>
         <p><strong>Team:</strong> Alisha Jordan, Chyna Little, Karena Blue, and Vicky Kimani. The study findings and recommendations are the team's shared work.</p>
         <h3>My contribution</h3>
-        <p>I moderated usability testing sessions and observed additional sessions led by teammates. I contributed to the collaboratively written report, helped develop the final presentation, and presented its Results &amp; Findings section.</p>
+        <p>I moderated usability testing sessions and observed additional sessions led by teammates. I contributed to the collaboratively written report, helped develop the final presentation, and presented its Results &amp; Findings section. For this portfolio, I independently designed the desktop and mobile filter and quick-add concepts shown below.</p>
       </section>
 
       <section class="section" id="criteria">
@@ -173,7 +177,7 @@
 
         <div class="callout"><p><strong>Why this matters (my inference, not a measured result):</strong> in a shopping flow, a filter that returns nothing or resets is a dead end. If 2 of 5 shoppers cannot finish filtering, some of them leave without finding a product to buy. The redesign targets that dead end.</p></div>
         <div class="callout"><p><strong>Trust design:</strong> the empty state is a "support when the system fails" pattern. It names what went wrong, keeps the shopper's other choices, and offers one clear recovery action. The filter chips add visible control: shoppers see and can undo what the system applied.</p></div>
-        <h3>The redesign, step by step</h3>
+        <h3 id="redesign">The redesign, step by step</h3>
         <ol class="decision-list">
           <li><strong>Visible filter chips.</strong> Applied filters are removable chips above results, so participants can see why the list changed. <em>Responds to:</em> filters that reset or returned nothing with no explanation.</li>
           <li><strong>Explicit Apply and Clear.</strong> “Show 128 results” and “Clear all” replace unclear Clear / Done actions.</li>
