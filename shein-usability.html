@@ -27,10 +27,10 @@
   <a class="back-link" href="work.html">← back to all work</a>
   <section class="case-hero" aria-labelledby="case-title">
     <span class="case-kicker">Interaction design · team usability study · independent concept</span>
-    <h1 id="case-title">SHEIN: designing a clearer path through filters and quick add</h1>
+    <h1 id="case-title">SHEIN: recovering from empty results</h1>
     <p class="case-deck">I designed filter recovery and size-aware quick add for desktop and mobile, with visible selections and clearer feedback. The concepts build on a team usability study where I moderated sessions: only 2 of 5 participants fully completed filtering. The redesigns have not been tested.</p>
     <figure class="case-preview">
-      <img src="images/shein/desktop-03-empty-crop.png" alt="Proposed SHEIN empty state with removable filter chips and a recovery action that keeps the shopper's remaining selections" width="1440" height="600" fetchpriority="high">
+      <img src="images/shein/desktop-03-empty.png" alt="Proposed SHEIN page showing the applied filters, empty results, and an action to remove Size XS while keeping color and price" width="1440" height="939" fetchpriority="high">
       <figcaption>Proposed filter recovery: remove one restrictive filter while keeping the rest. Counts are illustrative. <a class="source-link" href="#redesign">Explore the interaction decisions →</a></figcaption>
     </figure>
     <div class="stat-grid" aria-label="Project at a glance">
@@ -53,12 +53,32 @@
   <div class="case-layout">
     <nav class="jump-card mobile-jump" aria-label="Case study sections">
       <p>jump to ↓</p>
-      <a href="#overview">Overview</a><a href="#questions">Research questions</a>
+      <a href="#solution">Interaction sequence</a><a href="#overview">Overview</a><a href="#questions">Research questions</a>
       <a href="#design">Study design</a><a href="#pilot">Pilot</a>
       <a href="#results">Results</a><a href="#findings">Findings</a>
       <a href="#priorities">Recommendations</a><a href="#next">Limits &amp; next steps</a>
     </nav>
     <article>
+      <section class="section" id="solution">
+        <div class="section-head"><p class="section-note">the interaction, in context</p><h2>Choose a size without leaving the results</h2></div>
+        <p>The quick-add concept keeps the shopper on the listing, carries the filtered size into the picker, and names that size in the confirmation. These screens show the proposed behavior, not a tested outcome.</p>
+        <div class="interaction-sequence">
+          <figure>
+            <a href="images/shein/mobile-04-quickadd.jpg" target="_blank" rel="noopener"><img src="images/shein/mobile-04-quickadd.jpg" alt="Mobile product results with Size M and Black filters and a labeled Quick add button" width="390" height="749" loading="lazy"></a>
+            <figcaption><strong>1. Start on the listing.</strong> A labeled Quick add control sits beside the product details.</figcaption>
+          </figure>
+          <figure>
+            <a href="images/shein/mobile-05-picker.png" target="_blank" rel="noopener"><img src="images/shein/mobile-05-picker.png" alt="A size-selection sheet with M selected from the shopper's filter and an Add to bag button" width="390" height="749" loading="lazy"></a>
+            <figcaption><strong>2. Review the size.</strong> The sheet carries over M from the filter and lets the shopper change it.</figcaption>
+          </figure>
+          <figure>
+            <a href="images/shein/mobile-06-confirmed.jpg" target="_blank" rel="noopener"><img src="images/shein/mobile-06-confirmed.jpg" alt="The listing after adding an item, with confirmation reading Added to bag, Size M" width="390" height="749" loading="lazy"></a>
+            <figcaption><strong>3. See what was added.</strong> The confirmation includes the size while the product results remain visible.</figcaption>
+          </figure>
+        </div>
+        <p class="small-note">Independent mobile concepts informed by a desktop study. Product details and counts are illustrative. Open any screen to inspect it at full size.</p>
+        <div class="callout"><p><strong>What needs testing:</strong> does carrying over a filter size help shoppers choose correctly, or do they mistake it for a confirmed choice? Check whether people notice the selection, change it when needed, and understand the confirmation.</p></div>
+      </section>
       <section class="section" id="overview">
         <div class="section-head"><p class="section-note">the tension in one glance</p><h2>Overview</h2></div>
         <p>The four-person class team studied whether shoppers could search and filter for a product, add an item directly from a listing, and save one for later. The aim was to compare observed task performance with what participants said about the experience.</p>
@@ -249,7 +269,7 @@
     <aside class="case-aside">
       <nav class="jump-card" aria-label="Case study sections">
         <p>jump to ↓</p>
-        <a href="#overview">Overview</a><a href="#questions">Research questions</a>
+        <a href="#solution">Interaction sequence</a><a href="#overview">Overview</a><a href="#questions">Research questions</a>
         <a href="#design">Study design</a><a href="#pilot">Pilot</a>
         <a href="#results">Results</a><a href="#findings">Findings</a>
         <a href="#priorities">Recommendations</a><a href="#next">Limits &amp; next steps</a>

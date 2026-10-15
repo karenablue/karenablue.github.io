@@ -530,3 +530,11 @@ th,td,.task p,.benchmark-card p,.principle p,.persona-body p,
 .rd-frame{margin:0 0 18px;border:2px solid #43439a;border-radius:16px;overflow:hidden;background:#fff;box-shadow:0 6px 0 rgba(67,67,154,.25)}
 .rd-frame iframe{display:block;width:100%;height:560px;border:0}
 .rd-frame figcaption{padding:10px 14px;font-size:.8rem;border-top:2px solid #43439a}
+
+.interaction-sequence{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin:24px 0}
+.interaction-sequence figure{margin:0;min-width:0}
+.interaction-sequence a{display:block;border-radius:14px}
+.interaction-sequence img{display:block;width:100%;height:auto;border:1px solid var(--muted);border-radius:14px}
+.interaction-sequence figcaption{margin-top:12px;color:var(--muted);font-size:.82rem;line-height:1.6}
+.interaction-sequence figcaption strong{display:block;color:var(--ink)}
+@media(max-width:560px){.interaction-sequence{grid-template-columns:minmax(0,1fr);gap:28px}.interaction-sequence figure{width:min(100%,300px);justify-self:center}}

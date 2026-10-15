@@ -159,11 +159,11 @@ body{
 .work-section-head .handwritten{margin:0 0 4px;color:var(--periwinkle-deep)}
 .work-section-head h3{margin:0;font:700 1.8rem/1.15 "Bricolage Grotesque",serif}
 .work-section-head > p:last-child{margin:8px 0 0;color:#3e4357;line-height:1.6}
-.featured-study-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:start;gap:22px}
+.featured-study-grid{display:grid;grid-template-columns:1fr;align-items:start;gap:28px}
 .supporting-work{margin-top:40px;padding-top:24px;border-top:2px dashed rgba(27,24,32,.25)}
 .supporting-work .work-section-head{margin-top:0}
 .supporting-card{
-  display:grid;grid-template-columns:minmax(155px,210px) minmax(0,1fr);gap:18px;
+  display:block;
   padding:16px;border:var(--line);border-radius:20px;background:var(--lavender-2);
   box-shadow:var(--shadow-sm);
 }
@@ -818,6 +818,6 @@ body{
 .disc-tags span{padding:3px 9px;border:1.5px solid var(--ink,#161a2e);border-radius:6px;font-size:.66rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase;background:#fff}
 .disc-tags .research{background:#e9e9f7}.disc-tags .design{background:#eeeef9}.disc-tags .code{background:#eeeef9}
 
-.study-preview>img{position:absolute;inset:16px 18px 22px;width:calc(100% - 36px);height:calc(100% - 38px);object-fit:cover;object-position:left top;border:var(--line);border-radius:14px;background:#fff}
+.study-preview>img{position:absolute;inset:16px 18px 22px;width:calc(100% - 36px);height:calc(100% - 38px);object-fit:contain;object-position:center;border:var(--line);border-radius:14px;background:#fff}
 .study-preview .preview-sticker{z-index:1}
 

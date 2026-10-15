@@ -422,6 +422,23 @@ html body {
 .compare-tag.after{background:var(--purple);color:#fff}
 @media(max-width:760px){.compare{grid-template-columns:minmax(0,1fr)}}
 
+/* ---------- project previews and screen context ---------- */
+.project-visual { margin: 0 0 18px; padding: 16px; border-radius: 16px; background: var(--lav2); min-width: 0; }
+.project-visual img { display: block; width: 100%; height: auto; border: 1px solid var(--line-color); border-radius: 10px; background: var(--paper); }
+.project-visual a { display: block; }
+.project-visual .visual-label { display: block; margin: 0 0 8px; font: 700 .72rem/1.5 "Inter", sans-serif; color: var(--muted); }
+.navigation-visual > .visual-label:not(:first-child) { margin-top: 14px; }
+.project-visual > figcaption, .visual-caption { margin: 10px 0 0; font: 400 .78rem/1.6 "Inter", sans-serif; color: var(--muted); }
+.work-visual { margin: 0; padding: 22px; border-bottom: 1px solid var(--line-color); border-radius: 0; }
+.preview-pair { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); gap: 24px; align-items: start; }
+.preview-pair > figure { margin: 0; min-width: 0; }
+.preview-phone { max-width: 250px; justify-self: center; }
+@media (max-width: 560px) {
+  .project-visual, .work-visual { padding: 12px; }
+  .preview-pair { grid-template-columns: minmax(0, 1fr); gap: 20px; }
+  .preview-phone { width: min(100%, 250px); }
+}
+
 /* ---------- phone nav: keep five links on one row ---------- */
 @media (max-width: 480px) {
   .site-header { flex-direction: column; gap: 10px; }
