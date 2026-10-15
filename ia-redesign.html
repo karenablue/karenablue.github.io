@@ -6,11 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Inter:wght@400;500;600;700;800&family=Jost:wght@500&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="case-study.css">
 
 <title>Sigma Gamma Rho: Membership Navigation Redesign | Designed by Karena</title>
-<meta name="description" content="A navigation redesign by Karena Blue, connecting card sorting and tree testing to clearer membership paths and a coded desktop and mobile experience.">
+<meta name="description" content="A navigation redesign by Karena Blue, connecting card sorting and tree testing to clearer membership paths, desktop and mobile designs, and a clickable prototype.">
   <link rel="stylesheet" href="motion.css">
   <script src="motion.js"></script>
   <link rel="stylesheet" href="site.css">
@@ -29,36 +29,57 @@
 <main class="case-page" id="main-content" tabindex="-1">
 <a class="back-link" href="work.html">← back to all work</a>
 <section class="case-hero">
-  <span class="case-kicker">Product design · information architecture · front-end build</span>
+  <span class="case-kicker">Product design · information architecture · Figma</span>
   <h1>Sigma Gamma Rho: rethinking the path to membership</h1>
-  <p class="case-deck">I designed and coded a navigation redesign that gives membership actions a dedicated place, explains insider terminology, and reduces menu depth. Card sorting and tree testing shaped the structure; the coded experience is ready for follow-up usability testing.</p>
-  <figure class="case-preview">
-    <img src="images/sgrho/sgrho-nav-membership.jpg" alt="Coded Sigma Gamma Rho navigation with the Membership menu open and Become a Member listed first" width="1200" height="400" fetchpriority="high">
-    <figcaption>The coded redesign: a dedicated Membership menu with joining as its first action. <a class="source-link" href="#implementation">Explore the desktop and mobile design →</a></figcaption>
-  </figure>
+  <p class="case-deck">I redesigned the navigation of a membership organization's website so prospective members can find how to join and outsiders can make sense of insider titles. Card sorting and tree testing set the structure. I compared header patterns in Figma, designed every desktop and mobile menu state, and turned them into a clickable prototype that is ready for its first usability test.</p>
   <div class="stat-grid">
-    <div class="stat-card"><span>My role</span><strong>Product design, research + front-end development</strong></div>
-    <div class="stat-card"><span>Deliverable</span><strong>Navigation structure + coded desktop and mobile interfaces</strong></div>
-    <div class="stat-card"><span>Status</span><strong>Built; redesign not yet usability tested</strong></div>
-    <div class="stat-card"><span>Timeline</span><strong>Research Mar–May 2025 · Build Aug–Sep 2026</strong></div>
+    <div class="stat-card"><span>My role</span><strong>Independent project: research and product design</strong></div>
+    <div class="stat-card"><span>Deliverable</span><strong>Navigation structure, desktop and mobile states, clickable prototype</strong></div>
+    <div class="stat-card"><span>Status</span><strong>Designed; not yet usability tested</strong></div>
+    <div class="stat-card"><span>Timeline</span><strong>Research Mar–May 2025 · Design Aug–Oct 2026</strong></div>
   </div>
 </section>
 
 <div class="case-layout">
-<nav class="jump-card mobile-jump" aria-label="Case study sections"><p>jump to ↓</p><a href="#summary">Summary</a><a href="#overview">Overview</a><a href="#findings">Key findings</a><a href="#synthesis">Synthesis</a><a href="#architecture">Proposed IA</a><a href="#rationale">Rationale</a><a href="#implementation">Coded redesign</a><a href="#evidence">Full results</a><a href="#limits">Limitations</a></nav>
+<nav class="jump-card mobile-jump" aria-label="Case study sections"><p>jump to ↓</p><a href="#summary">Summary</a><a href="#problem">Problem</a><a href="#overview">Research</a><a href="#findings">Key findings</a><a href="#architecture">Structure</a><a href="#exploration">Exploration</a><a href="#final-design">Final design</a><a href="#design-system">Components</a><a href="#measure">Next steps</a><a href="#limits">Reflection</a><a href="#evidence">Full results</a></nav>
 <article>
 <section class="section" id="summary">
   <div class="section-head"><p class="section-note">the short version</p><h2>Summary</h2></div>
   <div class="summary-grid">
     <div class="summary-card"><span class="summary-label">What I learned</span><p>Prospective members expected a top-level Membership section, and every card-sort participant grouped "Become a Member" with the other membership actions. Insider titles such as "Grand Basileus" were the biggest barrier for non-members.</p></div>
-    <div class="summary-card"><span class="summary-label">What I changed</span><p>I made Membership its own primary category and put "Become a Member" first, instead of a Members menu sitting beside Leadership and Affiliates. I also replaced the weak "Service &amp; Impact" label and designed a shallower navigation. The captured desktop and mobile interfaces give joining a prominent control.</p></div>
+    <div class="summary-card"><span class="summary-label">What I changed</span><p>I made Membership its own primary category and put "Become a Member" first, instead of a Members menu sitting beside Leadership and Affiliates. I also replaced the weak "Service &amp; Impact" label and designed a shallower navigation. The desktop and mobile designs give joining a prominent control.</p></div>
     <div class="summary-card highlight"><span class="summary-label">Strongest result</span><strong>4 of 4 vs. 1 of 5</strong><p>On "find the current leader," all 4 members succeeded but only 1 of 5 non-members did. Outsiders miss insider titles, while the join path worked for everyone (8 of 8, 7.1 seconds on average).</p></div>
   </div>
-  <p class="small-note"><strong>Next test:</strong> run a moderated usability test of the coded build with first-time non-members on the join and find-the-leader tasks, and compare against the tree-test baselines of 100% and 55.6% success. The tree test evaluated a proposed structure, so no live-site result is claimed yet.</p>
+  <p class="small-note"><strong>Next test:</strong> run a moderated usability test of the prototype with first-time non-members on the join and find-the-leader tasks, and compare against the tree-test baselines of 100% and 55.6% success. The tree test evaluated a proposed structure, so no live-site result is claimed yet.</p>
+</section>
+
+<section class="section" id="problem">
+  <div class="section-head"><p class="section-note">where people got stuck</p><h2>The Problem</h2></div>
+  <p>The site's main job is to start a relationship with people who want to join, yet joining sat outside the main navigation. Twelve top-level links competed for attention, membership actions were split across a "Members" menu and a utility bar, and some menus opened a menu inside a menu. Insider titles assumed the visitor already knew the organization.</p>
+  <figure class="panel">
+    <img src="images/sgrho/sgrho-original-header-2025-03.jpg" alt="Original Sigma Gamma Rho header: Member Portal, Join Sigma, and Find a Chapter buttons above a single row of twelve text links: About, Leadership, Help Center, Service, Members, Affiliates, Partners, Sponsors, Vendors, Media, Donate Now, Careers." width="1440" height="234" loading="lazy">
+    <figcaption>Before: the original header, captured from the Wayback Machine on March 19, 2025. Twelve text links sit in one row, and a Join Sigma button sits in the utility bar above them, beside Member Portal and Find a Chapter. The original site did have a Join button; it sat outside the main navigation.</figcaption>
+  </figure>
+
+  <figure class="panel">
+    <img src="images/sgrho/sgrho-original-members-menu-2025-03.jpg" alt="Original Sigma Gamma Rho header with the Members menu open, listing Membership, Collegiate Experience, Alumnae Engagement, and Reactivate Today." width="1440" height="324" loading="lazy">
+    <figcaption>Before: the original Members menu, open. It lists Membership, Collegiate Experience, Alumnae Engagement, and Reactivate Today (Wayback Machine, March 19, 2025).</figcaption>
+  </figure>
+
+  <div class="panel-stack">
+    <figure class="panel">
+      <img src="images/sgrho/sgrho-original-affiliates-nested-2025-03.jpg" alt="Original header with the Affiliates menu open: Rhoer Affiliates, Philo Affiliates expanded to show Philo Photo Gallery, and Rhosebuds." width="1440" height="327" loading="lazy">
+      <figcaption>Before: a menu inside a menu. Affiliates opens to Rhoer Affiliates, Philo Affiliates (which expands to Philo Photo Gallery), and Rhosebuds.</figcaption>
+    </figure>
+    <figure class="panel">
+      <img src="images/sgrho/sgrho-original-partners-nested-2025-03.jpg" alt="Original header with the Partners menu open: Foundations expanded to show National Education Fund, Sigma Public Education and Research Foundation, and G.O.L.D.E.N. Charitable Foundation." width="1440" height="340" loading="lazy">
+      <figcaption>Before: Partners opens to a single item, Foundations, which expands to three foundations. Navigation went three levels deep here.</figcaption>
+    </figure>
+  </div>
 </section>
 
 <section class="section" id="criteria">
-  <div class="section-head"><p class="section-note">pass or fail, stated up front</p><h2>Success criteria</h2></div>
+  <div class="section-head"><p class="section-note">pass or fail, stated up front</p><h2>Goals &amp; Success Criteria</h2></div>
   <p><strong>Benchmarks I'm judging against.</strong> Set retrospectively. The tree test evaluated a proposed structure, not a live site.</p>
   <div class="table-wrap" tabindex="0" role="region" aria-label="Success criteria, scroll horizontally if needed">
     <table>
@@ -71,11 +92,11 @@
       </tbody>
     </table>
   </div>
-  <p class="small-note"><strong>What this changed:</strong> the two misses drove the plain-language title explanations and the “Programs &amp; Initiatives” relabel. Both are untested in the built navigation, and that retest is the next step.</p>
+  <p class="small-note"><strong>What this changed:</strong> the two misses drove the plain-language title explanations and the “Programs &amp; Initiatives” relabel. Both are untested in the final design, and that retest is the next step.</p>
 </section>
 
 <section class="section" id="overview">
-  <div class="section-head"><p class="section-note">the setup</p><h2>Project Overview</h2></div>
+  <div class="section-head"><p class="section-note">how I learned what visitors expect</p><h2>Research Approach</h2></div>
   <div class="callout"><p><strong>Research question:</strong> why do prospective members struggle to find membership information, and what does the navigation reveal about the gap between how the organization thinks about its content and how visitors expect to find it?</p></div>
   <div class="table-wrap">
     <table>
@@ -144,66 +165,188 @@
     <div class="change"><h3>Plain-language context for insider titles</h3><p>Non-members struggled with titles like "Grand Basileus," so the proposal keeps official titles and adds plain-language explanations.</p><span class="change-evidence">Leader task: members 4 of 4, non-members 1 of 5</span></div>
     <div class="change"><h3>Sub-items ordered by user intent</h3><p>Highest-intent actions come first. "Become a Member" leads Membership, followed by Chapter Locator.</p><span class="change-evidence">9 of 9 · Become a Member</span></div>
     <div class="change"><h3>Affiliates placed under Membership</h3><p>Membership was the most common placement for Affiliates, though not a majority. I first placed it under Programs, then moved it so the structure follows the data.</p><span class="change-evidence">4 of 9</span></div>
+
   </div>
 </section>
 
-<section class="section" id="implementation">
-  <div class="section-head"><p class="section-note">the same project, carried into code</p><h2>From Findings to Coded Redesign</h2></div>
-  <div class="callout"><p><strong>Access the redesign.</strong> Enter the shared password to unlock the walkthrough and its link to the coded redesign. The walkthrough covers what carried over from this study, where the build departs from it, and what is new.</p><div class="rd-actions"><a class="redesign-button" href="sgrho-redesign.html">Unlock the redesign →</a></div></div>
-  <p>I carried the research into a coded website redesign. The screenshots show the resulting desktop and mobile interfaces. Each row below traces a finding to a design decision and to what can be seen in the captured build; interaction and sitewide behavior still need a code review or hands-on test.</p>
-
-  <figure class="shot">
-    <img src="images/sgrho/sgrho-original-header-2025-03.jpg" alt="Original Sigma Gamma Rho header: Member Portal, Join Sigma, and Find a Chapter buttons above a single row of twelve text links: About, Leadership, Help Center, Service, Members, Affiliates, Partners, Sponsors, Vendors, Media, Donate Now, Careers." width="1440" height="234" loading="lazy">
-    <figcaption>Before: the original header, captured from the Wayback Machine on March 19, 2025. Twelve text links sit in one row, and a Join Sigma button sits in the utility bar above them, beside Member Portal and Find a Chapter. The original site did have a Join button; it sat outside the main navigation.</figcaption>
+<section class="section" id="exploration">
+  <div class="section-head"><p class="section-note">three ways to hold the same structure</p><h2>Exploring Header Patterns</h2></div>
+  <p class="lead-in"><strong>I had already chosen a single-row ribbon in my full redesign.</strong> To check that choice rather than assume it, I went back and compared it with two alternative header patterns as greyscale wireframes in Figma, each with the Membership menu open.</p>
+  <figure class="panel">
+    <img src="images/sgrho/sgrho-figma-option-1.jpg" alt="Greyscale wireframe, option 1: a single-row navigation ribbon with dropdown menus; the Membership menu is open with Become a Member first, and Join sits in the masthead." width="1800" height="590" loading="lazy">
+    <figcaption><strong>Option 1 · Single-row ribbon with dropdowns.</strong> Compact scan path; long labels compete for horizontal space.</figcaption>
   </figure>
-
-  <figure class="shot">
-    <img src="images/sgrho/sgrho-original-members-menu-2025-03.jpg" alt="Original Sigma Gamma Rho header with the Members menu open, listing Membership, Collegiate Experience, Alumnae Engagement, and Reactivate Today." width="1440" height="324" loading="lazy">
-    <figcaption>Before: the original Members menu, open. It lists Membership, Collegiate Experience, Alumnae Engagement, and Reactivate Today (Wayback Machine, March 19, 2025).</figcaption>
+  <figure class="panel">
+    <img src="images/sgrho/sgrho-figma-option-2.jpg" alt="Greyscale wireframe, option 2: the same ribbon with a persistent Join action at its right end and a wider Membership panel with short descriptions." width="1800" height="650" loading="lazy">
+    <figcaption><strong>Option 2 · Persistent Join action in the ribbon.</strong> Joining is always one click away; the full menu still has to be opened deliberately.</figcaption>
   </figure>
+  <figure class="panel">
+    <img src="images/sgrho/sgrho-figma-option-3.jpg" alt="Greyscale wireframe, option 3: a grouped mega menu showing all six sections at once, with a one-line description under each section." width="1800" height="1100" loading="lazy">
+    <figcaption><strong>Option 3 · Grouped mega menu.</strong> Every section is visible at once, with room for plain-language descriptions; the large panel asks visitors to scan more.</figcaption>
+  </figure>
+  <div class="callout"><p><strong>Decision:</strong> I kept Option 1, the single-row ribbon with dropdowns and Join in the masthead.</p></div>
+  <!-- TODO(Karena): in two or three sentences, say why Option 1 over Options 2 and 3, and what you gave up. -->
+</section>
 
-  <div class="shot-stack">
-    <figure class="shot">
-      <img src="images/sgrho/sgrho-original-affiliates-nested-2025-03.jpg" alt="Original header with the Affiliates menu open: Rhoer Affiliates, Philo Affiliates expanded to show Philo Photo Gallery, and Rhosebuds." width="1440" height="327" loading="lazy">
-      <figcaption>Before: a menu inside a menu. Affiliates opens to Rhoer Affiliates, Philo Affiliates (which expands to Philo Photo Gallery), and Rhosebuds.</figcaption>
-    </figure>
-    <figure class="shot">
-      <img src="images/sgrho/sgrho-original-partners-nested-2025-03.jpg" alt="Original header with the Partners menu open: Foundations expanded to show National Education Fund, Sigma Public Education and Research Foundation, and G.O.L.D.E.N. Charitable Foundation." width="1440" height="340" loading="lazy">
-      <figcaption>Before: Partners opens to a single item, Foundations, which expands to three foundations. Navigation went three levels deep here.</figcaption>
-    </figure>
+<section class="section" id="final-design">
+  <div class="section-head"><p class="section-note">every state, desktop and mobile</p><h2>Final Design</h2></div>
+  <p class="lead-in"><strong>I documented every state of the chosen navigation in Figma.</strong> Each desktop menu open, search, and the mobile drawer are built from reusable components and wired into a clickable prototype for the next round of testing.</p>
+  <figure class="panel">
+    <img src="images/sgrho/sgrho-figma-hifi-membership.jpg" alt="High-fidelity desktop design: crest and wordmark, Search, Join, Poodle Portal and Donate buttons, a royal blue navigation ribbon, and the Membership dropdown open with Become a Member first." width="1800" height="596" loading="lazy">
+    <figcaption><strong>Desktop · Membership open.</strong> The gold underline marks the open section, and the dropdown lists joining first.</figcaption>
+  </figure>
+  <div class="panel">
+    <div class="phone-row">
+      <figure>
+        <img src="images/sgrho/sgrho-figma-mobile-closed.jpg" alt="Mobile design with the drawer closed: crest, wordmark and search, then a royal bar with Menu and a gold Explore Membership button." width="750" height="568" loading="lazy">
+        <figcaption><strong>Drawer closed.</strong> "Explore Membership" stays beside Menu, so the join path does not disappear into the collapsed navigation.</figcaption>
+      </figure>
+      <figure>
+        <img src="images/sgrho/sgrho-figma-mobile-open.jpg" alt="Mobile design with the drawer open: six section rows with chevrons, then Join, Poodle Portal and Donate buttons." width="750" height="1407" loading="lazy">
+        <figcaption><strong>Drawer open.</strong> The six sections become accordion rows; the masthead buttons move to the foot of the drawer.</figcaption>
+      </figure>
+      <figure>
+        <img src="images/sgrho/sgrho-figma-mobile-membership.jpg" alt="Mobile design with Membership expanded: Become a Member, Reactivate Membership, Chapter Locator, Affiliates and Membership Accountability." width="750" height="1793" loading="lazy">
+        <figcaption><strong>Membership expanded.</strong> The same five destinations as desktop, in the same order.</figcaption>
+      </figure>
+    </div>
   </div>
-
-  <div class="compare" role="group" aria-label="Original Members menu compared with the redesigned Membership menu">
-    <figure class="compare-item">
-      <span class="compare-tag before">Before · Mar 2025</span>
-      <img src="images/sgrho/sgrho-original-members-menu-2025-03.jpg" alt="Original header with the Members menu open: Membership, Collegiate Experience, Alumnae Engagement, Reactivate Today. Twelve links sit in one row." width="1440" height="324" loading="lazy">
-      <figcaption>Twelve links in one row; membership actions sit in a "Members" menu beside Leadership and Affiliates, and Join Sigma lives in a utility bar above.</figcaption>
-    </figure>
-    <figure class="compare-item">
-      <span class="compare-tag after">After · coded redesign</span>
-      <img src="images/sgrho/sgrho-nav-membership.jpg" alt="Redesigned header with the Membership menu open, listing Become a Member first, then Reactivate Membership, Chapter Locator, Affiliates, and Membership Accountability." width="1200" height="400" loading="lazy">
-      <figcaption>Membership is its own primary category with Become a Member first, and a Join button sits in the header beside Search.</figcaption>
-    </figure>
-  </div>
-
-  <div class="rd-actions"><a class="redesign-button" href="sgrho-redesign.html">Enter password to access the redesign →</a></div>
-
-  <div class="table-wrap" tabindex="0" role="region" aria-label="Finding to design decision to coded behavior">
+  <h3>How the findings show up</h3>
+  <div class="table-wrap" tabindex="0" role="region" aria-label="Finding to design decision to final design">
     <table>
-      <thead><tr><th>Finding</th><th>Design decision</th><th>Captured implementation</th></tr></thead>
+      <thead><tr><th>Finding</th><th>Decision</th><th>In the final design</th></tr></thead>
       <tbody>
-        <tr><td>Join task: 100% direct; membership grouped unanimously</td><td>Membership in the primary navigation, with "Become a Member" first</td><td>The open Membership menu lists Become a Member first, and the desktop header shows a Join button. <span class="badge green">Shown</span></td></tr>
-        <tr><td>The join path needed to remain easy to find on small screens</td><td>Keep a membership entry outside the collapsed menu</td><td>The mobile capture shows "Explore Membership" next to the Menu button. <span class="badge green">Shown</span></td></tr>
-        <tr><td>Structural depth slowed participants</td><td>Limit navigation depth to two levels</td><td>The captured Membership menu has a single dropdown level. Other menus still need a full check. <span class="badge amber">Partial</span></td></tr>
-        <tr><td>"Find the current leader": 55.6% success</td><td>Explain insider titles in plain language</td><td>The header shows a Leadership category, but the capture does not show how the destination page explains "Grand Basileus." This change remains unverified. <span class="badge amber">Unverified</span></td></tr>
-        <tr><td>"Service &amp; Impact" tested weakly</td><td>Use a clearer programs label</td><td>The desktop capture shows "Programs &amp; Initiatives" in primary navigation. The revised label has not been tree-tested. <span class="badge green">Shown</span></td></tr>
+        <tr><td>Join task: 100% direct; membership grouped unanimously</td><td>Membership in the primary navigation, "Become a Member" first</td><td>Become a Member leads the menu, and Join sits in the masthead. <span class="badge green">Shown</span></td></tr>
+        <tr><td>The join path needed to stay findable on small screens</td><td>Keep a membership entry outside the collapsed menu</td><td>"Explore Membership" sits next to Menu on phones. <span class="badge green">Shown</span></td></tr>
+        <tr><td>Structural depth slowed participants</td><td>Limit navigation to two levels</td><td>All six menus open a single level of links. <span class="badge green">Shown</span></td></tr>
+        <tr><td>"Find the current leader": 55.6% success</td><td>Explain insider titles in plain language</td><td>Official titles only so far; descriptions are the next design change. <span class="badge amber">Not yet</span></td></tr>
+        <tr><td>"Service &amp; Impact" tested weakly</td><td>Use a clearer programs label</td><td>"Programs &amp; Initiatives" is in the ribbon; not yet tree-tested. <span class="badge green">Shown</span></td></tr>
       </tbody>
     </table>
   </div>
-
-
-  <div class="callout yellow"><p><strong>Where the captured build departs from the tested structure:</strong> Contact appears as a top-level item. That placement and the revised "Programs &amp; Initiatives" label were not evaluated in the original tree test. A follow-up tree test should check them in the built navigation. <a class="source-link" href="mailto:designedbykarena@gmail.com?subject=Request%20for%20Sigma%20Gamma%20Rho%20Coded%20Redesign">Request the redesign code →</a></p></div>
+  <div class="callout yellow"><p><strong>Where the final design departs from the tested structure:</strong> Corporate Partnerships joined Programs, Membership Accountability joined the Membership menu, and Our Foundations left the About menu. None of these, nor the "Programs &amp; Initiatives" label, were in the tree test, so the round 2 test checks them.</p></div>
+  <h3>Try the prototype</h3>
+  <p>Open a menu, search, or switch to the phone view and open the drawer. The destinations are placeholder pages.</p>
+  <div class="nav-demo" id="nav-demo">
+    <div class="nd-controls">
+      <div class="nd-views" role="group" aria-label="Prototype view">
+        <button type="button" data-view="desktop" aria-pressed="true">Desktop</button>
+        <button type="button" data-view="phone" aria-pressed="false">Phone</button>
+      </div>
+      <button type="button" class="nd-restart">Restart</button>
+    </div>
+    <div class="nd-stage"><div class="nd-screen desktop"></div></div>
+    <p class="nd-status" role="status" aria-live="polite"></p>
+    <noscript><p class="small-note">The prototype needs JavaScript. The screens above show every state.</p></noscript>
+  </div>
 </section>
+
+<section class="section" id="design-system">
+  <div class="section-head"><p class="section-note">the pieces every state is built from</p><h2>Components &amp; Tokens</h2></div>
+  <p class="lead-in"><strong>Every state is built from one small set of components and values.</strong> Changing a color or a component once updates every screen. Hover the specimens below to see their states.</p>
+
+  <div class="sg-system">
+    <h3>Color</h3>
+    <div class="sg-swatches">
+      <div class="sg-swatch"><i style="background:#2041a5"></i><div><strong>Royal</strong><code>#2041A5</code><span>Navigation ribbon, links, outline button labels</span></div></div>
+      <div class="sg-swatch"><i style="background:#dfb136"></i><div><strong>Gold</strong><code>#DFB136</code><span>Primary action fill, open-menu underline</span></div></div>
+      <div class="sg-swatch"><i style="background:#081633"></i><div><strong>Navy</strong><code>#081633</code><span>Text on gold, deepest backgrounds</span></div></div>
+      <div class="sg-swatch"><i style="background:#f4f6fb"></i><div><strong>Tint</strong><code>#F4F6FB</code><span>Hover fill for menu items and search</span></div></div>
+      <div class="sg-swatch"><i style="background:#fcfffe"></i><div><strong>Bright white</strong><code>#FCFFFE</code><span>Masthead and panels</span></div></div>
+      <div class="sg-swatch"><i style="background:#333333"></i><div><strong>Ink</strong><code>#333333</code><span>Body text</span></div></div>
+    </div>
+    <p class="small-note"><strong>Contrast decision:</strong> gold text on royal is only 4.44:1, so on the ribbon the gold stays in the underline and labels stay white. Every gold fill carries navy text, at 8.9:1.</p>
+
+    <h3>Type</h3>
+    <div class="sg-card sg-type">
+      <div class="sg-type-row"><span class="sg-wordmark">Sigma Gamma Rho</span><small>Wordmark · LEMON MILK on the site (Jost shown here), uppercase, 5% tracking</small></div>
+      <div class="sg-type-row"><span class="sg-navlabel sg-on-light">Membership</span><small>Nav label · Montserrat Bold 12, 12% tracking, uppercase</small></div>
+      <div class="sg-type-row"><span class="sg-link">Become a Member</span><small>Menu link · Montserrat SemiBold 14</small></div>
+      <div class="sg-type-row"><span class="sg-btnlabel">Poodle Portal</span><small>Button label · Montserrat Bold 14</small></div>
+    </div>
+
+    <h3>Buttons</h3>
+    <div class="sg-pair">
+      <figure class="sg-card">
+        <div class="sg-row">
+          <span class="sg-search"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>Search</span>
+          <span class="sg-btn">Join</span>
+          <span class="sg-btn solid">Poodle Portal</span>
+        </div>
+        <figcaption><strong>On light (masthead).</strong> Outline buttons fill gold on hover and their label turns navy; the solid button fills royal.</figcaption>
+      </figure>
+      <figure class="sg-card sg-royal">
+        <div class="sg-row">
+          <span class="sg-btn ghost">Join</span>
+          <span class="sg-btn solid">Poodle Portal</span>
+        </div>
+        <figcaption><strong>On dark (mobile drawer).</strong> White outline and label; gold on hover with a navy label.</figcaption>
+      </figure>
+    </div>
+
+    <h3>Navigation link</h3>
+    <figure class="sg-card sg-royal">
+      <div class="sg-nav">
+        <span class="sg-navlabel">About</span>
+        <span class="sg-navlabel">Leadership</span>
+        <span class="sg-navlabel open">Membership</span>
+        <span class="sg-navlabel">Programs &amp; Initiatives</span>
+      </div>
+      <figcaption><strong>Default, hover, open.</strong> White uppercase labels; a 2px gold underline appears on hover and stays while a menu is open.</figcaption>
+    </figure>
+
+    <h3>Dropdown item</h3>
+    <div class="sg-pair">
+      <div class="sg-card sg-menu-stage">
+        <div class="sg-menu" role="presentation">
+          <span>Become a Member</span>
+          <span class="is-hover">Reactivate Membership</span>
+          <span class="is-focus">Chapter Locator</span>
+          <span>Affiliates</span>
+          <span>Membership Accountability</span>
+        </div>
+      </div>
+      <ul class="sg-states">
+        <li><strong>Default</strong> Royal SemiBold 14 on white.</li>
+        <li><strong>Hover</strong> Tint fill, darker royal label (shown on Reactivate Membership).</li>
+        <li><strong>Focus</strong> Tint fill plus a 3px gold outline for keyboard users (shown on Chapter Locator).</li>
+        <li><strong>Menu</strong> White card, 8px radius, soft shadow, at least 260px wide.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="measure">
+  <div class="section-head"><p class="section-note">what is proven, and what is next</p><h2>Next: Testing the Design</h2></div>
+  <p class="lead-in"><strong>So far, the evidence covers the structure, not the interface.</strong> The tree test checked a proposed structure with 9 participants. The final design and its prototype have not been in front of users yet, so round 2 tests what changed.</p>
+  <div class="next-grid">
+    <div class="next-card"><span>Round 2 · Tree test</span><h3>The final structure</h3><p>At least 5 non-members. Join and find-a-chapter as controls, a retest of the two weak tasks (the current leader, community programs), and contacting the organization under Resources.</p></div>
+    <div class="next-card"><span>Round 2 · Moderated test</span><h3>The prototype</h3><p>3 to 5 first-time non-members on desktop and phone: start the join path, find who leads the organization, and find something it does in the community.</p></div>
+  </div>
+  <div class="table-wrap"><table><thead><tr><th>What I'll measure</th><th>Round 1 baseline</th><th>Round 2 target</th></tr></thead><tbody>
+    <tr><td>Non-members finding the current leader</td><td>1 of 5</td><td>At least 4 of 5</td></tr>
+    <tr><td>Visitors finding community programs</td><td>5 of 8</td><td>At least 7 of 8</td></tr>
+    <tr><td>Placements resting on judgment</td><td>5 untested</td><td>All five tree-tested</td></tr>
+  </tbody></table></div>
+  <p class="small-note">Targets are mine, set before any retest. Round 1 tested a proposed structure, round 2 tests the final design, and each result will be reported next to its baseline with the sample size.</p>
+</section>
+
+<section class="section" id="limits">
+  <div class="section-head"><p class="section-note">what I learned</p><h2>Reflection</h2></div>
+  <div class="judgment-grid">
+    <div class="judgment"><span>Why these methods</span><p>Card sorting showed how visitors group content; the tree test checked whether a proposed structure let them find it. Together they separate labeling problems from structure problems.</p></div>
+    <div class="judgment"><span>What I'd do differently</span><p>Tree-test the revised “Programs &amp; Initiatives” label and the design's departures before finalizing them, not after.</p></div>
+    <div class="judgment"><span>Tradeoff</span><p>I chose to keep official titles and pair them with plain-language explanations instead of renaming them, balancing newcomer clarity against member expectations. The explanations are planned for the next design round.</p></div>
+  </div>
+  <div class="callout dark"><p><strong>Key takeaway:</strong> navigation problems in large organizations are rarely just interface problems. They reflect a mismatch between how an organization manages its content internally and how visitors expect to find it.</p></div>
+  <details class="evidence">
+    <summary>Study limitations</summary>
+    <div class="evidence-body">
+      <ul><li>A sample of 9 participants per phase limits how far the results generalize.</li><li>I did not tree-test the original site structure with the same tasks, so I can show how the proposed structure performs but not that it beats the old one.</li><li>The join task names the action it wants ("becoming a member") and the answer is labeled "Become a Member," so its 100% shows the label is findable, not that the structure is strong. The member versus non-member gap on the leader task is the more informative result.</li><li>Participants came from a convenience sample.</li><li>The tree test used a proposed structure, not a live site.</li><li>Four placements rest on judgment more than on the card sort: Notable Sigmas, Anti-Hazing Policy, International Corporate Headquarters, and Media Relations. Tree-test them, along with Affiliates under Membership (4 of 9, not a majority), before treating the structure as settled.</li><li>The final design and its prototype have not been tested with participants. The design's departures from the tested structure and the revised "Programs &amp; Initiatives" label are the next things to test.</li></ul>
+    </div>
+  </details>
+</section>
+
 
 <section class="section" id="evidence">
   <div class="section-head"><p class="section-note">the supporting evidence, if you want all of it</p><h2>Full Results</h2></div>
@@ -311,35 +454,18 @@
     </div>
   </details>
 </section>
-
-<section class="section" id="measure">
-  <div class="section-head"><p class="section-note">how I would know it worked</p><h2>Why this matters and what I would measure</h2></div>
-  <p><strong>Why it matters (my inference, not a measured result):</strong> a membership organization depends on people being able to join. If an outsider cannot find the join path or the current leader, the site loses the first conversation it exists to start.</p>
-  <div class="table-wrap"><table><thead><tr><th>Metric</th><th>Baseline</th><th>Target in a retest</th></tr></thead><tbody>
-    <tr><td>Non-members finding the current leader</td><td>1 of 5</td><td>At least 4 of 5</td></tr>
-    <tr><td>Visitors finding community programs</td><td>5 of 8</td><td>At least 7 of 8</td></tr>
-    <tr><td>Placements resting on judgment</td><td>5 untested</td><td>All five tree-tested</td></tr>
-  </tbody></table></div>
-  <p class="small-note">Targets are mine, set before any retest. Baselines come from the tree test of the proposed structure, not the live site.</p>
-</section>
-
-<section class="section" id="limits">
-  <div class="section-head"><p class="section-note">what this study does not prove</p><h2>Limitations &amp; Next Steps</h2></div>
-  <ul><li>A sample of 9 participants per phase limits how far the results generalize.</li><li>I did not tree-test the original site structure with the same tasks, so I can show how the proposed structure performs but not that it beats the old one.</li><li>The join task names the action it wants ("becoming a member") and the answer is labeled "Become a Member," so its 100% shows the label is findable, not that the structure is strong. The member versus non-member gap on the leader task is the more informative result.</li><li>Participants came from a convenience sample.</li><li>The tree test used a proposed structure, not a live site.</li><li>Four placements rest on judgment more than on the card sort: Notable Sigmas, Anti-Hazing Policy, International Corporate Headquarters, and Media Relations. Tree-test them, along with Affiliates under Membership (which I first placed under Programs), before treating the structure as settled.</li><li>The coded navigation has not been tested. Its departures from the tested structure, and the revised "Programs &amp; Initiatives" label, are the next things to test.</li></ul>
-  <div class="judgment-grid">
-    <div class="judgment"><span>Why these methods</span><p>Card sorting showed how visitors group content; the tree test checked whether a proposed structure let them find it. Together they separate labeling problems from structure problems.</p></div>
-    <div class="judgment"><span>What I'd do differently</span><p>Tree-test the revised “Programs &amp; Initiatives” label and the build's departures before coding them, not after.</p></div>
-    <div class="judgment"><span>Tradeoff</span><p>I kept official titles and added plain-language explanations instead of renaming them, balancing newcomer clarity against member expectations.</p></div>
-  </div>
-  <div class="callout dark"><p><strong>Key takeaway:</strong> navigation problems in large organizations are rarely just interface problems. They reflect a mismatch between how an organization manages its content internally and how visitors expect to find it.</p></div>
-</section>
+<aside class="stakeholder" aria-label="Access for Sigma Gamma Rho stakeholders">
+  <p><strong>For Sigma Gamma Rho stakeholders.</strong> The full site redesign is shared privately. Enter the password you were given to view it.</p>
+  <a href="sgrho-redesign.html">View the full redesign →</a>
+</aside>
 <div class="end-nav"><a href="work.html">← All work</a><a href="shein-usability.html">Next: SHEIN →</a></div>
 </article>
-<aside class="case-aside"><nav class="jump-card" aria-label="Case study sections"><p>jump to ↓</p><a href="#summary">Summary</a><a href="#overview">Overview</a><a href="#findings">Key findings</a><a href="#synthesis">Synthesis</a><a href="#architecture">Proposed IA</a><a href="#rationale">Rationale</a><a href="#implementation">Coded redesign</a><a href="#evidence">Full results</a><a href="#limits">Limitations</a></nav></aside>
+<aside class="case-aside"><nav class="jump-card" aria-label="Case study sections"><p>jump to ↓</p><a href="#summary">Summary</a><a href="#problem">Problem</a><a href="#overview">Research</a><a href="#findings">Key findings</a><a href="#architecture">Structure</a><a href="#exploration">Exploration</a><a href="#final-design">Final design</a><a href="#design-system">Components</a><a href="#measure">Next steps</a><a href="#limits">Reflection</a><a href="#evidence">Full results</a></nav></aside>
 </div>
 </main>
 
 <footer class="site-footer"><p>Designed and coded by Karena Blue.</p></footer>
 
 <script src="site.js" defer></script>
+<script src="sgrho-nav-demo.js" defer></script>
 </body></html>

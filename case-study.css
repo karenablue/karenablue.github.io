@@ -538,3 +538,157 @@ th,td,.task p,.benchmark-card p,.principle p,.persona-body p,
 .interaction-sequence figcaption{margin-top:12px;color:var(--muted);font-size:.82rem;line-height:1.6}
 .interaction-sequence figcaption strong{display:block;color:var(--ink)}
 @media(max-width:560px){.interaction-sequence{grid-template-columns:minmax(0,1fr);gap:28px}.interaction-sequence figure{width:min(100%,300px);justify-self:center}}
+
+/* ---------- design showcase (SGRho case study) ---------- */
+.lead-in{font-size:1.04rem;line-height:1.7;color:var(--muted)}
+.lead-in strong{color:var(--ink)}
+.panel{margin:24px 0;padding:clamp(14px,3.6vw,40px);border-radius:20px;background:#eef0f7}
+.panel img{display:block;width:100%;height:auto;border-radius:10px;background:#fff;box-shadow:0 1px 2px rgba(18,21,31,.06),0 18px 40px -20px rgba(18,21,31,.38)}
+.panel figcaption{margin-top:14px;color:var(--muted);font-size:.86rem;line-height:1.6}
+.panel figcaption strong{color:var(--ink)}
+.phone-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(12px,3vw,32px);align-items:start}
+.phone-row figure{margin:0;min-width:0}
+.phone-row img{border-radius:18px}
+@media(max-width:640px){.phone-row{grid-template-columns:minmax(0,1fr);max-width:300px;margin-inline:auto}}
+
+.sg-system{--sg-royal:#2041a5;--sg-royal-dark:#17357f;--sg-gold:#dfb136;--sg-navy:#081633;--sg-tint:#f4f6fb;--sg-line:rgba(32,65,165,.2)}
+.sg-system h3{margin:32px 0 12px}
+.sg-swatches{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+@media(max-width:560px){.sg-swatches{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.sg-swatch{border-radius:14px;overflow:hidden;background:#fff;border:1px solid var(--line-color)}
+.sg-swatch i{display:block;height:76px;border-bottom:1px solid var(--line-color)}
+.sg-swatch div{display:grid;gap:3px;padding:10px 12px 12px;font-size:.8rem;line-height:1.4}
+.sg-swatch code{font-size:.76rem;color:var(--muted)}
+.sg-swatch span{color:var(--muted)}
+.sg-card{margin:0;padding:22px;border-radius:16px;background:#fff;border:1px solid var(--line-color)}
+.sg-card figcaption{margin-top:16px;font-size:.84rem;line-height:1.55;color:var(--muted)}
+.sg-card figcaption strong{color:var(--ink)}
+.sg-card.sg-royal{background:var(--sg-royal);border-color:var(--sg-royal)}
+.sg-card.sg-royal figcaption,.sg-card.sg-royal figcaption strong{color:#fff}
+.sg-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;align-items:start}
+@media(max-width:700px){.sg-pair{grid-template-columns:minmax(0,1fr)}}
+.sg-row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.sg-btn,.sg-search{display:inline-flex;align-items:center;gap:10px;min-height:44px;padding:0 20px;border-radius:8px;font:700 14px/1 "Montserrat",system-ui,sans-serif;cursor:default;transition:background .15s,color .15s,border-color .15s}
+.sg-btn{border:2px solid var(--sg-gold);background:#fff;color:var(--sg-royal)}
+.sg-btn:hover{background:var(--sg-gold);color:var(--sg-navy)}
+.sg-btn.solid{background:var(--sg-gold);color:var(--sg-navy)}
+.sg-btn.solid:hover{background:var(--sg-royal);border-color:var(--sg-royal);color:#fff}
+.sg-btn.ghost{background:transparent;border-color:#fff;color:#fff}
+.sg-btn.ghost:hover{background:var(--sg-gold);border-color:var(--sg-gold);color:var(--sg-navy)}
+.sg-search{padding:0 16px;border:1px solid var(--sg-line);background:#fff;color:var(--sg-royal)}
+.sg-search:hover{border-color:var(--sg-royal);background:var(--sg-tint)}
+.sg-nav{display:flex;flex-wrap:wrap;gap:8px 32px}
+.sg-navlabel{display:inline-block;padding:10px 0;border-bottom:2px solid transparent;color:#fff;font:700 12px/1 "Montserrat",system-ui,sans-serif;letter-spacing:.12em;text-transform:uppercase;cursor:default;transition:border-color .2s}
+.sg-navlabel:hover,.sg-navlabel.open{border-bottom-color:var(--sg-gold)}
+.sg-navlabel.sg-on-light{color:var(--sg-ink,#333);padding:0}
+.sg-type{display:grid;gap:18px}
+.sg-type-row{display:grid;gap:4px}
+.sg-type-row small{font-size:.78rem;color:var(--muted)}
+.sg-wordmark{font:500 clamp(1.3rem,3vw,1.75rem)/1.1 "Jost",system-ui,sans-serif;letter-spacing:.05em;text-transform:uppercase;color:var(--sg-royal)}
+.sg-link{font:600 14px/1.4 "Montserrat",system-ui,sans-serif;color:var(--sg-royal)}
+.sg-btnlabel{font:700 14px/1.4 "Montserrat",system-ui,sans-serif;color:#333}
+.sg-menu-stage{background:var(--sg-tint)}
+.sg-menu{max-width:280px;padding:8px 0;border-radius:8px;background:#fff;border:1px solid rgba(0,0,0,.08);box-shadow:0 20px 44px rgba(8,22,51,.18)}
+.sg-menu span{display:block;padding:10px 20px;font:600 14px/1.4 "Montserrat",system-ui,sans-serif;color:var(--sg-royal);cursor:default}
+.sg-menu span:hover,.sg-menu span.is-hover{background:var(--sg-tint);color:var(--sg-royal-dark)}
+.sg-menu span.is-focus{background:var(--sg-tint);color:var(--sg-royal-dark);outline:3px solid var(--sg-gold);outline-offset:-3px}
+.sg-states{margin:0;padding:0;list-style:none;display:grid;gap:10px;font-size:.88rem;line-height:1.5;color:var(--muted)}
+.sg-states strong{display:block;color:var(--ink)}
+.next-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:20px 0}
+.next-card{padding:22px;border-radius:16px;background:#eef0f7}
+.next-card span{font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.next-card h3{margin:6px 0 8px}
+.next-card p{margin:0;font-size:.92rem;line-height:1.6}
+@media(max-width:700px){.next-grid{grid-template-columns:minmax(0,1fr)}}
+
+/* ---------- on-page navigation prototype ---------- */
+.nav-demo{--r:#2041a5;--rd:#17357f;--g:#dfb136;--n:#081633;--t:#f4f6fb;margin:16px 0 8px;padding:clamp(12px,3vw,28px);border-radius:20px;background:#eef0f7}
+.nd-controls{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:14px}
+.nd-views{display:inline-flex;padding:4px;border-radius:999px;background:#fff;border:1px solid var(--line-color)}
+.nd-views button,.nd-restart{border:0;background:none;padding:8px 16px;border-radius:999px;font:600 .82rem "Inter",sans-serif;color:var(--muted);cursor:pointer;min-height:36px}
+.nd-views button[aria-pressed="true"]{background:var(--ink);color:#fff}
+.nd-restart{border:1px solid var(--line-color);background:#fff}
+.nd-stage{position:relative;overflow:hidden}
+.nd-screen{font-family:"Montserrat",system-ui,sans-serif;color:#333}
+.nd-screen button{font-family:inherit;cursor:pointer}
+.nd-screen.desktop{width:960px;transform-origin:0 0}
+.nd-desktop{position:relative;background:#fcfffe;border-radius:12px;overflow:hidden;box-shadow:0 18px 40px -20px rgba(18,21,31,.38)}
+.nd-mast{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 32px;background:#fcfffe}
+.nd-brand{display:flex;align-items:center;gap:12px;border:0;background:none;padding:0;text-align:left}
+.nd-brand img{width:48px;height:64px;object-fit:contain}
+.nd-wordmark{display:grid;gap:3px;padding-left:12px;border-left:1px solid var(--g)}
+.nd-wordmark b{font:500 22px/1 "Jost",sans-serif;letter-spacing:.05em;text-transform:uppercase;color:var(--r)}
+.nd-wordmark small{font:700 9px/1 "Montserrat",sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#333}
+.nd-actions{display:flex;gap:8px;align-items:center}
+.nd-btn{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:0 16px;border-radius:8px;border:2px solid var(--g);background:#fff;color:var(--r);font-weight:700;font-size:13px;transition:background .15s,color .15s,border-color .15s}
+.nd-btn:hover{background:var(--g);color:var(--n)}
+.nd-btn.solid{background:var(--g);color:var(--n)}
+.nd-btn.solid:hover{background:var(--r);border-color:var(--r);color:#fff}
+.nd-btn.ghost{background:transparent;border-color:#fff;color:#fff}
+.nd-btn.ghost:hover{background:var(--g);border-color:var(--g);color:var(--n)}
+.nd-searchbtn{display:inline-flex;align-items:center;gap:8px;min-height:40px;padding:0 14px;border-radius:8px;border:1px solid rgba(32,65,165,.2);background:#fff;color:var(--r);font-weight:700;font-size:13px}
+.nd-searchbtn:hover,.nd-searchbtn[aria-expanded="true"]{border-color:var(--r);background:var(--t)}
+.nd-searchbtn.square{width:44px;height:44px;padding:0;justify-content:center}
+.nd-ribbon{background:var(--r)}
+.nd-ribbon>ul{display:flex;justify-content:center;gap:28px;margin:0;padding:0;list-style:none}
+.nd-item{position:relative}
+.nd-link{border:0;border-bottom:2px solid transparent;background:none;padding:13px 0 11px;color:#fff;font-weight:700;font-size:11px;letter-spacing:.12em;text-transform:uppercase}
+.nd-link:hover,.nd-item.is-open .nd-link,.nd-item.is-current .nd-link{border-bottom-color:var(--g)}
+.nd-menu{position:absolute;z-index:5;top:calc(100% + 6px);left:50%;transform:translateX(-50%);min-width:240px;margin:0;padding:8px 0;list-style:none;background:#fff;border-radius:8px;border:1px solid rgba(0,0,0,.08);box-shadow:0 20px 44px rgba(8,22,51,.18)}
+.nd-item:last-child .nd-menu{left:auto;right:0;transform:none}
+.nd-menu button,.nd-sub button{display:block;width:100%;border:0;background:none;text-align:left;padding:9px 20px;color:var(--r);font-weight:600;font-size:13px;white-space:nowrap}
+.nd-menu button:hover,.nd-menu button:focus-visible{background:var(--t);color:var(--rd)}
+.nd-screen :focus-visible{outline:3px solid var(--g);outline-offset:2px}
+.nd-menu button:focus-visible{outline-offset:-3px}
+.nd-page{min-height:250px;padding:40px 32px;background:var(--t)}
+.nd-page.home{display:grid;place-content:center;text-align:center;gap:8px}
+.nd-hint{margin:0;color:#6a7282;font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:700}
+.nd-try{margin:0;font-size:14px;color:#333}
+.nd-crumb{margin:0 0 14px;font-size:12px;color:#555a66}
+.nd-rule{display:block;width:40px;height:4px;background:var(--g);margin-bottom:12px}
+.nd-page h4{margin:0 0 8px;font:500 30px/1.1 "Jost",sans-serif;letter-spacing:.03em;text-transform:uppercase;color:var(--r)}
+.nd-note{margin:0;font-size:14px;color:#555a66}
+.nd-search-panel{position:absolute;z-index:6;right:32px;top:88px;width:340px;padding:16px;background:#fcfffe;border:1px solid rgba(32,65,165,.2);border-top:3px solid var(--g);border-radius:0 0 8px 8px;box-shadow:0 20px 44px rgba(8,22,51,.18)}
+.nd-search-label{display:block;margin-bottom:10px;font:500 13px "Jost",sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--r)}
+.nd-field{display:flex;align-items:center;gap:8px;padding:0 12px;border:1px solid var(--r);border-radius:8px;background:#fff;color:var(--r)}
+.nd-field input{flex:1;min-width:0;border:0;outline:0;padding:12px 0;font:14px "Montserrat",sans-serif;color:#333;background:transparent}
+.nd-result{display:flex;justify-content:space-between;width:100%;border:0;border-bottom:1px solid rgba(32,65,165,.12);background:none;padding:12px 8px;color:var(--r);font-weight:700;font-size:13px;text-align:left}
+.nd-result:hover{background:var(--t)}
+.nd-empty{margin:12px 0 0;font-size:13px;color:#555a66}
+.nd-screen.phone{display:flex;justify-content:center}
+.nd-phone{width:340px;max-width:100%;height:640px;border:8px solid #12151f;border-radius:32px;overflow:hidden;background:#fcfffe;box-shadow:0 18px 40px -20px rgba(18,21,31,.45)}
+.nd-phone-scroll{position:relative;height:100%;overflow-y:auto}
+.nd-phone .nd-mast{padding:10px 16px}
+.nd-brand.small img{width:36px;height:48px}
+.nd-brand.small .nd-wordmark{padding-left:8px}
+.nd-brand.small .nd-wordmark b{font-size:16px}
+.nd-brand.small .nd-wordmark small{font-size:8px;letter-spacing:.14em}
+.nd-ribbon-m{background:var(--r);padding:0 16px}
+.nd-bar-m{display:flex;justify-content:space-between;align-items:center;padding:6px 0}
+.nd-menu-toggle{display:inline-flex;align-items:center;gap:10px;min-height:44px;border:0;background:none;color:#fff;font-weight:700;font-size:11px;letter-spacing:.12em;text-transform:uppercase;padding:0}
+.nd-burger{display:grid;gap:4px;width:20px}.nd-burger i{display:block;height:2px;background:#fff;border-radius:1px}
+.nd-x{position:relative;width:20px;height:20px}.nd-x::before,.nd-x::after{content:"";position:absolute;left:0;top:9px;width:20px;height:2px;background:#fff;transform:rotate(45deg)}.nd-x::after{transform:rotate(-45deg)}
+.nd-explore{min-height:40px;padding:0 12px;border:0;border-radius:8px;background:var(--g);color:var(--n);font-weight:700;font-size:11px}
+.nd-drawer{padding:4px 0 16px}
+.nd-drawer>ul{margin:0;padding:0;list-style:none}
+.nd-drawer>ul>li{border-bottom:1px solid rgba(255,255,255,.16)}
+.nd-row{display:flex;justify-content:space-between;align-items:center;width:100%;border:0;background:none;padding:14px 4px;color:#fff;font-weight:700;font-size:11px;letter-spacing:.12em;text-transform:uppercase}
+.nd-chev{transition:transform .2s}
+.is-open>.nd-row .nd-chev{transform:rotate(180deg)}
+.nd-sub{margin:0;padding:0 0 8px 12px;list-style:none}
+.nd-sub button{padding:9px 4px;color:rgba(255,255,255,.88);white-space:normal}
+.nd-sub button:hover{color:#fff}
+.nd-drawer-actions{display:grid;gap:10px;margin-top:14px;padding-top:14px;border-top:1px solid rgba(255,255,255,.16)}
+.nd-drawer-actions .nd-btn{min-height:46px;font-size:14px}
+.nd-phone .nd-search-panel{position:static;width:auto;margin:0;border-radius:0}
+.nd-phone .nd-page{min-height:300px;padding:28px 20px}
+.nd-phone .nd-page h4{font-size:24px}
+.nd-status{min-height:1.4em;margin:12px 0 0;font-size:.84rem;color:var(--muted)}
+@media(prefers-reduced-motion:reduce){.nd-chev,.nd-btn,.nd-searchbtn{transition:none}}
+
+/* ---------- stakeholder access ---------- */
+.stakeholder{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;margin:40px 0 8px;padding:20px 24px;border-radius:16px;background:#fff;border:1px dashed var(--line-color)}
+.stakeholder p{margin:0;max-width:52ch;font-size:.9rem;line-height:1.55;color:var(--muted)}
+.stakeholder strong{color:var(--ink)}
+.stakeholder a{flex:none;display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:999px;border:1.5px solid var(--ink);color:var(--ink);font-weight:700;font-size:.85rem;text-decoration:none}
+.stakeholder a:hover{background:var(--ink);color:#fff}
