@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Inter:wght@400;500;600;700;800&family=Mulish:wght@400;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="case-study.css">
   <title>SHEIN: Filter &amp; Quick-add Interaction Design | Designed by Karena</title>
   <meta name="description" content="Desktop and mobile filter recovery and quick-add concepts by Karena Blue, informed by a DePaul team usability study of SHEIN. Independent, untested redesigns.">
@@ -26,23 +26,19 @@
 <main class="case-page" id="main-content" tabindex="-1">
   <a class="back-link" href="work.html">← back to all work</a>
   <section class="case-hero" aria-labelledby="case-title">
-    <span class="case-kicker">Interaction design · team usability study · independent concept</span>
+    <span class="case-kicker">Product design · team usability study · independent concept</span>
     <h1 id="case-title">SHEIN: recovering from empty results</h1>
-    <p class="case-deck">I designed filter recovery and size-aware quick add for desktop and mobile, with visible selections and clearer feedback. The concepts build on a team usability study where I moderated sessions: only 2 of 5 participants fully completed filtering. The redesigns have not been tested.</p>
-    <figure class="case-preview">
-      <img src="images/shein/desktop-03-empty.png" alt="Proposed SHEIN page showing the applied filters, empty results, and an action to remove Size XS while keeping color and price" width="1440" height="939" fetchpriority="high">
-      <figcaption>Proposed filter recovery: remove one restrictive filter while keeping the rest. Counts are illustrative. <a class="source-link" href="#redesign">Explore the interaction decisions →</a></figcaption>
-    </figure>
+    <p class="case-deck">I designed filter recovery and size-aware quick add for desktop and mobile, built on a team usability study where I moderated sessions: only 2 of 5 participants fully completed filtering. I compared patterns in mid-fi, restyled the chosen ones to match SHEIN’s current interface, and made a clickable prototype. The redesign has not been tested.</p>
     <div class="stat-grid" aria-label="Project at a glance">
       <div class="stat-card"><span>My contribution</span><strong>Study moderation + independent interaction redesign</strong></div>
-      <div class="stat-card"><span>Deliverable</span><strong>Desktop and mobile concepts + component states</strong></div>
+      <div class="stat-card"><span>Deliverable</span><strong>Mid-fi options, hi-fi desktop and mobile states, clickable prototype</strong></div>
       <div class="stat-card"><span>Research foundation</span><strong>Team study: 5 formal sessions + 1 pilot</strong></div>
       <div class="stat-card"><span>Status</span><strong>Independent concepts; not yet tested</strong></div>
     </div>
     <div class="callout yellow tldr" role="note" aria-label="Summary">
       <dl>
         <dt>Problem</dt><dd>Filters returned no results or reset, and shoppers missed quick add or took detours into product pages.</dd>
-        <dt>Design</dt><dd>Removable filter chips, an empty state with a specific recovery action, and quick add with size selection and confirmation.</dd>
+        <dt>Design</dt><dd>Removable filter chips, an empty state with a one-click recovery action, and a labeled quick add that carries the filtered size and confirms it.</dd>
         <dt>Evidence</dt><dd>In the team's desktop study, 2 of 5 fully completed filtering and 3 of 5 quick add, despite a mean SUS of 81.5.</dd>
         <dt>Next</dt><dd>Test the redesigned interactions with new and experienced shoppers, then revise based on task outcomes and feedback.</dd>
       </dl>
@@ -53,33 +49,14 @@
   <div class="case-layout">
     <nav class="jump-card mobile-jump" aria-label="Case study sections">
       <p>jump to ↓</p>
-      <a href="#solution">Interaction sequence</a><a href="#overview">Overview</a><a href="#questions">Research questions</a>
+      <a href="#overview">Overview</a><a href="#questions">Research questions</a>
       <a href="#design">Study design</a><a href="#pilot">Pilot</a>
       <a href="#results">Results</a><a href="#findings">Findings</a>
+      <a href="#exploration">Exploration</a><a href="#final-design">Final design</a><a href="#design-system">Components</a>
       <a href="#priorities">Recommendations</a><a href="#next">Limits &amp; next steps</a>
     </nav>
     <article>
-      <section class="section" id="solution">
-        <div class="section-head"><p class="section-note">the interaction, in context</p><h2>Choose a size without leaving the results</h2></div>
-        <p>The quick-add concept keeps the shopper on the listing, carries the filtered size into the picker, and names that size in the confirmation. These screens show the proposed behavior, not a tested outcome.</p>
-        <div class="interaction-sequence">
-          <figure>
-            <a href="images/shein/mobile-04-quickadd.jpg" target="_blank" rel="noopener"><img src="images/shein/mobile-04-quickadd.jpg" alt="Mobile product results with Size M and Black filters and a labeled Quick add button" width="390" height="749" loading="lazy"></a>
-            <figcaption><strong>1. Start on the listing.</strong> A labeled Quick add control sits beside the product details.</figcaption>
-          </figure>
-          <figure>
-            <a href="images/shein/mobile-05-picker.png" target="_blank" rel="noopener"><img src="images/shein/mobile-05-picker.png" alt="A size-selection sheet with M selected from the shopper's filter and an Add to bag button" width="390" height="749" loading="lazy"></a>
-            <figcaption><strong>2. Review the size.</strong> The sheet carries over M from the filter and lets the shopper change it.</figcaption>
-          </figure>
-          <figure>
-            <a href="images/shein/mobile-06-confirmed.jpg" target="_blank" rel="noopener"><img src="images/shein/mobile-06-confirmed.jpg" alt="The listing after adding an item, with confirmation reading Added to bag, Size M" width="390" height="749" loading="lazy"></a>
-            <figcaption><strong>3. See what was added.</strong> The confirmation includes the size while the product results remain visible.</figcaption>
-          </figure>
-        </div>
-        <p class="small-note">Independent mobile concepts informed by a desktop study. Product details and counts are illustrative. Open any screen to inspect it at full size.</p>
-        <div class="callout"><p><strong>What needs testing:</strong> does carrying over a filter size help shoppers choose correctly, or do they mistake it for a confirmed choice? Check whether people notice the selection, change it when needed, and understand the confirmation.</p></div>
-      </section>
-      <section class="section" id="overview">
+            <section class="section" id="overview">
         <div class="section-head"><p class="section-note">the tension in one glance</p><h2>Overview</h2></div>
         <p>The four-person class team studied whether shoppers could search and filter for a product, add an item directly from a listing, and save one for later. The aim was to compare observed task performance with what participants said about the experience.</p>
         <div class="callout yellow"><p><strong>Core finding:</strong> A formal-study mean SUS score of 81.5 described generally positive perceived usability. But the task records were less positive. Only two of five fully completed the filtering task and three of five fully completed quick add. Favorites reached five of five full completions, with friction for some participants.</p></div>
@@ -185,42 +162,137 @@
           <p><em>Quick add:</em> “Neutral, just ok, also confused with the add to cart icon.”</p>
         </div>
 
-        <figure class="fix-fig" aria-labelledby="fix-title">
-          <figcaption><span class="trace-kicker">Design decision · proposed fix, untested</span>
-            <strong id="fix-title">Because 2 of 5 hit no-results or a filter reset and could not finish, I redesigned the empty state so no one loses their search.</strong></figcaption>
-          <a class="zoom" href="images/shein/desktop-03-empty.png" target="_blank" rel="noopener"><img src="images/shein/desktop-03-empty-crop.png" alt="Redesigned empty state. Applied-filter chips for Size XS, Color Black and Price Under $25 sit above a message reading A little too specific, with a button reading Remove Size XS to see 24 items." width="1440" height="600" loading="lazy"><span>Open full screen ↗</span></a>
-          <ol class="annot"><li><b>1</b>Unclear active filters → visible, removable chips.</li><li><b>2</b>Unexplained zero results → one action: remove XS, see 24 items, keeping color and price.</li><li><b>3</b>Favorites preserved (5 of 5 completed in the study).</li></ol>
-          <p class="small-note">Independent redesign concept, not an official SHEIN design. Product details and result counts are illustrative, not research outcomes. Not shown to participants.</p>
-        </figure>
-
-        <p class="small-note"><a class="source-link" href="https://www.figma.com/design/6gJcBBmTdOjOGJpmOJ83K7/SHEIN-filter-fix?node-id=0-1&amp;p=f" target="_blank" rel="noopener">Open the Figma file: all desktop and mobile states and components ↗</a></p>
-
         <div class="callout"><p><strong>Why this matters (my inference, not a measured result):</strong> in a shopping flow, a filter that returns nothing or resets is a dead end. If 2 of 5 shoppers cannot finish filtering, some of them leave without finding a product to buy. The redesign targets that dead end.</p></div>
-        <div class="callout"><p><strong>Trust design:</strong> the empty state is a "support when the system fails" pattern. It names what went wrong, keeps the shopper's other choices, and offers one clear recovery action. The filter chips add visible control: shoppers see and can undo what the system applied.</p></div>
-        <h3 id="redesign">The redesign, step by step</h3>
-        <ol class="decision-list">
-          <li><strong>Visible filter chips.</strong> Applied filters are removable chips above results, so participants can see why the list changed. <em>Responds to:</em> filters that reset or returned nothing with no explanation.</li>
-          <li><strong>Explicit Apply and Clear.</strong> “Show 128 results” and “Clear all” replace unclear Clear / Done actions.</li>
-          <li><strong>A recoverable empty state.</strong> It names the one filter to drop and what it restores, keeping the rest.</li>
-          <li><strong>Quick add with a size.</strong> A size picker pre-selects the filtered size and confirms “Added to bag · Size M.”</li>
-        </ol>
-
-        <div class="shot-stack">
-          <figure class="shot "><a class="zoom" href="images/shein/desktop-02-applied.jpg" target="_blank" rel="noopener"><img src="images/shein/desktop-02-applied.jpg" alt="Desktop listing with applied filter chips for Size M and Color Black and a Show 128 results button." width="1440" height="939" loading="lazy"><span>Open full size ↗</span></a><figcaption>Filter applied<ol class="annot"><li><b>1</b>Unclear active filters → visible, removable chips.</li><li><b>2</b>Unclear Clear / Done → explicit “Show 128 results” and “Clear all”.</li><li><b>3</b>Favorites preserved (5 of 5 completed in the study).</li></ol></figcaption></figure>
-          <figure class="shot "><a class="zoom" href="images/shein/desktop-05-picker.jpg" target="_blank" rel="noopener"><img src="images/shein/desktop-05-picker.jpg" alt="Desktop listing with quick-add size picker open, Size M selected from filters, and an Add to bag button." width="1440" height="939" loading="lazy"><span>Open full size ↗</span></a><figcaption>Quick add, size picker open<ol class="annot"><li><b>1</b>Unclear active filters → visible, removable chips.</li><li><b>2</b>Size carried over from the filters, with confirmation.</li><li><b>3</b>Favorites preserved (5 of 5 completed in the study).</li></ol></figcaption></figure>
-        </div>
-        <div class="shot-pair even phones">
-          <figure class="shot phone"><a class="zoom" href="images/shein/mobile-03-empty.png" target="_blank" rel="noopener"><img src="images/shein/mobile-03-empty.png" alt="Mobile empty state with three filter chips and a Remove Size XS to see 24 items button." width="390" height="749" loading="lazy"><span>Open full size ↗</span></a><figcaption>Mobile empty state<ol class="annot"><li><b>1</b>Unclear active filters → visible, removable chips.</li><li><b>2</b>Unexplained zero results → remove XS, see 24.</li><li><b>3</b>Favorites preserved (5 of 5 completed in the study).</li></ol></figcaption></figure>
-          <figure class="shot phone"><a class="zoom" href="images/shein/mobile-05-picker.png" target="_blank" rel="noopener"><img src="images/shein/mobile-05-picker.png" alt="Mobile bottom sheet titled Choose your size with Size M selected and an Add to bag button." width="390" height="749" loading="lazy"><span>Open full size ↗</span></a><figcaption>Mobile size picker<ol class="annot"><li><b>1</b>Unclear active filters → visible, removable chips.</li><li><b>2</b>Size carried over from the filters, with confirmation.</li><li><b>3</b>Favorites preserved (5 of 5 completed in the study).</li></ol></figcaption></figure>
-        </div>
-        <details class="evidence"><summary>Component states used in the redesign</summary>
-          <div class="evidence-body"><figure class="shot "><a class="zoom" href="images/shein/components.jpg" target="_blank" rel="noopener"><img src="images/shein/components.jpg" alt="Component sheet showing filter chips, size selectors, add-to-bag button states, and product card quick-add states." width="1400" height="2072" loading="lazy"><span>Open full size ↗</span></a><figcaption>Chips, size selector, button, and card states.</figcaption></figure></div>
-        </details>
-
         <div class="judgment-grid">
           <div class="judgment"><span>Why this method</span><p>Moderated think-aloud shows the route, not just the result. Scrolling to a coat and using filters look the same in a survey but not on screen.</p></div>
           <div class="judgment"><span>What I'd do differently</span><p>Define pass/fail thresholds before testing, and recruit with a stricter screener so new and returning shoppers can be compared.</p></div>
           <div class="judgment"><span>Constraint</span><p>Public desktop site only, five sessions, and class-project time, so findings are directional and the fix is a proposal.</p></div>
+        </div>
+      </section>
+
+      <section class="section" id="exploration">
+        <div class="section-head"><p class="section-note">three ways each, before styling</p><h2>Exploring the Patterns</h2></div>
+        <p class="lead-in"><strong>My concept already used a one-click recovery and a size picker inside the card.</strong> To check those choices rather than assume them, I compared each with two alternatives as greyscale wireframes.</p>
+        <h3>When filters return nothing</h3>
+        <div class="sd-pair">
+        <figure class="panel">
+          <img src="images/shein/midfi-empty-a.jpg" alt="Greyscale wireframe of option A: applied filter chips above a message reading A little too specific, a dark button reading Remove Size XS, see 24 items, and a Reset filters button." width="1000" height="889" loading="lazy">
+          <figcaption><strong>A · One-click recovery.</strong> Fastest path back to products, keeping the filters that matter most; the page picks which filter to drop, so it has to name that choice plainly.</figcaption>
+        </figure>
+        <figure class="panel">
+          <img src="images/shein/midfi-empty-b.jpg" alt="Greyscale wireframe of option B: four rows, each removing one filter, with the number of items it would return." width="1000" height="857" loading="lazy">
+          <figcaption><strong>B · Choose which filter to loosen.</strong> Full control with a count for every choice; one more decision at a frustrating moment.</figcaption>
+        </figure>
+        <figure class="panel">
+          <img src="images/shein/midfi-empty-c.jpg" alt="Greyscale wireframe of option C: a line reading No exact matches, then a row of nearest-match product cards." width="1000" height="880" loading="lazy">
+          <figcaption><strong>C · Show nearest matches.</strong> Never a dead end; shoppers may read suggestions as exact matches unless they are labeled clearly.</figcaption>
+        </figure>
+        </div>
+        <div class="callout"><p><strong>Decision:</strong> I kept Option A. In the study, the two participants who hit a dead end gave up, so the recovery has to be a single obvious step. Reset filters stays as the fallback.</p></div>
+        <h3>Choosing a size without leaving the results</h3>
+        <div class="sd-pair">
+        <figure class="panel">
+          <img src="images/shein/midfi-qa-a.jpg" alt="Greyscale wireframe of quick add option A: a product card expanded in place with a size row, M selected, and an Add size M to bag button." width="1000" height="1019" loading="lazy">
+          <figcaption><strong>A · Expand inside the card (desktop).</strong> The shopper never leaves the grid; the expanded card makes its row taller for a moment.</figcaption>
+        </figure>
+        <figure class="panel">
+          <img src="images/shein/midfi-qa-b.jpg" alt="Greyscale wireframe of quick add option B: a pop-up size picker over the product grid." width="1000" height="940" loading="lazy">
+          <figcaption><strong>B · Pop-up picker (desktop).</strong> A common pattern with room for size details; it covers the grid and breaks the shopper’s place in the list.</figcaption>
+        </figure>
+        <figure class="panel">
+          <img src="images/shein/midfi-qa-c.jpg" alt="Greyscale wireframe of quick add option C: a phone with a bottom sheet holding the size row and an Add to bag button." width="1000" height="1060" loading="lazy">
+          <figcaption><strong>C · Bottom sheet (mobile).</strong> Thumb-reachable and keeps the list visible behind it; on desktop the same sheet would feel out of place.</figcaption>
+        </figure>
+        </div>
+        <div class="callout"><p><strong>Decision:</strong> I kept A on desktop and C on phones. Both keep the shopper on the results page, which is where one participant was lost when they opened the product page instead.</p></div>
+      </section>
+
+      <section class="section" id="final-design">
+        <div class="section-head"><p class="section-note">SHEIN’s look, with only the flagged parts changed</p><h2>Final Design</h2></div>
+        <p class="lead-in"><strong>I restyled the concept to match SHEIN’s current interface.</strong> The search-bar header, category circles, filter pills, dense product grid, orange sale prices and black buttons stay familiar, so a test measures the changed interactions rather than a new look. Only the parts the study flagged are new.</p>
+        <ol class="decision-list">
+          <li><strong>Visible, removable filter chips.</strong> An “Applied” row shows every active filter with a remove control, and the pills show counts such as “Size (1)”. <em>Responds to:</em> filters that reset or returned nothing with no explanation.</li>
+          <li><strong>A recoverable empty state.</strong> It names the one filter to drop and how many items that restores, keeping the rest. Reset filters is the fallback.</li>
+          <li><strong>A labeled quick add.</strong> “Quick add” with a cart icon replaces the icon-only control. <em>Responds to:</em> a participant “confused with the add to cart icon” and another who opened the product page.</li>
+          <li><strong>The filtered size carries over.</strong> The picker preselects Size M with a plain note, and the confirmation names the size: “Added to bag · Size M.”</li>
+        </ol>
+        <figure class="panel">
+          <img src="images/shein/hifi-desktop-empty.jpg" alt="High-fidelity desktop page in SHEIN’s style: applied chips for Size XS, Color Black and Price Under $25, and a white panel reading A little too specific with a black button reading Remove Size XS, see 24 items." width="1800" height="1110" loading="lazy">
+          <figcaption><strong>No results, desktop.</strong> The page names the filter to drop and keeps color and budget.</figcaption>
+        </figure>
+        <div class="sd-pair">
+        <figure class="panel">
+          <img src="images/shein/hifi-desktop-quickadd.jpg" alt="Desktop product grid with the first card expanded: Size M preselected from the filters and a black Add size M to bag button." width="1140" height="1160" loading="lazy">
+          <figcaption><strong>Quick add, desktop.</strong> The size from the filter is preselected inside the card.</figcaption>
+        </figure>
+        <figure class="panel">
+          <img src="images/shein/hifi-desktop-added.jpg" alt="Desktop product grid with the first card showing a green confirmation reading Added to bag, Size M." width="1140" height="1160" loading="lazy">
+          <figcaption><strong>Added.</strong> The confirmation names the size, and the bag count updates.</figcaption>
+        </figure>
+        </div>
+        <div class="panel">
+          <div class="phone-row">
+            <figure>
+              <img src="images/shein/hifi-mobile-listing.jpg" alt="Mobile SHEIN-style listing with filter pills, applied chips for Size M and Color Black, and product cards with Add buttons." width="780" height="1688" loading="lazy">
+              <figcaption><strong>Listing.</strong> Applied filters stay visible above the grid.</figcaption>
+            </figure>
+            <figure>
+              <img src="images/shein/hifi-mobile-sheet.jpg" alt="Mobile bottom sheet titled Select size, with M selected and a note that it was carried over from the filters." width="780" height="1688" loading="lazy">
+              <figcaption><strong>Size sheet.</strong> M carries over from the filter, and the shopper can change it.</figcaption>
+            </figure>
+            <figure>
+              <img src="images/shein/hifi-mobile-added.jpg" alt="Mobile listing with a dark toast reading Added to bag, Size M, and a View bag link." width="780" height="1688" loading="lazy">
+              <figcaption><strong>Added.</strong> The toast names the size while the results stay in view.</figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="callout"><p><strong>What needs testing:</strong> does carrying over a filter size help shoppers choose correctly, or do they mistake it for a confirmed choice? Check whether people notice the selection, change it when needed, and understand the confirmation.</p></div>
+        <h3>Try the prototype</h3>
+        <p>Open a filter pill, remove a chip, or use quick add. Switch to the phone view for the size sheet. Products and prices are fictional.</p>
+        <div class="shein-demo" id="shein-demo">
+          <div class="sd-controls">
+            <div class="sd-views" role="group" aria-label="Prototype view">
+              <button type="button" data-view="desktop" aria-pressed="true">Desktop</button>
+              <button type="button" data-view="phone" aria-pressed="false">Phone</button>
+            </div>
+            <div class="sd-right"><button type="button" class="sd-try">Try the no-results case</button><button type="button" class="sd-restart">Restart</button></div>
+          </div>
+          <div class="sd-stage"><div class="sd-screen desktop"></div></div>
+          <p class="sd-status" role="status" aria-live="polite"></p>
+          <noscript><p class="small-note">The prototype needs JavaScript. The screens above show every state.</p></noscript>
+        </div>
+        <p class="small-note">Independent concept, not an official SHEIN design or affiliated with SHEIN. Product photos, names, prices and counts are illustrative.</p>
+      </section>
+
+      <section class="section" id="design-system">
+        <div class="section-head"><p class="section-note">the pieces the states are built from</p><h2>Components &amp; Tokens</h2></div>
+        <p class="lead-in"><strong>The new pieces follow SHEIN’s existing visual language.</strong> Each one has the states the flows need. Hover the specimens to see them.</p>
+        <div class="sg-system">
+          <h3>Color</h3>
+          <div class="sg-swatches">
+            <div class="sg-swatch"><i style="background:#222222"></i><div><strong>Ink</strong><code>#222222</code><span>Text, selected outlines</span></div></div>
+            <div class="sg-swatch"><i style="background:#000000"></i><div><strong>Black</strong><code>#000000</code><span>Primary buttons, search button</span></div></div>
+            <div class="sg-swatch"><i style="background:#fa6338"></i><div><strong>Sale orange</strong><code>#FA6338</code><span>Sale prices, bag count</span></div></div>
+            <div class="sg-swatch"><i style="background:#f6f6f6"></i><div><strong>Pill gray</strong><code>#F6F6F6</code><span>Filter pills, quick add, page ground</span></div></div>
+            <div class="sg-swatch"><i style="background:#e5e5e5"></i><div><strong>Line</strong><code>#E5E5E5</code><span>Borders, disabled fills</span></div></div>
+            <div class="sg-swatch"><i style="background:#198055"></i><div><strong>Confirm green</strong><code>#198055</code><span>Added-to-bag confirmation</span></div></div>
+          </div>
+          <h3>Filters</h3>
+          <div class="sg-card sd-screen sd-vars"><div class="sd-specimen-row">
+            <span class="sd-pill">Size<svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M7 10l5 5 5-5"/></svg></span>
+            <span class="sd-pill active">Size (1)<svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M7 10l5 5 5-5"/></svg></span>
+            <span class="sd-chip">Size: M<svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M7 7l10 10M17 7L7 17"/></svg></span>
+          </div><p class="sd-cap"><strong>Pill, active pill, applied chip.</strong> The active pill shows a count and an outline; the chip removes that filter.</p></div>
+          <h3>Size and quick add</h3>
+          <div class="sg-card sd-screen sd-vars"><div class="sd-specimen-row">
+            <span class="sd-size">S</span><span class="sd-size" aria-pressed="true">M</span><button type="button" class="sd-size" disabled>XL</button>
+            <span class="sd-qa"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h2.5l2 11h10.5l2-7.5H7"/><circle cx="9" cy="19.5" r="1.3"/><circle cx="17" cy="19.5" r="1.3"/><path d="M13 7.5v5M10.5 10h5"/></svg>Quick add</span>
+            <span class="sd-added"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Added to bag · Size M</span>
+          </div><p class="sd-cap"><strong>Size default, selected, sold out; labeled quick add; confirmation.</strong> Sold-out sizes are struck through and can’t be chosen.</p></div>
+          <h3>Buttons</h3>
+          <div class="sg-card sd-screen sd-vars"><div class="sd-specimen-row">
+            <span class="sd-primary sd-btnspec">Add size M to bag</span><span class="sd-secondary sd-btnspec">Reset filters</span><span class="sd-primary sd-btnspec sd-disabledspec">Choose a size</span>
+          </div><p class="sd-cap"><strong>Primary, secondary, disabled.</strong> Uppercase labels on black, matching SHEIN’s add-to-bag button.</p></div>
         </div>
       </section>
 
@@ -249,9 +321,9 @@
           <div class="phase-card"><h3>Established by this study</h3><p>The formal task tables show uneven completion across three shopping flows, while the reported SUS scores show generally positive perceived usability with wide variation. Specific filter failures, quick-add detours, and favorites friction are documented.</p></div>
           <div class="phase-card"><h3>Still uncertain</h3><p>Five formal sessions cannot establish prevalence across shoppers. The report suggests familiarity or low prices may explain favorable impressions, but these are hypotheses here. No follow-up study shows that the recommendations improve task success, satisfaction, conversion, or revenue.</p></div>
         </div>
-        <div class="callout dark"><p><strong>Retest plan:</strong> prototype the filter and quick-add changes, recruit a mix of new and experienced shoppers, and repeat the same desktop tasks. Record full, partial, and unsuccessful outcomes alongside time, errors, post-task feedback, and SUS so behavior and perception can be compared again.</p>
+        <div class="callout dark"><p><strong>Retest plan:</strong> test the prototype’s filter and quick-add changes, recruit a mix of new and experienced shoppers, and repeat the same desktop tasks. Record full, partial, and unsuccessful outcomes alongside time, errors, post-task feedback, and SUS so behavior and perception can be compared again.</p>
           <p><strong>Success looks like:</strong> filtering fully completed by at least 4 of 5 participants (up from 2 of 5), and quick add by at least 4 of 5 (up from 3 of 5), without lowering SUS.</p></div>
-        <div class="callout mint"><p><strong>Where recommendations became work:</strong> this study did not implement its changes. The same research-to-decision approach did reach a build in my <a href="ia-redesign.html">Sigma Gamma Rho navigation redesign</a>, where card-sort and tree-test findings became a coded interface. That project has no post-launch measurement either, so it shows the translation from findings to build, not a measured result.</p></div>
+        <div class="callout mint"><p><strong>Where recommendations became work:</strong> this study did not implement its changes. The same research-to-decision approach shaped my <a href="ia-redesign.html">Sigma Gamma Rho navigation redesign</a>, where card-sort and tree-test findings became desktop and mobile designs with a clickable prototype. That project is untested too, so it shows the translation from findings to design, not a measured result.</p></div>
         <details class="evidence">
           <summary>Research integrity and source notes</summary>
           <div class="evidence-body">
@@ -269,9 +341,10 @@
     <aside class="case-aside">
       <nav class="jump-card" aria-label="Case study sections">
         <p>jump to ↓</p>
-        <a href="#solution">Interaction sequence</a><a href="#overview">Overview</a><a href="#questions">Research questions</a>
+        <a href="#overview">Overview</a><a href="#questions">Research questions</a>
         <a href="#design">Study design</a><a href="#pilot">Pilot</a>
         <a href="#results">Results</a><a href="#findings">Findings</a>
+        <a href="#exploration">Exploration</a><a href="#final-design">Final design</a><a href="#design-system">Components</a>
         <a href="#priorities">Recommendations</a><a href="#next">Limits &amp; next steps</a>
       </nav>
     </aside>
@@ -279,5 +352,6 @@
 </main>
 <footer class="site-footer"><p>Designed and coded by Karena Blue.</p></footer>
 <script src="site.js" defer></script>
+<script src="shein-demo.js" defer></script>
 </body>
 </html>
