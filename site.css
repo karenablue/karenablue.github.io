@@ -505,3 +505,142 @@ html body {
 .start-card { border: 1px solid var(--line-color) !important; border-radius: 16px !important; box-shadow: none !important; background: var(--paper) !important; transform: none !important; }
 .start-card:hover { border-color: var(--green) !important; box-shadow: var(--shadow-small) !important; }
 .status-strip { border: 1px solid var(--line-color) !important; border-radius: 16px !important; box-shadow: none !important; }
+
+/* Home: work-first layout */
+.home-page { width: min(1100px, calc(100% - 32px)); margin: 0 auto; }
+.hp-hero { padding: 72px 0 40px; max-width: 760px; }
+.hp-name { margin: 0 0 14px; font: 600 .95rem/1.4 "Inter", sans-serif; color: var(--green-dark); }
+.hp-hero h1 { margin: 0; font: 700 clamp(2.4rem, 5.6vw, 4.2rem)/1.04 "Bricolage Grotesque", sans-serif; letter-spacing: -.035em; color: var(--ink); }
+.hp-intro { margin: 20px 0 0; max-width: 56ch; font-size: 1.15rem; line-height: 1.6; color: var(--muted); }
+.hp-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+.hp-section { padding: 24px 0 16px; }
+.hp-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 16px; }
+.hp-head h2 { margin: 0; font: 700 1.4rem/1.2 "Bricolage Grotesque", sans-serif; letter-spacing: -.01em; }
+.hp-more { font-weight: 700; font-size: .9rem; color: var(--green-dark); text-decoration: none; }
+.hp-more:hover { text-decoration: underline; }
+.hp-contact { margin: 48px 0 24px; padding: 32px; border: 1px solid var(--line-color); border-radius: 16px; background: var(--paper); }
+.hp-contact h2 { margin: 0 0 8px; font: 700 1.6rem/1.2 "Bricolage Grotesque", sans-serif; }
+.hp-contact p { margin: 0 0 20px; max-width: 56ch; color: var(--muted); line-height: 1.6; }
+@media (max-width: 600px) { .hp-hero { padding: 40px 0 28px; } .hp-contact { padding: 24px; } }
+
+/* Work page: richer cards than the homepage */
+.pw-facts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px 16px; margin: 6px 0 2px; padding: 12px 14px; border-radius: 10px; background: var(--background); }
+.pw-facts div { min-width: 0; }
+.pw-facts dt { font: 600 .68rem/1.4 "Inter", sans-serif; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.pw-facts dd { margin: 2px 0 0; font-size: .84rem; line-height: 1.45; color: var(--ink); }
+@media (max-width: 420px) { .pw-facts { grid-template-columns: minmax(0, 1fr); } }
+/* Home: about teaser */
+.hp-about { display: grid; grid-template-columns: 120px minmax(0, 1fr); gap: 24px; align-items: center; margin: 40px 0 0; padding: 24px; border: 1px solid var(--line-color); border-radius: 16px; background: var(--paper); }
+.hp-about img { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; object-position: center 25%; }
+.hp-about h2 { margin: 0 0 8px; font: 700 1.25rem/1.2 "Bricolage Grotesque", sans-serif; }
+.hp-about p { margin: 0 0 12px; max-width: 62ch; color: var(--muted); line-height: 1.6; }
+@media (max-width: 600px) { .hp-about { grid-template-columns: minmax(0, 1fr); } .hp-about img { width: 88px; height: 88px; } }
+.hp-contact { margin-top: 20px; }
+
+/* ---------- Home hero: a nod to the "Amanda Please!" fan site ---------- */
+.ap-hero { --lime:#b6e23a; --lime-d:#7fae13; --blue:#1aa3e8; --blue-d:#0b6fb1; --orange:#ffad33; --purple:#6a3fb3; --purple-d:#3a2377; --lav:#d9ccff;
+  position: relative; display: grid; grid-template-columns: 190px minmax(0, 1fr) 210px; margin: 40px 0 48px; border-radius: 28px; overflow: hidden;
+  background: radial-gradient(circle at 12px 12px, rgba(255,255,255,.5) 3px, transparent 3.5px) 0 0/34px 34px, var(--lime); border: 3px solid var(--lime-d); }
+.ap-stickers, .ap-side { display: flex; flex-direction: column; gap: 18px; padding: 28px 18px; }
+.ap-center { position: relative; background: #fff; padding: 28px 36px 32px; text-align: center; border-left: 3px solid var(--lime-d); border-right: 3px solid var(--lime-d); }
+.ap-word { margin: 0; font: 700 clamp(2.2rem, 4.6vw, 3.8rem)/1.05 "Fredoka", sans-serif; color: var(--blue); letter-spacing: .01em; }
+.ap-word span { display: inline-block; transform: rotate(var(--r)) translateY(var(--y)); -webkit-text-stroke: 2px var(--blue-d); text-shadow: 3px 4px 0 var(--blue-d); }
+.ap-word .sp { width: .35em; }
+.ap-by { margin: 12px 0 18px; font: 700 .95rem "Fredoka", sans-serif; letter-spacing: .12em; text-transform: uppercase; color: var(--lime-d); }
+.ap-feature { display: flex; align-items: center; justify-content: center; }
+.ap-portrait { position: relative; flex: none; width: 190px; height: 220px; z-index: 2; }
+.ap-portrait img { width: 100%; height: 100%; object-fit: cover; object-position: center 25%; border-radius: 50%; border: 4px solid #1b1b1b; background: var(--orange); }
+.ap-star { position: absolute; width: 64px; height: 64px; }
+.ap-star.s1 { top: -14px; left: -18px; transform: rotate(-12deg); }
+.ap-star.s2 { bottom: -10px; right: -14px; transform: rotate(14deg); }
+.ap-cloud { position: relative; margin-left: -28px; padding: 34px 34px 34px 50px; width: 270px; background: var(--orange);
+  border-radius: 46% 54% 52% 48% / 58% 44% 56% 42%; box-shadow: 18px -14px 0 -6px var(--orange), -6px 18px 0 -4px var(--orange); }
+.ap-cloud p { margin: 0; font: 700 1.45rem/1.15 "Fredoka", sans-serif; color: var(--purple); text-transform: uppercase; }
+.ap-caption { margin: 22px auto 0; max-width: 46ch; font-size: .95rem; line-height: 1.5; color: #333; }
+.ap-caption strong { color: #111; }
+.ap-cta { display: inline-block; margin-top: 16px; padding: 10px 20px; border-radius: 999px; background: var(--purple); color: #fff; font: 700 .95rem "Fredoka", sans-serif; text-decoration: none; border: 3px solid var(--purple-d); }
+.ap-cta:hover { background: var(--purple-d); }
+.ap-sticker { display: block; padding: 14px 12px; border-radius: 18px; border: 3px solid #1b1b1b; text-align: center; text-decoration: none; color: #1b1b1b;
+  font: 700 1.15rem/1.1 "Fredoka", sans-serif; box-shadow: 0 4px 0 #1b1b1b; transition: transform .15s; }
+.ap-sticker small { display: block; font-size: .78rem; font-weight: 600; }
+.ap-sticker.sun { background: #ffd23f; color: #c2410c; transform: rotate(-3deg); }
+.ap-sticker.grape { background: var(--lav); color: var(--purple-d); transform: rotate(2deg); font-size: 1.5rem; }
+.ap-sticker.blue { background-color: var(--blue-d); color: #fff; transform: rotate(-2deg); background-image: radial-gradient(circle, rgba(255,255,255,.35) 2px, transparent 2.5px); background-size: 18px 18px; }
+.ap-sticker.small { font-size: 1rem; }
+.ap-sticker:hover { transform: rotate(0) translateY(-2px); }
+.ap-sticker:focus-visible, .ap-cta:focus-visible { outline: 3px solid var(--purple); outline-offset: 3px; }
+.ap-history { padding: 14px; border-radius: 18px; background: #f3e6ff; border: 3px solid var(--purple); }
+.ap-history h2 { margin: -14px -14px 10px; padding: 10px; border-radius: 14px 14px 0 0; background: var(--purple); color: #fff; font: 600 .9rem/1.15 "Fredoka", sans-serif; text-align: center; }
+.ap-history h2 span { display: block; font-size: 1.35rem; font-weight: 700; text-transform: uppercase; }
+.ap-history p { margin: 0 0 8px; font: 500 .9rem/1.4 "Fredoka", sans-serif; color: var(--purple-d); }
+@media (max-width: 900px) {
+  .ap-hero { grid-template-columns: minmax(0, 1fr); }
+  .ap-center { order: -1; border: 0; padding: 24px 18px 28px; }
+  .ap-stickers, .ap-side { flex-direction: row; flex-wrap: wrap; justify-content: center; padding: 18px; }
+  .ap-sticker { flex: 1 1 140px; }
+  .ap-history { flex: 1 1 100%; }
+  .ap-feature { flex-direction: column; }
+  .ap-cloud { margin: -26px 0 0; padding: 36px 28px 28px; width: min(100%, 280px); }
+}
+@media (prefers-reduced-motion: reduce) { .ap-sticker { transition: none; } }
+.ap-hero .ap-sticker.sun { background: #ffd23f !important; }
+.ap-hero .ap-sticker.grape { background: var(--lav) !important; }
+@media (max-width: 600px) {
+  .ap-word { font-size: 2.1rem; line-height: 1.15; }
+  .ap-word span { -webkit-text-stroke: 1.5px var(--blue-d); text-shadow: 2px 3px 0 var(--blue-d); }
+  .ap-portrait { width: 170px; height: 200px; }
+}
+
+/* ---------- Home: the whole page as an "Amanda Please!" fan-site frame ---------- */
+.home-page { width: min(1240px, calc(100% - 24px)) !important; }
+.ap-frame { --lime:#b6e23a; --lime-d:#7fae13; --blue:#1aa3e8; --blue-d:#0b6fb1; --orange:#ffad33; --purple:#6a3fb3; --purple-d:#3a2377; --lav:#d9ccff; --pink:#ff6fb5;
+  display: grid; grid-template-columns: 190px minmax(0, 1fr) 210px; margin: 28px 0 40px; border-radius: 28px; overflow: hidden; border: 3px solid var(--lime-d);
+  background: radial-gradient(circle at 12px 12px, rgba(255,255,255,.5) 3px, transparent 3.5px) 0 0/34px 34px, var(--lime); }
+.ap-frame > .ap-stickers, .ap-frame > .ap-side { position: sticky; top: 16px; align-self: start; display: flex; flex-direction: column; gap: 18px; padding: 28px 18px; }
+.ap-frame .ap-center { background: #fff; padding: 28px 36px 40px; border-left: 3px solid var(--lime-d); border-right: 3px solid var(--lime-d); }
+.ap-intro { text-align: center; padding-bottom: 12px; }
+.ap-block { margin-top: 36px; }
+.ap-bar { margin: 0 0 18px; padding: 10px 18px; border-radius: 999px; border: 3px solid #1b1b1b; background: var(--orange); color: var(--purple-d); font: 700 1.25rem/1.2 "Fredoka", sans-serif; text-align: center; box-shadow: 0 4px 0 #1b1b1b; }
+.ap-bar.grape { background: var(--lav); }
+.ap-bar.blue { background: var(--blue-d); color: #fff; }
+.ap-card { border: 3px solid #1b1b1b !important; border-radius: 18px !important; box-shadow: 0 5px 0 #1b1b1b !important; }
+.ap-card:nth-child(1) { transform: rotate(-.6deg); } .ap-card:nth-child(2) { transform: rotate(.6deg); }
+.ap-card:hover { transform: rotate(0) translateY(-3px) !important; }
+.ap-card .pw-media { border-bottom: 3px solid #1b1b1b; }
+.ap-card .pw-title { font-family: "Fredoka", sans-serif; font-weight: 700; }
+.ap-card .pw-tags span:nth-child(1) { background: #d7f5a5; color: #3c5a07; }
+.ap-card .pw-tags span:nth-child(2) { background: #cdeaff; color: #0b4f80; }
+.ap-card .pw-tags span:nth-child(3) { background: #ffd6ea; color: #8a1d55; }
+.ap-more { margin: 16px 0 0; text-align: center; }
+.ap-more a { font: 700 1rem "Fredoka", sans-serif; color: var(--purple); }
+.ap-interview { position: relative; padding: 26px 28px; background: #fff7d6; border: 3px solid #1b1b1b; border-radius: 22px; box-shadow: 0 5px 0 #1b1b1b; }
+.ap-interview p { margin: 0 0 12px; line-height: 1.55; color: #333; }
+.ap-interview .q { margin-top: 4px; font: 700 1.05rem "Fredoka", sans-serif; color: var(--purple); }
+.ap-news { padding: 22px 26px; border: 3px dashed var(--blue-d); border-radius: 22px; text-align: center; }
+.ap-news p { margin: 0 auto 16px; max-width: 54ch; line-height: 1.55; color: #333; }
+.ap-pills { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+.ap-pill { display: inline-block; padding: 8px 18px; border-radius: 999px; border: 3px solid #1b1b1b; font: 700 .95rem "Fredoka", sans-serif; color: #1b1b1b; text-decoration: none; box-shadow: 0 3px 0 #1b1b1b; }
+.ap-pill.green { background: #b6e23a; } .ap-pill.blue { background: #8fd3ff; } .ap-pill.pink { background: #ffb3d6; }
+.ap-pill:hover { transform: translateY(-2px); }
+.ap-pill:focus-visible { outline: 3px solid var(--purple); outline-offset: 3px; }
+.ap-sticker.pink { background: var(--pink) !important; color: #fff; transform: rotate(3deg); background-image: radial-gradient(circle, rgba(255,255,255,.4) 2px, transparent 2.5px) !important; background-size: 16px 16px !important; }
+.ap-history.toolbox { background: #e9fbd0; border-color: var(--lime-d); }
+.ap-history.toolbox h2 { background: var(--lime-d); }
+.ap-history.toolbox p { color: #2f4a06; }
+@media (max-width: 900px) {
+  .ap-frame { grid-template-columns: minmax(0, 1fr); }
+  .ap-frame .ap-center { order: -1; border: 0; padding: 24px 18px 32px; }
+  .ap-frame > .ap-stickers, .ap-frame > .ap-side { position: static; flex-direction: row; flex-wrap: wrap; justify-content: center; padding: 18px; }
+  .ap-frame .ap-sticker { flex: 1 1 140px; }
+  .ap-frame .ap-history { flex: 1 1 100%; }
+  .ap-card:nth-child(n) { transform: none; }
+}
+.ap-frame .ap-center { text-align: left; }
+.ap-frame .ap-intro, .ap-frame .ap-news, .ap-frame .ap-more { text-align: center; }
+.ap-frame .ap-interview { text-align: left; }
+/* contrast fixes for the fan-site hero (WCAG AA) */
+.ap-hero .ap-sticker.sun, .ap-frame .ap-sticker.sun { color: #8a2a00 !important; }
+.ap-frame .ap-sticker.pink { color: #4a0a2e !important; }
+.ap-word { color: #0f86cc; }
+.ap-by { color: #4f7a08 !important; }
+.ap-history.toolbox h2 { background: #4f7a08 !important; }
