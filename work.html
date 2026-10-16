@@ -43,100 +43,57 @@
       </aside>
 
       <section class="archive-board">
-        <div class="board-top">
-          <div>
-            <span class="board-stamp">selected work</span>
-            <h2>Two problems, two approaches</h2>
-          </div>
-        </div>
-        <p class="board-intro">One project works through the structure of a membership website. The other focuses on the details of a shopping interaction. Research helps me decide what to change in each.</p>
-
+        
         <section class="featured-work" aria-labelledby="featured-title">
           <div class="work-section-head">
-            <p class="handwritten">start here ✦</p>
-            <h3 id="featured-title">Selected design projects</h3>
+            <h2 id="featured-title">Design projects</h2>
           </div>
-
-          <div class="featured-study-grid">
-            <article class="study-card" aria-labelledby="sgrho-card-title">
-              <figure class="project-visual navigation-visual work-visual">
-                <span class="visual-label">Original navigation · Members menu</span>
-                <img src="images/sgrho/sgrho-original-members-menu-2025-03.jpg" alt="Original navigation with membership inside a Members dropdown among twelve top-level links" width="1440" height="324" loading="lazy">
-                <span class="visual-label">My redesign · Membership menu</span>
-                <img src="images/sgrho/sgrho-nav-membership.jpg" alt="Redesigned header with Membership as a primary category and Become a Member first in its dropdown" width="1440" height="370" loading="lazy">
-                <figcaption>The structure changed; whether it improves usability still needs testing.</figcaption>
-              </figure>
-              <div class="study-body">
-                <div class="disc-tags" aria-label="Disciplines"><span class="research">Research</span><span class="design">Design</span></div>
-                <div class="study-meta"><span class="kicker">Sigma Gamma Rho</span></div>
-                <h4 id="sgrho-card-title">Rethinking the path to membership</h4>
-                <p class="subtitle">the structure of an experience</p>
-                <p class="desc">Insider labels made parts of the navigation harder for non-members to understand. I used card sorting and tree testing to bring membership actions together, clarify the menus, and design desktop and mobile navigation with a clickable prototype.</p>
-                <div class="study-facts">
-                  <span><strong>My work:</strong> research and navigation design</span>
-                  <span><strong>Status:</strong> designed; usability testing is next</span>
-                </div>
-                <div class="method-chips"><span>Information Architecture</span><span>Navigation Design</span><span>Prototyping</span></div>
-                <div class="study-actions">
-                  <a class="study-button primary" href="ia-redesign.html">Explore the membership project →</a>
-                </div>
-              </div>
-            </article>
-            <article class="study-card" aria-labelledby="shein-card-title">
-              <div class="project-visual work-visual">
-                <div class="preview-pair">
-                  <figure>
-                    <figcaption class="visual-label">Desktop · applied filters</figcaption>
-                    <a href="shein-usability.html#final-design"><img src="images/shein/hifi-desktop-recovered.jpg" alt="Desktop concept in SHEIN’s style with visible filter chips, a result count, and labeled quick-add controls" width="1800" height="1188" loading="lazy"></a>
-                  </figure>
-                  <figure class="preview-phone">
-                    <figcaption class="visual-label">Mobile · empty-state recovery</figcaption>
-                    <a href="shein-usability.html#final-design"><img src="images/shein/hifi-mobile-empty.jpg" alt="Mobile recovery concept offering to remove Size XS while keeping the shopper's color and price filters" width="780" height="1688" loading="lazy"></a>
-                  </figure>
-                </div>
-                <p class="visual-caption">Independent, untested concepts. Product details and result counts are illustrative.</p>
-              </div>
-              <div class="study-body">
-                <div class="disc-tags" aria-label="Disciplines"><span class="research">Research</span><span class="design">Design</span></div>
-                <div class="study-meta"><span class="kicker">SHEIN</span><span class="privacy">Independent concept</span></div>
-                <h4 id="shein-card-title">Recovering from empty results</h4>
-                <p class="subtitle">the details of an interaction</p>
-                <p class="desc">Filters left shoppers with no results or reset their choices. After moderating sessions in a team usability study, I designed removable filter chips, a recovery action that keeps other selections, and quick add with size feedback.</p>
-                <div class="study-facts">
-                  <span><strong>My work:</strong> team study moderation; independent desktop and mobile interaction concepts</span>
-                  <span><strong>Status:</strong> mid-fi, hi-fi, and a clickable prototype; not yet tested</span>
-                </div>
-                <div class="method-chips"><span>Interaction Design</span><span>Prototyping</span><span>Usability Testing</span></div>
-                <div class="study-actions"><a class="study-button primary" href="shein-usability.html">Explore the shopping interactions →</a></div>
-              </div>
-            </article>
-
+          <div class="pw-grid">
+            <a class="pw-card" href="ia-redesign.html" aria-labelledby="sgrho-card-title">
+              <span class="pw-media"><img src="images/sgrho/sgrho-figma-hifi-membership.jpg" alt="Redesigned Sigma Gamma Rho navigation with the Membership menu open and Become a Member listed first" width="1800" height="596" loading="lazy"></span>
+              <span class="pw-body">
+                <span class="pw-kicker">Sigma Gamma Rho · Independent project</span>
+                <h3 class="pw-title" id="sgrho-card-title">Rethinking the path to membership</h3>
+                <span class="pw-desc">Card sorting and tree testing reshaped a membership site’s navigation, carried into desktop and mobile designs and a clickable prototype.</span>
+                <span class="pw-tags"><span>Information architecture</span><span>Navigation</span><span>Prototype</span></span>
+                <span class="pw-link">View case study →</span>
+              </span>
+            </a>
+            <a class="pw-card" href="shein-usability.html" aria-labelledby="shein-card-title">
+              <span class="pw-media"><img src="images/shein/hifi-desktop-quickadd.jpg" alt="SHEIN-style product card with applied filter chips and quick add open, Size M carried over from the filters" width="1140" height="1160" loading="lazy"></span>
+              <span class="pw-body">
+                <span class="pw-kicker">SHEIN · Independent concept</span>
+                <h3 class="pw-title" id="shein-card-title">Recovering from empty results</h3>
+                <span class="pw-desc">After moderating a team usability study, I designed filter recovery and size-aware quick add, from mid-fi options to a clickable prototype.</span>
+                <span class="pw-tags"><span>Usability testing</span><span>Interaction design</span><span>Prototype</span></span>
+                <span class="pw-link">View case study →</span>
+              </span>
+            </a>
           </div>
         </section>
 
         <section class="supporting-work" aria-labelledby="supporting-title">
           <div class="work-section-head">
-            <p class="handwritten">questions I’m exploring</p>
-            <h3 id="supporting-title">Research explorations</h3>
-            <p>Alongside design work, I study how people build trust and make decisions online.</p>
+            <h2 id="supporting-title">Research explorations</h2>
           </div>
-          <article class="supporting-card" aria-labelledby="banking-card-title">
-            <div class="supporting-body">
-              <span class="kicker">Secondary Research + Strategy</span>
-              <h4 id="banking-card-title">What makes AI banking assistance feel trustworthy?</h4>
-              <p>I synthesized published research into priorities for AI-assisted banking: explain actions, offer review steps, and preserve user control. A secondary research study; the recommendations still need participant validation.</p>
-              <a class="study-button secondary" href="ai-banking.html">Read the research →</a>
-            </div>
-          </article>
-
-          <article class="supporting-card" aria-labelledby="post-card-title">
-            <div class="supporting-body">
-              <div class="supporting-meta"><span class="kicker">Observation study · in progress</span><span class="privacy locked">Password protected</span></div>
-              <h4 id="post-card-title">What Goes Into a Post?</h4>
-              <p>A team study of how people curate social posts and think about their audience. Fieldwork is underway, with findings planned for November 2026. Participant-session material is password protected.</p>
-              <a class="study-button secondary" href="post-curation.html">Unlock the study →</a>
-            </div>
-          </article>
+          <div class="pw-grid">
+            <a class="pw-card text" href="ai-banking.html" aria-labelledby="banking-card-title">
+              <span class="pw-body">
+                <span class="pw-kicker">Secondary research · Strategy</span>
+                <h3 class="pw-title" id="banking-card-title">What makes AI banking assistance feel trustworthy?</h3>
+                <span class="pw-desc">A synthesis of published research into priorities for AI-assisted banking: explain actions, offer review steps, keep users in control.</span>
+                <span class="pw-link">Read the research →</span>
+              </span>
+            </a>
+            <a class="pw-card text" href="post-curation.html" aria-labelledby="post-card-title">
+              <span class="pw-body">
+                <span class="pw-kicker">Observation study · In progress · Password protected</span>
+                <h3 class="pw-title" id="post-card-title">What goes into a post?</h3>
+                <span class="pw-desc">A team study of how people curate social posts and think about their audience. Findings planned for November 2026.</span>
+                <span class="pw-link">Unlock the study →</span>
+              </span>
+            </a>
+          </div>
         </section>
       </section>
 
@@ -147,10 +104,6 @@
       </aside>
     </section>
 
-    <section class="footer-card">
-      <p class="hand">thoughtful design, grounded in research.</p>
-      <p>See what I designed, why I chose it, and what I would learn from the next iteration.</p>
-    </section>
   </main>
 
   <footer class="site-footer">
