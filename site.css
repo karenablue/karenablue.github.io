@@ -670,3 +670,41 @@ html body {
 .ap-light .ap-card:hover { transform: translateY(-3px) !important; }
 .ap-light .about-cloud p { color: #4a2a8f; }
 .ap-light .ap-hl { color: #0a6fae; }
+
+/* ================= Cohesion pass: one system across every inner page ================= */
+/* 1. Page titles: same size, same alignment */
+.research-hero, .about-hero, .contact-hero, .resume-hero { text-align: left !important; max-width: 1100px !important; margin-left: auto !important; margin-right: auto !important; padding: 48px 0 24px !important; }
+.research-hero h1, .about-hero h1, .contact-hero h1, .resume-hero h1, .resume-hero-copy h1 {
+  font: 700 clamp(2.4rem, 5.6vw, 4.2rem)/1.04 "Bricolage Grotesque", sans-serif !important; letter-spacing: -.035em !important; margin: 0 !important; text-align: left !important; }
+.research-hero p, .about-hero p, .contact-hero p, .resume-hero-copy p { margin-left: 0 !important; margin-right: 0 !important; text-align: left !important;
+  font-family: "Inter", sans-serif !important; font-size: 1.1rem !important; line-height: 1.6 !important; color: var(--muted) !important; max-width: 60ch; }
+.about-squiggle, .contact-squiggle, .resume-squiggle, .research-hero .squiggle { display: none !important; }
+.contact-hero .ap-hl { margin-left: .1em; }
+
+/* 2. Small uppercase labels instead of handwriting (homepage fan-site frame keeps its own type) */
+.handwritten, .section-note, .resume-handwritten, .closing-handwritten, .intro-kicker, .tiny-label, .story-card .story-kicker, .skill-card .skill-kicker {
+  font: 600 .74rem/1.4 "Inter", sans-serif !important; letter-spacing: .08em !important; text-transform: uppercase !important; color: var(--green-dark) !important; transform: none !important; }
+.contact-side p, .contact-side li, .contact-link-card small, .contact-link-card .link-kicker, .favorite-problem p, .about-page [class*="quote"] {
+  font-family: "Inter", sans-serif !important; font-style: normal !important; font-size: .9rem !important; line-height: 1.55 !important; }
+
+/* 3. No orange dotted underlines under section headings */
+.section h2::after, .featured-heading h2::after { display: none !important; }
+
+/* 4. Shared light cards on About and Contact */
+.currently-card, .intro-card, .story-card, .belief-card, .skill-card, .tools-board, .closing-card, .contact-side > *, .contact-link-card, .contact-form-card, .one-more-card, .about-page aside > div:not(.ap-portrait):not(.ap-cloud) {
+  border: 1px solid var(--line-color) !important; border-radius: 16px !important; box-shadow: none !important; background: var(--paper) !important; transform: none !important; }
+.closing-card { text-align: left !important; }
+.closing-button { background: var(--green) !important; border-color: var(--green) !important; }
+
+/* 5. Tags: colorful only inside the playful frames, plain elsewhere */
+.pw-tags span { background: var(--green-tint); color: var(--green-dark); }
+.about-tagline, .story-mini, .personal-small, .favorite-problem span, .contact-sticker .sticker-label, .contact-link-label small {
+  font: 600 .74rem/1.4 "Inter", sans-serif !important; letter-spacing: .08em !important; text-transform: uppercase !important; color: var(--green-dark) !important; transform: none !important; }
+.about-tagline { font-size: 1.1rem !important; letter-spacing: 0 !important; text-transform: none !important; color: var(--muted) !important; font-weight: 400 !important; }
+.contact-sticker, .personal-note { border: 1px solid var(--line-color) !important; border-radius: 16px !important; box-shadow: none !important; background: var(--paper) !important; transform: none !important; }
+.contact-sticker p, .personal-note p, .favorite-problem p { font-family: "Inter", sans-serif !important; font-style: normal !important; font-size: .92rem !important; color: var(--ink) !important; }
+.contact-link-label, .personal-label { font: 600 .74rem/1.4 "Inter", sans-serif !important; letter-spacing: .08em !important; text-transform: uppercase !important; color: var(--green-dark) !important; transform: none !important; }
+.favorite-problem strong { font-family: "Inter", sans-serif !important; font-style: normal !important; font-weight: 600 !important; font-size: 1rem !important; }
+.favorite-problem { border-style: solid !important; }
+.closing-card p { margin-left: 0 !important; padding-left: 0 !important; text-align: left !important; }
+.message-board { border: 1px solid var(--line-color) !important; border-radius: 16px !important; box-shadow: none !important; background: var(--paper) !important; transform: none !important; }
