@@ -477,3 +477,21 @@ html body {
 @media (max-width: 760px) { .pw-grid { grid-template-columns: minmax(0, 1fr); } }
 @media (prefers-reduced-motion: reduce) { .pw-card { transition: none; } .pw-card:hover { transform: none; } }
 .pw-media img[src*="sgrho"] { object-position: left top; }
+
+/* Resume: same quiet card language as the Work page */
+@media screen {
+  .resume-entry, .selected-project, .education-card, .skills-board, .resume-bottom {
+    border: 1px solid var(--line-color) !important; border-radius: 16px !important;
+    background: var(--paper) !important; box-shadow: none !important; transform: none !important;
+  }
+  .resume-entry:hover, .selected-project:hover { border-color: var(--green) !important; }
+  .resume-date, .selected-project-heading > span, .education-status {
+    font-family: "Inter", sans-serif !important; font-style: normal !important; font-size: .82rem !important; color: var(--muted) !important;
+  }
+  .resume-bullets li::before { content: "" !important; width: 5px; height: 5px; margin-top: .6em; border-radius: 50%; background: var(--green); }
+  .selected-projects { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+  .selected-project-secondary { grid-column: auto !important; }
+  .resume-bottom { text-align: left !important; margin-inline: 0 !important; max-width: none !important; width: 100% !important; box-sizing: border-box; }
+  .resume-bottom-actions { justify-content: flex-start !important; }
+  @media (max-width: 760px) { .selected-projects { grid-template-columns: minmax(0, 1fr); } }
+}
