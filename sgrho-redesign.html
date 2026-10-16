@@ -7,9 +7,8 @@
 <title>Sigma Gamma Rho Stakeholder Access | Designed by Karena</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,600;1,9..144,500&family=Fredoka:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="case-study.css">
-<link rel="stylesheet" href="motion.css">
 <style>
 .lock-card{max-width:460px;margin:60px auto;padding:28px;border:1.5px solid var(--ink);border-radius:20px;background:var(--paper);box-shadow:var(--shadow)}
 .lock-card h1{margin:0 0 8px;font:700 1.9rem/1.1 "Bricolage Grotesque",serif}
@@ -20,33 +19,41 @@
 .lock-row button{padding:11px 18px;border:1.5px solid var(--ink);border-radius:999px;background:var(--purple2);color:#fff;font:800 .85rem "Inter",sans-serif;cursor:pointer}
 .lock-error{min-height:1.4em;margin:12px 0 0;font-weight:700;color:#43439a}
 </style>
-  <link rel="stylesheet" href="site.css">
-</head>
-<body>
+<link rel="stylesheet" href="directions-shared.css"><link rel="stylesheet" href="direction-y2k.css"><link rel="stylesheet" href="portfolio.css"><script src="portfolio.js" defer></script></head>
+<body id="top" class="direction-y2k portfolio-page portfolio-case">
 <a class="skip-link" href="#main-content">Skip to main content</a>
-<header class="site-header">
-  <a href="index.html" class="site-logo">Designed by Karena</a>
-  <nav class="site-nav" aria-label="Main navigation">
-    <a href="index.html">Home</a><a href="work.html" class="active-link" aria-current="location">Work</a>
-    <a href="about.html">About</a><a href="resume.html">Resume</a><a href="contact.html">Contact</a>
-  </nav>
-</header>
+<header class="site-header page-width">
+      <a class="wordmark" href="index.html" aria-label="Designed by Karena, home"><svg class="drawn-icon icon-star" viewBox="0 0 80 80" aria-hidden="true">
+          <path d="M40 4l9 24 26 2-20 17 6 26-21-15-23 15 7-26L4 30l27-2z" /></svg><span>designed by <strong>karena.</strong></span></a>
+      <nav class="top-nav" aria-label="Main navigation">
+        <a href="work.html" aria-current="location">Work</a><a href="about.html">About</a><a href="resume.html">Résumé</a><a href="contact.html">Contact ↗</a>
+      </nav>
+    </header>
 
 <main class="case-page" id="main-content" tabindex="-1">
-  <form class="lock-card" id="lock-form" autocomplete="off">
+  <form class="lock-card" id="lock-form" autocomplete="off"><div class="lock-illustration" aria-hidden="true"><svg class="drawn-icon icon-folder" viewBox="0 0 80 80" aria-hidden="true">
+                <path d="M8 20h23l7 8h35v38H8z" />
+                <path d="M8 30h65L62 69H3z" />
+                <path class="icon-line" d="M25 46h28M23 54h18" /></svg></div>
     <h1>Sigma Gamma Rho stakeholder access</h1>
     <p><strong>The full site redesign.</strong> It is shared privately with Sigma Gamma Rho stakeholders.</p>
     <p>Enter the password you were given to open it, or <a class="source-link" href="mailto:designedbykarena@gmail.com?subject=Access%20to%20the%20SGRho%20redesign">request access by email</a>.</p>
     <label for="pw">Password</label>
     <div class="lock-row">
-      <input id="pw" type="password" required autofocus>
+      <input id="pw" type="password" required autocomplete="current-password">
       <button type="submit">Unlock →</button>
     </div>
     <p class="lock-error" id="lock-error" role="status" aria-live="polite"></p>
   </form>
 </main>
 
-<footer class="site-footer"><p>Designed by Karena — made by hand, one page at a time.</p></footer>
+<footer class="page-width">
+      <a href="#top">Designed by Karena Blue <span aria-hidden="true">↑</span></a>
+      <p>A curious corner of the internet.</p>
+      <div>
+        <a href="resume.html">Résumé ↗</a><a href="contact.html">Contact ↗</a>
+      </div>
+    </footer>
 
 <script id="vault" type="application/json">{"s":"+soR76s9DvwhmIYw2GE/PA==","i":"7JVG+JQvNMpn1nfS","c":"L+rFps0QtXZmfvv0AaC/37G80AztiBy2wakKYemuM0VKCCRICgfu1qBHMnqHRh5zt/kcGpWlTiXnWltxpf6q","n":310000}</script>
 <script>

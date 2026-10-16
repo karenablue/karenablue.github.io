@@ -1,252 +1,273 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Contact | Designed by Karena</title>
-
-  <meta
-    name="description"
-    content="Get in touch with Karena about UX research, design, web projects, and thoughtful collaborations."
-  >
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Caveat:wght@400;600;700&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Inter:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet"
-  >
-
-  <link rel="stylesheet" href="index.css">
-  <link rel="stylesheet" href="contact.css">
-  <link rel="stylesheet" href="motion.css">
-  <script src="motion.js"></script>
-  <link rel="stylesheet" href="site.css">
-</head>
-
-<body>
-  <a class="skip-link" href="#main-content">Skip to main content</a>
-
-  <div class="contact-doodles" aria-hidden="true">
-  </div>
-
-  <header class="site-header">
-    <a href="index.html" class="site-logo">
-      Designed by Karena
-    </a>
-
-    <nav class="site-nav" aria-label="Main navigation">
-      <a href="index.html">Home</a>
-      <a href="work.html">Work</a>
-      <a href="about.html">About</a>
-      <a href="resume.html">Resume</a>
-      <a href="contact.html" class="active-link" aria-current="page">Contact</a>
-    </nav>
-  </header>
-
-  <main class="contact-page ap-light" id="main-content" tabindex="-1">
-
-    <section class="contact-hero">
-
-      <h1>Want more <span class="ap-hl">Karena?</span></h1>
-
-      <div class="contact-squiggle"></div>
-
-      <p>
-        Have a project, a role, a question, or something interesting to talk through?
-        Send it my way.
-      </p>
-      <p class="mobile-direct-email">Prefer email? <a href="mailto:designedbykarena@gmail.com">designedbykarena@gmail.com</a></p>
-
-    </section>
-
-
-    <section class="contact-layout">
-
-      <!-- LEFT NOTES -->
-      <aside class="contact-side contact-side-left" aria-label="Contact notes">
-
-        <div class="contact-sticker lavender-sticker">
-          <span class="sticker-label">best for</span>
-          <p>UX and design research opportunities, research collaborations, web projects, and interesting questions.</p>
-        </div>
-
-        <div class="contact-sticker yellow-sticker">
-          <span class="sticker-label">tiny request</span>
-          <p>Tell me a little about why you’re reaching out. It helps me give you a useful answer.</p>
-        </div>
-
-      </aside>
-
-
-      <!-- MAIN MESSAGE CARD -->
-      <section class="message-board">
-
-        <div class="message-board-top">
-
-          <div>
-            <span class="board-label">
-              new message
-            </span>
-
-            <h2>What’s on your mind?</h2>
-          </div>
-
-          <span class="mail-stamp" aria-hidden="true">
-            ✉
-          </span>
-
-        </div>
-
-        <p class="message-intro">
-          It doesn’t have to be formal.
-        </p>
-
-        <form class="contact-form" id="contact-form">
-
-          <div class="form-row">
-
-            <div class="form-field">
-              <label for="name">Your name</label>
-              <input
-                id="name"
-                name="name"
-                type="text"
-                autocomplete="name"
-                placeholder="Your name"
-                required
-              >
-            </div>
-
-            <div class="form-field">
-              <label for="email">Your email</label>
-              <input
-                id="email"
-                name="email"
-                type="email"
-                autocomplete="email"
-                placeholder="you@example.com"
-                required
-              >
-            </div>
-
-          </div>
-
-          <div class="form-field">
-            <label for="subject">What are we talking about?</label>
-
-            <select id="subject" name="subject" required>
-              <option value="" selected disabled>Pick one...</option>
-              <option value="UX Research">UX Research</option>
-              <option value="Design Opportunity">Design Opportunity</option>
-              <option value="Web Project">Web Project</option>
-              <option value="Recruiting / Role">Recruiting / Role</option>
-              <option value="Collaboration">Collaboration</option>
-              <option value="Something Else">Something Else</option>
-            </select>
-          </div>
-
-          <div class="form-field">
-            <label for="message">Your note</label>
-
-            <textarea
-              id="message"
-              name="message"
-              rows="7"
-              placeholder="Tell me what you're working on, what you need, or what made you reach out..."
-              required
-            ></textarea>
-          </div>
-
-          <div class="form-footer">
-
-            <p class="form-note">
-              This opens a draft in your email app. Press Send there to deliver it.
-            </p>
-
-            <button type="submit" class="send-button">
-              Open email draft →
-            </button>
-
-          </div>
-
-          <p class="form-status" id="form-status" aria-live="polite"></p>
-
-        </form>
-
-      </section>
-
-
-      <!-- RIGHT NOTES -->
-      <aside class="contact-side contact-side-right" aria-label="Direct contact links">
-
-        <a class="contact-link-card email-card" href="mailto:designedbykarena@gmail.com">
-          <span class="contact-link-icon">✉</span>
-
-          <div>
-            <span class="contact-link-label">email me</span>
-            <strong>designedbykarena<wbr>@gmail.com</strong>
-          </div>
-        </a>
-
-        <a
-          class="contact-link-card linkedin-card"
-          href="https://www.linkedin.com/in/karenablue/"
-          target="_blank"
-          rel="noopener noreferrer"
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Contact | Designed by Karena</title>
+    <meta
+      name="description"
+      content="Connect with Karena Blue about research, product design, web projects, and interesting questions."
+    />
+    <meta name="theme-color" content="#e9deff" />
+    <link rel="canonical" href="https://designedbykarena.com/contact.html" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,600;1,9..144,500&family=Fredoka:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="directions-shared.css" />
+    <link rel="stylesheet" href="direction-y2k.css" />
+    <link rel="stylesheet" href="portfolio.css" />
+    <script src="portfolio.js" defer></script>
+  </head>
+  <body id="top" class="direction-y2k portfolio-page portfolio-contact">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header page-width">
+      <a
+        class="wordmark"
+        href="index.html"
+        aria-label="Designed by Karena, home"
+        ><svg
+          class="drawn-icon icon-star"
+          viewBox="0 0 80 80"
+          aria-hidden="true"
         >
-          <span class="contact-link-icon">in</span>
+          <path
+            d="M40 4l9 24 26 2-20 17 6 26-21-15-23 15 7-26L4 30l27-2z"
+          /></svg
+        ><span>designed by <strong>karena.</strong></span></a
+      >
+      <nav class="top-nav" aria-label="Main navigation">
+        <a href="work.html">Work</a><a href="about.html">About</a
+        ><a href="resume.html">Résumé</a
+        ><a href="contact.html" aria-current="page">Contact ↗</a>
+      </nav>
+    </header>
+    <main class="contact-page ap-light" id="main-content" tabindex="-1">
+      <section class="contact-hero">
+        <p class="section-label">A message for Karena</p>
+        <h1>Good things start<br />with a <em>hello.</em></h1>
+        <svg
+          class="drawn-icon icon-mail"
+          viewBox="0 0 80 80"
+          aria-hidden="true"
+        >
+          <path d="M7 20h65v46H7z" />
+          <path
+            class="icon-line"
+            d="M7 21l33 25 32-25M7 65l23-24m42 24L49 41"
+          />
+          <path class="icon-spark" d="M58 7v13m-6-6h12" />
+        </svg>
 
-          <div>
-            <span class="contact-link-label">find me on</span>
-            <strong>LinkedIn</strong>
-          </div>
-        </a>
-
-        <div class="contact-sticker pink-sticker">
-          <span class="sticker-label">response time</span>
-          <p>I reply fastest when the message has a specific question in it.</p>
-        </div>
-
-      </aside>
-
-    </section>
-
-
-    <section class="contact-closing">
-
-      <div class="closing-card">
-
-        <p class="closing-handwritten">
-          before you go...
-        </p>
-
-        <h2>You can also just look around.</h2>
+        <div class="contact-squiggle"></div>
 
         <p>
-          If you landed here first, my case studies are a good place to start.
+          Have a project, a role, a question, or something interesting to talk
+          through? Send it my way.
         </p>
+        <p class="mobile-direct-email">
+          Prefer email?
+          <a href="mailto:designedbykarena@gmail.com"
+            >designedbykarena@gmail.com</a
+          >
+        </p>
+      </section>
 
-        <a href="work.html" class="closing-button">
-          See my work →
-        </a>
+      <section class="contact-layout">
+        <!-- LEFT NOTES -->
+        <aside
+          class="contact-side contact-side-left"
+          aria-label="Contact notes"
+        >
+          <div class="contact-sticker lavender-sticker">
+            <span class="sticker-label">best for</span>
+            <p>
+              UX and design research opportunities, research collaborations, web
+              projects, and interesting questions.
+            </p>
+          </div>
 
+          <div class="contact-sticker yellow-sticker">
+            <span class="sticker-label">tiny request</span>
+            <p>
+              Tell me a little about why you’re reaching out. It helps me give
+              you a useful answer.
+            </p>
+          </div>
+        </aside>
+
+        <!-- MAIN MESSAGE CARD -->
+        <section class="message-board">
+          <div class="message-board-top">
+            <div>
+              <span class="board-label"> new message </span>
+
+              <h2>What’s on your mind?</h2>
+            </div>
+
+            <svg
+              class="drawn-icon icon-mail"
+              viewBox="0 0 80 80"
+              aria-hidden="true"
+            >
+              <path d="M7 20h65v46H7z" />
+              <path
+                class="icon-line"
+                d="M7 21l33 25 32-25M7 65l23-24m42 24L49 41"
+              />
+              <path class="icon-spark" d="M58 7v13m-6-6h12" />
+            </svg>
+          </div>
+
+          <p class="message-intro">It doesn’t have to be formal.</p>
+
+          <form
+            class="contact-form"
+            id="contact-form"
+            action="mailto:designedbykarena@gmail.com"
+            method="post"
+            enctype="text/plain"
+          >
+            <div class="form-row">
+              <div class="form-field">
+                <label for="name">Your name</label>
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  autocomplete="name"
+                  placeholder="Your name"
+                  required
+                />
+              </div>
+
+              <div class="form-field">
+                <label for="email">Your email</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  placeholder="you@example.com"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="subject">What are we talking about?</label>
+
+              <select id="subject" name="subject" required>
+                <option value="" selected disabled>Pick one...</option>
+                <option value="UX Research">UX Research</option>
+                <option value="Design Opportunity">Design Opportunity</option>
+                <option value="Web Project">Web Project</option>
+                <option value="Recruiting / Role">Recruiting / Role</option>
+                <option value="Collaboration">Collaboration</option>
+                <option value="Something Else">Something Else</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="message">Your note</label>
+
+              <textarea
+                id="message"
+                name="message"
+                rows="7"
+                placeholder="Tell me what you're working on, what you need, or what made you reach out..."
+                required
+              ></textarea>
+            </div>
+
+            <div class="form-footer">
+              <p class="form-note">
+                This opens a draft in your email app. Press Send there to
+                deliver it.
+              </p>
+
+              <button type="submit" class="send-button">
+                Open email draft →
+              </button>
+            </div>
+
+            <noscript
+              ><p>
+                JavaScript is off.
+                <a href="mailto:designedbykarena@gmail.com"
+                  >Email Karena directly</a
+                >.
+              </p></noscript
+            >
+            <p class="form-status" id="form-status" aria-live="polite"></p>
+          </form>
+        </section>
+
+        <!-- RIGHT NOTES -->
+        <aside
+          class="contact-side contact-side-right"
+          aria-label="Direct contact links"
+        >
+          <a
+            class="contact-link-card email-card"
+            href="mailto:designedbykarena@gmail.com"
+          >
+            <span class="contact-link-icon">✉</span>
+
+            <div>
+              <span class="contact-link-label">email me</span>
+              <strong>designedbykarena<wbr />@gmail.com</strong>
+            </div>
+          </a>
+
+          <a
+            class="contact-link-card linkedin-card"
+            href="https://www.linkedin.com/in/karenablue/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="contact-link-icon">in</span>
+
+            <div>
+              <span class="contact-link-label">find me on</span>
+              <strong>LinkedIn</strong>
+            </div>
+          </a>
+
+          <div class="contact-sticker pink-sticker">
+            <span class="sticker-label">response time</span>
+            <p>
+              I reply fastest when the message has a specific question in it.
+            </p>
+          </div>
+        </aside>
+      </section>
+
+      <section class="contact-closing">
+        <div class="closing-card">
+          <p class="closing-handwritten">before you go...</p>
+
+          <h2>You can also just look around.</h2>
+
+          <p>
+            If you landed here first, my case studies are a good place to start.
+          </p>
+
+          <a href="work.html" class="closing-button"> See my work → </a>
+        </div>
+      </section>
+    </main>
+    <footer class="page-width">
+      <a href="#top"
+        >Designed by Karena Blue <span aria-hidden="true">↑</span></a
+      >
+      <p>A curious corner of the internet.</p>
+      <div>
+        <a href="resume.html">Résumé ↗</a><a href="contact.html">Contact ↗</a>
       </div>
-
-    </section>
-
-  </main>
-
-
-  <footer class="site-footer">
-    <p>
-      Designed and coded by Karena Blue.
-    </p>
-  </footer>
-
-  <script src="contact.js"></script>
-
-</body>
+    </footer>
+    <script src="contact.js" defer></script>
+  </body>
 </html>

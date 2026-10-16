@@ -7,9 +7,8 @@
 <title>Locked case study | Designed by Karena</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,600;1,9..144,500&family=Fredoka:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="case-study.css">
-<link rel="stylesheet" href="motion.css">
 <style>
 .lock-card{max-width:460px;margin:60px auto;padding:28px;border:1.5px solid var(--ink);border-radius:20px;background:var(--paper);box-shadow:var(--shadow)}
 .lock-card h1{margin:0 0 8px;font:700 1.9rem/1.1 "Bricolage Grotesque",serif}
@@ -20,33 +19,41 @@
 .lock-row button{padding:11px 18px;border:1.5px solid var(--ink);border-radius:999px;background:var(--purple2);color:#fff;font:800 .85rem "Inter",sans-serif;cursor:pointer}
 .lock-error{min-height:1.4em;margin:12px 0 0;font-weight:700;color:#43439a}
 </style>
-  <link rel="stylesheet" href="site.css">
-</head>
-<body>
+<link rel="stylesheet" href="directions-shared.css"><link rel="stylesheet" href="direction-y2k.css"><link rel="stylesheet" href="portfolio.css"><script src="portfolio.js" defer></script></head>
+<body id="top" class="direction-y2k portfolio-page portfolio-case">
 <a class="skip-link" href="#main-content">Skip to main content</a>
-<header class="site-header">
-  <a href="index.html" class="site-logo">Designed by Karena</a>
-  <nav class="site-nav" aria-label="Main navigation">
-    <a href="index.html">Home</a><a href="work.html" class="active-link" aria-current="location">Work</a>
-    <a href="about.html">About</a><a href="resume.html">Resume</a><a href="contact.html">Contact</a>
-  </nav>
-</header>
+<header class="site-header page-width">
+      <a class="wordmark" href="index.html" aria-label="Designed by Karena, home"><svg class="drawn-icon icon-star" viewBox="0 0 80 80" aria-hidden="true">
+          <path d="M40 4l9 24 26 2-20 17 6 26-21-15-23 15 7-26L4 30l27-2z" /></svg><span>designed by <strong>karena.</strong></span></a>
+      <nav class="top-nav" aria-label="Main navigation">
+        <a href="work.html" aria-current="location">Work</a><a href="about.html">About</a><a href="resume.html">Résumé</a><a href="contact.html">Contact ↗</a>
+      </nav>
+    </header>
 
 <main class="case-page" id="main-content" tabindex="-1">
-  <form class="lock-card" id="lock-form" autocomplete="off">
+  <form class="lock-card" id="lock-form" autocomplete="off"><div class="lock-illustration" aria-hidden="true"><svg class="drawn-icon icon-folder" viewBox="0 0 80 80" aria-hidden="true">
+                <path d="M8 20h23l7 8h35v38H8z" />
+                <path d="M8 30h65L62 69H3z" />
+                <path class="icon-line" d="M25 46h28M23 54h18" /></svg></div>
     <h1>This case study is locked</h1>
     <p><strong>What Goes Into a Post?</strong> A team observation study of how people curate social media posts, and how worry about audience perception affects the time it takes. Fieldwork is underway and findings arrive when the study wraps in November 2026.</p>
     <p>The full page contains participant-session material, so it is locked. Enter the password I shared with you, or <a class="source-link" href="mailto:designedbykarena@gmail.com?subject=Access%20to%20What%20Goes%20Into%20a%20Post%3F">request access by email</a>.</p>
     <label for="pw">Password</label>
     <div class="lock-row">
-      <input id="pw" type="password" required autofocus>
+      <input id="pw" type="password" required autocomplete="current-password">
       <button type="submit">Unlock →</button>
     </div>
     <p class="lock-error" id="lock-error" role="status" aria-live="polite"></p>
   </form>
 </main>
 
-<footer class="site-footer"><p>Designed by Karena — made by hand, one page at a time.</p></footer>
+<footer class="page-width">
+      <a href="#top">Designed by Karena Blue <span aria-hidden="true">↑</span></a>
+      <p>A curious corner of the internet.</p>
+      <div>
+        <a href="resume.html">Résumé ↗</a><a href="contact.html">Contact ↗</a>
+      </div>
+    </footer>
 
 <script id="vault" type="application/json">{"s":"GADGN9ULyEWZGUo/jrIUGQ==","i":"ARDVprrczA/qVaYi","c":"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","n":310000}</script>
 <script>
