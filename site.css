@@ -495,3 +495,14 @@ html body {
   .resume-bottom-actions { justify-content: flex-start !important; }
   @media (max-width: 760px) { .selected-projects { grid-template-columns: minmax(0, 1fr); } }
 }
+
+/* Home hero: lead with the work instead of a portrait */
+.hero-collage::after { content: none !important; }
+.hero-work { position: relative; z-index: 1; display: grid; gap: 16px; width: 100%; max-width: 500px; }
+.hero-shot { display: block; overflow: hidden; border: 2px solid var(--outline, #43439a); border-radius: 20px; background: var(--paper); box-shadow: 0 6px 0 rgba(67,67,154,.25); color: var(--ink); text-decoration: none; transition: transform .15s; }
+.hero-shot:hover { transform: translateY(-3px); }
+.hero-shot:focus-visible { outline: 3px solid var(--green); outline-offset: 3px; }
+.hero-shot img { display: block; width: 100%; height: auto !important; aspect-ratio: 16 / 7; object-fit: cover; object-position: left top; border-bottom: 1px solid var(--line-color); }
+.hero-shot:last-child img { object-position: center top; }
+.hero-shot span { display: block; padding: 10px 14px; font: 700 .82rem/1.3 "Inter", sans-serif; }
+@media (prefers-reduced-motion: reduce) { .hero-shot { transition: none; } .hero-shot:hover { transform: none; } }
