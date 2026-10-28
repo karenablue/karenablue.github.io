@@ -2737,3 +2737,10 @@ html body.portfolio-page {
     transform: none;
   }
 }
+
+/* Compact project preview beside the introduction. */
+.project-preview { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; width: min(1200px, calc(100% - 3rem)); margin: 0 auto 2rem; }
+.project-preview a { display: grid; gap: .45rem; padding: 1rem 1.15rem; border: 2px solid currentColor; border-radius: 12px; color: inherit; background: #fffaf0; text-decoration: none; }
+.project-preview a:hover, .project-preview a:focus-visible { background: #f0e8ff; }
+.project-preview span { font-size: .9rem; line-height: 1.5; }
+@media (max-width: 650px) { .project-preview { grid-template-columns: 1fr; gap: .65rem; } }

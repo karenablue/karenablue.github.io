@@ -64,14 +64,7 @@
           >Product design · information architecture · Figma</span
         >
         <h1>Sigma Gamma Rho: rethinking the path to membership</h1>
-        <p class="case-deck">
-          I redesigned the navigation of a membership organization's website so
-          prospective members can find how to join and outsiders can make sense
-          of insider titles. Card sorting and tree testing set the structure. I
-          compared header patterns in Figma, designed every desktop and mobile
-          menu state, and turned them into a clickable prototype that is ready
-          for its first usability test.
-        </p>
+        <p class="case-deck">Navigation that makes sense to members can confuse newcomers. I researched and redesigned Sigma Gamma Rho’s website navigation, preserving official titles while adding context for first-time visitors.</p>
         <div class="stat-grid">
           <div class="stat-card">
             <span>My role</span
@@ -101,428 +94,72 @@
             In this case study <span aria-hidden="true">↓</span>
           </summary>
           <nav class="jump-card mobile-jump" aria-label="Case study sections">
-            <p>jump to ↓</p>
-            <a href="#summary">Summary</a><a href="#problem">Problem</a
-            ><a href="#overview">Research</a><a href="#findings">Key findings</a
-            ><a href="#architecture">Structure</a
-            ><a href="#exploration">Exploration</a
-            ><a href="#final-design">Final design</a
-            ><a href="#design-system">Components</a
-            ><a href="#measure">Next steps</a><a href="#limits">Reflection</a
-            ><a href="#evidence">Full results</a>
-          </nav>
+<p>jump to ↓</p><a href="#summary">Overview</a><a href="#findings">Key evidence</a><a href="#decisions">Design decisions</a><a href="#final-design">Prototype</a><a href="#measure">Evaluation</a><a href="#evidence">Supporting research</a></nav>
         </details>
         <article>
-          <section class="section" id="summary">
-            <div class="section-head">
-              <p class="section-note">the short version</p>
-              <h2>Summary</h2>
-            </div>
-            <div class="summary-grid">
-              <div class="summary-card">
-                <span class="summary-label">What I learned</span>
-                <p>
-                  Prospective members expected a top-level Membership section,
-                  and every card-sort participant grouped "Become a Member" with
-                  the other membership actions. Insider titles such as "Grand
-                  Basileus" were the biggest barrier for non-members.
-                </p>
-              </div>
-              <div class="summary-card">
-                <span class="summary-label">What I changed</span>
-                <p>
-                  I made Membership its own primary category and put "Become a
-                  Member" first, instead of a Members menu sitting beside
-                  Leadership and Affiliates. I also replaced the weak "Service
-                  &amp; Impact" label and designed a shallower navigation. The
-                  desktop and mobile designs give joining a prominent control.
-                </p>
-              </div>
-              <div class="summary-card highlight">
-                <span class="summary-label">Strongest result</span
-                ><strong>4 of 4 vs. 1 of 5</strong>
-                <p>
-                  On "find the current leader," all 4 members succeeded but only
-                  1 of 5 non-members did. Outsiders miss insider titles, while
-                  the join path worked for everyone (8 of 8, 7.1 seconds on
-                  average).
-                </p>
-              </div>
-            </div>
-            <p class="small-note">
-              <strong>Next test:</strong> run a moderated usability test of the
-              prototype with first-time non-members on the join and
-              find-the-leader tasks, and compare against the tree-test baselines
-              of 100% and 55.6% success. The tree test evaluated a proposed
-              structure, so no live-site result is claimed yet.
-            </p>
-          </section>
-
-          <section class="section" id="problem">
-            <div class="section-head">
-              <p class="section-note">where people got stuck</p>
-              <h2>The Problem</h2>
-            </div>
-            <p>
-              The site's main job is to start a relationship with people who
-              want to join, yet joining sat outside the main navigation. Twelve
-              top-level links competed for attention, membership actions were
-              split across a "Members" menu and a utility bar, and some menus
-              opened a menu inside a menu. Insider titles assumed the visitor
-              already knew the organization.
-            </p>
-            <figure class="panel">
-              <img
-                src="images/sgrho/sgrho-original-header-2025-03.jpg"
-                alt="Original Sigma Gamma Rho header: Member Portal, Join Sigma, and Find a Chapter buttons above a single row of twelve text links: About, Leadership, Help Center, Service, Members, Affiliates, Partners, Sponsors, Vendors, Media, Donate Now, Careers."
-                width="1440"
-                height="234"
-                loading="lazy"
-              />
-              <figcaption>
-                Before: the original header, captured from the Wayback Machine
-                on March 19, 2025. Twelve text links sit in one row, and a Join
-                Sigma button sits in the utility bar above them, beside Member
-                Portal and Find a Chapter. The original site did have a Join
-                button; it sat outside the main navigation.
-              </figcaption>
-            </figure>
-
-            <figure class="panel">
-              <img
-                src="images/sgrho/sgrho-original-members-menu-2025-03.jpg"
-                alt="Original Sigma Gamma Rho header with the Members menu open, listing Membership, Collegiate Experience, Alumnae Engagement, and Reactivate Today."
-                width="1440"
-                height="324"
-                loading="lazy"
-              />
-              <figcaption>
-                Before: the original Members menu, open. It lists Membership,
-                Collegiate Experience, Alumnae Engagement, and Reactivate Today
-                (Wayback Machine, March 19, 2025).
-              </figcaption>
-            </figure>
-
-            <div class="panel-stack">
-              <figure class="panel">
-                <img
-                  src="images/sgrho/sgrho-original-affiliates-nested-2025-03.jpg"
-                  alt="Original header with the Affiliates menu open: Rhoer Affiliates, Philo Affiliates expanded to show Philo Photo Gallery, and Rhosebuds."
-                  width="1440"
-                  height="327"
-                  loading="lazy"
-                />
-                <figcaption>
-                  Before: a menu inside a menu. Affiliates opens to Rhoer
-                  Affiliates, Philo Affiliates (which expands to Philo Photo
-                  Gallery), and Rhosebuds.
-                </figcaption>
-              </figure>
-              <figure class="panel">
-                <img
-                  src="images/sgrho/sgrho-original-partners-nested-2025-03.jpg"
-                  alt="Original header with the Partners menu open: Foundations expanded to show National Education Fund, Sigma Public Education and Research Foundation, and G.O.L.D.E.N. Charitable Foundation."
-                  width="1440"
-                  height="340"
-                  loading="lazy"
-                />
-                <figcaption>
-                  Before: Partners opens to a single item, Foundations, which
-                  expands to three foundations. Navigation went three levels
-                  deep here.
-                </figcaption>
-              </figure>
-            </div>
-          </section>
-
-          <section class="section" id="criteria">
-            <div class="section-head">
-              <p class="section-note">pass or fail, stated up front</p>
-              <h2>Goals &amp; Success Criteria</h2>
-            </div>
-            <p>
-              <strong>Benchmarks I'm judging against.</strong> Set
-              retrospectively. The tree test evaluated a proposed structure, not
-              a live site.
-            </p>
-            <div
-              class="table-wrap"
-              tabindex="0"
-              role="region"
-              aria-label="Success criteria, scroll horizontally if needed"
-            >
-              <table>
-                <thead>
-                  <tr>
-                    <th scope="col">Goal</th>
-                    <th scope="col">Benchmark</th>
-                    <th scope="col">Result</th>
-                    <th scope="col">Read</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">
-                      Prospective members can find how to join
-                    </th>
-                    <td>≥ 80% direct success</td>
-                    <td>100% direct, 7.1s average</td>
-                    <td>Met</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">
-                      Non-members can find leadership information
-                    </th>
-                    <td>≥ 80% success</td>
-                    <td>55.6%, 27.6s average</td>
-                    <td>Not met</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Visitors can find programs</th>
-                    <td>≥ 80% success</td>
-                    <td>62.5% success, 37.5% direct</td>
-                    <td>Not met</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Overall navigation</th>
-                    <td>≥ 80% average across the 10 tasks</td>
-                    <td>82.2%</td>
-                    <td>Met, but it masks two weak tasks</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <p class="small-note">
-              <strong>What this changed:</strong> the two misses drove the
-              plain-language title explanations and the “Programs &amp;
-              Initiatives” relabel. Both are untested in the final design, and
-              that retest is the next step.
-            </p>
-          </section>
-
-          <section class="section" id="overview">
-            <div class="section-head">
-              <p class="section-note">how I learned what visitors expect</p>
-              <h2>Research Approach</h2>
-            </div>
-            <div class="callout">
-              <p>
-                <strong>Research question:</strong> why do prospective members
-                struggle to find membership information, and what does the
-                navigation reveal about the gap between how the organization
-                thinks about its content and how visitors expect to find it?
-              </p>
-            </div>
-            <div class="table-wrap">
-              <table>
-                <tbody>
-                  <tr>
-                    <th>Participation by phase</th>
-                    <td>
-                      9 card-sort participants and 9 tree-test participants.
-                      Four people took part in both phases (2 undergraduate
-                      sorors and 2 non-members); the other five in each phase
-                      were different.
-                    </td>
-                  </tr>
-                  <tr>
-                    <th>Card sort segments</th>
-                    <td>
-                      6 sorors (3 undergraduate, 3 alumnae) and 3 non-members
-                    </td>
-                  </tr>
-                  <tr>
-                    <th>Tree test segments</th>
-                    <td>
-                      4 members (3 undergraduate, 1 alumna) and 5 non-members,
-                      one of whom belongs to another Divine Nine organization
-                    </td>
-                  </tr>
-                  <tr>
-                    <th>Methods</th>
-                    <td>
-                      Competitive analysis of 3 Divine Nine (NPHC) sororities,
-                      open card sort (24 cards), tree test (10 tasks)
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <p class="small-note">
-              <strong>Exclusion:</strong> one additional card-sort session,
-              submitted on May 29, 2025 after the study closed on May 27, was
-              excluded from the analysis. Including it would not change the main
-              findings: the join grouping stays unanimous, and National Programs
-              agreement would be 70% instead of 77.8%.
-            </p>
-            <div class="callout">
-              <p>
-                <strong>Researcher positionality:</strong> I am a member of
-                Sigma Gamma Rho, so its structure and titles are familiar to me.
-                That familiarity can make a label feel clearer than it does to a
-                first-time visitor. The card sort included three non-members,
-                and one of them placed “International Grand Basileus” under
-                About while all six sorors put it under Leadership; the tree
-                test included five non-members, and finding the current leader
-                was its weakest task. I recommended keeping official terms and
-                explaining them in plain language.
-              </p>
-            </div>
-          </section>
-
-          <section class="section" id="findings">
-            <div class="section-head">
-              <p class="section-note">the three that drove decisions</p>
-              <h2>Key Findings</h2>
-            </div>
-            <div class="principle-list">
-              <div class="principle">
-                <h3>1. Membership belongs at the top level</h3>
-                <p>
-                  <strong>Evidence:</strong> all 9 card-sort participants (100%)
-                  grouped "Become a Member" under Membership. All 3 benchmarked
-                  sororities put membership in primary navigation. In the tree
-                  test, the join task reached 100% success, and every
-                  participant took the direct path.
-                </p>
-                <p>
-                  <strong>Decision:</strong> make Membership a primary category
-                  and put "Become a Member" first.
-                </p>
-              </div>
-              <div class="principle">
-                <h3>2. Insider titles block non-members</h3>
-                <p>
-                  <strong>Evidence:</strong> "Find the current leader" was the
-                  weakest tree-test task (55.6% success, 27.6s average). Members
-                  got it 4 of 4, non-members 1 of 5. Across all 10 tasks,
-                  members succeeded on 37 of 40 (92.5%) and non-members on 30 of
-                  42 (71.4%). All 4 misses were non-members: 2 stopped at
-                  International Board of Directors (right section, wrong person)
-                  and 2 ended in About (Herstory, Our Founders). In the card
-                  sort, 1 of 3 non-members placed International Grand Basileus
-                  under About; all 6 sorors put it under Leadership.
-                </p>
-                <p>
-                  <strong>Decision:</strong> keep the official titles, but
-                  explain them in plain language.
-                </p>
-              </div>
-              <div class="principle">
-                <h3>3. "Service &amp; Impact" didn't read as programs</h3>
-                <p>
-                  <strong>Evidence:</strong> "Find community programs" reached
-                  62.5% success, and only 37.5% of participants went directly to
-                  it. All 3 misses chose a foundation instead of National
-                  Programs (Partner Foundations twice, Our Foundations once); 2
-                  of the 3 were non-members and 1 an undergraduate soror. In the
-                  card sort, programs, foundations, and initiatives formed one
-                  group (National Programs 77.8%); all 6 sorors put National
-                  Programs and Partner Foundations under Service &amp; Impact,
-                  while non-members scattered them across Resources, Leadership,
-                  and a help-center group.
-                </p>
-                <p>
-                  <strong>Decision:</strong> combine them under one programs
-                  label instead of the tested "Service &amp; Impact."
-                </p>
-              </div>
-            </div>
-            <figure class="chart-fig">
-              <figcaption>
-                Tree test: "Find the current leader," success by segment
-              </figcaption>
-              <div class="bar-row">
-                <span class="bar-label">Members (4)</span>
-                <div
-                  class="bar"
-                  role="img"
-                  aria-label="Members: 4 of 4 succeeded"
-                >
-                  <span class="full" style="flex: 4">4 of 4</span>
-                </div>
-              </div>
-              <div class="bar-row">
-                <span class="bar-label">Non-members (5)</span>
-                <div
-                  class="bar"
-                  role="img"
-                  aria-label="Non-members: 1 of 5 succeeded, 4 did not"
-                >
-                  <span class="full" style="flex: 1">1</span
-                  ><span class="fail" style="flex: 4">4 missed</span>
-                </div>
-              </div>
-              <div class="bar-legend">
-                <span
-                  ><i style="background: var(--mint)"></i>Found the leader</span
-                ><span><i style="background: var(--pink)"></i>Missed</span>
-              </div>
-            </figure>
-          </section>
-
-          <section class="section" id="synthesis">
-            <div class="section-head">
-              <p class="section-note">what held across methods</p>
-              <h2>Cross-Method Synthesis</h2>
-            </div>
-            <div class="insight-grid">
-              <div class="insight">
-                <span class="num">01</span>
-                <h3>Membership belongs at the top level</h3>
-                <p>
-                  Card sorting produced unanimous grouping of membership
-                  actions, and peer organizations put membership in primary
-                  navigation.
-                </p>
-              </div>
-              <div class="insight">
-                <span class="num">02</span>
-                <h3>Insider terminology is a barrier</h3>
-                <p>
-                  Non-members misplaced items more often when organizational
-                  jargon appeared. They needed plain-language context alongside
-                  the official terms.
-                </p>
-              </div>
-              <div class="insight">
-                <span class="num">03</span>
-                <h3>Service and program content share a mental model</h3>
-                <p>
-                  Participants grouped programs, foundations, and initiatives
-                  together on their own, while the existing site split them
-                  across several paths.
-                </p>
-              </div>
-              <div class="insight">
-                <span class="num">04</span>
-                <h3>Structural depth slows everyone down</h3>
-                <p>
-                  Hesitation in the card sort and the competitor patterns both
-                  pointed to a shallower architecture, with two levels as the
-                  practical limit.
-                </p>
-              </div>
-            </div>
-          </section>
-
-          <section class="section" id="architecture">
-            <div class="section-head">
-              <p class="section-note">research translated into structure</p>
-              <h2>Proposed Site Architecture</h2>
-            </div>
+<section class="section" id="summary">
+<div class="section-head">
+<p class="section-note">the problem, my contribution, and where it stands</p>
+<h2>Overview</h2>
+</div>
+<p>The original website split membership actions across menus and used titles that assumed visitors already knew the organization. As the independent researcher and designer, I conducted a competitive review, card sorting, and tree testing, then designed a revised navigation structure, desktop and mobile menu states, and a clickable prototype.</p>
+<p><strong>Current status:</strong> the research evaluated a proposed text-only structure. The interface is a design proposal awaiting participant testing.</p>
+</section>
+<section class="section" id="findings"><span id="synthesis"></span>
+<div class="section-head">
+<p class="section-note">the findings beside the decisions they informed</p>
+<h2>Key evidence</h2>
+</div>
+<div class="principle-list">
+<div class="principle">
+<h3>Members recognized the leader; newcomers struggled</h3>
+<p><strong>Evidence:</strong> in the proposed structure’s tree test, 4 of 4 members found the current leader, compared with only <strong>1 of 5 non-members</strong>. Two non-members chose the board rather than the individual; two ended in About. This suggests the title needed context, though the small sample cannot isolate terminology from other navigation factors.</p>
+<p><strong>Decision:</strong> keep the official title and add a plain-language description. This preserves familiar terminology for members while explaining the role to newcomers.</p>
+<div class="revision-pair" aria-label="Tested title and revised prototype wording">
+<div>
+<h4>Tested wording</h4>
+<p>International Grand Basileus</p>
+</div>
+<div>
+<h4>In the prototype</h4>
+<p>International Grand Basileus<small>Current international leader</small>
+</p>
+</div>
+</div>
+<p class="small-note">The revised wording is in the desktop and phone prototype and awaiting testing. The Figma screenshots below predate this copy change. <a href="#nav-demo">Try the Leadership menu →</a>
+</p>
+</div>
+<div class="principle">
+<h3>Joining was easier to recognize</h3>
+<p><strong>Evidence:</strong> all 9 card-sort participants grouped “Become a Member” with membership actions. In the proposed tree, all 8 who attempted the join task succeeded directly (7.1 seconds on average). The task wording closely matched the destination label, so this supports findability within that tree, not improvement over the original site.</p>
+<p><strong>Decision:</strong> make Membership a primary category and put “Become a Member” first, giving prospective members a visible starting point.</p>
+</div>
+<div class="principle">
+<h3>“Service &amp; Impact” left programs ambiguous</h3>
+<p><strong>Evidence:</strong> only 5 of 8 found community programs, and just 3 went directly there. All three misses selected a foundation. Card sorting grouped programs and foundations together (7 of 9 for National Programs).</p>
+<p><strong>Decision:</strong> use “Programs &amp; Initiatives” for the shared category. This is my interpretation of the grouping; its wording still needs testing.</p>
+</div>
+</div>
+</section>
+<section class="section" id="decisions"><span id="architecture"></span>
+<div class="section-head">
+<p class="section-note">from findings to navigation</p>
+<h2>Design decisions</h2>
+</div>
             <div class="callout">
               <p><strong>How to read this map:</strong> the counts show card-sort
                 placements, not tree-test success. This view combines research
                 placements with the later “Programs &amp; Initiatives” label.
-                The table below separates the tested structure from revisions.</p>
+                <a href="#architecture-status">See the tested structure beside later revisions.</a>
+</p>
             </div>
             <div
               class="sitemap"
               role="group"
               aria-label="Proposed site structure: Home plus six sections, two levels deep"
             >
-              <div class="sitemap-home"><span>Home</span></div>
+              <div class="sitemap-home"><span>Home</span>
+</div>
               <div class="sitemap-cols">
                 <div class="sm-col">
                   <h3>About</h3>
@@ -603,51 +240,12 @@
               Resources). Affiliates sits under Membership, the most common
               placement (4 of 9) though not a majority.
             </p>
-          </section>
-
-          <section class="section" id="architecture-status">
-            <div class="section-head">
-              <p class="section-note">what was tested, what changed</p>
-              <h2>Architecture evidence &amp; revisions</h2>
-            </div>
-            <div class="table-wrap" tabindex="0" role="region" aria-label="Tested navigation and proposed revisions">
-              <table>
-                <thead><tr><th>Element</th><th>Research version</th><th>Current proposal &amp; status</th></tr></thead>
-                <tbody>
-                  <tr><td>Membership / Become a Member</td><td>Join task: 8 of 8 direct successes.</td><td>Retained. Interface presentation still needs usability testing.</td></tr>
-                  <tr><td>Leadership titles</td><td>Official titles; leader task: 5 of 9 succeeded, including 1 of 5 non-members.</td><td>Helper descriptions added to the coded prototype. Copy and interface are untested.</td></tr>
-                  <tr><td>Programs label</td><td>“Service &amp; Impact”; programs task: 5 of 8 succeeded.</td><td>“Programs &amp; Initiatives” replaces it. New label is untested.</td></tr>
-                  <tr><td>Later content changes</td><td>Our Foundations was under About; Corporate Partnerships and Membership Accountability were absent.</td><td>Our Foundations removed from About; Corporate Partnerships added under Programs; Membership Accountability added under Membership. These revisions are untested.</td></tr>
-                  <tr><td>Low-agreement placements</td><td>Notable Sigmas, Anti-Hazing Policy, Corporate Headquarters, Media Relations, and Affiliates lacked majority card-sort agreement.</td><td>Flagged for focused tree-test checks; card-sort counts do not establish findability.</td></tr>
-                </tbody>
-              </table>
-            </div>
-          </section>
-
-          <section class="section" id="rationale">
-            <div class="section-head">
-              <p class="section-note">every change needed a reason</p>
-              <h2>Design Rationale</h2>
-            </div>
+          <details class="evidence" id="rationale">
+<summary>Other placement decisions and tradeoffs</summary>
+<div class="evidence-body">
             <div class="change-grid">
-              <div class="change">
-                <h3>Membership becomes its own primary category</h3>
-                <p>
-                  All 9 participants grouped membership actions together, and
-                  all 3 benchmarked sororities put membership in primary
-                  navigation.
-                </p>
-                <span class="change-evidence">9 of 9</span>
-              </div>
-              <div class="change">
-                <h3>Programs consolidated into "Programs &amp; Initiatives"</h3>
-                <p>
-                  Participants grouped programs and partner foundations
-                  together. The label itself is my synthesis, not a card-sort
-                  result.
-                </p>
-                <span class="change-evidence">7 of 9 · National Programs</span>
-              </div>
+
+
               <div class="change">
                 <h3>News &amp; Events reintroduced</h3>
                 <p>
@@ -662,7 +260,7 @@
                 <h3>Depth capped at two levels</h3>
                 <p>
                   The original menus ran three levels deep (Affiliates and
-                  Partners), and structural depth slowed participants down.
+                  Partners), so I reduced nesting to make destinations visible sooner. The effect on task time needs testing.
                 </p>
                 <span class="change-evidence">3 levels before, 2 after</span>
               </div>
@@ -674,25 +272,8 @@
                 </p>
                 <span class="change-evidence">6 of 9</span>
               </div>
-              <div class="change">
-                <h3>Plain-language context for insider titles</h3>
-                <p>
-                  Non-members struggled with titles like "Grand Basileus," so
-                  the proposal keeps official titles and adds plain-language
-                  explanations.
-                </p>
-                <span class="change-evidence"
-                  >Leader task: members 4 of 4, non-members 1 of 5</span
-                >
-              </div>
-              <div class="change">
-                <h3>Sub-items ordered by user intent</h3>
-                <p>
-                  Highest-intent actions come first. "Become a Member" leads
-                  Membership, followed by Chapter Locator.
-                </p>
-                <span class="change-evidence">9 of 9 · Become a Member</span>
-              </div>
+
+
               <div class="change">
                 <h3>Affiliates placed under Membership</h3>
                 <p>
@@ -703,13 +284,11 @@
                 <span class="change-evidence">4 of 9</span>
               </div>
             </div>
-          </section>
-
-          <section class="section" id="exploration">
-            <div class="section-head">
-              <p class="section-note">three ways to hold the same structure</p>
-              <h2>Exploring Header Patterns</h2>
-            </div>
+          </div>
+</details>
+<details class="evidence" id="exploration">
+<summary>Header alternatives and the selected pattern</summary>
+<div class="evidence-body">
             <p class="lead-in">
               <strong
                 >I had already chosen a single-row ribbon in my full
@@ -769,13 +348,48 @@
               </p>
             </div>
             <p class="small-note"><strong>Why Option 1:</strong> every section stays visible and one click from any page, which suits a two-level structure with six sections. Option 2’s persistent Join competed with the ribbon, and Option 3’s mega menu asked visitors to scan far more than the join task needed.</p>
-          </section>
-
-          <section class="section" id="final-design">
-            <div class="section-head">
-              <p class="section-note">every state, desktop and mobile</p>
-              <h2>Final Design</h2>
+          </div>
+</details>
+</section>
+<section class="section" id="final-design">
+<div class="section-head">
+<p class="section-note">inspect the interaction, then the screens</p>
+<h2>Prototype</h2>
+</div>
+<h3>Try the prototype</h3>
+            <p>
+              Open a menu, search, or switch to the phone view and open the
+              drawer. The destinations are placeholder pages.
+            </p>
+            <div class="nav-demo" id="nav-demo">
+              <div class="nd-controls">
+                <div class="nd-views" role="group" aria-label="Prototype view">
+                  <button type="button" data-view="desktop" aria-pressed="true">
+                    Desktop
+                  </button>
+                  <button type="button" data-view="phone" aria-pressed="false">
+                    Phone
+                  </button>
+                </div>
+                <button type="button" class="nd-restart">Restart</button>
+              </div>
+              <div class="nd-stage">
+<div class="nd-screen desktop">
+</div>
+</div>
+              <p class="nd-status" role="status" aria-live="polite">
+</p>
+              <noscript
+                >
+<p class="small-note">
+                  The prototype needs JavaScript. The screens above show every
+                  state.
+                </p></noscript
+              >
             </div>
+          <details class="evidence">
+<summary>Desktop and mobile design states</summary>
+<div class="evidence-body">
             <p class="lead-in">
               <strong
                 >I documented every state of the chosen navigation in
@@ -843,128 +457,305 @@
                 </figure>
               </div>
             </div>
-            <h3>How the findings show up</h3>
-            <div
-              class="table-wrap"
-              tabindex="0"
-              role="region"
-              aria-label="Finding to design decision to final design"
-            >
+            </div>
+</details>
+</section>
+<section class="section" id="measure">
+<div class="section-head">
+<p class="section-note">what was tested and what comes next</p>
+<h2>Evaluation</h2>
+</div>
+            <p class="lead-in">
+              <strong
+                >So far, the evidence covers the structure, not the
+                interface.</strong
+              >
+              The tree test checked a proposed structure with 9 participants.
+              The final design and its prototype have not been in front of users
+              yet, so round 2 tests what changed.
+            </p>
+            <div class="next-grid">
+              <div class="next-card">
+                <span>Round 2 · Tree test</span>
+                <h3>The final structure</h3>
+                <p>
+                  At least 5 non-members. Join and find-a-chapter as controls, a
+                  retest of the two weak tasks (the current leader, community
+                  programs), and contacting the organization under Resources.
+                </p>
+              </div>
+              <div class="next-card">
+                <span>Round 2 · Moderated test</span>
+                <h3>The prototype</h3>
+                <p>
+                  3 to 5 first-time non-members on desktop and phone: start the
+                  join path, find who leads the organization, and find something
+                  it does in the community.
+                </p>
+              </div>
+            </div>
+            <div class="table-wrap">
               <table>
                 <thead>
                   <tr>
-                    <th>Finding</th>
-                    <th>Decision</th>
-                    <th>In the final design</th>
+                    <th>What I'll measure</th>
+                    <th>Round 1 baseline</th>
+                    <th>Round 2 target</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
+                    <td>Non-members finding the current leader</td>
+                    <td>1 of 5</td>
+                    <td>At least 4 of 5</td>
+                  </tr>
+                  <tr>
+                    <td>Visitors finding community programs</td>
+                    <td>5 of 8</td>
+                    <td>At least 7 of 8</td>
+                  </tr>
+                  <tr>
+                    <td>Placements resting on judgment</td>
+                    <td>5 untested</td>
+                    <td>All five tree-tested</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="small-note">
+              Targets are mine, set before any retest. Round 1 tested a proposed
+              structure, round 2 tests the final design, and each result will be
+              reported next to its baseline with the sample size.
+            </p>
+          <h3 id="limits">Reflection</h3>
+<p>My familiarity with Sigma’s titles could hide a newcomer’s difficulty. I kept official titles and added helper descriptions, balancing member expectations with newcomer clarity. Those descriptions are in the prototype and awaiting testing.</p>
+</section>
+<section class="section" id="evidence">
+<div class="section-head">
+<p class="section-note">methods, detailed results, and limitations</p>
+<h2>Supporting research</h2>
+</div>
+<details class="evidence" id="problem">
+<summary>Original navigation and problem context</summary>
+<div class="evidence-body">
+            <p>
+              The site's main job is to start a relationship with people who
+              want to join, yet joining sat outside the main navigation. Twelve
+              top-level links competed for attention, membership actions were
+              split across a "Members" menu and a utility bar, and some menus
+              opened a menu inside a menu. Insider titles assumed the visitor
+              already knew the organization.
+            </p>
+            <figure class="panel">
+              <img
+                src="images/sgrho/sgrho-original-header-2025-03.jpg"
+                alt="Original Sigma Gamma Rho header: Member Portal, Join Sigma, and Find a Chapter buttons above a single row of twelve text links: About, Leadership, Help Center, Service, Members, Affiliates, Partners, Sponsors, Vendors, Media, Donate Now, Careers."
+                width="1440"
+                height="234"
+                loading="lazy"
+              />
+              <figcaption>
+                Before: the original header, captured from the Wayback Machine
+                on March 19, 2025. Twelve text links sit in one row, and a Join
+                Sigma button sits in the utility bar above them, beside Member
+                Portal and Find a Chapter. The original site did have a Join
+                button; it sat outside the main navigation.
+              </figcaption>
+            </figure>
+
+            <figure class="panel">
+              <img
+                src="images/sgrho/sgrho-original-members-menu-2025-03.jpg"
+                alt="Original Sigma Gamma Rho header with the Members menu open, listing Membership, Collegiate Experience, Alumnae Engagement, and Reactivate Today."
+                width="1440"
+                height="324"
+                loading="lazy"
+              />
+              <figcaption>
+                Before: the original Members menu, open. It lists Membership,
+                Collegiate Experience, Alumnae Engagement, and Reactivate Today
+                (Wayback Machine, March 19, 2025).
+              </figcaption>
+            </figure>
+
+            <div class="panel-stack">
+              <figure class="panel">
+                <img
+                  src="images/sgrho/sgrho-original-affiliates-nested-2025-03.jpg"
+                  alt="Original header with the Affiliates menu open: Rhoer Affiliates, Philo Affiliates expanded to show Philo Photo Gallery, and Rhosebuds."
+                  width="1440"
+                  height="327"
+                  loading="lazy"
+                />
+                <figcaption>
+                  Before: a menu inside a menu. Affiliates opens to Rhoer
+                  Affiliates, Philo Affiliates (which expands to Philo Photo
+                  Gallery), and Rhosebuds.
+                </figcaption>
+              </figure>
+              <figure class="panel">
+                <img
+                  src="images/sgrho/sgrho-original-partners-nested-2025-03.jpg"
+                  alt="Original header with the Partners menu open: Foundations expanded to show National Education Fund, Sigma Public Education and Research Foundation, and G.O.L.D.E.N. Charitable Foundation."
+                  width="1440"
+                  height="340"
+                  loading="lazy"
+                />
+                <figcaption>
+                  Before: Partners opens to a single item, Foundations, which
+                  expands to three foundations. Navigation went three levels
+                  deep here.
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+</details>
+<details class="evidence" id="overview">
+<summary>Research approach and researcher positionality</summary>
+<div class="evidence-body">
+            <div class="callout">
+              <p>
+                <strong>Research question:</strong> why do prospective members
+                struggle to find membership information, and what does the
+                navigation reveal about the gap between how the organization
+                thinks about its content and how visitors expect to find it?
+              </p>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <tbody>
+                  <tr>
+                    <th>Participation by phase</th>
                     <td>
-                      Join task: 100% direct; membership grouped unanimously
-                    </td>
-                    <td>
-                      Membership in the primary navigation, "Become a Member"
-                      first
-                    </td>
-                    <td>
-                      Become a Member leads the menu, and Join sits in the
-                      masthead. <span class="badge green">Shown</span>
+                      9 card-sort participants and 9 tree-test participants.
+                      Four people took part in both phases (2 undergraduate
+                      sorors and 2 non-members); the other five in each phase
+                      were different.
                     </td>
                   </tr>
                   <tr>
+                    <th>Card sort segments</th>
                     <td>
-                      The join path needed to stay findable on small screens
-                    </td>
-                    <td>Keep a membership entry outside the collapsed menu</td>
-                    <td>
-                      "Explore Membership" sits next to Menu on phones.
-                      <span class="badge green">Shown</span>
+                      6 sorors (3 undergraduate, 3 alumnae) and 3 non-members
                     </td>
                   </tr>
                   <tr>
-                    <td>Structural depth slowed participants</td>
-                    <td>Limit navigation to two levels</td>
+                    <th>Tree test segments</th>
                     <td>
-                      All six menus open a single level of links.
-                      <span class="badge green">Shown</span>
+                      4 members (3 undergraduate, 1 alumna) and 5 non-members,
+                      one of whom belongs to another Divine Nine organization
                     </td>
                   </tr>
                   <tr>
-                    <td>"Find the current leader": 55.6% success</td>
-                    <td>Explain insider titles in plain language</td>
+                    <th>Methods</th>
                     <td>
-                      Helper descriptions now appear in the coded prototype;
-                      Figma captures still show the earlier version.
-                      <span class="badge amber">Proposed; untested</span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>"Service &amp; Impact" tested weakly</td>
-                    <td>Use a clearer programs label</td>
-                    <td>
-                      "Programs &amp; Initiatives" is in the ribbon; not yet
-                      tree-tested. <span class="badge green">Shown</span>
+                      Competitive analysis of 3 Divine Nine (NPHC) sororities,
+                      open card sort (24 cards), tree test (10 tasks)
                     </td>
                   </tr>
                 </tbody>
               </table>
             </div>
-            <div class="callout yellow">
+            <p class="small-note">
+              <strong>Exclusion:</strong> one additional card-sort session,
+              submitted on May 29, 2025 after the study closed on May 27, was
+              excluded from the analysis. Including it would not change the main
+              findings: the join grouping stays unanimous, and National Programs
+              agreement would be 70% instead of 77.8%.
+            </p>
+            <div class="callout">
               <p>
-                <strong
-                  >Where the final design departs from the tested
-                  structure:</strong
-                >
-                Corporate Partnerships joined Programs, Membership
-                Accountability joined the Membership menu, and Our Foundations
-                left the About menu. None of these, nor the "Programs &amp;
-                Initiatives" label, were in the tree test, so the round 2 test
-                checks them.
+                <strong>Researcher positionality:</strong> I am a member of
+                Sigma Gamma Rho, so its structure and titles are familiar to me.
+                That familiarity can make a label feel clearer than it does to a
+                first-time visitor. The card sort included three non-members,
+                and one of them placed “International Grand Basileus” under
+                About while all six sorors put it under Leadership; the tree
+                test included five non-members, and finding the current leader
+                was its weakest task. I recommended keeping official terms and
+                explaining them in plain language.
               </p>
             </div>
-            <h3>Making the leader easier to recognize</h3>
-            <div class="revision-pair" aria-label="Leadership label before and proposed revision">
-              <div><h4>Before · tested wording</h4><p>International Grand Basileus</p><p>Past Grand Basilei</p></div>
-              <div><h4>After · proposed helper copy</h4><p>International Grand Basileus<small>Current international leader</small></p><p>Past Grand Basilei<small>Former international leaders</small></p></div>
-            </div>
-            <p class="small-note">Official titles stay intact. These descriptions
-              are a proposed response to the non-member finding, not a measured
-              improvement. They appear in desktop and phone navigation and search
-              in the coded prototype below. The Figma screenshots above predate this revision.</p>
-            <h3>Try the prototype</h3>
+          </div>
+</details>
+<details class="evidence" id="criteria">
+<summary>How I assessed the results</summary>
+<div class="evidence-body">
             <p>
-              Open a menu, search, or switch to the phone view and open the
-              drawer. The destinations are placeholder pages.
+              <strong>Benchmarks I'm judging against.</strong> Set
+              retrospectively. The tree test evaluated a proposed structure, not
+              a live site.
             </p>
-            <div class="nav-demo" id="nav-demo">
-              <div class="nd-controls">
-                <div class="nd-views" role="group" aria-label="Prototype view">
-                  <button type="button" data-view="desktop" aria-pressed="true">
-                    Desktop
-                  </button>
-                  <button type="button" data-view="phone" aria-pressed="false">
-                    Phone
-                  </button>
-                </div>
-                <button type="button" class="nd-restart">Restart</button>
-              </div>
-              <div class="nd-stage"><div class="nd-screen desktop"></div></div>
-              <p class="nd-status" role="status" aria-live="polite"></p>
-              <noscript
-                ><p class="small-note">
-                  The prototype needs JavaScript. The screens above show every
-                  state.
-                </p></noscript
-              >
+            <div
+              class="table-wrap"
+              tabindex="0"
+              role="region"
+              aria-label="Success criteria, scroll horizontally if needed"
+            >
+              <table>
+                <thead>
+                  <tr>
+                    <th scope="col">Goal</th>
+                    <th scope="col">Benchmark</th>
+                    <th scope="col">Result</th>
+                    <th scope="col">Read</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">
+                      Prospective members can find how to join
+                    </th>
+                    <td>≥ 80% direct success</td>
+                    <td>100% direct, 7.1s average</td>
+                    <td>Met</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      Non-members can find leadership information
+                    </th>
+                    <td>≥ 80% success</td>
+                    <td>1 of 5 non-members; 5 of 9 overall, 27.6s average</td>
+                    <td>Not met</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Visitors can find programs</th>
+                    <td>≥ 80% success</td>
+                    <td>62.5% success, 37.5% direct</td>
+                    <td>Not met</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Overall navigation</th>
+                    <td>≥ 80% average across the 10 tasks</td>
+                    <td>82.2%</td>
+                    <td>Met, but it masks two weak tasks</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-          </section>
 
-          <section class="section" id="design-system">
-            <div class="section-head">
-              <p class="section-note">the pieces every state is built from</p>
-              <h2>Components &amp; Tokens</h2>
+          </div>
+</details>
+<details class="evidence" id="architecture-status">
+<summary>Tested structure and later revisions</summary>
+<div class="evidence-body">
+            <div class="table-wrap" tabindex="0" role="region" aria-label="Tested navigation and proposed revisions">
+              <table>
+                <thead><tr><th>Element</th><th>Research version</th><th>Current proposal &amp; status</th></tr></thead>
+                <tbody>
+                  <tr><td>Membership / Become a Member</td><td>Join task: 8 of 8 direct successes.</td><td>Retained. Interface presentation still needs usability testing.</td></tr>
+                  <tr><td>Leadership titles</td><td>Official titles; leader task: 5 of 9 succeeded, including 1 of 5 non-members.</td><td>Helper descriptions added to the coded prototype. Copy and interface are untested.</td></tr>
+                  <tr><td>Programs label</td><td>“Service &amp; Impact”; programs task: 5 of 8 succeeded.</td><td>“Programs &amp; Initiatives” replaces it. New label is untested.</td></tr>
+                  <tr><td>Later content changes</td><td>Our Foundations was under About; Corporate Partnerships and Membership Accountability were absent.</td><td>Our Foundations removed from About; Corporate Partnerships added under Programs; Membership Accountability added under Membership. These revisions are untested.</td></tr>
+                  <tr><td>Low-agreement placements</td><td>Notable Sigmas, Anti-Hazing Policy, Corporate Headquarters, Media Relations, and Affiliates lacked majority card-sort agreement.</td><td>Flagged for focused tree-test checks; card-sort counts do not establish findability.</td></tr>
+                </tbody>
+              </table>
             </div>
+          </div>
+</details>
+<details class="evidence" id="design-system">
+<summary>Components and tokens</summary>
+<div class="evidence-body">
             <p class="lead-in">
               <strong
                 >Every state is built from one small set of components and
@@ -1137,118 +928,9 @@
                 </ul>
               </div>
             </div>
-          </section>
-
-          <section class="section" id="measure">
-            <div class="section-head">
-              <p class="section-note">what is proven, and what is next</p>
-              <h2>Next: Testing the Design</h2>
-            </div>
-            <p class="lead-in">
-              <strong
-                >So far, the evidence covers the structure, not the
-                interface.</strong
-              >
-              The tree test checked a proposed structure with 9 participants.
-              The final design and its prototype have not been in front of users
-              yet, so round 2 tests what changed.
-            </p>
-            <div class="next-grid">
-              <div class="next-card">
-                <span>Round 2 · Tree test</span>
-                <h3>The final structure</h3>
-                <p>
-                  At least 5 non-members. Join and find-a-chapter as controls, a
-                  retest of the two weak tasks (the current leader, community
-                  programs), and contacting the organization under Resources.
-                </p>
-              </div>
-              <div class="next-card">
-                <span>Round 2 · Moderated test</span>
-                <h3>The prototype</h3>
-                <p>
-                  3 to 5 first-time non-members on desktop and phone: start the
-                  join path, find who leads the organization, and find something
-                  it does in the community.
-                </p>
-              </div>
-            </div>
-            <div class="table-wrap">
-              <table>
-                <thead>
-                  <tr>
-                    <th>What I'll measure</th>
-                    <th>Round 1 baseline</th>
-                    <th>Round 2 target</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Non-members finding the current leader</td>
-                    <td>1 of 5</td>
-                    <td>At least 4 of 5</td>
-                  </tr>
-                  <tr>
-                    <td>Visitors finding community programs</td>
-                    <td>5 of 8</td>
-                    <td>At least 7 of 8</td>
-                  </tr>
-                  <tr>
-                    <td>Placements resting on judgment</td>
-                    <td>5 untested</td>
-                    <td>All five tree-tested</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <p class="small-note">
-              Targets are mine, set before any retest. Round 1 tested a proposed
-              structure, round 2 tests the final design, and each result will be
-              reported next to its baseline with the sample size.
-            </p>
-          </section>
-
-          <section class="section" id="limits">
-            <div class="section-head">
-              <p class="section-note">what I learned</p>
-              <h2>Reflection</h2>
-            </div>
-            <div class="judgment-grid">
-              <div class="judgment">
-                <span>Why these methods</span>
-                <p>
-                  Card sorting showed how visitors group content; the tree test
-                  checked whether a proposed structure let them find it.
-                  Together they separate labeling problems from structure
-                  problems.
-                </p>
-              </div>
-              <div class="judgment">
-                <span>What I'd do differently</span>
-                <p>
-                  Tree-test the revised “Programs &amp; Initiatives” label and
-                  the design's departures before finalizing them, not after.
-                </p>
-              </div>
-              <div class="judgment">
-                <span>Tradeoff</span>
-                <p>
-                  I chose to keep official titles and pair them with
-                  plain-language explanations instead of renaming them,
-                  balancing newcomer clarity against member expectations. The
-                  explanations are planned for the next design round.
-                </p>
-              </div>
-            </div>
-            <div class="callout dark">
-              <p>
-                <strong>Key takeaway:</strong> navigation problems in large
-                organizations are rarely just interface problems. They reflect a
-                mismatch between how an organization manages its content
-                internally and how visitors expect to find it.
-              </p>
-            </div>
-            <details class="evidence">
+          </div>
+</details>
+<details class="evidence">
               <summary>Study limitations</summary>
               <div class="evidence-body">
                 <ul>
@@ -1288,15 +970,7 @@
                 </ul>
               </div>
             </details>
-          </section>
 
-          <section class="section" id="evidence">
-            <div class="section-head">
-              <p class="section-note">
-                the supporting evidence, if you want all of it
-              </p>
-              <h2>Full Results</h2>
-            </div>
             <p>
               The findings above draw on the results below. Open any section to
               see the complete data.
@@ -1742,7 +1416,8 @@
                       <h3>Reactivate membership</h3>
                       <span class="badge green">100%</span>
                     </div>
-                    <div class="task-stats"><span>Direct 100%</span></div>
+                    <div class="task-stats"><span>Direct 100%</span>
+</div>
                     <p>
                       Participants went directly to Membership → Reactivate
                       Today, which supports grouping the membership actions
@@ -1780,7 +1455,8 @@
                       <h3>Find a chapter</h3>
                       <span class="badge green">87.5%</span>
                     </div>
-                    <div class="task-stats"><span>Direct 75%</span></div>
+                    <div class="task-stats"><span>Direct 75%</span>
+</div>
                     <p>
                       Expected path: Membership → Chapter Locator. One
                       participant went to News &amp; Events → Upcoming Events.
@@ -1857,7 +1533,7 @@
               </div>
             </details>
           </section>
-          <aside
+<aside
             class="stakeholder"
             aria-label="Access for Sigma Gamma Rho stakeholders"
           >
@@ -1872,19 +1548,11 @@
             <a href="work.html">← All work</a
             ><a href="shein-usability.html">Next: SHEIN →</a>
           </div>
-        </article>
+
+</article>
         <aside class="case-aside">
           <nav class="jump-card" aria-label="Case study sections">
-            <p>jump to ↓</p>
-            <a href="#summary">Summary</a><a href="#problem">Problem</a
-            ><a href="#overview">Research</a><a href="#findings">Key findings</a
-            ><a href="#architecture">Structure</a
-            ><a href="#exploration">Exploration</a
-            ><a href="#final-design">Final design</a
-            ><a href="#design-system">Components</a
-            ><a href="#measure">Next steps</a><a href="#limits">Reflection</a
-            ><a href="#evidence">Full results</a>
-          </nav>
+<p>jump to ↓</p><a href="#summary">Overview</a><a href="#findings">Key evidence</a><a href="#decisions">Design decisions</a><a href="#final-design">Prototype</a><a href="#measure">Evaluation</a><a href="#evidence">Supporting research</a></nav>
         </aside>
       </div>
     </main>

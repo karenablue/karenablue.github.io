@@ -63,7 +63,7 @@
         >
         <h1 id="case-title">SHEIN: recovering from empty results</h1>
         <p class="case-deck">
-          I designed filter recovery and size-aware quick add for desktop and
+          Positive usability ratings can hide difficulty completing specific tasks. I designed filter recovery and size-aware quick add for desktop and
           mobile, built on a team usability study where I moderated sessions:
           only 2 of 5 participants fully completed filtering. I compared
           patterns in mid-fi, restyled the chosen ones to match SHEIN’s current
@@ -131,20 +131,10 @@
             In this case study <span aria-hidden="true">↓</span>
           </summary>
           <nav class="jump-card mobile-jump" aria-label="Case study sections">
-            <p>jump to ↓</p>
-            <a href="#overview">Overview</a
-            ><a href="#questions">Research questions</a>
-            <a href="#design">Study design</a><a href="#pilot">Pilot</a>
-            <a href="#results">Results</a><a href="#findings">Findings</a>
-            <a href="#exploration">Exploration</a
-            ><a href="#final-design">Final design</a
-            ><a href="#design-system">Components</a>
-            <a href="#priorities">Recommendations</a
-            ><a href="#next">Limits &amp; next steps</a>
-          </nav>
+<p>jump to ↓</p><a href="#overview">Overview</a><a href="#findings">Key evidence</a><a href="#exploration">Design decisions</a><a href="#final-design">Prototype</a><a href="#measure">Evaluation</a><a href="#supporting-research">Supporting research</a></nav>
         </details>
         <article>
-          <section class="section" id="overview">
+<section class="section" id="overview">
             <div class="section-head">
               <p class="section-note">the tension in one glance</p>
               <h2>Overview</h2>
@@ -180,12 +170,579 @@
               quick-add concepts shown below.
             </p>
           </section>
-
-          <section class="section" id="criteria">
-            <div class="section-head">
-              <p class="section-note">pass or fail, stated up front</p>
-              <h2>Success criteria</h2>
+<section class="section" id="findings">
+<div class="section-head">
+<p class="section-note">positive ratings can hide task problems</p>
+<h2>Key evidence</h2>
+</div>
+            <div class="principle-list">
+              <div class="principle">
+                <h3>01 · Filters interrupted the search path</h3>
+                <p>
+                  <strong>Observed:</strong> P1 and P4 did not complete the task
+                  after filters returned no results or reset. P2 found a coat by
+                  scrolling but did not use filters, so their outcome is
+                  partial. P3 completed the task while noting that filters cost
+                  time.
+                </p>
+                <p>
+                  <strong>Recommendation:</strong> investigate result and reset
+                  behavior, then test clearer filter labels, persistent
+                  selections, and visible result counts. These changes were
+                  proposed, not implemented or validated in this study.
+                </p>
+              </div>
+              <div class="principle">
+                <h3>02 · Quick add was easy to miss</h3>
+                <p>
+                  <strong>Observed:</strong> P1 first opened the product page
+                  instead of using the listing control. P3 did not use quick
+                  add, and P5 partially completed the task. Three of five fully
+                  completed it.
+                </p>
+                <p>
+                  <strong>Recommendation:</strong> test a more prominent,
+                  clearly labeled quick-add control on product cards, with
+                  visible feedback after activation.
+                </p>
+              </div>
+              <div class="principle">
+                <h3>03 · Favorites succeeded, with friction</h3>
+                <p>
+                  <strong>Observed:</strong> all five formal participants
+                  completed the task. P1 struggled to find the heart control and
+                  encountered an account-creation prompt; P2 corrected an
+                  initial mistake.
+                </p>
+                <p>
+                  <strong>Recommendation:</strong> make the save control easier
+                  to identify and clarify the sign-in step before it interrupts
+                  saving. Whether guest saving is feasible requires separate
+                  product and technical review.
+                </p>
+              </div>
             </div>
+            <div class="quote-box">
+              <p>
+                <strong>In the participants' words.</strong> Post-task answers
+                recorded in the report appendix (the participant isn't
+                identified there).
+              </p>
+              <p>
+                <em>Filtering:</em> “Simple but difficult cause filter is not
+                working.” Time satisfaction: “disappointed.” Feeling: “Sad,
+                cause you couldn't find the coat.”
+              </p>
+              <p>
+                <em>Quick add:</em> “Neutral, just ok, also confused with the
+                add to cart icon.”
+              </p>
+            </div>
+
+            <div class="callout">
+              <p>
+                <strong
+                  >Why this matters (my inference, not a measured
+                  result):</strong
+                >
+                in a shopping flow, a filter that returns nothing or resets is a
+                dead end. If 2 of 5 shoppers cannot finish filtering, some of
+                them leave without finding a product to buy. The redesign
+                targets that dead end.
+              </p>
+            </div>
+            <div class="judgment-grid">
+              <div class="judgment">
+                <span>Why this method</span>
+                <p>
+                  Moderated think-aloud shows the route, not just the result.
+                  Scrolling to a coat and using filters look the same in a
+                  survey but not on screen.
+                </p>
+              </div>
+              <div class="judgment">
+                <span>What I'd do differently</span>
+                <p>
+                  Define pass/fail thresholds before testing, and recruit with a
+                  stricter screener so new and returning shoppers can be
+                  compared.
+                </p>
+              </div>
+              <div class="judgment">
+                <span>Constraint</span>
+                <p>
+                  Public desktop site only, five sessions, and class-project
+                  time, so findings are directional and the fix is a proposal.
+                </p>
+              </div>
+            </div>
+          </section>
+<section class="section" id="exploration">
+<div class="section-head">
+<p class="section-note">patterns, reasons, and tradeoffs</p>
+<h2>Design decisions</h2>
+</div>
+            <p class="lead-in">
+              <strong
+                >My concept already used a one-click recovery and a size picker
+                inside the card.</strong
+              >
+              To check those choices rather than assume them, I compared each
+              with two alternatives as greyscale wireframes.
+            </p>
+            <h3>When filters return nothing</h3>
+            <div class="sd-pair">
+              <figure class="panel">
+                <img
+                  src="images/shein/midfi-empty-a.jpg"
+                  alt="Greyscale wireframe of option A: applied filter chips above a message reading A little too specific, a dark button reading Remove Size XS, see 24 items, and a Reset filters button."
+                  width="1000"
+                  height="889"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <strong>A · One-click recovery.</strong> Fastest path back to
+                  products, keeping the filters that matter most; the page picks
+                  which filter to drop, so it has to name that choice plainly.
+                </figcaption>
+              </figure>
+              <figure class="panel">
+                <img
+                  src="images/shein/midfi-empty-b.jpg"
+                  alt="Greyscale wireframe of option B: four rows, each removing one filter, with the number of items it would return."
+                  width="1000"
+                  height="857"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <strong>B · Choose which filter to loosen.</strong> Full
+                  control with a count for every choice; one more decision at a
+                  frustrating moment.
+                </figcaption>
+              </figure>
+              <figure class="panel">
+                <img
+                  src="images/shein/midfi-empty-c.jpg"
+                  alt="Greyscale wireframe of option C: a line reading No exact matches, then a row of nearest-match product cards."
+                  width="1000"
+                  height="880"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <strong>C · Show nearest matches.</strong> Never a dead end;
+                  shoppers may read suggestions as exact matches unless they are
+                  labeled clearly.
+                </figcaption>
+              </figure>
+            </div>
+            <div class="callout">
+              <p>
+                <strong>Decision:</strong> I kept Option A. In the study, the
+                two participants who hit a dead end gave up, so the recovery has
+                to be a single obvious step. Reset filters stays as the
+                fallback.
+              </p>
+            </div>
+            <h3>Choosing a size without leaving the results</h3>
+            <div class="sd-pair">
+              <figure class="panel">
+                <img
+                  src="images/shein/midfi-qa-a.jpg"
+                  alt="Greyscale wireframe of quick add option A: a product card expanded in place with a size row, M selected, and an Add size M to bag button."
+                  width="1000"
+                  height="1019"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <strong>A · Expand inside the card (desktop).</strong> The
+                  shopper never leaves the grid; the expanded card makes its row
+                  taller for a moment.
+                </figcaption>
+              </figure>
+              <figure class="panel">
+                <img
+                  src="images/shein/midfi-qa-b.jpg"
+                  alt="Greyscale wireframe of quick add option B: a pop-up size picker over the product grid."
+                  width="1000"
+                  height="940"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <strong>B · Pop-up picker (desktop).</strong> A common pattern
+                  with room for size details; it covers the grid and breaks the
+                  shopper’s place in the list.
+                </figcaption>
+              </figure>
+              <figure class="panel">
+                <img
+                  src="images/shein/midfi-qa-c.jpg"
+                  alt="Greyscale wireframe of quick add option C: a phone with a bottom sheet holding the size row and an Add to bag button."
+                  width="1000"
+                  height="1060"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <strong>C · Bottom sheet (mobile).</strong> Thumb-reachable
+                  and keeps the list visible behind it; on desktop the same
+                  sheet would feel out of place.
+                </figcaption>
+              </figure>
+            </div>
+            <div class="callout">
+              <p>
+                <strong>Decision:</strong> I kept A on desktop and C on phones.
+                Both keep the shopper on the results page, which is where one
+                participant was lost when they opened the product page instead.
+              </p>
+            </div>
+          </section>
+<section class="section" id="final-design">
+            <div class="section-head">
+              <p class="section-note">
+                SHEIN’s look, with only the flagged parts changed
+              </p>
+              <h2>Prototype</h2>
+            </div>
+            <p class="lead-in">
+              <strong
+                >I restyled the concept to match SHEIN’s current
+                interface.</strong
+              >
+              The search-bar header, category circles, filter pills, dense
+              product grid, orange sale prices and black buttons stay familiar,
+              so a test measures the changed interactions rather than a new
+              look. Only the parts the study flagged are new.
+            </p>
+            <ol class="decision-list">
+              <li>
+                <strong>Visible, removable filter chips.</strong> An “Applied”
+                row shows every active filter with a remove control, and the
+                pills show counts such as “Size (1)”.
+                <em>Responds to:</em> filters that reset or returned nothing
+                with no explanation.
+              </li>
+              <li>
+                <strong>A recoverable empty state.</strong> It names the one
+                filter to drop and how many items that restores, keeping the
+                rest. Reset filters is the fallback.
+              </li>
+              <li>
+                <strong>A labeled quick add.</strong> “Quick add” with a cart
+                icon replaces the icon-only control. <em>Responds to:</em> a
+                participant “confused with the add to cart icon” and another who
+                opened the product page.
+              </li>
+              <li>
+                <strong>The filtered size carries over.</strong> The picker
+                preselects Size M with a plain note, and the confirmation names
+                the size: “Added to bag · Size M.”
+              </li>
+            </ol>
+            <figure class="panel">
+              <img
+                src="images/shein/hifi-desktop-empty.jpg"
+                alt="High-fidelity desktop page in SHEIN’s style: applied chips for Size XS, Color Black and Price Under $25, and a white panel reading A little too specific with a black button reading Remove Size XS, see 24 items."
+                width="1800"
+                height="1110"
+                loading="lazy"
+              />
+              <figcaption>
+                <strong>No results, desktop.</strong> The page names the filter
+                to drop and keeps color and budget.
+              </figcaption>
+            </figure>
+            <div class="sd-pair">
+              <figure class="panel">
+                <img
+                  src="images/shein/hifi-desktop-quickadd.jpg"
+                  alt="Desktop product grid with the first card expanded: Size M preselected from the filters and a black Add size M to bag button."
+                  width="1140"
+                  height="1160"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <strong>Quick add, desktop.</strong> The size from the filter
+                  is preselected inside the card.
+                </figcaption>
+              </figure>
+              <figure class="panel">
+                <img
+                  src="images/shein/hifi-desktop-added.jpg"
+                  alt="Desktop product grid with the first card showing a green confirmation reading Added to bag, Size M."
+                  width="1140"
+                  height="1160"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <strong>Added.</strong> The confirmation names the size, and
+                  the bag count updates.
+                </figcaption>
+              </figure>
+            </div>
+            <div class="panel">
+              <div class="phone-row">
+                <figure>
+                  <img
+                    src="images/shein/hifi-mobile-listing.jpg"
+                    alt="Mobile SHEIN-style listing with filter pills, applied chips for Size M and Color Black, and product cards with Add buttons."
+                    width="780"
+                    height="1688"
+                    loading="lazy"
+                  />
+                  <figcaption>
+                    <strong>Listing.</strong> Applied filters stay visible above
+                    the grid.
+                  </figcaption>
+                </figure>
+                <figure>
+                  <img
+                    src="images/shein/hifi-mobile-sheet.jpg"
+                    alt="Mobile bottom sheet titled Select size, with M selected and a note that it was carried over from the filters."
+                    width="780"
+                    height="1688"
+                    loading="lazy"
+                  />
+                  <figcaption>
+                    <strong>Size sheet.</strong> M carries over from the filter,
+                    and the shopper can change it.
+                  </figcaption>
+                </figure>
+                <figure>
+                  <img
+                    src="images/shein/hifi-mobile-added.jpg"
+                    alt="Mobile listing with a dark toast reading Added to bag, Size M, and a View bag link."
+                    width="780"
+                    height="1688"
+                    loading="lazy"
+                  />
+                  <figcaption>
+                    <strong>Added.</strong> The toast names the size while the
+                    results stay in view.
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="callout">
+              <p>
+                <strong>What needs testing:</strong> does carrying over a filter
+                size help shoppers choose correctly, or do they mistake it for a
+                confirmed choice? Check whether people notice the selection,
+                change it when needed, and understand the confirmation.
+              </p>
+            </div>
+            <h3>From empty results back to products</h3>
+            <p class="small-note">Proposed wireflow: simplified layouts and actions
+              show the recovery sequence. Counts are illustrative; this flow has not been tested.</p>
+            <ol class="artifact-flow" aria-label="Proposed filter recovery wireflow">
+              <li>
+<h4>Apply filters</h4>
+<div class="mini-screen"><strong>Search results</strong>Size M · Black · Budget<span class="mini-action">Apply another filter →</span>
+</div>
+<p>The applied row keeps current selections visible.</p></li>
+              <li>
+<h4>Reach an empty state</h4>
+<div class="mini-screen"><strong>No matching products</strong>Name a filter that can be relaxed.<span class="mini-action">Remove named filter →</span>
+</div>
+<p>Show which constraint changes and the expected result count.</p></li>
+              <li>
+<h4>Restore results</h4>
+<div class="mini-screen"><strong>Products return</strong>Remaining filters stay applied.<span class="mini-action">Review matching products →</span>
+</div>
+<p>Remove only the named filter. Preserve the remaining selections.</p></li>
+              <li>
+<h4>Continue shopping</h4>
+<div class="mini-screen"><strong>Product grid</strong>Applied filters stay visible.<span class="mini-action">Quick add / adjust filters</span>
+</div>
+<p>If recovery is unsuitable, let shoppers change another filter or reset all.</p></li>
+            </ol>
+            <p><a href="#shein-demo">Try the no-results case in the prototype below →</a>
+</p>
+            <h3>Try the prototype</h3>
+            <p>
+              Open a filter pill, remove a chip, or use quick add. Switch to the
+              phone view for the size sheet. Products and prices are fictional.
+            </p>
+            <div class="shein-demo" id="shein-demo">
+              <div class="sd-controls">
+                <div class="sd-views" role="group" aria-label="Prototype view">
+                  <button type="button" data-view="desktop" aria-pressed="true">
+                    Desktop
+                  </button>
+                  <button type="button" data-view="phone" aria-pressed="false">
+                    Phone
+                  </button>
+                </div>
+                <div class="sd-right">
+                  <button type="button" class="sd-try">
+                    Try the no-results case</button
+                  ><button type="button" class="sd-restart">Restart</button>
+                </div>
+              </div>
+              <div class="sd-stage">
+<div class="sd-screen desktop">
+</div>
+</div>
+              <p class="sd-status" role="status" aria-live="polite">
+</p>
+              <noscript
+                >
+<p class="small-note">
+                  The prototype needs JavaScript. The screens above show every
+                  state.
+                </p></noscript
+              >
+            </div>
+            <p class="small-note">
+              Independent concept, not an official SHEIN design or affiliated
+              with SHEIN. Product photos, names, prices and counts are
+              illustrative.
+            </p>
+          </section>
+<section class="section" id="measure"><span id="next"></span>
+<div class="section-head">
+<p class="section-note">what was tested and what comes next</p>
+<h2>Evaluation</h2>
+</div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Metric</th>
+                    <th>Baseline</th>
+                    <th>Target in a retest</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Filtering task completion</td>
+                    <td>2 of 5 (40%)</td>
+                    <td>At least 4 of 5 (80%)</td>
+                  </tr>
+                  <tr>
+                    <td>Participants who recover from a zero-result page</td>
+                    <td>0 of 2 who hit it</td>
+                    <td>Most recover without restarting</td>
+                  </tr>
+                  <tr>
+                    <td>Size chosen matches the shopper’s intended purchase</td>
+                    <td>Not measured in the original study</td>
+                    <td>Observe correct changes from a preselected size; record accidental acceptance and final confirmation understanding.</td>
+                  </tr>
+                  <tr>
+                    <td>Quick add used without opening the product page</td>
+                    <td>3 of 5 fully completed</td>
+                    <td>At least 4 of 5</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="small-note">
+              Targets are mine, set before any retest. With 5 participants a
+              retest shows direction, not proof.
+            </p>
+
+            <div class="phase-grid">
+              <div class="phase-card">
+                <h3>Established by this study</h3>
+                <p>
+                  The formal task tables show uneven completion across three
+                  shopping flows, while the reported SUS scores show generally
+                  positive perceived usability with wide variation. Specific
+                  filter failures, quick-add detours, and favorites friction are
+                  documented.
+                </p>
+              </div>
+              <div class="phase-card">
+                <h3>Still uncertain</h3>
+                <p>
+                  Five formal sessions cannot establish prevalence across
+                  shoppers. The report suggests familiarity or low prices may
+                  explain favorable impressions, but these are hypotheses here.
+                  No follow-up study shows that the recommendations improve task
+                  success, satisfaction, conversion, or revenue.
+                </p>
+              </div>
+            </div>
+            <div class="callout dark">
+              <p>
+                <strong>Size-change task:</strong> ask a shopper to filter for
+                size M while browsing, then buy an item in size S as a gift.
+                Observe whether they notice the carried-over M, select S, and
+                interpret the final confirmation correctly. Run this on desktop
+                and phone; this is a proposed task, not a completed session.
+              </p>
+            </div>
+            <div class="callout">
+              <p>
+                <strong>Retest plan:</strong> test the prototype’s filter and
+                quick-add changes, recruit a mix of new and experienced
+                shoppers, and repeat the same desktop tasks. Record full,
+                partial, and unsuccessful outcomes alongside time, errors,
+                post-task feedback, and SUS so behavior and perception can be
+                compared again.
+              </p>
+              <p>
+                <strong>Success looks like:</strong> filtering fully completed
+                by at least 4 of 5 participants (up from 2 of 5), and quick add
+                by at least 4 of 5 (up from 3 of 5), without lowering SUS.
+              </p>
+            </div>
+            <div class="callout mint">
+              <p>
+                <strong>Where recommendations became work:</strong> this study
+                did not implement its changes. The same research-to-decision
+                approach shaped my
+                <a href="ia-redesign.html"
+                  >Sigma Gamma Rho navigation redesign</a
+                >, where card-sort and tree-test findings became desktop and
+                mobile designs with a clickable prototype. That project is
+                untested too, so it shows the translation from findings to
+                design, not a measured result.
+              </p>
+            </div>
+            <details class="evidence">
+              <summary>Research integrity and source notes</summary>
+              <div class="evidence-body">
+                <ul>
+                  <li>
+                    <strong>Recruitment:</strong> the method section requires
+                    prior SHEIN use; the consent appendix allows 0–3 uses, while
+                    its screener terminates zero-use respondents. The exact
+                    criterion applied to this sample needs confirmation.
+                  </li>
+                  <li>
+                    <strong>Measures:</strong> the plan lists task time and ASQ,
+                    and the presentation's method slide labels task success
+                    Yes/No even though its results slide includes Partial. The
+                    report's results provide no usable time or aggregate ASQ
+                    table. This page uses the participant-level Yes/Partial/No
+                    statuses and does not infer missing measures.
+                  </li>
+                  <li>
+                    <strong>Source summaries:</strong> the presentation's “3/3
+                    tasks completed” conclusion and the pilot's “all tasks
+                    completed” sentence conflict with their task tables. This
+                    page follows the tables and separates P0 from P1–P5.
+                  </li>
+                </ul>
+              </div>
+            </details>
+            <p class="small-note">
+              Sources used for this case study:
+              <em>HCI 460 Final Usability Testing Report</em> (primary, March 4,
+              2026) and <em>460 SHEIN Final Presentation</em> (supporting, March
+              9, 2026). No participant names, recordings, or consent materials
+              are reproduced.
+            </p>
+          </section>
+<section class="section" id="supporting-research">
+<div class="section-head">
+<p class="section-note">methods and detailed results</p>
+<h2>Supporting research</h2>
+</div>
+<details class="evidence" id="criteria">
+<summary>How I assessed the results</summary>
+<div class="evidence-body">
             <p>
               <strong>Benchmarks I'm judging against.</strong> Set
               retrospectively for this write-up; the original study defined no
@@ -233,13 +790,11 @@
               “usable” task success. With n = 5, each participant is 20 points,
               so treat the gaps as direction, not proof.
             </p>
-          </section>
-
-          <section class="section" id="questions">
-            <div class="section-head">
-              <p class="section-note">why watch the work happen?</p>
-              <h2>Research questions &amp; method choice</h2>
-            </div>
+          </div>
+</details>
+<details class="evidence" id="questions">
+<summary>Research questions and method choice</summary>
+<div class="evidence-body">
             <ul>
               <li>
                 Could participants find a product and use filters to narrow the
@@ -265,13 +820,11 @@
               using filters, and adding from a product page is different from
               using quick add.
             </p>
-          </section>
-
-          <section class="section" id="design">
-            <div class="section-head">
-              <p class="section-note">one pilot, then the formal test</p>
-              <h2>Study design</h2>
-            </div>
+          </div>
+</details>
+<details class="evidence" id="design">
+<summary>Study design</summary>
+<div class="evidence-body">
             <div class="phase-grid">
               <div class="phase-card">
                 <h3>Participants &amp; setting</h3>
@@ -301,15 +854,11 @@
               experience limit how far these results can be generalized. The
               study observed the existing interface; it did not test a redesign.
             </p>
-          </section>
-
-          <section class="section" id="pilot">
-            <div class="section-head">
-              <p class="section-note">
-                change the task before judging the site
-              </p>
-              <h2>What the pilot changed</h2>
-            </div>
+          </div>
+</details>
+<details class="evidence" id="pilot">
+<summary>What the pilot changed</summary>
+<div class="evidence-body">
             <p>
               The February 17 pilot (P0) exposed a task-script problem: Task 1
               needed clearer wording, and Task 2 needed a complete rewrite to
@@ -321,13 +870,11 @@
               after the pilot, so P0 is excluded from every primary completion
               count and from the formal SUS mean.
             </div>
-          </section>
-
-          <section class="section" id="results">
-            <div class="section-head">
-              <p class="section-note">counts first, scores in context</p>
-              <h2>Formal-study results</h2>
-            </div>
+          </div>
+</details>
+<details class="evidence" id="results">
+<summary>Full formal-study results</summary>
+<div class="evidence-body">
             <p>
               These counts are calculated from the report's participant-level
               results tables for P1–P5. “Partial” stays separate rather than
@@ -503,422 +1050,63 @@
               responses and session recordings have not been independently
               verified.
             </p>
-          </section>
-
-          <section class="section" id="findings">
-            <div class="section-head">
-              <p class="section-note">what people did, then what to try</p>
-              <h2>Three findings</h2>
+          </div>
+</details>
+<details class="evidence" id="priorities">
+<summary>Prioritized recommendations</summary>
+<div class="evidence-body">
+            <div class="table-wrap" tabindex="0" role="region" aria-label="Usability issues, evidence, severity, and proposed changes">
+              <table>
+                <thead><tr><th>Issue</th><th>Observed evidence</th><th>Proposed severity &amp; rationale</th><th>Change to test</th></tr></thead>
+                <tbody>
+                  <tr><td>Filtering blocks progress</td><td>P1 and P4 did not finish; P2 found a coat by scrolling rather than filtering. Full completion: 2 of 5.</td><td><strong>High.</strong> Blocks the intended task, with no successful recovery documented for the two failed sessions.</td><td>Persistent selections, visible filter chips, and an empty state that names one constraint to remove.</td></tr>
+                  <tr><td>Quick add is missed</td><td>P1 opened a product page first; P3 did not use quick add; P5 partially completed. Full completion: 3 of 5.</td><td><strong>High for this task.</strong> The listing interaction fails or takes a detour; this does not establish that buying an item is impossible.</td><td>A labeled quick-add control and clear size selection and confirmation.</td></tr>
+                  <tr><td>Favorites creates friction</td><td>All 5 completed; P1 had icon and account-prompt friction, and P2 corrected an initial mistake.</td><td><strong>Moderate.</strong> Interruptions were recoverable in the observed sessions.</td><td>Clearer save control and advance notice of sign-in requirements.</td></tr>
+                </tbody>
+              </table>
             </div>
-            <div class="principle-list">
-              <div class="principle">
-                <h3>01 · Filters interrupted the search path</h3>
-                <p>
-                  <strong>Observed:</strong> P1 and P4 did not complete the task
-                  after filters returned no results or reset. P2 found a coat by
-                  scrolling but did not use filters, so their outcome is
-                  partial. P3 completed the task while noting that filters cost
-                  time.
-                </p>
-                <p>
-                  <strong>Recommendation:</strong> investigate result and reset
-                  behavior, then test clearer filter labels, persistent
-                  selections, and visible result counts. These changes were
-                  proposed, not implemented or validated in this study.
-                </p>
-              </div>
-              <div class="principle">
-                <h3>02 · Quick add was easy to miss</h3>
-                <p>
-                  <strong>Observed:</strong> P1 first opened the product page
-                  instead of using the listing control. P3 did not use quick
-                  add, and P5 partially completed the task. Three of five fully
-                  completed it.
-                </p>
-                <p>
-                  <strong>Recommendation:</strong> test a more prominent,
-                  clearly labeled quick-add control on product cards, with
-                  visible feedback after activation.
-                </p>
-              </div>
-              <div class="principle">
-                <h3>03 · Favorites succeeded, with friction</h3>
-                <p>
-                  <strong>Observed:</strong> all five formal participants
-                  completed the task. P1 struggled to find the heart control and
-                  encountered an account-creation prompt; P2 corrected an
-                  initial mistake.
-                </p>
-                <p>
-                  <strong>Recommendation:</strong> make the save control easier
-                  to identify and clarify the sign-in step before it interrupts
-                  saving. Whether guest saving is feasible requires separate
-                  product and technical review.
-                </p>
-              </div>
-            </div>
-            <div class="quote-box">
-              <p>
-                <strong>In the participants' words.</strong> Post-task answers
-                recorded in the report appendix (the participant isn't
-                identified there).
-              </p>
-              <p>
-                <em>Filtering:</em> “Simple but difficult cause filter is not
-                working.” Time satisfaction: “disappointed.” Feeling: “Sad,
-                cause you couldn't find the coat.”
-              </p>
-              <p>
-                <em>Quick add:</em> “Neutral, just ok, also confused with the
-                add to cart icon.”
-              </p>
-            </div>
-
-            <div class="callout">
-              <p>
-                <strong
-                  >Why this matters (my inference, not a measured
-                  result):</strong
-                >
-                in a shopping flow, a filter that returns nothing or resets is a
-                dead end. If 2 of 5 shoppers cannot finish filtering, some of
-                them leave without finding a product to buy. The redesign
-                targets that dead end.
-              </p>
-            </div>
-            <div class="judgment-grid">
-              <div class="judgment">
-                <span>Why this method</span>
-                <p>
-                  Moderated think-aloud shows the route, not just the result.
-                  Scrolling to a coat and using filters look the same in a
-                  survey but not on screen.
-                </p>
-              </div>
-              <div class="judgment">
-                <span>What I'd do differently</span>
-                <p>
-                  Define pass/fail thresholds before testing, and recruit with a
-                  stricter screener so new and returning shoppers can be
-                  compared.
-                </p>
-              </div>
-              <div class="judgment">
-                <span>Constraint</span>
-                <p>
-                  Public desktop site only, five sessions, and class-project
-                  time, so findings are directional and the fix is a proposal.
-                </p>
-              </div>
-            </div>
-          </section>
-
-          <section class="section" id="exploration">
-            <div class="section-head">
-              <p class="section-note">three ways each, before styling</p>
-              <h2>Exploring the Patterns</h2>
-            </div>
-            <p class="lead-in">
-              <strong
-                >My concept already used a one-click recovery and a size picker
-                inside the card.</strong
-              >
-              To check those choices rather than assume them, I compared each
-              with two alternatives as greyscale wireframes.
-            </p>
-            <h3>When filters return nothing</h3>
-            <div class="sd-pair">
-              <figure class="panel">
-                <img
-                  src="images/shein/midfi-empty-a.jpg"
-                  alt="Greyscale wireframe of option A: applied filter chips above a message reading A little too specific, a dark button reading Remove Size XS, see 24 items, and a Reset filters button."
-                  width="1000"
-                  height="889"
-                  loading="lazy"
-                />
-                <figcaption>
-                  <strong>A · One-click recovery.</strong> Fastest path back to
-                  products, keeping the filters that matter most; the page picks
-                  which filter to drop, so it has to name that choice plainly.
-                </figcaption>
-              </figure>
-              <figure class="panel">
-                <img
-                  src="images/shein/midfi-empty-b.jpg"
-                  alt="Greyscale wireframe of option B: four rows, each removing one filter, with the number of items it would return."
-                  width="1000"
-                  height="857"
-                  loading="lazy"
-                />
-                <figcaption>
-                  <strong>B · Choose which filter to loosen.</strong> Full
-                  control with a count for every choice; one more decision at a
-                  frustrating moment.
-                </figcaption>
-              </figure>
-              <figure class="panel">
-                <img
-                  src="images/shein/midfi-empty-c.jpg"
-                  alt="Greyscale wireframe of option C: a line reading No exact matches, then a row of nearest-match product cards."
-                  width="1000"
-                  height="880"
-                  loading="lazy"
-                />
-                <figcaption>
-                  <strong>C · Show nearest matches.</strong> Never a dead end;
-                  shoppers may read suggestions as exact matches unless they are
-                  labeled clearly.
-                </figcaption>
-              </figure>
-            </div>
-            <div class="callout">
-              <p>
-                <strong>Decision:</strong> I kept Option A. In the study, the
-                two participants who hit a dead end gave up, so the recovery has
-                to be a single obvious step. Reset filters stays as the
-                fallback.
-              </p>
-            </div>
-            <h3>Choosing a size without leaving the results</h3>
-            <div class="sd-pair">
-              <figure class="panel">
-                <img
-                  src="images/shein/midfi-qa-a.jpg"
-                  alt="Greyscale wireframe of quick add option A: a product card expanded in place with a size row, M selected, and an Add size M to bag button."
-                  width="1000"
-                  height="1019"
-                  loading="lazy"
-                />
-                <figcaption>
-                  <strong>A · Expand inside the card (desktop).</strong> The
-                  shopper never leaves the grid; the expanded card makes its row
-                  taller for a moment.
-                </figcaption>
-              </figure>
-              <figure class="panel">
-                <img
-                  src="images/shein/midfi-qa-b.jpg"
-                  alt="Greyscale wireframe of quick add option B: a pop-up size picker over the product grid."
-                  width="1000"
-                  height="940"
-                  loading="lazy"
-                />
-                <figcaption>
-                  <strong>B · Pop-up picker (desktop).</strong> A common pattern
-                  with room for size details; it covers the grid and breaks the
-                  shopper’s place in the list.
-                </figcaption>
-              </figure>
-              <figure class="panel">
-                <img
-                  src="images/shein/midfi-qa-c.jpg"
-                  alt="Greyscale wireframe of quick add option C: a phone with a bottom sheet holding the size row and an Add to bag button."
-                  width="1000"
-                  height="1060"
-                  loading="lazy"
-                />
-                <figcaption>
-                  <strong>C · Bottom sheet (mobile).</strong> Thumb-reachable
-                  and keeps the list visible behind it; on desktop the same
-                  sheet would feel out of place.
-                </figcaption>
-              </figure>
-            </div>
-            <div class="callout">
-              <p>
-                <strong>Decision:</strong> I kept A on desktop and C on phones.
-                Both keep the shopper on the results page, which is where one
-                participant was lost when they opened the product page instead.
-              </p>
-            </div>
-          </section>
-
-          <section class="section" id="final-design">
-            <div class="section-head">
-              <p class="section-note">
-                SHEIN’s look, with only the flagged parts changed
-              </p>
-              <h2>Final Design</h2>
-            </div>
-            <p class="lead-in">
-              <strong
-                >I restyled the concept to match SHEIN’s current
-                interface.</strong
-              >
-              The search-bar header, category circles, filter pills, dense
-              product grid, orange sale prices and black buttons stay familiar,
-              so a test measures the changed interactions rather than a new
-              look. Only the parts the study flagged are new.
-            </p>
-            <ol class="decision-list">
-              <li>
-                <strong>Visible, removable filter chips.</strong> An “Applied”
-                row shows every active filter with a remove control, and the
-                pills show counts such as “Size (1)”.
-                <em>Responds to:</em> filters that reset or returned nothing
-                with no explanation.
-              </li>
-              <li>
-                <strong>A recoverable empty state.</strong> It names the one
-                filter to drop and how many items that restores, keeping the
-                rest. Reset filters is the fallback.
-              </li>
-              <li>
-                <strong>A labeled quick add.</strong> “Quick add” with a cart
-                icon replaces the icon-only control. <em>Responds to:</em> a
-                participant “confused with the add to cart icon” and another who
-                opened the product page.
-              </li>
-              <li>
-                <strong>The filtered size carries over.</strong> The picker
-                preselects Size M with a plain note, and the confirmation names
-                the size: “Added to bag · Size M.”
-              </li>
-            </ol>
-            <figure class="panel">
-              <img
-                src="images/shein/hifi-desktop-empty.jpg"
-                alt="High-fidelity desktop page in SHEIN’s style: applied chips for Size XS, Color Black and Price Under $25, and a white panel reading A little too specific with a black button reading Remove Size XS, see 24 items."
-                width="1800"
-                height="1110"
-                loading="lazy"
-              />
-              <figcaption>
-                <strong>No results, desktop.</strong> The page names the filter
-                to drop and keeps color and budget.
-              </figcaption>
-            </figure>
-            <div class="sd-pair">
-              <figure class="panel">
-                <img
-                  src="images/shein/hifi-desktop-quickadd.jpg"
-                  alt="Desktop product grid with the first card expanded: Size M preselected from the filters and a black Add size M to bag button."
-                  width="1140"
-                  height="1160"
-                  loading="lazy"
-                />
-                <figcaption>
-                  <strong>Quick add, desktop.</strong> The size from the filter
-                  is preselected inside the card.
-                </figcaption>
-              </figure>
-              <figure class="panel">
-                <img
-                  src="images/shein/hifi-desktop-added.jpg"
-                  alt="Desktop product grid with the first card showing a green confirmation reading Added to bag, Size M."
-                  width="1140"
-                  height="1160"
-                  loading="lazy"
-                />
-                <figcaption>
-                  <strong>Added.</strong> The confirmation names the size, and
-                  the bag count updates.
-                </figcaption>
-              </figure>
-            </div>
-            <div class="panel">
-              <div class="phone-row">
-                <figure>
-                  <img
-                    src="images/shein/hifi-mobile-listing.jpg"
-                    alt="Mobile SHEIN-style listing with filter pills, applied chips for Size M and Color Black, and product cards with Add buttons."
-                    width="780"
-                    height="1688"
-                    loading="lazy"
-                  />
-                  <figcaption>
-                    <strong>Listing.</strong> Applied filters stay visible above
-                    the grid.
-                  </figcaption>
-                </figure>
-                <figure>
-                  <img
-                    src="images/shein/hifi-mobile-sheet.jpg"
-                    alt="Mobile bottom sheet titled Select size, with M selected and a note that it was carried over from the filters."
-                    width="780"
-                    height="1688"
-                    loading="lazy"
-                  />
-                  <figcaption>
-                    <strong>Size sheet.</strong> M carries over from the filter,
-                    and the shopper can change it.
-                  </figcaption>
-                </figure>
-                <figure>
-                  <img
-                    src="images/shein/hifi-mobile-added.jpg"
-                    alt="Mobile listing with a dark toast reading Added to bag, Size M, and a View bag link."
-                    width="780"
-                    height="1688"
-                    loading="lazy"
-                  />
-                  <figcaption>
-                    <strong>Added.</strong> The toast names the size while the
-                    results stay in view.
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
-            <div class="callout">
-              <p>
-                <strong>What needs testing:</strong> does carrying over a filter
-                size help shoppers choose correctly, or do they mistake it for a
-                confirmed choice? Check whether people notice the selection,
-                change it when needed, and understand the confirmation.
-              </p>
-            </div>
-            <h3>From empty results back to products</h3>
-            <p class="small-note">Proposed wireflow: simplified layouts and actions
-              show the recovery sequence. Counts are illustrative; this flow has not been tested.</p>
-            <ol class="artifact-flow" aria-label="Proposed filter recovery wireflow">
-              <li><h4>Apply filters</h4><div class="mini-screen"><strong>Search results</strong>Size M · Black · Budget<span class="mini-action">Apply another filter →</span></div><p>The applied row keeps current selections visible.</p></li>
-              <li><h4>Reach an empty state</h4><div class="mini-screen"><strong>No matching products</strong>Name a filter that can be relaxed.<span class="mini-action">Remove named filter →</span></div><p>Show which constraint changes and the expected result count.</p></li>
-              <li><h4>Restore results</h4><div class="mini-screen"><strong>Products return</strong>Remaining filters stay applied.<span class="mini-action">Review matching products →</span></div><p>Remove only the named filter. Preserve the remaining selections.</p></li>
-              <li><h4>Continue shopping</h4><div class="mini-screen"><strong>Product grid</strong>Applied filters stay visible.<span class="mini-action">Quick add / adjust filters</span></div><p>If recovery is unsuitable, let shoppers change another filter or reset all.</p></li>
-            </ol>
-            <p><a href="#shein-demo">Try the no-results case in the prototype below →</a></p>
-            <h3>Try the prototype</h3>
-            <p>
-              Open a filter pill, remove a chip, or use quick add. Switch to the
-              phone view for the size sheet. Products and prices are fictional.
-            </p>
-            <div class="shein-demo" id="shein-demo">
-              <div class="sd-controls">
-                <div class="sd-views" role="group" aria-label="Prototype view">
-                  <button type="button" data-view="desktop" aria-pressed="true">
-                    Desktop
-                  </button>
-                  <button type="button" data-view="phone" aria-pressed="false">
-                    Phone
-                  </button>
-                </div>
-                <div class="sd-right">
-                  <button type="button" class="sd-try">
-                    Try the no-results case</button
-                  ><button type="button" class="sd-restart">Restart</button>
-                </div>
-              </div>
-              <div class="sd-stage"><div class="sd-screen desktop"></div></div>
-              <p class="sd-status" role="status" aria-live="polite"></p>
-              <noscript
-                ><p class="small-note">
-                  The prototype needs JavaScript. The screens above show every
-                  state.
-                </p></noscript
-              >
-            </div>
+            <p class="small-note">Severity is my retrospective judgment of task
+              blockage and observed recovery, not an original team rating or an
+              estimate of prevalence across shoppers. Recommendations remain untested.</p>
             <p class="small-note">
-              Independent concept, not an official SHEIN design or affiliated
-              with SHEIN. Product photos, names, prices and counts are
-              illustrative.
+              <strong>Retrospective analysis:</strong> this order is a later
+              interpretation of the formal task counts and documented friction,
+              not a ranking recorded in the original report or a claim that any
+              change was shipped.
             </p>
-          </section>
-
-          <section class="section" id="design-system">
-            <div class="section-head">
-              <p class="section-note">the pieces the states are built from</p>
-              <h2>Components &amp; Tokens</h2>
+            <div class="flow">
+              <div class="flow-step" data-step="1">
+                <h3>Fix and retest filtering</h3>
+                <p>
+                  Two unsuccessful and one partial outcome make this the
+                  clearest task barrier. First reproduce no-result and reset
+                  behavior; then test stable filter selections, clearer labels,
+                  and result feedback.
+                </p>
+              </div>
+              <div class="flow-step" data-step="2">
+                <h3>Make quick add recognizable</h3>
+                <p>
+                  One unsuccessful and one partial outcome, plus a documented
+                  detour into the product page, support testing a visible label,
+                  stronger contrast, and clearer feedback.
+                </p>
+              </div>
+              <div class="flow-step" data-step="3">
+                <h3>Smooth the favorites path</h3>
+                <p>
+                  All five completed it, so this follows the completion
+                  barriers. Test icon visibility and explain when sign-in is
+                  required. The report also notes disruptive overlays and
+                  navigation; capture their frequency in a follow-up study.
+                </p>
+              </div>
             </div>
+          </div>
+</details>
+<details class="evidence" id="design-system">
+<summary>Components and tokens</summary>
+<div class="evidence-body">
             <p class="lead-in">
               <strong
                 >The new pieces follow SHEIN’s existing visual language.</strong
@@ -1084,222 +1272,18 @@
                 </p>
               </div>
             </div>
-          </section>
-
-          <section class="section" id="priorities">
-            <div class="section-head">
-              <p class="section-note">a portfolio read of the evidence</p>
-              <h2>Prioritized recommendations</h2>
-            </div>
-            <div class="table-wrap" tabindex="0" role="region" aria-label="Usability issues, evidence, severity, and proposed changes">
-              <table>
-                <thead><tr><th>Issue</th><th>Observed evidence</th><th>Proposed severity &amp; rationale</th><th>Change to test</th></tr></thead>
-                <tbody>
-                  <tr><td>Filtering blocks progress</td><td>P1 and P4 did not finish; P2 found a coat by scrolling rather than filtering. Full completion: 2 of 5.</td><td><strong>High.</strong> Blocks the intended task, with no successful recovery documented for the two failed sessions.</td><td>Persistent selections, visible filter chips, and an empty state that names one constraint to remove.</td></tr>
-                  <tr><td>Quick add is missed</td><td>P1 opened a product page first; P3 did not use quick add; P5 partially completed. Full completion: 3 of 5.</td><td><strong>High for this task.</strong> The listing interaction fails or takes a detour; this does not establish that buying an item is impossible.</td><td>A labeled quick-add control and clear size selection and confirmation.</td></tr>
-                  <tr><td>Favorites creates friction</td><td>All 5 completed; P1 had icon and account-prompt friction, and P2 corrected an initial mistake.</td><td><strong>Moderate.</strong> Interruptions were recoverable in the observed sessions.</td><td>Clearer save control and advance notice of sign-in requirements.</td></tr>
-                </tbody>
-              </table>
-            </div>
-            <p class="small-note">Severity is my retrospective judgment of task
-              blockage and observed recovery, not an original team rating or an
-              estimate of prevalence across shoppers. Recommendations remain untested.</p>
-            <p class="small-note">
-              <strong>Retrospective analysis:</strong> this order is a later
-              interpretation of the formal task counts and documented friction,
-              not a ranking recorded in the original report or a claim that any
-              change was shipped.
-            </p>
-            <div class="flow">
-              <div class="flow-step" data-step="1">
-                <h3>Fix and retest filtering</h3>
-                <p>
-                  Two unsuccessful and one partial outcome make this the
-                  clearest task barrier. First reproduce no-result and reset
-                  behavior; then test stable filter selections, clearer labels,
-                  and result feedback.
-                </p>
-              </div>
-              <div class="flow-step" data-step="2">
-                <h3>Make quick add recognizable</h3>
-                <p>
-                  One unsuccessful and one partial outcome, plus a documented
-                  detour into the product page, support testing a visible label,
-                  stronger contrast, and clearer feedback.
-                </p>
-              </div>
-              <div class="flow-step" data-step="3">
-                <h3>Smooth the favorites path</h3>
-                <p>
-                  All five completed it, so this follows the completion
-                  barriers. Test icon visibility and explain when sign-in is
-                  required. The report also notes disruptive overlays and
-                  navigation; capture their frequency in a follow-up study.
-                </p>
-              </div>
-            </div>
-          </section>
-
-          <section class="section" id="measure">
-            <div class="section-head">
-              <p class="section-note">how I would know it worked</p>
-              <h2>What I would measure</h2>
-            </div>
-            <div class="table-wrap">
-              <table>
-                <thead>
-                  <tr>
-                    <th>Metric</th>
-                    <th>Baseline</th>
-                    <th>Target in a retest</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Filtering task completion</td>
-                    <td>2 of 5 (40%)</td>
-                    <td>At least 4 of 5 (80%)</td>
-                  </tr>
-                  <tr>
-                    <td>Participants who recover from a zero-result page</td>
-                    <td>0 of 2 who hit it</td>
-                    <td>Most recover without restarting</td>
-                  </tr>
-                  <tr>
-                    <td>Size chosen matches the shopper’s intended purchase</td>
-                    <td>Not measured in the original study</td>
-                    <td>Observe correct changes from a preselected size; record accidental acceptance and final confirmation understanding.</td>
-                  </tr>
-                  <tr>
-                    <td>Quick add used without opening the product page</td>
-                    <td>3 of 5 fully completed</td>
-                    <td>At least 4 of 5</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <p class="small-note">
-              Targets are mine, set before any retest. With 5 participants a
-              retest shows direction, not proof.
-            </p>
-          </section>
-          <section class="section" id="next">
-            <div class="section-head">
-              <p class="section-note">where the evidence stops</p>
-              <h2>What we know &amp; what comes next</h2>
-            </div>
-            <div class="phase-grid">
-              <div class="phase-card">
-                <h3>Established by this study</h3>
-                <p>
-                  The formal task tables show uneven completion across three
-                  shopping flows, while the reported SUS scores show generally
-                  positive perceived usability with wide variation. Specific
-                  filter failures, quick-add detours, and favorites friction are
-                  documented.
-                </p>
-              </div>
-              <div class="phase-card">
-                <h3>Still uncertain</h3>
-                <p>
-                  Five formal sessions cannot establish prevalence across
-                  shoppers. The report suggests familiarity or low prices may
-                  explain favorable impressions, but these are hypotheses here.
-                  No follow-up study shows that the recommendations improve task
-                  success, satisfaction, conversion, or revenue.
-                </p>
-              </div>
-            </div>
-            <div class="callout dark">
-              <p>
-                <strong>Size-change task:</strong> ask a shopper to filter for
-                size M while browsing, then buy an item in size S as a gift.
-                Observe whether they notice the carried-over M, select S, and
-                interpret the final confirmation correctly. Run this on desktop
-                and phone; this is a proposed task, not a completed session.
-              </p>
-            </div>
-            <div class="callout">
-              <p>
-                <strong>Retest plan:</strong> test the prototype’s filter and
-                quick-add changes, recruit a mix of new and experienced
-                shoppers, and repeat the same desktop tasks. Record full,
-                partial, and unsuccessful outcomes alongside time, errors,
-                post-task feedback, and SUS so behavior and perception can be
-                compared again.
-              </p>
-              <p>
-                <strong>Success looks like:</strong> filtering fully completed
-                by at least 4 of 5 participants (up from 2 of 5), and quick add
-                by at least 4 of 5 (up from 3 of 5), without lowering SUS.
-              </p>
-            </div>
-            <div class="callout mint">
-              <p>
-                <strong>Where recommendations became work:</strong> this study
-                did not implement its changes. The same research-to-decision
-                approach shaped my
-                <a href="ia-redesign.html"
-                  >Sigma Gamma Rho navigation redesign</a
-                >, where card-sort and tree-test findings became desktop and
-                mobile designs with a clickable prototype. That project is
-                untested too, so it shows the translation from findings to
-                design, not a measured result.
-              </p>
-            </div>
-            <details class="evidence">
-              <summary>Research integrity and source notes</summary>
-              <div class="evidence-body">
-                <ul>
-                  <li>
-                    <strong>Recruitment:</strong> the method section requires
-                    prior SHEIN use; the consent appendix allows 0–3 uses, while
-                    its screener terminates zero-use respondents. The exact
-                    criterion applied to this sample needs confirmation.
-                  </li>
-                  <li>
-                    <strong>Measures:</strong> the plan lists task time and ASQ,
-                    and the presentation's method slide labels task success
-                    Yes/No even though its results slide includes Partial. The
-                    report's results provide no usable time or aggregate ASQ
-                    table. This page uses the participant-level Yes/Partial/No
-                    statuses and does not infer missing measures.
-                  </li>
-                  <li>
-                    <strong>Source summaries:</strong> the presentation's “3/3
-                    tasks completed” conclusion and the pilot's “all tasks
-                    completed” sentence conflict with their task tables. This
-                    page follows the tables and separates P0 from P1–P5.
-                  </li>
-                </ul>
-              </div>
-            </details>
-            <p class="small-note">
-              Sources used for this case study:
-              <em>HCI 460 Final Usability Testing Report</em> (primary, March 4,
-              2026) and <em>460 SHEIN Final Presentation</em> (supporting, March
-              9, 2026). No participant names, recordings, or consent materials
-              are reproduced.
-            </p>
-          </section>
+          </div>
+</details>
+</section>
           <div class="end-nav">
             <a href="ia-redesign.html">← IA Research</a
             ><a href="work.html">All work →</a>
           </div>
-        </article>
+
+</article>
         <aside class="case-aside">
           <nav class="jump-card" aria-label="Case study sections">
-            <p>jump to ↓</p>
-            <a href="#overview">Overview</a
-            ><a href="#questions">Research questions</a>
-            <a href="#design">Study design</a><a href="#pilot">Pilot</a>
-            <a href="#results">Results</a><a href="#findings">Findings</a>
-            <a href="#exploration">Exploration</a
-            ><a href="#final-design">Final design</a
-            ><a href="#design-system">Components</a>
-            <a href="#priorities">Recommendations</a
-            ><a href="#next">Limits &amp; next steps</a>
-          </nav>
+<p>jump to ↓</p><a href="#overview">Overview</a><a href="#findings">Key evidence</a><a href="#exploration">Design decisions</a><a href="#final-design">Prototype</a><a href="#measure">Evaluation</a><a href="#supporting-research">Supporting research</a></nav>
         </aside>
       </div>
     </main>

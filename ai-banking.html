@@ -94,20 +94,10 @@
             In this case study <span aria-hidden="true">↓</span>
           </summary>
           <nav class="jump-card mobile-jump" aria-label="Case study sections">
-            <p>jump to ↓</p>
-            <a href="#overview">Overview</a
-            ><a href="#synthesis">How we synthesized</a
-            ><a href="#insights">Evidence &amp; hypotheses</a
-            ><a href="#needs">Two trust needs</a
-            ><a href="#journey">Illustrative journey</a
-            ><a href="#benchmark">Benchmarking</a
-            ><a href="#principles">UX principles</a
-            ><a href="#validation">Validation plan</a
-            ><a href="#limits">Limitations</a>
-          </nav>
+<p>jump to ↓</p><a href="#overview">Overview</a><a href="#insights">Key evidence</a><a href="#principles">Design decisions</a><a href="#prototype">Prototype</a><a href="#validation">Evaluation</a><a href="#supporting-research">Supporting research</a></nav>
         </details>
         <article>
-          <section class="section" id="overview">
+<section class="section" id="overview">
             <div class="section-head">
               <p class="section-note">the question</p>
               <h2>Overview</h2>
@@ -128,20 +118,335 @@
             </p>
             <p class="small-note">
               <strong>Proposed next step:</strong> a moderated prototype test
-              would compare an AI recommendation with and without an explanation
-              and override, then observe whether people catch a flawed
+              would test explanation and control together by comparing an AI recommendation with and without both features, then observe whether people catch a flawed
               suggestion.
               <a class="source-link" href="#validation"
                 >Read the validation plan →</a
               >
             </p>
           </section>
-
-          <section class="section" id="synthesis">
-            <div class="section-head">
-              <p class="section-note">one thread, from source to hypothesis</p>
-              <h2>How We Synthesized the Sources</h2>
+<section class="section" id="insights">
+<div class="section-head">
+<p class="section-note">published evidence and its limits</p>
+<h2>Key evidence</h2>
+</div>
+            <div class="insight-grid">
+              <div class="insight">
+                <span class="num">01</span>
+                <h3>Comfort depends on the task</h3>
+                <p>
+                  Comfort with AI was higher for budgeting (60%) than for
+                  investing (44%). Confidence varies with the decision being
+                  delegated.
+                  <a
+                    class="source-link"
+                    href="https://stories.td.com/volumes/default/article/TDBank_AI_InsightsReport.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >TD Bank survey ↗</a
+                  >
+                </p>
+              </div>
+              <div class="insight">
+                <span class="num">02</span>
+                <h3>Human oversight remains important</h3>
+                <p>
+                  Trust, transparency, and human involvement appear as
+                  foundations for AI in banking. This supports review steps
+                  before consequential actions.
+                  <a
+                    class="source-link"
+                    href="https://stories.td.com/volumes/default/article/TDBank_AI_InsightsReport.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >TD Bank survey ↗</a
+                  >
+                </p>
+              </div>
+              <div class="insight">
+                <span class="num">03</span>
+                <h3>Explanation and override are design hypotheses</h3>
+                <p>
+                  We translated the trust concerns into proposed explanations,
+                  review steps, and override controls. Their effect on real
+                  banking behavior still needs to be tested.
+                </p>
+              </div>
+              <div class="insight">
+                <span class="num">04</span>
+                <h3>Make the benefit visible, then test it</h3>
+                <p>
+                  Showing a concrete outcome, such as money saved, could make an
+                  AI feature easier to evaluate. This study did not test
+                  messages or measure engagement.
+                </p>
+              </div>
             </div>
+          <details class="evidence" id="needs">
+<summary>Two trust needs from the synthesis</summary>
+<div class="evidence-body">
+            <p>
+              We drafted two behavioral archetypes and journey maps from the
+              secondary research. They are kept here only where they explain a
+              recommendation. Both are illustrative and were not validated with
+              participants.
+            </p>
+            <div
+              class="table-wrap"
+              tabindex="0"
+              role="region"
+              aria-label="Two trust needs and the recommendations they support"
+            >
+              <table>
+                <thead>
+                  <tr>
+                    <th>Trust need</th>
+                    <th>Where trust is most likely to break</th>
+                    <th>Recommendation it supports</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <strong>Speed first</strong><br />Delegates routine tasks
+                      such as recurring payments and wants the AI out of the
+                      way.
+                    </td>
+                    <td>
+                      Confirmation steps on low-stakes actions, plus slow or
+                      opaque status after money moves
+                    </td>
+                    <td>
+                      Lightweight handling of low-stakes actions, an override
+                      that is always visible, and immediate confirmation of the
+                      result
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <strong>Explanation first</strong><br />Wants to
+                      understand an action before allowing it, especially when a
+                      transfer can't be undone.
+                    </td>
+                    <td>
+                      A recommendation with no reason given, or no review point
+                      before a transfer is submitted
+                    </td>
+                    <td>
+                      Plain-language reasons, a review checkpoint that flags
+                      risky details, and an easy way to opt out
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+</details>
+</section>
+<section class="section" id="principles">
+<div class="section-head">
+<p class="section-note">safeguards as a design hypothesis</p>
+<h2>Design decisions</h2>
+</div>
+            <div class="principle-list">
+              <div class="principle">
+                <h3>Safeguards matched to the stakes</h3>
+                <p>
+                  Keep low-stakes suggestions lightweight. Add explanation,
+                  review, and override as the action becomes more consequential
+                  or harder to undo.
+                </p>
+              </div>
+              <div class="principle">
+                <h3>Explainable AI with progressive disclosure</h3>
+                <p>
+                  Lead with a plain-language reason, offer more detail on tap,
+                  and save the technical specifics for people who look for them.
+                </p>
+              </div>
+              <div class="principle">
+                <h3>Confirmation checkpoints</h3>
+                <p>
+                  Let people review consequential AI-initiated actions before
+                  they run, and point out details that look risky.
+                </p>
+              </div>
+              <div class="principle">
+                <h3>User override controls</h3>
+                <p>
+                  Provide a clear way to undo, adjust, or decline a
+                  recommendation, and make sure people can find it.
+                </p>
+              </div>
+              <div class="principle">
+                <h3>Visible results</h3>
+                <p>
+                  Show what happened after an AI action so people can check the
+                  outcome.
+                </p>
+              </div>
+            </div>
+          </section>
+<section class="section" id="prototype">
+<div class="section-head">
+<p class="section-note">compare explanation and control together</p>
+<h2>Prototype</h2>
+</div>
+<h3>Two versions of the same recommendation</h3>
+            <p class="small-note">Interactive test stimuli with fictional account
+              details. Both begin with the same $120 transfer; only B adds a reason
+              and explicit edit and decline controls. These are untested prototype
+              interactions. No account is connected and no money moves.</p>
+            <div class="revision-pair banking-demo" id="banking-demo">
+              <div data-bank-variant="a">
+                <h4>A · Confirm only</h4>
+                <p>Suggested transfer</p>
+<p><strong data-bank-amount>$120</strong> from Checking to Savings</p>
+                <button type="button" class="bank-action" data-bank-confirm>Confirm</button>
+                <p class="small-note" data-bank-status role="status" aria-live="polite">
+</p>
+              </div>
+              <div data-bank-variant="b">
+                <h4>B · Explanation &amp; control</h4>
+                <p>Suggested transfer</p>
+<p><strong data-bank-amount>$120</strong> from Checking to Savings</p>
+                <details>
+<summary>Why this?</summary>
+<p>Illustrative reasoning: a $620 balance minus $300 in scheduled bills and a $200 buffer leaves $120. This example may miss bills that are not scheduled in the app. Check your commitments before confirming.</p>
+</details>
+                <form data-bank-edit-form hidden>
+                  <label for="bank-transfer-amount">Transfer amount in dollars</label>
+                  <input id="bank-transfer-amount" name="amount" type="number" min="1" max="500" step="1" value="120" required />
+                  <button class="bank-action" type="submit">Save amount</button>
+                </form>
+                <div class="bank-actions"><button type="button" class="bank-action" data-bank-confirm>Confirm</button><button type="button" class="bank-action" data-bank-edit>Edit</button><button type="button" class="bank-action" data-bank-decline>Decline</button>
+</div>
+                <p class="small-note" data-bank-status role="status" aria-live="polite">
+</p>
+              </div>
+            </div>
+            <button type="button" class="bank-action" id="banking-restart">Restart both examples</button>
+            <details class="evidence" id="journey">
+<summary>Illustrative transfer journey</summary>
+<div class="evidence-body">
+            <p><strong>Illustrative journey, not an observed session.</strong>
+              A mobile banking customer wants to build savings while keeping
+              enough money for upcoming bills. The AI suggests a transfer; the
+              customer must decide whether it fits their situation. The steps,
+              concerns, and safeguards below are design hypotheses.</p>
+            <ol class="artifact-flow" aria-label="Illustrative journey for reviewing an AI-suggested transfer">
+              <li>
+<h4>Encounter the suggestion</h4>
+<p><strong>Action:</strong> see a suggested transfer while checking an account.</p>
+<p><strong>Possible concern:</strong> “Why this amount now?”</p>
+<p><strong>Proposed safeguard:</strong> show the amount, destination, and a short reason.</p>
+<p><a href="#synthesis">Evidence basis: task-dependent comfort.</a> The transfer scenario is an extrapolation.</p></li>
+              <li>
+<h4>Check the reasoning</h4>
+<p><strong>Action:</strong> inspect the explanation and upcoming commitments.</p>
+<p><strong>Possible concern:</strong> the AI may have missed a bill.</p>
+<p><strong>Proposed safeguard:</strong> disclose the inputs and uncertainty; let the customer inspect details.</p>
+<p><a href="#insights">Evidence basis: transparency and human oversight.</a> This interface pattern is untested.</p></li>
+              <li>
+<h4>Decide and review</h4>
+<p><strong>Action:</strong> accept, edit, or decline before submitting.</p>
+<p><strong>Possible concern:</strong> an unsuitable transfer could leave too little available.</p>
+<p><strong>Proposed safeguard:</strong> visible edit and decline controls with a review checkpoint.</p>
+<p><a href="#principles">Design hypothesis: preserve control as stakes rise.</a> The sources do not establish its effect.</p></li>
+              <li>
+<h4>Verify the outcome</h4>
+<p><strong>Action:</strong> check the transfer status and updated balance.</p>
+<p><strong>Possible concern:</strong> uncertainty about whether money moved.</p>
+<p><strong>Proposed safeguard:</strong> distinguish submitted, pending, and completed states.</p>
+<p><a href="#validation">Test next: comprehension and perceived control.</a> No behavioral outcome was measured here.</p></li>
+            </ol>
+            <div class="callout">
+              <p><strong>What would validate the two trust needs?</strong>
+                The task-comfort difference in the <a class="source-link" href="https://stories.td.com/volumes/default/article/TDBank_AI_InsightsReport.pdf" target="_blank" rel="noopener noreferrer">TD Bank survey</a>
+                motivates the distinction; it does not establish two stable user
+                segments. Observe whether the same person wants speed for routine
+                tasks and more explanation for consequential ones. If needs shift
+                with the task, describe them as situational needs rather than personas.</p>
+            </div>
+          </div>
+</details>
+</section>
+<section class="section" id="validation">
+<div class="section-head">
+<p class="section-note">the proposed test and what remains uncertain</p>
+<h2>Evaluation</h2>
+</div>
+            <div class="callout">
+              <p>
+                <strong>Hypothesis:</strong> when an AI recommends a
+                consequential money action, a plain-language reason plus a
+                visible override will help people understand the recommendation
+                and challenge it when it is wrong, without slowing routine use
+                much.
+              </p>
+            </div>
+            <div class="sequence-model">
+              <div class="sequence-row">
+                <span class="sequence-label">Method</span>
+                <p>
+                  A moderated, within-subjects prototype test. Each participant
+                  sees both variants, in counterbalanced order. Explanation and control change together, so this comparison tests their combined effect; it cannot identify which feature caused a difference.
+                </p>
+              </div>
+              <div class="sequence-row">
+                <span class="sequence-label">Participants</span>
+                <p>
+                  8–10 people who bank on mobile, screened to include both high
+                  and low comfort with AI. The screener would reuse the
+                  budgeting-versus-investing comfort question.
+                </p>
+              </div>
+              <div class="sequence-row">
+                <span class="sequence-label">Variants</span>
+                <p>
+                  <strong>A:</strong> an AI recommendation with a single Confirm
+                  button. <strong>B:</strong> the same recommendation with a
+                  "Why this?" reason and visible Edit and Decline controls.
+                </p>
+              </div>
+              <div class="sequence-row">
+                <span class="sequence-label">Tasks</span>
+                <p>
+                  Respond to an AI-suggested bill-payment date and an
+                  AI-suggested transfer to savings. In one trial the
+                  recommendation is deliberately flawed: it schedules a payment
+                  after the due date.
+                </p>
+              </div>
+              <div class="sequence-row">
+                <span class="sequence-label">Measures</span>
+                <p>
+                  Whether participants catch and override the flawed
+                  recommendation. Whether they can explain any recommendation in
+                  their own words. Time to find the override. Perceived control
+                  after each variant. Think-aloud comments at the review step.
+                </p>
+              </div>
+              <div class="sequence-row">
+                <span class="sequence-label">Decision rule</span>
+                <p>
+                  Keep explanation and override if Variant B improves catches of
+                  the flawed recommendation and the quality of participants'
+                  explanations. If it only adds time, simplify the explanation
+                  and retest. With this sample size, results are directional,
+                  not statistically conclusive.
+                </p>
+              </div>
+            </div>
+          </section>
+<section class="section" id="supporting-research">
+<div class="section-head">
+<p class="section-note">methods and source context</p>
+<h2>Supporting research</h2>
+</div>
+<details class="evidence" id="synthesis">
+<summary>How we synthesized the sources</summary>
+<div class="evidence-body">
             <p>
               The steps below follow one piece of evidence from the source to
               the design hypothesis it produced. We treated the rest of the
@@ -199,166 +504,11 @@
               Caveat: two tasks from one survey suggest a stakes effect but do
               not measure one. The validation plan below tests this hypothesis.
             </p>
-          </section>
-
-          <section class="section" id="insights">
-            <div class="section-head">
-              <p class="section-note">
-                what the sources support and what still needs testing
-              </p>
-              <h2>Evidence &amp; Strategy Hypotheses</h2>
-            </div>
-            <div class="insight-grid">
-              <div class="insight">
-                <span class="num">01</span>
-                <h3>Comfort depends on the task</h3>
-                <p>
-                  Comfort with AI was higher for budgeting (60%) than for
-                  investing (44%). Confidence varies with the decision being
-                  delegated.
-                  <a
-                    class="source-link"
-                    href="https://stories.td.com/volumes/default/article/TDBank_AI_InsightsReport.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >TD Bank survey ↗</a
-                  >
-                </p>
-              </div>
-              <div class="insight">
-                <span class="num">02</span>
-                <h3>Human oversight remains important</h3>
-                <p>
-                  Trust, transparency, and human involvement appear as
-                  foundations for AI in banking. This supports review steps
-                  before consequential actions.
-                  <a
-                    class="source-link"
-                    href="https://stories.td.com/volumes/default/article/TDBank_AI_InsightsReport.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >TD Bank survey ↗</a
-                  >
-                </p>
-              </div>
-              <div class="insight">
-                <span class="num">03</span>
-                <h3>Explanation and override are design hypotheses</h3>
-                <p>
-                  We translated the trust concerns into proposed explanations,
-                  review steps, and override controls. Their effect on real
-                  banking behavior still needs to be tested.
-                </p>
-              </div>
-              <div class="insight">
-                <span class="num">04</span>
-                <h3>Make the benefit visible, then test it</h3>
-                <p>
-                  Showing a concrete outcome, such as money saved, could make an
-                  AI feature easier to evaluate. This study did not test
-                  messages or measure engagement.
-                </p>
-              </div>
-            </div>
-          </section>
-
-          <section class="section" id="needs">
-            <div class="section-head">
-              <p class="section-note">
-                two archetypes, reduced to what they explain
-              </p>
-              <h2>Two Trust Needs</h2>
-            </div>
-            <p>
-              We drafted two behavioral archetypes and journey maps from the
-              secondary research. They are kept here only where they explain a
-              recommendation. Both are illustrative and were not validated with
-              participants.
-            </p>
-            <div
-              class="table-wrap"
-              tabindex="0"
-              role="region"
-              aria-label="Two trust needs and the recommendations they support"
-            >
-              <table>
-                <thead>
-                  <tr>
-                    <th>Trust need</th>
-                    <th>Where trust is most likely to break</th>
-                    <th>Recommendation it supports</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>
-                      <strong>Speed first</strong><br />Delegates routine tasks
-                      such as recurring payments and wants the AI out of the
-                      way.
-                    </td>
-                    <td>
-                      Confirmation steps on low-stakes actions, plus slow or
-                      opaque status after money moves
-                    </td>
-                    <td>
-                      Lightweight handling of low-stakes actions, an override
-                      that is always visible, and immediate confirmation of the
-                      result
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <strong>Explanation first</strong><br />Wants to
-                      understand an action before allowing it, especially when a
-                      transfer can't be undone.
-                    </td>
-                    <td>
-                      A recommendation with no reason given, or no review point
-                      before a transfer is submitted
-                    </td>
-                    <td>
-                      Plain-language reasons, a review checkpoint that flags
-                      risky details, and an easy way to opt out
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </section>
-
-          <section class="section" id="journey">
-            <div class="section-head">
-              <p class="section-note">from published evidence to a testable experience</p>
-              <h2>Reviewing an AI-suggested transfer</h2>
-            </div>
-            <p><strong>Illustrative journey, not an observed session.</strong>
-              A mobile banking customer wants to build savings while keeping
-              enough money for upcoming bills. The AI suggests a transfer; the
-              customer must decide whether it fits their situation. The steps,
-              concerns, and safeguards below are design hypotheses.</p>
-            <ol class="artifact-flow" aria-label="Illustrative journey for reviewing an AI-suggested transfer">
-              <li><h4>Encounter the suggestion</h4><p><strong>Action:</strong> see a suggested transfer while checking an account.</p><p><strong>Possible concern:</strong> “Why this amount now?”</p><p><strong>Proposed safeguard:</strong> show the amount, destination, and a short reason.</p><p><a href="#synthesis">Evidence basis: task-dependent comfort.</a> The transfer scenario is an extrapolation.</p></li>
-              <li><h4>Check the reasoning</h4><p><strong>Action:</strong> inspect the explanation and upcoming commitments.</p><p><strong>Possible concern:</strong> the AI may have missed a bill.</p><p><strong>Proposed safeguard:</strong> disclose the inputs and uncertainty; let the customer inspect details.</p><p><a href="#insights">Evidence basis: transparency and human oversight.</a> This interface pattern is untested.</p></li>
-              <li><h4>Decide and review</h4><p><strong>Action:</strong> accept, edit, or decline before submitting.</p><p><strong>Possible concern:</strong> an unsuitable transfer could leave too little available.</p><p><strong>Proposed safeguard:</strong> visible edit and decline controls with a review checkpoint.</p><p><a href="#principles">Design hypothesis: preserve control as stakes rise.</a> The sources do not establish its effect.</p></li>
-              <li><h4>Verify the outcome</h4><p><strong>Action:</strong> check the transfer status and updated balance.</p><p><strong>Possible concern:</strong> uncertainty about whether money moved.</p><p><strong>Proposed safeguard:</strong> distinguish submitted, pending, and completed states.</p><p><a href="#validation">Test next: comprehension and perceived control.</a> No behavioral outcome was measured here.</p></li>
-            </ol>
-            <div class="callout">
-              <p><strong>What would validate the two trust needs?</strong>
-                The task-comfort difference in the <a class="source-link" href="https://stories.td.com/volumes/default/article/TDBank_AI_InsightsReport.pdf" target="_blank" rel="noopener noreferrer">TD Bank survey</a>
-                motivates the distinction; it does not establish two stable user
-                segments. Observe whether the same person wants speed for routine
-                tasks and more explanation for consequential ones. If needs shift
-                with the task, describe them as situational needs rather than personas.</p>
-            </div>
-          </section>
-
-          <section class="section" id="benchmark">
-            <div class="section-head">
-              <p class="section-note">
-                grouped by how closely each example applies
-              </p>
-              <h2>Competitive Benchmarking</h2>
-            </div>
+          </div>
+</details>
+<details class="evidence" id="benchmark">
+<summary>Competitive benchmarking</summary>
+<div class="evidence-body">
             <p>
               These are provider-reported examples, not outcomes measured in
               this research. We grouped them by who interacts with the AI,
@@ -480,155 +630,11 @@
                 </p>
               </div>
             </details>
-          </section>
-
-          <section class="section" id="principles">
-            <div class="section-head">
-              <p class="section-note">design ideas to validate next</p>
-              <h2>Strategic UX Implications</h2>
-            </div>
-            <div class="principle-list">
-              <div class="principle">
-                <h3>Safeguards matched to the stakes</h3>
-                <p>
-                  Keep low-stakes suggestions lightweight. Add explanation,
-                  review, and override as the action becomes more consequential
-                  or harder to undo.
-                </p>
-              </div>
-              <div class="principle">
-                <h3>Explainable AI with progressive disclosure</h3>
-                <p>
-                  Lead with a plain-language reason, offer more detail on tap,
-                  and save the technical specifics for people who look for them.
-                </p>
-              </div>
-              <div class="principle">
-                <h3>Confirmation checkpoints</h3>
-                <p>
-                  Let people review consequential AI-initiated actions before
-                  they run, and point out details that look risky.
-                </p>
-              </div>
-              <div class="principle">
-                <h3>User override controls</h3>
-                <p>
-                  Provide a clear way to undo, adjust, or decline a
-                  recommendation, and make sure people can find it.
-                </p>
-              </div>
-              <div class="principle">
-                <h3>Visible results</h3>
-                <p>
-                  Show what happened after an AI action so people can check the
-                  outcome.
-                </p>
-              </div>
-            </div>
-          </section>
-
-          <section class="section" id="validation">
-            <div class="section-head">
-              <p class="section-note">
-                how we would test the central hypothesis
-              </p>
-              <h2>Validation Plan</h2>
-            </div>
-            <h3>Two versions of the same recommendation</h3>
-            <p class="small-note">Interactive test stimuli with fictional account
-              details. Both begin with the same $120 transfer; only B adds a reason
-              and explicit edit and decline controls. These are untested prototype
-              interactions. No account is connected and no money moves.</p>
-            <div class="revision-pair banking-demo" id="banking-demo">
-              <div data-bank-variant="a">
-                <h4>A · Confirm only</h4>
-                <p>Suggested transfer</p><p><strong data-bank-amount>$120</strong> from Checking to Savings</p>
-                <button type="button" class="bank-action" data-bank-confirm>Confirm</button>
-                <p class="small-note" data-bank-status role="status" aria-live="polite"></p>
-              </div>
-              <div data-bank-variant="b">
-                <h4>B · Explanation &amp; control</h4>
-                <p>Suggested transfer</p><p><strong data-bank-amount>$120</strong> from Checking to Savings</p>
-                <details><summary>Why this?</summary><p>Illustrative reasoning: a $620 balance minus $300 in scheduled bills and a $200 buffer leaves $120. This example may miss bills that are not scheduled in the app. Check your commitments before confirming.</p></details>
-                <form data-bank-edit-form hidden>
-                  <label for="bank-transfer-amount">Transfer amount in dollars</label>
-                  <input id="bank-transfer-amount" name="amount" type="number" min="1" max="500" step="1" value="120" required />
-                  <button class="bank-action" type="submit">Save amount</button>
-                </form>
-                <div class="bank-actions"><button type="button" class="bank-action" data-bank-confirm>Confirm</button><button type="button" class="bank-action" data-bank-edit>Edit</button><button type="button" class="bank-action" data-bank-decline>Decline</button></div>
-                <p class="small-note" data-bank-status role="status" aria-live="polite"></p>
-              </div>
-            </div>
-            <button type="button" class="bank-action" id="banking-restart">Restart both examples</button>
-            <div class="callout">
-              <p>
-                <strong>Hypothesis:</strong> when an AI recommends a
-                consequential money action, a plain-language reason plus a
-                visible override will help people understand the recommendation
-                and challenge it when it is wrong, without slowing routine use
-                much.
-              </p>
-            </div>
-            <div class="sequence-model">
-              <div class="sequence-row">
-                <span class="sequence-label">Method</span>
-                <p>
-                  A moderated, within-subjects prototype test. Each participant
-                  sees both variants, in counterbalanced order.
-                </p>
-              </div>
-              <div class="sequence-row">
-                <span class="sequence-label">Participants</span>
-                <p>
-                  8–10 people who bank on mobile, screened to include both high
-                  and low comfort with AI. The screener would reuse the
-                  budgeting-versus-investing comfort question.
-                </p>
-              </div>
-              <div class="sequence-row">
-                <span class="sequence-label">Variants</span>
-                <p>
-                  <strong>A:</strong> an AI recommendation with a single Confirm
-                  button. <strong>B:</strong> the same recommendation with a
-                  "Why this?" reason and visible Edit and Decline controls.
-                </p>
-              </div>
-              <div class="sequence-row">
-                <span class="sequence-label">Tasks</span>
-                <p>
-                  Respond to an AI-suggested bill-payment date and an
-                  AI-suggested transfer to savings. In one trial the
-                  recommendation is deliberately flawed: it schedules a payment
-                  after the due date.
-                </p>
-              </div>
-              <div class="sequence-row">
-                <span class="sequence-label">Measures</span>
-                <p>
-                  Whether participants catch and override the flawed
-                  recommendation. Whether they can explain any recommendation in
-                  their own words. Time to find the override. Perceived control
-                  after each variant. Think-aloud comments at the review step.
-                </p>
-              </div>
-              <div class="sequence-row">
-                <span class="sequence-label">Decision rule</span>
-                <p>
-                  Keep explanation and override if Variant B improves catches of
-                  the flawed recommendation and the quality of participants'
-                  explanations. If it only adds time, simplify the explanation
-                  and retest. With this sample size, results are directional,
-                  not statistically conclusive.
-                </p>
-              </div>
-            </div>
-          </section>
-
-          <section class="section" id="limits">
-            <div class="section-head">
-              <p class="section-note">where the evidence stops</p>
-              <h2>Limitations</h2>
-            </div>
+          </div>
+</details>
+<details class="evidence" id="limits">
+<summary>Limitations</summary>
+<div class="evidence-body">
             <ul>
               <li>
                 <strong>No primary behavioral data:</strong> the findings come
@@ -649,25 +655,18 @@
                 expectations.
               </li>
             </ul>
-          </section>
+          </div>
+</details>
+</section>
           <div class="end-nav">
             <a href="shein-usability.html">← SHEIN</a
             ><a href="work.html">All work →</a>
           </div>
-        </article>
+
+</article>
         <aside class="case-aside">
           <nav class="jump-card" aria-label="Case study sections">
-            <p>jump to ↓</p>
-            <a href="#overview">Overview</a
-            ><a href="#synthesis">How we synthesized</a
-            ><a href="#insights">Evidence &amp; hypotheses</a
-            ><a href="#needs">Two trust needs</a
-            ><a href="#journey">Illustrative journey</a
-            ><a href="#benchmark">Benchmarking</a
-            ><a href="#principles">UX principles</a
-            ><a href="#validation">Validation plan</a
-            ><a href="#limits">Limitations</a>
-          </nav>
+<p>jump to ↓</p><a href="#overview">Overview</a><a href="#insights">Key evidence</a><a href="#principles">Design decisions</a><a href="#prototype">Prototype</a><a href="#validation">Evaluation</a><a href="#supporting-research">Supporting research</a></nav>
         </aside>
       </div>
     </main>

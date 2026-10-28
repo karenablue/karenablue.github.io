@@ -1,8 +1,23 @@
+// Reveal supporting details when a case-study link points inside one.
+function revealHashTarget() {
+  const target = document.getElementById(location.hash.slice(1));
+  if (!target) return;
+  for (let parent = target; parent; parent = parent.parentElement) {
+    if (parent.tagName === "DETAILS") parent.open = true;
+  }
+  target.scrollIntoView();
+}
+window.addEventListener("hashchange", revealHashTarget);
+if (location.hash) revealHashTarget();
+
 // Links and native disclosures remain available without JavaScript.
 document.querySelectorAll('a[href^="#"]').forEach((link) => {
   link.addEventListener("click", () => {
     const target = document.getElementById(link.hash.slice(1));
     if (!target || target === document.body) return;
+    for (let parent = target; parent; parent = parent.parentElement) {
+      if (parent.tagName === "DETAILS") parent.open = true;
+    }
     const hadTabindex = target.hasAttribute("tabindex");
     if (!hadTabindex) target.setAttribute("tabindex", "-1");
     target.focus({ preventScroll: true });
