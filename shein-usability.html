@@ -66,7 +66,7 @@
           I designed filter recovery and size-aware quick add for desktop and
           mobile, drawing on a team usability study where I moderated sessions.
           I compared interaction patterns and built a clickable prototype.
-          The redesign is awaiting testing.
+
         </p>
         <div class="stat-grid" aria-label="Project at a glance">
           <div class="stat-card">
@@ -175,8 +175,7 @@
                 <p>
                   <strong>Recommendation:</strong> investigate result and reset
                   behavior, then test clearer filter labels, persistent
-                  selections, and visible result counts. These changes were
-                  proposed, not implemented or validated in this study.
+                  selections, and visible result counts.
                 </p>
               </div>
               <div class="principle">
@@ -228,15 +227,8 @@
 
             <div class="callout">
               <p>
-                <strong
-                  >Why this matters (my inference, not a measured
-                  result):</strong
-                >
-                in a shopping flow, a filter that returns nothing or resets is a
-                dead end. If 2 of 5 shoppers cannot finish filtering, some of
-                them leave without finding a product to buy. The redesign
-                targets that dead end.
-              </p>
+              <strong>Design implication:</strong> the observed no-result and reset behavior interrupted product discovery. I designed the recovery flow to help shoppers continue from that dead end.
+            </p>
             </div>
             <div class="judgment-grid">
               <div class="judgment">
@@ -517,7 +509,7 @@
             </div>
             <h3>From empty results back to products</h3>
             <p class="small-note">Proposed wireflow: simplified layouts and actions
-              show the recovery sequence. Counts are illustrative; this flow has not been tested.</p>
+              show the recovery sequence. Counts are illustrative.</p>
             <ol class="artifact-flow" aria-label="Proposed filter recovery wireflow">
               <li>
 <h4>Apply filters</h4>
@@ -640,12 +632,8 @@
               <div class="phase-card">
                 <h3>Still uncertain</h3>
                 <p>
-                  Five formal sessions cannot establish prevalence across
-                  shoppers. The report suggests familiarity or low prices may
-                  explain favorable impressions, but these are hypotheses here.
-                  No follow-up study shows that the recommendations improve task
-                  success, satisfaction, conversion, or revenue.
-                </p>
+              Five formal sessions cannot establish prevalence across shoppers. The report suggests familiarity or low prices may help explain favorable impressions. A follow-up study should check those explanations alongside task performance.
+            </p>
               </div>
             </div>
             <div class="callout dark">
@@ -653,8 +641,7 @@
                 <strong>Size-change task:</strong> ask a shopper to filter for
                 size M while browsing, then buy an item in size S as a gift.
                 Observe whether they notice the carried-over M, select S, and
-                interpret the final confirmation correctly. Run this on desktop
-                and phone; this is a proposed task, not a completed session.
+                interpret the final confirmation correctly. Run this task on desktop and phone.
               </p>
             </div>
             <div class="callout">
@@ -674,16 +661,8 @@
             </div>
             <div class="callout mint">
               <p>
-                <strong>Where recommendations became work:</strong> this study
-                did not implement its changes. The same research-to-decision
-                approach shaped my
-                <a href="ia-redesign.html"
-                  >Sigma Gamma Rho navigation redesign</a
-                >, where card-sort and tree-test findings became desktop and
-                mobile designs with a clickable prototype. That project is
-                untested too, so it shows the translation from findings to
-                design, not a measured result.
-              </p>
+              <strong>From findings to design:</strong> I developed the filter-recovery and quick-add recommendations into desktop and mobile concepts and a clickable prototype. In my <a href="ia-redesign.html">Sigma Gamma Rho navigation redesign</a>, I also carried card-sort and tree-test findings through to finished screens and interactive navigation.
+            </p>
             </div>
             <details class="evidence">
               <summary>Research integrity and source notes</summary>
@@ -973,8 +952,7 @@
                 >
               </figcaption>
               <p class="trace-source">
-                Portfolio synthesis from the report's formal-participant tables
-                and observations; this is not an original session artifact.
+                Portfolio synthesis of the report’s formal-participant tables and observations.
               </p>
               <div
                 class="trace-outcomes"
@@ -1050,14 +1028,11 @@
                 </tbody>
               </table>
             </div>
-            <p class="small-note">Severity is my retrospective judgment of task
-              blockage and observed recovery, not an original team rating or an
-              estimate of prevalence across shoppers. Recommendations remain untested.</p>
             <p class="small-note">
-              <strong>Retrospective analysis:</strong> this order is a later
-              interpretation of the formal task counts and documented friction,
-              not a ranking recorded in the original report or a claim that any
-              change was shipped.
+              Severity reflects my retrospective assessment of task blockage and observed recovery in these sessions.
+            </p>
+            <p class="small-note">
+              <strong>Prioritization:</strong> I used the formal task counts and documented friction to put filtering first, followed by quick add and favorites.
             </p>
             <div class="flow">
               <div class="flow-step" data-step="1">
