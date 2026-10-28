@@ -2744,3 +2744,31 @@ html body.portfolio-page {
 .project-preview a:hover, .project-preview a:focus-visible { background: #f0e8ff; }
 .project-preview span { font-size: .9rem; line-height: 1.5; }
 @media (max-width: 650px) { .project-preview { grid-template-columns: 1fr; gap: .65rem; } }
+
+/* Leave room for project previews in the desktop opening view. */
+@media (min-width: 1000px) {
+  .hero { padding-block: 18px 24px; }
+  .welcome-heading h1 { margin-block: 6px 10px; }
+  .welcome-heading h1 > span { font-size: clamp(55px, 5vw, 72px); }
+  .welcome-heading h1 strong { font-size: clamp(74px, 6.5vw, 94px); }
+  .home-universe { grid-template-columns: 112px minmax(0, 1fr) 170px; gap: 20px; margin-top: 16px; }
+  .object-nav { gap: 10px; }
+  .object-nav .drawn-icon { width: 54px; height: 50px; }
+  .object-nav a > span { font-size: 12px; }
+  .welcome-window { margin-top: 8px; }
+  .welcome-body { padding: 22px 26px; gap: 24px; }
+  .portrait-discovery { width: 100%; max-width: 240px; margin-inline: auto; }
+  .speech-cloud { font-size: 30px; padding: 18px 12px; margin-bottom: 18px; }
+  .side-discoveries { display: flex; grid-column: auto; gap: 16px; margin-top: 0; }
+  .mini-resume { grid-column: auto; }
+}
+.sigma-screen-examples { display: grid; grid-template-columns: minmax(0, 2.2fr) minmax(0, 1fr); align-items: start; gap: 20px; margin-block: 20px 28px; }
+.sigma-screen-examples figure { min-width: 0; margin: 0; }
+.sigma-screen-examples img { width: 100%; height: auto; border-radius: 10px; }
+.sigma-screen-examples figcaption { margin-top: 12px; }
+.sigma-additional-states .phone-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (max-width: 650px) {
+  .sigma-screen-examples { grid-template-columns: minmax(0, 1fr); }
+  .sigma-screen-examples figure:last-child { width: min(100%, 280px); margin-inline: auto; }
+  .sigma-additional-states .phone-row { grid-template-columns: minmax(0, 1fr); }
+}
