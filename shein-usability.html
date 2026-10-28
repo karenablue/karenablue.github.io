@@ -867,6 +867,16 @@
                 change it when needed, and understand the confirmation.
               </p>
             </div>
+            <h3>From empty results back to products</h3>
+            <p class="small-note">Proposed wireflow: simplified layouts and actions
+              show the recovery sequence. Counts are illustrative; this flow has not been tested.</p>
+            <ol class="artifact-flow" aria-label="Proposed filter recovery wireflow">
+              <li><h4>Apply filters</h4><div class="mini-screen"><strong>Search results</strong>Size M · Black · Budget<span class="mini-action">Apply another filter →</span></div><p>The applied row keeps current selections visible.</p></li>
+              <li><h4>Reach an empty state</h4><div class="mini-screen"><strong>No matching products</strong>Name a filter that can be relaxed.<span class="mini-action">Remove named filter →</span></div><p>Show which constraint changes and the expected result count.</p></li>
+              <li><h4>Restore results</h4><div class="mini-screen"><strong>Products return</strong>Remaining filters stay applied.<span class="mini-action">Review matching products →</span></div><p>Remove only the named filter. Preserve the remaining selections.</p></li>
+              <li><h4>Continue shopping</h4><div class="mini-screen"><strong>Product grid</strong>Applied filters stay visible.<span class="mini-action">Quick add / adjust filters</span></div><p>If recovery is unsuitable, let shoppers change another filter or reset all.</p></li>
+            </ol>
+            <p><a href="#shein-demo">Try the no-results case in the prototype below →</a></p>
             <h3>Try the prototype</h3>
             <p>
               Open a filter pill, remove a chip, or use quick add. Switch to the
@@ -1081,6 +1091,19 @@
               <p class="section-note">a portfolio read of the evidence</p>
               <h2>Prioritized recommendations</h2>
             </div>
+            <div class="table-wrap" tabindex="0" role="region" aria-label="Usability issues, evidence, severity, and proposed changes">
+              <table>
+                <thead><tr><th>Issue</th><th>Observed evidence</th><th>Proposed severity &amp; rationale</th><th>Change to test</th></tr></thead>
+                <tbody>
+                  <tr><td>Filtering blocks progress</td><td>P1 and P4 did not finish; P2 found a coat by scrolling rather than filtering. Full completion: 2 of 5.</td><td><strong>High.</strong> Blocks the intended task, with no successful recovery documented for the two failed sessions.</td><td>Persistent selections, visible filter chips, and an empty state that names one constraint to remove.</td></tr>
+                  <tr><td>Quick add is missed</td><td>P1 opened a product page first; P3 did not use quick add; P5 partially completed. Full completion: 3 of 5.</td><td><strong>High for this task.</strong> The listing interaction fails or takes a detour; this does not establish that buying an item is impossible.</td><td>A labeled quick-add control and clear size selection and confirmation.</td></tr>
+                  <tr><td>Favorites creates friction</td><td>All 5 completed; P1 had icon and account-prompt friction, and P2 corrected an initial mistake.</td><td><strong>Moderate.</strong> Interruptions were recoverable in the observed sessions.</td><td>Clearer save control and advance notice of sign-in requirements.</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="small-note">Severity is my retrospective judgment of task
+              blockage and observed recovery, not an original team rating or an
+              estimate of prevalence across shoppers. Recommendations remain untested.</p>
             <p class="small-note">
               <strong>Retrospective analysis:</strong> this order is a later
               interpretation of the formal task counts and documented friction,
@@ -1143,6 +1166,11 @@
                     <td>Most recover without restarting</td>
                   </tr>
                   <tr>
+                    <td>Size chosen matches the shopper’s intended purchase</td>
+                    <td>Not measured in the original study</td>
+                    <td>Observe correct changes from a preselected size; record accidental acceptance and final confirmation understanding.</td>
+                  </tr>
+                  <tr>
                     <td>Quick add used without opening the product page</td>
                     <td>3 of 5 fully completed</td>
                     <td>At least 4 of 5</td>
@@ -1183,6 +1211,15 @@
               </div>
             </div>
             <div class="callout dark">
+              <p>
+                <strong>Size-change task:</strong> ask a shopper to filter for
+                size M while browsing, then buy an item in size S as a gift.
+                Observe whether they notice the carried-over M, select S, and
+                interpret the final confirmation correctly. Run this on desktop
+                and phone; this is a proposed task, not a completed session.
+              </p>
+            </div>
+            <div class="callout">
               <p>
                 <strong>Retest plan:</strong> test the prototype’s filter and
                 quick-add changes, recruit a mix of new and experienced

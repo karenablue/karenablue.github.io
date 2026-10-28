@@ -14,6 +14,14 @@
     ["Resources", ["Help Center", "Vendor", "Contact Us", "Careers"]]
   ];
   var DESKTOP_W = 960;
+  // Proposed helper copy; not part of the original tree test or Figma captures.
+  var DESCRIPTIONS = {
+    "International Grand Basileus": "Current international leader",
+    "Past Grand Basilei": "Former international leaders"
+  };
+  function label(l) {
+    return esc(l) + (DESCRIPTIONS[l] ? '<small class="nd-description">' + esc(DESCRIPTIONS[l]) + '</small>' : '');
+  }
   var screen = root.querySelector(".nd-screen");
   var stage = root.querySelector(".nd-stage");
   var status = root.querySelector(".nd-status");
@@ -48,11 +56,11 @@
   function searchPanel() {
     var q = state.query.trim().toLowerCase();
     var hits = [];
-    if (q) NAV.forEach(function (s) { s[1].forEach(function (l) { if (l.toLowerCase().indexOf(q) > -1) hits.push([s[0], l]); }); });
+    if (q) NAV.forEach(function (s) { s[1].forEach(function (l) { if ((l + " " + (DESCRIPTIONS[l] || "")).toLowerCase().indexOf(q) > -1) hits.push([s[0], l]); }); });
     return '<div class="nd-search-panel"><label class="nd-search-label" for="nd-q">Search the site</label>' +
       '<div class="nd-field">' + searchIcon + '<input id="nd-q" type="search" autocomplete="off" placeholder="Try membership, chapters, programs…" value="' + esc(state.query) + '"></div>' +
       (q ? (hits.length ? hits.slice(0, 6).map(function (h) {
-        return '<button type="button" class="nd-result" data-go="' + esc(h[0]) + "|" + esc(h[1]) + '">' + esc(h[1]) + "<span>→</span></button>";
+        return '<button type="button" class="nd-result" data-go="' + esc(h[0]) + "|" + esc(h[1]) + '"><span>' + label(h[1]) + "</span><span>→</span></button>";
       }).join("") : '<p class="nd-empty">No matching pages.</p>') : "") + "</div>";
   }
   function desktop() {
@@ -62,7 +70,7 @@
       return '<li class="nd-item' + (open ? " is-open" : "") + (current ? " is-current" : "") + '">' +
         '<button type="button" class="nd-link" data-menu="' + esc(s[0]) + '" aria-expanded="' + open + '">' + esc(s[0]) + "</button>" +
         (open ? '<ul class="nd-menu">' + s[1].map(function (l) {
-          return '<li><button type="button" data-go="' + esc(s[0]) + "|" + esc(l) + '">' + esc(l) + "</button></li>";
+          return '<li><button type="button" data-go="' + esc(s[0]) + "|" + esc(l) + '">' + label(l) + "</button></li>";
         }).join("") + "</ul>" : "") + "</li>";
     }).join("");
     return '<div class="nd-desktop">' +
@@ -81,7 +89,7 @@
         var ex = state.expanded === s[0];
         return '<li class="' + (ex ? "is-open" : "") + '"><button type="button" class="nd-row" data-acc="' + esc(s[0]) + '" aria-expanded="' + ex + '">' + esc(s[0]) + chevron + "</button>" +
           (ex ? '<ul class="nd-sub">' + s[1].map(function (l) {
-            return '<li><button type="button" data-go="' + esc(s[0]) + "|" + esc(l) + '">' + esc(l) + "</button></li>";
+            return '<li><button type="button" data-go="' + esc(s[0]) + "|" + esc(l) + '">' + label(l) + "</button></li>";
           }).join("") + "</ul>" : "") + "</li>";
       }).join("") + "</ul>" +
         '<div class="nd-drawer-actions"><button type="button" class="nd-btn ghost" data-go="Membership|Become a Member">Join</button>' +

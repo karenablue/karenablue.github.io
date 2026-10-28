@@ -576,6 +576,30 @@ th,td,.task p,.benchmark-card p,.principle p,.persona-body p,
 .nd-sub{margin:0;padding:0 0 8px 12px;list-style:none}
 .nd-sub button{padding:9px 4px;color:rgba(255,255,255,.88);white-space:normal}
 .nd-sub button:hover{color:#fff}
+.nd-description{display:block;margin-top:4px;font-size:12px;line-height:1.45;font-weight:400;white-space:normal;color:inherit}
+.artifact-flow{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:20px 0;padding:0;list-style:none;counter-reset:artifact-step}
+.artifact-flow>li{position:relative;min-width:0;padding:18px;border:1.5px solid var(--ink);border-radius:16px;background:#fff;counter-increment:artifact-step}
+.artifact-flow>li::before{content:counter(artifact-step);display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--lav);font-weight:800;margin-bottom:12px}
+.artifact-flow h4{margin:0 0 10px;font-size:.95rem}
+.artifact-flow p{margin:8px 0;font-size:.82rem;line-height:1.6}
+.artifact-flow .mini-screen{padding:12px;border:1px solid var(--line-color);border-radius:8px;background:var(--lav2);font-size:.8rem;line-height:1.6}
+.artifact-flow .mini-screen strong{display:block}
+.artifact-flow .mini-action{display:block;margin-top:10px;padding:7px;border:1px solid var(--ink);border-radius:5px;text-align:center;font-weight:700}
+.revision-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:18px 0}
+.revision-pair>div{padding:18px;border:1.5px solid var(--ink);border-radius:14px;background:#fff}
+.revision-pair h4{margin:0 0 10px}
+.revision-pair p{margin:6px 0}
+.revision-pair small{display:block;color:var(--muted)}
+.bank-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.bank-action{margin:8px 0;padding:10px 14px;min-height:44px;border:1.5px solid var(--ink);border-radius:8px;background:var(--lav2);color:var(--ink);font-family:inherit;font-size:.85rem;font-weight:600;line-height:1.4;cursor:pointer}
+.bank-action:focus-visible,.banking-demo summary:focus-visible{outline:3px solid var(--purple);outline-offset:3px}
+.bank-action:disabled{opacity:.6;cursor:default}
+.banking-demo details{margin:14px 0;font-size:.85rem}
+.banking-demo summary{cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+.banking-demo label{display:block;margin:12px 0 6px;font-size:.85rem}
+.banking-demo input{box-sizing:border-box;max-width:100%;width:100%;padding:10px;font:inherit;border:1.5px solid var(--ink);border-radius:6px}
+@media(max-width:1050px){.artifact-flow{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.artifact-flow,.revision-pair{grid-template-columns:minmax(0,1fr)}}
 .nd-drawer-actions{display:grid;gap:10px;margin-top:14px;padding-top:14px;border-top:1px solid rgba(255,255,255,.16)}
 .nd-drawer-actions .nd-btn{min-height:46px;font-size:14px}
 .nd-phone .nd-search-panel{position:static;width:auto;margin:0;border-radius:0}
